@@ -3,5 +3,6 @@ from config import config
 
 engine = create_engine(config.DATABASE_URL, echo=True)
 
+
 def get_session():
-    return Session(engine) 
+    return Session(engine)
