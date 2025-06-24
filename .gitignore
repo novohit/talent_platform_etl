@@ -11,3 +11,6 @@ wheels/
 
 # Ruff files
 *.ruff_cache
+
+# macOS Desktop Services Store
+.DS_Store
