@@ -11,6 +11,13 @@ def create_tables():
 
 def query_teachers():
     with get_session() as session:
-        statement = select(Teacher).limit(100)  # Adjust the limit as needed
+        statement = select(Teacher).limit(100)
+        results = session.exec(statement)
+        return list(results)
+
+
+def query_invalid_teachers():
+    with get_session() as session:
+        statement = select(Teacher).where(Teacher.is_valid == False).limit(10)
         results = session.exec(statement)
         return list(results)
