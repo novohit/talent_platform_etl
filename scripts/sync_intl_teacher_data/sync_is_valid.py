@@ -1,6 +1,6 @@
 from etl.operations import query_invalid_teachers
 from services.es.teacher_service import TeacherService
-
+from logger import logger
 
 def sync_is_valid():
     invalid_teachers = query_invalid_teachers()
@@ -10,9 +10,10 @@ def sync_is_valid():
     for i in range(0, len(teacher_ids), 100):
         batch_teacher_ids = teacher_ids[i : i + 100]
         # 调用es删除
-        TeacherService.remove_by_ids(batch_teacher_ids)
+        result = TeacherService.remove_by_ids(batch_teacher_ids)
+        logger.info(result)
 
 
-# PYTHONPATH=/workspace/code/talent_platform_etl uv run scripts/sync_intl_teacher_data/sync_is_valid.py
+# PYTHONPATH=$(pwd) uv run scripts/sync_intl_teacher_data/sync_is_valid.py
 if __name__ == "__main__":
     sync_is_valid()

@@ -14,3 +14,6 @@ wheels/
 
 # macOS Desktop Services Store
 .DS_Store
+
+# logs
+logs/
