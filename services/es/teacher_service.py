@@ -143,3 +143,32 @@ class TeacherService:
         response = es_client.delete_by_query(index=cls.INDEX_NAME, query=query)
 
         return response
+
+    @classmethod
+    def update_domains_by_ids(
+        cls, teacher_id: str, school_name: str, first_level: List[str]
+    ) -> Dict[str, Any]:
+        """
+        更新教师的学校名称和一级领域
+
+        Args:
+            teacher_id: 教师ID
+            school_name: 学校名称
+            first_level: 一级领域列表
+
+        Returns:
+            更新结果
+        """
+        query = {"term": {"teacherId.keyword": teacher_id}}
+        script = {
+            "source": """
+                ctx._source.schoolName = params.schoolName;
+                ctx._source.firstLevel = params.test;
+            """,
+            "lang": "painless",
+            "params": {"schoolName": school_name, "test": first_level},
+        }
+
+        return es_client.update_by_query(
+            index=cls.INDEX_NAME, query=query, script=script
+        )

@@ -1,8 +1,9 @@
-from etl.operations import query_invalid_teachers
+from etl.operations import query_invalid_teachers, query_teacher_domain
 from services.es.teacher_service import TeacherService
 from logger import logger
 
-def sync_is_valid():
+
+def remove_invalid_teachers():
     invalid_teachers = query_invalid_teachers()
     # 收集teacher_id
     teacher_ids = [teacher.teacher_id for teacher in invalid_teachers]
@@ -14,6 +15,13 @@ def sync_is_valid():
         logger.info(result)
 
 
+def sync_teacher_domain():
+    teacher_domains = query_teacher_domain()
+    for teacher_domain in teacher_domains:
+        print(teacher_domain)
+
+
 # PYTHONPATH=$(pwd) uv run scripts/sync_intl_teacher_data/sync_is_valid.py
 if __name__ == "__main__":
-    sync_is_valid()
+    remove_invalid_teachers()
+    # sync_teacher_domain()

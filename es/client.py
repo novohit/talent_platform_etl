@@ -83,5 +83,40 @@ class ESClient:
         response = self.client.delete_by_query(index=index, body=query)
         return response.body
 
+    def update_by_query(
+        self, index: str, query: Dict[str, Any], script: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """
+        根据查询条件更新文档
+
+        Args:
+            index: 索引名称
+            query: 查询DSL
+            script: 更新脚本
+
+        Returns:
+            更新结果
+        """
+        body = {"query": query, "script": script}
+        response = self.client.update_by_query(index=index, body=body)
+        return response.body
+
+    def bulk(
+        self, operations: List[Dict[str, Any]], index: str = None
+    ) -> Dict[str, Any]:
+        """
+        执行批量操作
+
+        Args:
+            operations: 批量操作的请求体列表，每个操作都是一个字典，
+                      包含操作类型（index, create, update, delete）和相应的数据
+            index: 可选的默认索引名称
+
+        Returns:
+            批量操作结果
+        """
+        response = self.client.bulk(operations=operations, index=index)
+        return response.body
+
 
 es_client = ESClient()

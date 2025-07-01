@@ -4,5 +4,13 @@ from config import config
 engine = create_engine(config.DATABASE_URL, echo=True)
 
 
-def get_session():
+def get_domain_tree_engine():
+    return create_engine(config.DOMAIN_TREE_DATABASE_URL, echo=True)
+
+
+def get_session() -> Session:
     return Session(engine)
+
+
+def get_domain_tree_session() -> Session:
+    return Session(get_domain_tree_engine())

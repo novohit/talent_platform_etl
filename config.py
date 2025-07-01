@@ -8,6 +8,10 @@ class Config:
     DATABASE_URL = os.getenv(
         "DATABASE_URL", "mysql+pymysql://user:password@localhost:3306/dbname"
     )
+    DOMAIN_TREE_DATABASE_URL = os.getenv(
+        "DOMAIN_TREE_DATABASE_URL",
+        "mysql+pymysql://user:password@localhost:3306/dbname",
+    )
     # ES配置
     ES_HOSTS = os.getenv("ES_HOSTS", "http://localhost:9200").split(",")
     ES_USERNAME = os.getenv("ES_USERNAME", "")

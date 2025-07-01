@@ -7,5 +7,53 @@ class Teacher(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     teacher_id: str
     school_name: str
+    college_name: str
     derived_teacher_name: str
+    description: str
     is_valid: bool
+
+
+class TeacherDomain(SQLModel, table=True):
+    __tablename__ = "data_intl_teacher_domains"
+    id: Optional[int] = Field(default=None, primary_key=True)
+    teacher_id: str
+    l1_domain_count: str
+    l2_domain_count: str
+    l3_domain_count: str
+    l1_domains: str
+    l2_domains: str
+    l3_domains: str
+    major_paper_1_domain: str
+    minor_paper_1_domain: str
+    major_paper_2_domain: str
+    minor_paper_2_domain: str
+    major_paper_3_domain: str
+    minor_paper_3_domain: str
+
+
+class TeacherWide(SQLModel, table=True):
+    __tablename__ = "data_intl_teacher_wide"
+    id: Optional[int] = Field(default=None, primary_key=True)
+    teacher_id: str
+    school_name: str
+    college_name: str
+    derived_teacher_name: str
+    email: str
+    omit_description: str
+    research_area: str
+    normalized_title: str
+    is_phd: bool
+    is_chinese: bool
+    famous_titles: str
+    first_level: str
+    second_level: str
+
+
+class Domain(SQLModel, table=True):
+    __tablename__ = "domain"
+    id: str = Field(primary_key=True)
+    name: str
+    parent: Optional[str] = None
+    level: int
+    code: Optional[str] = None
+    sort: Optional[int] = None
