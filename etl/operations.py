@@ -22,6 +22,7 @@ def query_invalid_teachers():
         results = session.exec(statement)
         return list(results)
 
+
 def query_teacher_domain():
     with get_session() as session:
         statement = select(TeacherDomain).limit(10)

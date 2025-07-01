@@ -9,7 +9,9 @@ dependencies = [
     "elasticsearch==8.15.1",
     "pymysql>=1.1.1",
     "python-dotenv>=1.1.0",
+    "requests>=2.32.4",
     "sqlmodel>=0.0.24",
+    "tqdm>=4.67.1",
 ]
 
 [dependency-groups]
