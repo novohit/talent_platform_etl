@@ -1,0 +1,31 @@
+{
+    "mappings": {
+        "properties": {
+            "id": {
+                "type": "keyword"
+            },
+            "name": {
+                "type": "text",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            },
+            "email": {
+                "type": "keyword"
+            },
+            "created_at": {
+                "type": "date"
+            },
+            "updated_at": {
+                "type": "date"
+            }
+        }
+    },
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 1
+    }
+}

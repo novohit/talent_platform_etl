@@ -1,5 +1,4 @@
 import requests
-import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 from tqdm import tqdm

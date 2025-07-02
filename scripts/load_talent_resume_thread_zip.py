@@ -5,7 +5,7 @@ import os
 from tqdm import tqdm
 from datetime import datetime
 
-base_url = "http://172.22.121.63:32738/api"
+base_url = "http://localhost:8080/api"
 pdf_save_path = "../output/resumes_v1"
 
 
@@ -18,7 +18,7 @@ def fetch_talents(token):
         "filters": {"isChinese": ["1"], "major2Domain": ["人工智能"]},
         "keyword": "",
         "page": 0,
-        "size": 500,
+        "size": 100,
         "needAggregations": True,
     }
 

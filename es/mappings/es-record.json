@@ -1,0 +1,47 @@
+{
+  "properties": {
+    "id": {
+      "type": "keyword"
+    },
+    "title": {
+      "type": "text",
+      "analyzer": "ik_max_word",
+      "search_analyzer": "ik_smart",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "subject": {
+      "type": "text",
+      "analyzer": "ik_max_word",
+      "search_analyzer": "ik_smart",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "country": {
+      "type": "keyword"
+    },
+    "jobTitle": {
+      "type": "keyword"
+    },
+    "isChinese": {
+      "type": "integer"
+    },
+    "isDomesticCooperation": {
+      "type": "integer"
+    },
+    "institution": {
+      "type": "keyword"
+    },
+    "institutionRank": {
+      "type": "integer"
+    }
+  }
+} 

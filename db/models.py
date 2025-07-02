@@ -32,21 +32,41 @@ class TeacherDomain(SQLModel, table=True):
 
 
 class TeacherWide(SQLModel, table=True):
-    __tablename__ = "data_intl_teacher_wide"
-    id: Optional[int] = Field(default=None, primary_key=True)
-    teacher_id: str
+    __tablename__ = "data_intl_wide_view"
+    teacher_id: str = Field(primary_key=True)
     school_name: str
+    school_name_en: str
     college_name: str
     derived_teacher_name: str
     email: str
     omit_description: str
     research_area: str
     normalized_title: str
-    is_phd: bool
-    is_chinese: bool
+    is_phd: int
+    is_chinese: int
     famous_titles: str
     first_level: str
     second_level: str
+    region: str
+    ranking: str
+    age_range: str
+    corporate_experience: str
+    overseas_experience: str
+    major_paper_1_domain: str
+    minor_paper_1_domain: str
+    major_paper_2_domain: str
+    minor_paper_2_domain: str
+    major_paper_3_domain: str
+    paper_l1_domains: str
+    paper_l2_domains: str
+    paper_l3_domains: str
+    is_dome_cooperation: int
+    paper_num: int
+    is_paper_CNS: int
+    educations: str
+    employments: str
+    famous_titles_level: float
+    job_title_level: float
 
 
 class Domain(SQLModel, table=True):
