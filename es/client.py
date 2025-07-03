@@ -246,9 +246,7 @@ class ESClient:
             logger.error("Failed to update documents in index %s: %s", index, str(e))
             raise
 
-    def bulk(
-        self, index: str, operations: List[Dict[str, Any]]
-    ) -> int:
+    def bulk(self, index: str, operations: List[Dict[str, Any]]) -> int:
         """
         Execute bulk operations
 
@@ -263,6 +261,7 @@ class ESClient:
         try:
             logger.info("Executing bulk operation with %d items", len(operations))
             from elasticsearch.helpers import bulk, BulkIndexError
+
             success_count, _ = bulk(self.client, operations, index=index)
             logger.info(
                 "Bulk operation completed: %d/%d items succeeded",
@@ -271,7 +270,9 @@ class ESClient:
             )
             return success_count
         except BulkIndexError as e:
-            logger.error("Bulk operation failed: %d document(s) failed to index", len(e.errors))
+            logger.error(
+                "Bulk operation failed: %d document(s) failed to index", len(e.errors)
+            )
             logger.error("Document error: %s", e.errors[0])
             # raise
         except Exception as e:
