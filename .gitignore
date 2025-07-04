@@ -17,3 +17,6 @@ wheels/
 
 # logs
 logs/
+
+# cache
+cache/
