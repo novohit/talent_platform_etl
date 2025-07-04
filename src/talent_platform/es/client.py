@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 
 from elasticsearch.exceptions import NotFoundError
-from config import config
-from logger import logger
+from talent_platform.config import config
+from talent_platform.logger import logger
 
 
 def get_es_client() -> Elasticsearch:

@@ -1,6 +1,6 @@
 from typing import Dict, Any, List, Optional
 
-from es.client import es_client
+from talent_platform.es.client import es_client
 
 
 class TeacherService:

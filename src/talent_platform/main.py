@@ -1,6 +1,6 @@
-from etl.operations import query_teachers
-from services.es.teacher_service import TeacherService
-from logger import logger
+from talent_platform.etl.operations import query_teachers
+from talent_platform.services.es.teacher_service import TeacherService
+from talent_platform.logger import logger
 
 
 def main():

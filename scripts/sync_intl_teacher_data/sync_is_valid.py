@@ -1,6 +1,6 @@
-from etl.operations import query_invalid_teachers, query_teacher_domain
-from services.es.teacher_service import TeacherService
-from logger import logger
+from talent_platform.etl.operations import query_invalid_teachers, query_teacher_domain
+from talent_platform.services.es.teacher_service import TeacherService
+from talent_platform.logger import logger
 
 
 def remove_invalid_teachers():

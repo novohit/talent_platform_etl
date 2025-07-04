@@ -1,5 +1,5 @@
-from db.database import engine, get_session
-from db.models import Teacher, TeacherDomain
+from talent_platform.db.database import engine, get_session
+from talent_platform.db.models import Teacher, TeacherDomain
 
 
 from sqlmodel import SQLModel, select
@@ -18,7 +18,7 @@ def query_teachers():
 
 def query_invalid_teachers():
     with get_session() as session:
-        statement = select(Teacher).where(Teacher.is_valid == False).limit(10)
+        statement = select(Teacher).where(Teacher.is_valid == False).limit(10)  # noqa: E712
         results = session.exec(statement)
         return list(results)
 

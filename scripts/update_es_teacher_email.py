@@ -5,8 +5,8 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from es.client import es_client
-from logger import logger
+from talent_platform.es.client import es_client
+from talent_platform.logger import logger
 
 
 def read_excel_data(file_path):

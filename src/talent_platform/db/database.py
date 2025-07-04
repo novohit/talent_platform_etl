@@ -1,5 +1,5 @@
 from sqlmodel import create_engine, Session
-from config import config
+from talent_platform.config import config
 import socks
 import socket
 

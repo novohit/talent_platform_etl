@@ -1,8 +1,8 @@
-from es.client import es_client
-from db.database import get_domain_tree_session
-from db.models import TeacherWide
+from talent_platform.es.client import es_client
+from talent_platform.db.database import get_domain_tree_session
+from talent_platform.db.models import TeacherWide
 from sqlmodel import select
-from logger import logger
+from talent_platform.logger import logger
 from typing import List
 import json
 import humps

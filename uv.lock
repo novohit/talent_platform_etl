@@ -472,7 +472,7 @@ wheels = [
 [[package]]
 name = "talent-platform-etl"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "colorlog" },
     { name = "elasticsearch" },

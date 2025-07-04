@@ -1,7 +1,7 @@
 from typing import Dict, List, Optional
 from sqlmodel import select
-from db.database import get_domain_tree_session
-from db.models import Domain
+from talent_platform.db.database import get_domain_tree_session
+from talent_platform.db.models import Domain
 import json
 
 
