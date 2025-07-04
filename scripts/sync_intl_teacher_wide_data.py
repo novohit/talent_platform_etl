@@ -1,18 +1,44 @@
 from es.client import es_client
-from db.database import get_session
+from db.database import get_domain_tree_session
 from db.models import TeacherWide
 from sqlmodel import select
 from logger import logger
 from typing import List
 import json
 import humps
+import os
+import pickle
+from datetime import datetime, timedelta
 
 
 def sync_teacher_wide_data():
-    with get_session() as session:
+    cache_file = "cache/teacher_wide_data.pkl"
+    cache_meta_file = "cache/teacher_wide_data_meta.json"
+
+    # Check if cache exists and is not expired (24 hours)
+    if os.path.exists(cache_file) and os.path.exists(cache_meta_file):
+        with open(cache_meta_file, "r") as f:
+            meta = json.load(f)
+            cache_time = datetime.fromisoformat(meta["timestamp"])
+            if datetime.now() - cache_time < timedelta(hours=24):
+                logger.info("Using cached teacher wide data")
+                with open(cache_file, "rb") as f:
+                    return pickle.load(f)
+
+    logger.info("Fetching teacher wide data from database")
+    with get_domain_tree_session() as session:
         statement = select(TeacherWide)
         results = session.exec(statement)
-        return list(results)
+        data = list(results)
+
+        # Save to cache
+        os.makedirs("cache", exist_ok=True)
+        with open(cache_file, "wb") as f:
+            pickle.dump(data, f)
+        with open(cache_meta_file, "w") as f:
+            json.dump({"timestamp": datetime.now().isoformat(), "count": len(data)}, f)
+
+        return data
 
 
 def create_teacher_index(index):
@@ -70,7 +96,7 @@ def safe_split_string(value):
     return [item.strip() for item in value.split(",") if item.strip()]
 
 
-def process_batch(items: List[TeacherWide]):
+def process_batch(index, items: List[TeacherWide]):
     documents = []
     for item in items:
         educations = safe_json_loads(
@@ -165,11 +191,12 @@ def process_batch(items: List[TeacherWide]):
             }
         )
     if documents:
-        es_client.bulk("teacher_test", documents)
+        es_client.bulk(index, documents)
 
 
 if __name__ == "__main__":
-    create_teacher_index("teacher_test")
+    index = "teacher_dev"
+    create_teacher_index(index)
     logger.info("Starting to reading teacher wide data")
     res = sync_teacher_wide_data()
     total_records = len(res)
@@ -181,6 +208,6 @@ if __name__ == "__main__":
         logger.info(
             f"Processing batch {i // batch_size + 1}, records {i + 1} to {min(i + batch_size, total_records)}"
         )
-        process_batch(batch)
+        process_batch(index, batch)
 
     logger.info("Completed syncing teacher wide data")
