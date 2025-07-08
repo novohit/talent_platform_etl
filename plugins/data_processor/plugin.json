@@ -1,0 +1,43 @@
+{
+  "name": "data_processor",
+  "version": "1.0.0",
+  "description": "处理爬虫数据的示例插件",
+  "author": "Talent Platform Team",
+  "entry_point": "main.process_data",
+  "parameters": {
+    "operation": {
+      "type": "string",
+      "required": true,
+      "description": "操作类型：process_new_teacher, update_teacher_data, sync_data",
+      "default": "sync_data"
+    },
+    "teacher_id": {
+      "type": "string",
+      "required": false,
+      "description": "教师ID，用于处理特定教师数据"
+    },
+    "data": {
+      "type": "object",
+      "required": false,
+      "description": "传入的数据对象"
+    },
+    "sync_type": {
+      "type": "string",
+      "required": false,
+      "description": "同步类型：daily, hourly, manual",
+      "default": "manual"
+    },
+    "change_event": {
+      "type": "object",
+      "required": false,
+      "description": "数据库变更事件对象"
+    }
+  },
+  "dependencies": [
+    "pandas>=2.0.0",
+    "requests>=2.30.0"
+  ],
+  "python_version": ">=3.8",
+  "enabled": true,
+  "tags": ["data-processing", "crawler", "etl"]
+} 

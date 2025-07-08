@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "celery>=5.5.3",
     "colorlog>=6.9.0",
     "elasticsearch==8.15.1",
     "openpyxl>=3.1.5",
@@ -12,6 +13,7 @@ dependencies = [
     "pyhumps>=3.8.0",
     "pymysql>=1.1.1",
     "python-dotenv>=1.1.0",
+    "redis>=6.2.0",
     "requests>=2.32.4",
     "sqlmodel>=0.0.24",
     "tqdm>=4.67.1",

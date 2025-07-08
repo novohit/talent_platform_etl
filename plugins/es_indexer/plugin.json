@@ -1,0 +1,48 @@
+{
+  "name": "es_indexer",
+  "version": "1.0.0",
+  "description": "Elasticsearch索引管理插件",
+  "author": "Talent Platform Team",
+  "entry_point": "main.index_data",
+  "parameters": {
+    "operation": {
+      "type": "string",
+      "required": true,
+      "description": "操作类型：update_teacher_index, bulk_index, delete_index",
+      "default": "update_teacher_index"
+    },
+    "teacher_id": {
+      "type": "string",
+      "required": false,
+      "description": "教师ID"
+    },
+    "data": {
+      "type": "object",
+      "required": false,
+      "description": "要索引的数据"
+    },
+    "index_name": {
+      "type": "string",
+      "required": false,
+      "description": "索引名称",
+      "default": "teachers"
+    },
+    "batch_size": {
+      "type": "integer",
+      "required": false,
+      "description": "批处理大小",
+      "default": 100
+    },
+    "change_event": {
+      "type": "object",
+      "required": false,
+      "description": "数据库变更事件"
+    }
+  },
+  "dependencies": [
+    "elasticsearch>=8.0.0"
+  ],
+  "python_version": ">=3.8",
+  "enabled": true,
+  "tags": ["elasticsearch", "indexing", "search"]
+} 
