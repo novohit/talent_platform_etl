@@ -1,10 +1,17 @@
 {
   "name": "hot_reload_demo",
-  "version": "1.0.0",
-  "description": "热加载功能演示插件",
+  "version": "2.0.0",
+  "description": "热加载功能演示插件 - 支持代码和环境变量热加载",
   "author": "Talent Platform Team",
   "entry_point": "main.demo_function",
   "parameters": {
+    "operation": {
+      "type": "string",
+      "required": false,
+      "description": "操作类型",
+      "default": "demo_function",
+      "options": ["demo_function", "test_env_hot_reload"]
+    },
     "message": {
       "type": "string",
       "required": false,
@@ -21,5 +28,12 @@
   "dependencies": [],
   "python_version": ">=3.8",
   "enabled": true,
-  "tags": ["demo", "hot-reload", "testing"]
+  "tags": ["demo", "hot-reload", "testing", "environment", "config"],
+  "features": {
+    "hot_reload": {
+      "code_reload": true,
+      "env_reload": true,
+      "description": "支持代码文件和环境变量文件的热加载"
+    }
+  }
 } 

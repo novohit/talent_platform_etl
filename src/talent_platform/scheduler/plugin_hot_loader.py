@@ -50,7 +50,7 @@ class PluginChangeHandler(FileSystemEventHandler):
         current_time = time.time()
         
         # 只关心插件相关文件
-        if not (file_path.endswith('.py') or file_path.endswith('.json')):
+        if not (file_path.endswith('.py') or file_path.endswith('.json') or file_path.endswith('.env')):
             return
         
         plugin_path = Path(file_path)
@@ -64,6 +64,14 @@ class PluginChangeHandler(FileSystemEventHandler):
         
         if not plugin_name:
             return
+        
+        # 排除全局的 plugins/.env 文件，只监听插件目录内的 .env 文件
+        if file_path.endswith('.env'):
+            plugins_dir_path = Path(config.PLUGINS_DIR)
+            if Path(file_path).parent == plugins_dir_path:
+                # 这是全局的 plugins/.env 文件，忽略
+                logger.debug(f"Ignoring global .env file change: {file_path}")
+                return
         
         # 防抖处理
         key = f"{plugin_name}:{change_type}"
@@ -246,12 +254,15 @@ class PluginHotLoader:
     
     def _handle_plugin_change(self, plugin_name: str, file_path: str, change_type: str):
         """处理插件变更"""
-        logger.info(f"Plugin change detected: {plugin_name} - {change_type} - {file_path}")
+        file_type = "env config" if file_path.endswith('.env') else "code"
+        logger.info(f"Plugin {file_type} change detected: {plugin_name} - {change_type} - {file_path}")
         
         try:
             if change_type in ["modified", "created"]:
                 # 检查是否真的需要重新加载
                 if self.check_plugin_updates(plugin_name):
+                    if file_path.endswith('.env'):
+                        logger.info(f"Environment config changed for {plugin_name}, triggering hot reload...")
                     self.force_reload_plugin(plugin_name)
                 else:
                     logger.debug(f"No actual changes detected for plugin {plugin_name}")
@@ -262,6 +273,11 @@ class PluginHotLoader:
                     # 插件配置被删除，卸载插件
                     self._unload_plugin(plugin_name)
                     logger.info(f"Plugin {plugin_name} unloaded due to config deletion")
+                elif file_path.endswith('.env'):
+                    # .env 文件被删除，重新加载插件以清除环境变量
+                    logger.info(f"Environment config deleted for {plugin_name}, reloading plugin...")
+                    if self.check_plugin_updates(plugin_name):
+                        self.force_reload_plugin(plugin_name)
         
         except Exception as e:
             logger.error(f"Error handling plugin change for {plugin_name}: {e}")
@@ -325,7 +341,7 @@ class PluginHotLoader:
             logger.error(f"Error unloading plugin {plugin_name}: {e}")
     
     def _calculate_plugin_checksum(self, plugin_name: str) -> str:
-        """计算插件文件校验和"""
+        """计算插件文件校验和（包含 .env 文件）"""
         plugin_dir = self.plugins_dir / plugin_name
         if not plugin_dir.exists():
             return ""
@@ -339,6 +355,12 @@ class PluginHotLoader:
                     hasher.update(f.read())
         
         for file_path in plugin_dir.rglob("*.json"):
+            if file_path.is_file():
+                with open(file_path, 'rb') as f:
+                    hasher.update(f.read())
+        
+        # 包含插件目录内的 .env 文件
+        for file_path in plugin_dir.rglob("*.env"):
             if file_path.is_file():
                 with open(file_path, 'rb') as f:
                     hasher.update(f.read())
