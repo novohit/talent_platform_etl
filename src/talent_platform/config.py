@@ -1,12 +1,12 @@
 import os
 from dotenv import load_dotenv
 
-import socks
-import socket
+# import socks
+# import socket
 
-# 设置全局的 SOCKS5 代理
-socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 7891)
-socket.socket = socks.socksocket
+# # 设置全局的 SOCKS5 代理
+# socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 7891)
+# socket.socket = socks.socksocket
 
 load_dotenv()
 

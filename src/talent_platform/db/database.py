@@ -1,11 +1,7 @@
-from sqlmodel import create_engine, Session
-from talent_platform.config import config
-import socks
-import socket
+from sqlmodel import Session, create_engine
 
-# 设置全局的 SOCKS5 代理
-socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 7891)
-socket.socket = socks.socksocket
+from talent_platform.config import config
+
 
 engine = create_engine(config.DATABASE_URL, echo=True)
 
