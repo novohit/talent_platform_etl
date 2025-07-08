@@ -7,10 +7,10 @@ import time
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 
-# 导入各个功能包
-from .utils import get_logger, timing, Timer, format_duration, format_size
-from .config import get_config, get_config_summary, validate_configuration
-from .fetchers import APIFetcher
+# 导入各个功能包 - 使用绝对导入，插件可以独立运行
+from utils import get_logger, timing, Timer, format_duration, format_size
+from config import get_config, get_config_summary, validate_configuration
+from fetchers import APIFetcher
 
 
 class DataPipeline:
@@ -433,3 +433,6 @@ def run_data_pipeline(operation: str = "full_pipeline",
 
 # 兼容性别名
 process_data = run_data_pipeline 
+
+if __name__ == "__main__":
+    run_data_pipeline()

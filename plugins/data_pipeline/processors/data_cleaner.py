@@ -4,7 +4,7 @@
 """
 
 from typing import Dict, List, Any
-from ..utils import get_logger, timing
+from utils import get_logger, timing
 
 
 class DataCleaner:

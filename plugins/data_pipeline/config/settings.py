@@ -7,7 +7,7 @@ import os
 from typing import Dict, Any, List, Optional
 from dataclasses import dataclass, field
 
-from ..utils.helpers import (
+from utils.helpers import (
     parse_env_int, parse_env_float, parse_env_bool, 
     parse_env_list, validate_config
 )

@@ -8,8 +8,8 @@ import time
 from typing import Dict, List, Any, Optional
 from dataclasses import dataclass
 
-from ..utils import get_logger, timing, retry, rate_limit
-from ..config import get_config
+from utils import get_logger, timing, retry, rate_limit
+from config import get_config
 
 
 @dataclass
