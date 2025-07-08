@@ -1,0 +1,29 @@
+{
+  "name": "env_demo",
+  "version": "1.0.0",
+  "description": "环境变量配置演示插件",
+  "author": "Talent Platform Team",
+  "entry_point": "main.process_with_env",
+  "parameters": {
+    "operation": {
+      "type": "string",
+      "required": true,
+      "description": "操作类型"
+    },
+    "data_source": {
+      "type": "string",
+      "required": false,
+      "description": "数据源",
+      "default": "default"
+    },
+    "override_config": {
+      "type": "object",
+      "required": false,
+      "description": "临时覆盖配置"
+    }
+  },
+  "dependencies": ["requests>=2.30.0"],
+  "python_version": ">=3.8",
+  "enabled": true,
+  "tags": ["demo", "environment", "configuration"]
+} 

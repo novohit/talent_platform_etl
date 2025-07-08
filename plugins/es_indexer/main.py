@@ -4,6 +4,7 @@ Elasticsearch索引管理插件
 """
 
 import json
+import os
 import logging
 from datetime import datetime
 from typing import Dict, Any, Optional, List
@@ -35,6 +36,8 @@ def index_data(operation: str = "update_teacher_index",
     Returns:
         索引结果字典
     """
+    logger.info(f"env {os.getenv('ES_PASSWORD')}")
+    logger.info(f"env {os.getenv('HELLO')}")
     logger.info(f"==！！！！！！！！===uer_index")
     logger.info(f"Starting ES indexing: operation={operation}, index={index_name}")
     

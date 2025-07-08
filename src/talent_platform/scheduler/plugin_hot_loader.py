@@ -50,7 +50,7 @@ class PluginChangeHandler(FileSystemEventHandler):
         current_time = time.time()
         
         # 只关心插件相关文件
-        if not (file_path.endswith('.py') or file_path.endswith('.json')):
+        if not (file_path.endswith('.py') or file_path.endswith('.json') or file_path.endswith('.env')):
             return
         
         plugin_path = Path(file_path)

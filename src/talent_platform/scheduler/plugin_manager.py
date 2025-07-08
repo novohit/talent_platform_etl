@@ -9,9 +9,21 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional, Callable
 from dataclasses import dataclass, asdict
 from threading import Lock
+from contextlib import contextmanager
 
 from talent_platform.config import config
 from talent_platform.logger import logger
+
+# 添加 dotenv 支持
+try:
+    from dotenv import load_dotenv, dotenv_values
+except ImportError:
+    # 如果没有安装 python-dotenv，创建简单的替代函数
+    def load_dotenv(dotenv_path=None):
+        pass
+    
+    def dotenv_values(dotenv_path=None):
+        return {}
 
 
 @dataclass
@@ -27,10 +39,44 @@ class PluginMetadata:
     python_version: str = ">=3.8"
     enabled: bool = True
     tags: List[str] = None
+    env_vars: Dict[str, str] = None  # 插件环境变量
     
     def __post_init__(self):
         if self.tags is None:
             self.tags = []
+        if self.env_vars is None:
+            self.env_vars = {}
+
+
+@contextmanager
+def plugin_environment(env_vars: Dict[str, str]):
+    """
+    插件环境变量上下文管理器
+    临时设置插件的环境变量，执行完成后恢复原始环境
+    """
+    # 保存原始环境变量
+    original_env = {}
+    new_vars = []
+    
+    try:
+        # 设置插件环境变量
+        for key, value in env_vars.items():
+            if key in os.environ:
+                original_env[key] = os.environ[key]
+            else:
+                new_vars.append(key)
+            os.environ[key] = value
+        
+        yield
+        
+    finally:
+        # 恢复原始环境变量
+        for key in new_vars:
+            if key in os.environ:
+                del os.environ[key]
+        
+        for key, value in original_env.items():
+            os.environ[key] = value
 
 
 class PluginManager:
@@ -117,10 +163,28 @@ class PluginManager:
         with open(metadata_file, 'r', encoding='utf-8') as f:
             metadata_dict = json.load(f)
         
+        # 加载插件的环境变量
+        plugin_env_file = plugin_dir / ".env"
+        plugin_env_vars = {}
+        
+        if plugin_env_file.exists():
+            try:
+                # 读取插件的 .env 文件
+                plugin_env_vars = dotenv_values(str(plugin_env_file))
+                logger.info(f"Loaded {len(plugin_env_vars)} environment variables for plugin {metadata_dict['name']}")
+            except Exception as e:
+                logger.warning(f"Failed to load .env file for plugin {metadata_dict['name']}: {e}")
+        
+        # 将环境变量添加到元数据中
+        if plugin_env_vars:
+            metadata_dict['env_vars'] = plugin_env_vars
+        
         metadata = PluginMetadata(**metadata_dict)
         self.plugins[metadata.name] = metadata
         
         logger.info(f"Loaded plugin metadata: {metadata.name} v{metadata.version}")
+        if metadata.env_vars:
+            logger.debug(f"Plugin {metadata.name} environment variables: {list(metadata.env_vars.keys())}")
     
     def _create_virtual_env(self, plugin_name: str, dependencies: List[str]) -> str:
         """为插件创建虚拟环境"""
@@ -257,7 +321,8 @@ class PluginManager:
         logger.info(f"Executing plugin {plugin_name} with parameters: {list(kwargs.keys())}")
         
         try:
-            result = plugin_function(**kwargs)
+            with plugin_environment(metadata.env_vars):
+                result = plugin_function(**kwargs)
             logger.info(f"Plugin {plugin_name} executed successfully")
             return result
         except Exception as e:

@@ -531,13 +531,65 @@ A: 系统支持自动重试，可以在任务中配置重试次数和间隔。
 
 A: 可以增加更多 Worker 实例来提高处理能力，支持分布式部署。
 
+## 🌍 插件环境变量
+
+每个插件可以有独立的环境配置文件，实现更好的配置隔离：
+
+### 插件目录结构
+
+```
+plugins/
+└── your_plugin/
+    ├── plugin.json      # 插件元数据
+    ├── main.py          # 插件代码
+    ├── .env            # 插件环境配置
+    ├── .env.example    # 环境配置示例
+    └── requirements.txt # 依赖 (可选)
+```
+
+### 基本用法
+
+**1. 创建插件环境配置**
+
+```bash
+# plugins/my_plugin/.env
+DEBUG=true
+MAX_ITEMS=1000
+API_BASE_URL=https://api.example.com
+DB_HOST=localhost
+```
+
+**2. 在插件中使用环境变量**
+
+```python
+import os
+
+def my_plugin_function(**kwargs):
+    debug = os.getenv('DEBUG', 'false').lower() == 'true'
+    max_items = int(os.getenv('MAX_ITEMS', '100'))
+    api_url = os.getenv('API_BASE_URL', 'https://default.com')
+
+    # 使用配置进行业务逻辑
+    # ...
+```
+
+**3. 测试环境配置**
+
+```bash
+# 测试插件 (会自动加载环境变量)
+python -m talent_platform.scheduler_app test-plugin my_plugin
+```
+
+**详细环境配置指南请参考：** `PLUGIN_ENV_GUIDE.md`
+
 ## 📖 示例插件
 
 系统包含以下示例插件：
 
 1. **data_processor**: 数据处理插件，演示如何处理爬虫数据
 2. **es_indexer**: ES 索引插件，演示如何管理 Elasticsearch 索引
-3. **hot_reload_demo**: 热加载演示插件，展示热加载功能
+3. **hot_reload_demo**: 热加载演示插件，展示热加载功能和环境变量使用
+4. **env_demo**: 环境变量配置演示插件，展示完整的环境配置管理
 
 你可以参考这些示例来开发自己的插件。
 
@@ -613,5 +665,6 @@ tail -f logs/error.log
 **快速链接：**
 
 - 🔥 [热加载详细指南](HOT_RELOAD_GUIDE.md)
+- 🌍 [插件环境变量指南](PLUGIN_ENV_GUIDE.md)
 - 📋 [系统设计文档](SCHEDULER_SUMMARY.md)
 - 🚀 [启动脚本使用](start_scheduler.sh)
