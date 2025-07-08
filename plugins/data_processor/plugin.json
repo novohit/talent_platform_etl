@@ -7,7 +7,7 @@
   "parameters": {
     "operation": {
       "type": "string",
-      "required": true,
+      "required": false,
       "description": "操作类型：process_new_teacher, update_teacher_data, sync_data",
       "default": "sync_data"
     },

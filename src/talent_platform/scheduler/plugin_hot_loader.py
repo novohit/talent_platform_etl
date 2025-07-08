@@ -321,14 +321,18 @@ class PluginHotLoader:
             if plugin_name in self.plugin_manager.plugins:
                 del self.plugin_manager.plugins[plugin_name]
             
-            # 清理模块缓存
+            # 清理模块缓存 - 支持包结构
             modules_to_remove = []
             for module_name in sys.modules:
-                if module_name.startswith(f"plugin_{plugin_name}"):
+                # 清理旧式命名（plugin_xxx）和新式包结构（插件名开头）
+                if (module_name.startswith(f"plugin_{plugin_name}") or 
+                    module_name == plugin_name or 
+                    module_name.startswith(f"{plugin_name}.")):
                     modules_to_remove.append(module_name)
             
             for module_name in modules_to_remove:
                 del sys.modules[module_name]
+                logger.debug(f"Removed module from cache: {module_name}")
             
             # 清理状态
             self.plugin_load_times.pop(plugin_name, None)

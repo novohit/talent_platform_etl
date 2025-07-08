@@ -175,7 +175,7 @@ def test_plugin(plugin_name, operation=None):
     
     try:
         # 准备测试参数
-        test_params = {"operation": operation or "sync_data"}
+        test_params = {"operation": operation or ""}
         
         if plugin_name == "data_processor":
             test_params.update({
@@ -224,7 +224,8 @@ def trigger_plugin(plugin_name, operation=None, **params):
     
     try:
         # 准备参数
-        plugin_params = {"operation": operation or "sync_data", "index_name": "aaas"}
+        # plugin_params = {"operation": operation or "sync_data"}
+        plugin_params = {}
         plugin_params.update(params)
         
         # 触发执行

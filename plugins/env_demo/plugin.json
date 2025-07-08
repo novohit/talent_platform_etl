@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "环境变量配置演示插件",
   "author": "Talent Platform Team",
-  "entry_point": "main.process_with_env",
+  "entry_point": "main.process_data",
   "parameters": {
     "operation": {
       "type": "string",
-      "required": true,
+      "required": false,
       "description": "操作类型"
     },
     "data_source": {

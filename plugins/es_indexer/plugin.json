@@ -7,7 +7,7 @@
   "parameters": {
     "operation": {
       "type": "string",
-      "required": true,
+      "required": false,
       "description": "操作类型：update_teacher_index, bulk_index, delete_index",
       "default": "update_teacher_index"
     },

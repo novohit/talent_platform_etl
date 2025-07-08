@@ -259,3 +259,6 @@ def _create_suggest_field(text: str) -> List[str]:
         suggestions.append(text[:i].lower())
     
     return list(set(suggestions))  # 去重 
+
+if __name__ == "__main__":
+    index_data()

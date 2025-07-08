@@ -300,8 +300,52 @@ class PluginManager:
                 if site_packages.exists():
                     sys.path.insert(0, str(site_packages))
             
-            # 加载插件模块
+            # 加载插件模块 - 支持包结构
             plugin_dir = self.plugins_dir / plugin_name
+            module_name = metadata.entry_point.split('.')[0]
+            
+            # 检查是否是包结构（有多个.py文件或子目录）
+            python_files = list(plugin_dir.glob("*.py"))
+            subdirs = [d for d in plugin_dir.iterdir() if d.is_dir() and not d.name.startswith('.')]
+            
+            if len(python_files) > 1 or subdirs:
+                # 包结构：将插件目录添加到sys.path，然后导入为包
+                plugin_parent = str(plugin_dir.parent)
+                if plugin_parent not in sys.path:
+                    sys.path.insert(0, plugin_parent)
+                
+                try:
+                    # 先尝试导入包
+                    package_module = importlib.import_module(plugin_name)
+                    
+                    # 然后导入具体模块
+                    if '.' in metadata.entry_point:
+                        module_path = f"{plugin_name}.{module_name}"
+                        module = importlib.import_module(module_path)
+                    else:
+                        module = package_module
+                        
+                except ImportError as e:
+                    logger.warning(f"Failed to import as package, trying file-based import: {e}")
+                    # 回退到文件加载方式
+                    module = self._load_plugin_as_file(plugin_name, plugin_dir, metadata)
+            else:
+                # 单文件：使用原来的方式
+                module = self._load_plugin_as_file(plugin_name, plugin_dir, metadata)
+            
+            if module:
+                self.loaded_modules[plugin_name] = module
+                logger.info(f"Successfully loaded plugin: {plugin_name}")
+            
+            return module
+            
+        except Exception as e:
+            logger.error(f"Failed to load plugin {plugin_name}: {e}")
+            return None
+    
+    def _load_plugin_as_file(self, plugin_name: str, plugin_dir: Path, metadata) -> Optional[Any]:
+        """作为单文件加载插件"""
+        try:
             module_path = plugin_dir / (metadata.entry_point.split('.')[0] + '.py')
             
             spec = importlib.util.spec_from_file_location(
@@ -311,13 +355,9 @@ class PluginManager:
             module = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(module)
             
-            self.loaded_modules[plugin_name] = module
-            logger.info(f"Successfully loaded plugin: {plugin_name}")
-            
             return module
-            
         except Exception as e:
-            logger.error(f"Failed to load plugin {plugin_name}: {e}")
+            logger.error(f"Failed to load plugin as file {plugin_name}: {e}")
             return None
     
     def get_plugin_function(self, plugin_name: str) -> Optional[Callable]:

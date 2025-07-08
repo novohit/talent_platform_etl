@@ -1,0 +1,31 @@
+{
+  "name": "data_pipeline",
+  "version": "2.0.0",
+  "description": "复杂数据处理管道插件，支持多数据源ETL处理",
+  "author": "Talent Platform Team",
+  "entry_point": "main.run_data_pipeline",
+  "enabled": true,
+  "parameters": {
+    "operation": {
+      "type": "string",
+      "required": false,
+      "description": "操作类型：update_teacher_index, bulk_index, delete_index",
+      "default": "update_teacher_index"
+    }
+  },
+  "dependencies": {
+    "python": ">=3.8",
+    "packages": [
+      "requests>=2.25.0",
+      "pandas>=1.3.0",
+      "sqlalchemy>=1.4.0"
+    ]
+  },
+  "tags": [
+    "etl",
+    "data-processing",
+    "pipeline",
+    "multi-source",
+    "complex"
+  ]
+} 
