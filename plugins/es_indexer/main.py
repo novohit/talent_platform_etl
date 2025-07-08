@@ -35,7 +35,7 @@ def index_data(operation: str = "update_teacher_index",
     Returns:
         索引结果字典
     """
-    logger.info(f"update plugin njhjhj")
+    logger.info(f"==！！！！！！！！===uer_index")
     logger.info(f"Starting ES indexing: operation={operation}, index={index_name}")
     
     try:

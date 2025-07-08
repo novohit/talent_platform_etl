@@ -64,6 +64,109 @@ def list_plugins():
         print("-" * 40)
 
 
+def list_plugins_hot():
+    """列出所有插件及热加载信息"""
+    from talent_platform.scheduler.plugin_manager import plugin_manager
+    
+    plugins = plugin_manager.list_plugins_with_hot_info()
+    
+    print(f"\n{'='*80}")
+    print(f"插件热加载状态 (共 {len(plugins)} 个)")
+    print(f"{'='*80}")
+    
+    for plugin in plugins:
+        metadata = plugin.get('metadata')
+        if not metadata:
+            continue
+            
+        status = "✓ 已启用" if metadata.enabled else "✗ 已禁用"
+        loaded = "✓ 已加载" if plugin["loaded"] else "✗ 未加载"
+        has_updates = "⚠ 有更新" if plugin["has_updates"] else "✓ 最新"
+        
+        print(f"名称: {metadata.name}")
+        print(f"版本: {metadata.version}")
+        print(f"状态: {status}")
+        print(f"加载: {loaded}")
+        print(f"更新: {has_updates}")
+        
+        if plugin["load_time"]:
+            print(f"加载时间: {plugin['load_time']}")
+        if plugin["checksum"]:
+            print(f"校验和: {plugin['checksum'][:8]}...")
+        
+        print(f"热加载: {'✓ 启用' if plugin_manager.enable_hot_reload else '✗ 禁用'}")
+        print("-" * 40)
+
+
+def reload_plugin(plugin_name):
+    """重新加载插件"""
+    from talent_platform.scheduler.plugin_manager import plugin_manager
+    
+    logger.info(f"Reloading plugin: {plugin_name}")
+    
+    try:
+        success = plugin_manager.force_reload_plugin(plugin_name)
+        
+        if success:
+            print(f"\n✓ 插件 '{plugin_name}' 重新加载成功")
+        else:
+            print(f"\n✗ 插件 '{plugin_name}' 重新加载失败")
+            
+    except Exception as e:
+        logger.error(f"Plugin reload failed: {e}")
+        print(f"\n✗ 插件重新加载失败: {e}")
+
+
+def enable_hot_reload():
+    """启用热加载功能"""
+    from talent_platform.scheduler.plugin_manager import plugin_manager
+    
+    try:
+        plugin_manager.enable_hot_loading()
+        print("\n✓ 插件热加载已启用")
+        print("系统将自动监听插件文件变更并重新加载")
+        
+    except Exception as e:
+        logger.error(f"Failed to enable hot reload: {e}")
+        print(f"\n✗ 启用热加载失败: {e}")
+
+
+def disable_hot_reload():
+    """禁用热加载功能"""
+    from talent_platform.scheduler.plugin_manager import plugin_manager
+    
+    try:
+        plugin_manager.disable_hot_loading()
+        print("\n✓ 插件热加载已禁用")
+        
+    except Exception as e:
+        logger.error(f"Failed to disable hot reload: {e}")
+        print(f"\n✗ 禁用热加载失败: {e}")
+
+
+def watch_plugins():
+    """监听插件变更（阻塞模式）"""
+    from talent_platform.scheduler.plugin_manager import plugin_manager
+    
+    print("开始监听插件变更... (按 Ctrl+C 停止)")
+    
+    try:
+        if not plugin_manager.enable_hot_reload:
+            plugin_manager.enable_hot_loading()
+        
+        # 保持运行
+        import time
+        while True:
+            time.sleep(1)
+            
+    except KeyboardInterrupt:
+        print("\n停止监听插件变更")
+        plugin_manager.disable_hot_loading()
+    except Exception as e:
+        logger.error(f"Error in plugin watching: {e}")
+        print(f"\n监听失败: {e}")
+
+
 def test_plugin(plugin_name, operation=None):
     """测试插件"""
     from talent_platform.scheduler.plugin_manager import plugin_manager
@@ -166,6 +269,7 @@ def get_task_status(task_id):
 def health_check():
     """系统健康检查"""
     from talent_platform.scheduler.task_scheduler import task_scheduler
+    from talent_platform.scheduler.plugin_manager import plugin_manager
     
     try:
         status = task_scheduler.health_check()
@@ -178,6 +282,7 @@ def health_check():
         print(f"已启用插件: {status['enabled_plugins']}")
         print(f"调度任务数: {status['scheduled_tasks']}")
         print(f"活动任务数: {status['active_tasks']}")
+        print(f"热加载状态: {'✓ 启用' if plugin_manager.enable_hot_reload else '✗ 禁用'}")
         print(f"检查时间: {status['timestamp']}")
         
     except Exception as e:
@@ -204,6 +309,7 @@ def main():
     
     # 插件命令
     subparsers.add_parser('list-plugins', help='列出所有插件')
+    subparsers.add_parser('list-plugins-hot', help='列出所有插件及热加载状态')
     
     test_parser = subparsers.add_parser('test-plugin', help='测试插件')
     test_parser.add_argument('plugin_name', help='插件名称')
@@ -215,6 +321,14 @@ def main():
     
     status_parser = subparsers.add_parser('status', help='获取任务状态')
     status_parser.add_argument('task_id', help='任务ID')
+    
+    # 热加载命令
+    reload_parser = subparsers.add_parser('reload', help='重新加载插件')
+    reload_parser.add_argument('plugin_name', help='插件名称')
+    
+    subparsers.add_parser('enable-hot-reload', help='启用热加载功能')
+    subparsers.add_parser('disable-hot-reload', help='禁用热加载功能')
+    subparsers.add_parser('watch', help='监听插件变更')
     
     # 健康检查命令
     subparsers.add_parser('health', help='系统健康检查')
@@ -229,12 +343,22 @@ def main():
         start_monitor()
     elif args.command == 'list-plugins':
         list_plugins()
+    elif args.command == 'list-plugins-hot':
+        list_plugins_hot()
     elif args.command == 'test-plugin':
         test_plugin(args.plugin_name, args.operation)
     elif args.command == 'trigger':
         trigger_plugin(args.plugin_name, args.operation)
     elif args.command == 'status':
         get_task_status(args.task_id)
+    elif args.command == 'reload':
+        reload_plugin(args.plugin_name)
+    elif args.command == 'enable-hot-reload':
+        enable_hot_reload()
+    elif args.command == 'disable-hot-reload':
+        disable_hot_reload()
+    elif args.command == 'watch':
+        watch_plugins()
     elif args.command == 'health':
         health_check()
     else:

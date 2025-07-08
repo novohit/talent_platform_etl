@@ -1,11 +1,12 @@
-# 调度系统使用指南
+# 统一调度系统使用指南
 
-## 概述
+## 🎯 概述
 
 这是一个基于 Celery 的统一调度系统，支持插件式管理第三方脚本，具有以下特性：
 
 - 🚀 **异步任务调度**: 基于 Celery 的分布式任务队列
 - 🔌 **插件系统**: 动态加载和管理第三方处理脚本
+- 🔥 **热加载功能**: 不停机更新插件代码，支持实时开发
 - 📊 **数据库监听**: 自动监听数据库变更并触发相应处理
 - 📦 **依赖管理**: 为每个插件独立管理 Python 依赖
 - 🎯 **任务调度**: 支持定时任务、触发式任务和批量任务
@@ -39,19 +40,23 @@ PLUGIN_VENV_DIR=plugin_envs
 DB_CHANGE_POLLING_INTERVAL=5
 ```
 
-## 系统架构
+## 🏗️ 系统架构
 
 ```
 调度系统
 ├── Celery App (任务队列)
 ├── Plugin Manager (插件管理)
+├── Hot Loader (热加载管理)
 ├── Database Monitor (数据库监听)
 ├── Task Scheduler (任务调度)
 └── 插件目录
     ├── data_processor/
     │   ├── plugin.json
     │   └── main.py
-    └── es_indexer/
+    ├── es_indexer/
+    │   ├── plugin.json
+    │   └── main.py
+    └── hot_reload_demo/
         ├── plugin.json
         └── main.py
 ```
@@ -75,30 +80,118 @@ redis-server
 ### 3. 启动调度系统
 
 ```bash
-# 启动 Worker (处理任务)
-python -m talent_platform.scheduler_app worker
+# 启动完整的调度服务（包含热加载）
+./start_scheduler.sh start
 
-# 启动 Beat (定时任务调度器)
-python -m talent_platform.scheduler_app beat
+# 查看服务状态
+./start_scheduler.sh status
 
-# 启动监控 (可选)
-python -m talent_platform.scheduler_app monitor
+# 停止服务
+./start_scheduler.sh stop
 ```
 
-### 4. 测试插件
+### 4. 基本操作
 
 ```bash
-# 列出所有插件
+# 查看所有插件
 python -m talent_platform.scheduler_app list-plugins
+
+# 查看插件热加载状态
+python -m talent_platform.scheduler_app list-plugins-hot
 
 # 测试插件
 python -m talent_platform.scheduler_app test-plugin data_processor
 
-# 触发插件执行
-python -m talent_platform.scheduler_app trigger data_processor --operation sync_data
+# 触发异步任务
+python -m talent_platform.scheduler_app trigger es_indexer --operation bulk_index
+
+# 系统健康检查
+python -m talent_platform.scheduler_app health
 ```
 
-## 插件开发
+## 🔧 插件开发
+
+### 创建新插件
+
+**1. 创建插件目录：**
+
+```bash
+mkdir plugins/my_plugin
+cd plugins/my_plugin
+```
+
+**2. 创建配置文件 `plugin.json`：**
+
+```json
+{
+  "name": "my_plugin",
+  "version": "1.0.0",
+  "description": "我的自定义插件",
+  "author": "Your Name",
+  "entry_point": "main.process_data",
+  "parameters": {
+    "operation": { "type": "string", "required": true },
+    "data_source": { "type": "string", "required": false, "default": "default" }
+  },
+  "dependencies": ["requests>=2.30.0", "pandas>=2.0.0"],
+  "python_version": ">=3.8",
+  "enabled": true,
+  "tags": ["data", "processing"]
+}
+```
+
+**3. 创建主要代码 `main.py`：**
+
+```python
+"""
+我的自定义插件
+"""
+
+import logging
+from datetime import datetime
+from typing import Dict, Any
+
+logger = logging.getLogger(__name__)
+
+def process_data(operation: str, data_source: str = "default", **kwargs) -> Dict[str, Any]:
+    """
+    数据处理入口函数
+
+    Args:
+        operation: 操作类型
+        data_source: 数据源
+        **kwargs: 其他参数
+
+    Returns:
+        处理结果字典
+    """
+    logger.info(f"Processing {operation} from {data_source}")
+
+    # 你的业务逻辑
+    result = {
+        "operation": operation,
+        "data_source": data_source,
+        "processed_records": 100,
+        "success": True
+    }
+
+    return {
+        "status": "success",
+        "operation": operation,
+        "result": result,
+        "timestamp": datetime.now().isoformat()
+    }
+```
+
+**4. 测试插件：**
+
+```bash
+# 测试新插件
+python -m talent_platform.scheduler_app test-plugin my_plugin --operation sync_data
+
+# 如果修改了代码，可以热重载
+python -m talent_platform.scheduler_app reload my_plugin
+```
 
 ### 插件目录结构
 
@@ -168,7 +261,87 @@ def your_function(param1: str, param2: int = 100, **kwargs):
     }
 ```
 
-## 数据库变更监听
+## 🔥 热加载功能
+
+### 核心特性
+
+- ✅ **自动文件监听**：监听插件目录变更
+- ✅ **智能更新检测**：基于 MD5 校验和避免无意义重载
+- ✅ **安全的模块管理**：清理缓存，保持系统稳定
+- ✅ **任务执行时检查**：确保使用最新版本代码
+
+### 基本使用
+
+```bash
+# 查看热加载状态
+python -m talent_platform.scheduler_app list-plugins-hot
+
+# 手动启用/禁用热加载
+python -m talent_platform.scheduler_app enable-hot-reload
+python -m talent_platform.scheduler_app disable-hot-reload
+
+# 监听插件变更（阻塞模式）
+python -m talent_platform.scheduler_app watch
+
+# 强制重新加载插件
+python -m talent_platform.scheduler_app reload plugin_name
+```
+
+### 热加载演示
+
+**1. 测试演示插件：**
+
+```bash
+python -m talent_platform.scheduler_app test-plugin hot_reload_demo --message "测试消息"
+```
+
+**2. 修改插件代码：**
+编辑 `plugins/hot_reload_demo/main.py` 中的任何内容
+
+**3. 再次测试（自动使用新版本）：**
+
+```bash
+python -m talent_platform.scheduler_app test-plugin hot_reload_demo --message "更新后的消息"
+```
+
+**详细热加载指南请参考：** `HOT_RELOAD_GUIDE.md`
+
+## 📋 命令参考
+
+### 系统管理
+
+| 命令      | 说明           | 示例                                              |
+| --------- | -------------- | ------------------------------------------------- |
+| `worker`  | 启动 Worker    | `python -m talent_platform.scheduler_app worker`  |
+| `beat`    | 启动定时调度器 | `python -m talent_platform.scheduler_app beat`    |
+| `monitor` | 启动监控       | `python -m talent_platform.scheduler_app monitor` |
+| `health`  | 系统健康检查   | `python -m talent_platform.scheduler_app health`  |
+
+### 插件管理
+
+| 命令               | 说明               | 示例                                                                 |
+| ------------------ | ------------------ | -------------------------------------------------------------------- |
+| `list-plugins`     | 列出所有插件       | `python -m talent_platform.scheduler_app list-plugins`               |
+| `list-plugins-hot` | 列出插件热加载状态 | `python -m talent_platform.scheduler_app list-plugins-hot`           |
+| `test-plugin`      | 测试插件           | `python -m talent_platform.scheduler_app test-plugin data_processor` |
+| `trigger`          | 触发插件执行       | `python -m talent_platform.scheduler_app trigger es_indexer`         |
+| `reload`           | 重新加载插件       | `python -m talent_platform.scheduler_app reload my_plugin`           |
+
+### 热加载管理
+
+| 命令                 | 说明         | 示例                                                         |
+| -------------------- | ------------ | ------------------------------------------------------------ |
+| `enable-hot-reload`  | 启用热加载   | `python -m talent_platform.scheduler_app enable-hot-reload`  |
+| `disable-hot-reload` | 禁用热加载   | `python -m talent_platform.scheduler_app disable-hot-reload` |
+| `watch`              | 监听插件变更 | `python -m talent_platform.scheduler_app watch`              |
+
+### 任务管理
+
+| 命令     | 说明         | 示例                                                     |
+| -------- | ------------ | -------------------------------------------------------- |
+| `status` | 查看任务状态 | `python -m talent_platform.scheduler_app status task_id` |
+
+## 📊 数据库变更监听
 
 系统会自动监听配置的数据库表变更，并触发相应的插件处理：
 
@@ -183,32 +356,71 @@ monitored_tables = {
 }
 ```
 
-## API 使用
+## 🚀 高级用法
 
-### 通过代码调用
+### 1. 编程式插件调用
 
 ```python
-from talent_platform.scheduler import task_scheduler, plugin_manager
+from talent_platform.scheduler import plugin_manager, task_scheduler
 
-# 直接执行插件
+# 同步执行插件
 result = plugin_manager.execute_plugin(
     "data_processor",
     operation="sync_data",
-    sync_type="manual"
+    teacher_id="123"
 )
 
-# 异步触发插件
+# 异步执行插件
 task_id = task_scheduler.trigger_plugin(
-    "data_processor",
-    {"operation": "sync_data"},
-    priority="high"
+    "es_indexer",
+    {
+        "operation": "update_index",
+        "teacher_id": "123",
+        "data": {"name": "John Doe"}
+    }
 )
 
-# 获取任务状态
+# 检查任务状态
 status = task_scheduler.get_task_status(task_id)
+```
 
-# 系统健康检查
-health = task_scheduler.health_check()
+### 2. 热加载编程接口
+
+```python
+from talent_platform.scheduler.plugin_manager import plugin_manager
+
+# 检查插件是否有更新
+has_updates = plugin_manager._hot_loader.check_plugin_updates("my_plugin")
+
+# 强制重载插件
+success = plugin_manager.force_reload_plugin("my_plugin")
+
+# 获取插件热加载信息
+info = plugin_manager.get_plugin_hot_info("my_plugin")
+```
+
+### 3. 数据库监听配置
+
+```python
+# 在 config.py 中配置监听的表
+DB_MONITOR_TABLES = [
+    {
+        "table": "teachers",
+        "plugin": "es_indexer",
+        "operation": "update_teacher_index",
+        "condition": "is_valid = 1"
+    }
+]
+```
+
+### 4. 自定义队列
+
+```bash
+# 启动指定队列的worker
+python -m talent_platform.scheduler_app worker --queues high_priority,plugin_tasks
+
+# 启动高并发worker
+python -m talent_platform.scheduler_app worker --concurrency 8
 ```
 
 ### 命令行工具
@@ -319,15 +531,87 @@ A: 系统支持自动重试，可以在任务中配置重试次数和间隔。
 
 A: 可以增加更多 Worker 实例来提高处理能力，支持分布式部署。
 
-## 示例插件
+## 📖 示例插件
 
-项目包含两个示例插件：
+系统包含以下示例插件：
 
 1. **data_processor**: 数据处理插件，演示如何处理爬虫数据
 2. **es_indexer**: ES 索引插件，演示如何管理 Elasticsearch 索引
+3. **hot_reload_demo**: 热加载演示插件，展示热加载功能
 
 你可以参考这些示例来开发自己的插件。
 
-## 联系支持
+## 🐛 故障排除
 
-如有问题或建议，请联系开发团队或提交 Issue。
+### 常见问题
+
+**1. 插件无法加载**
+
+```bash
+# 检查插件配置
+cat plugins/plugin_name/plugin.json
+
+# 查看详细日志
+tail -f logs/app.log | grep plugin_name
+```
+
+**2. 热加载不工作**
+
+```bash
+# 检查热加载状态
+python -m talent_platform.scheduler_app list-plugins-hot
+
+# 手动重载
+python -m talent_platform.scheduler_app reload plugin_name
+```
+
+**3. 任务执行失败**
+
+```bash
+# 查看任务状态
+python -m talent_platform.scheduler_app status task_id
+
+# 检查系统健康
+python -m talent_platform.scheduler_app health
+```
+
+**4. 依赖问题**
+
+```bash
+# 检查虚拟环境
+ls -la plugin_envs/plugin_name/
+
+# 重新安装依赖
+rm -rf plugin_envs/plugin_name/
+python -m talent_platform.scheduler_app test-plugin plugin_name
+```
+
+### 日志监控
+
+```bash
+# 实时监控调度系统日志
+tail -f logs/app.log
+
+# 监控插件相关日志
+tail -f logs/app.log | grep -E "(plugin|reload|hot)"
+
+# 监控错误日志
+tail -f logs/error.log
+```
+
+## 📞 技术支持
+
+如果遇到问题，请：
+
+1. 查看详细日志文件
+2. 运行系统健康检查
+3. 参考故障排除指南
+4. 查看 `HOT_RELOAD_GUIDE.md` 了解热加载详情
+
+---
+
+**快速链接：**
+
+- 🔥 [热加载详细指南](HOT_RELOAD_GUIDE.md)
+- 📋 [系统设计文档](SCHEDULER_SUMMARY.md)
+- 🚀 [启动脚本使用](start_scheduler.sh)

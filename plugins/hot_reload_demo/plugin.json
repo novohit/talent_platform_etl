@@ -1,0 +1,25 @@
+{
+  "name": "hot_reload_demo",
+  "version": "1.0.0",
+  "description": "热加载功能演示插件",
+  "author": "Talent Platform Team",
+  "entry_point": "main.demo_function",
+  "parameters": {
+    "message": {
+      "type": "string",
+      "required": false,
+      "description": "演示消息",
+      "default": "Hello from hot reload demo!"
+    },
+    "count": {
+      "type": "integer",
+      "required": false,
+      "description": "重复次数",
+      "default": 1
+    }
+  },
+  "dependencies": [],
+  "python_version": ">=3.8",
+  "enabled": true,
+  "tags": ["demo", "hot-reload", "testing"]
+} 
