@@ -92,14 +92,49 @@ class PluginManager:
         self._hot_loader = None
         self.enable_hot_reload = True
         
+        # 全局环境变量配置
+        self.global_env_vars = {}
+        
         # 确保插件目录存在
         self.plugins_dir = Path(config.PLUGINS_DIR)
         self.venv_dir = Path(config.PLUGIN_VENV_DIR)
         self.plugins_dir.mkdir(exist_ok=True)
         self.venv_dir.mkdir(exist_ok=True)
         
+        # 加载全局环境变量
+        self._load_global_env_vars()
+        
         # 扫描并加载插件
         self._scan_plugins()
+    
+    def _load_global_env_vars(self):
+        """加载全局环境变量配置"""
+        global_env_file = self.plugins_dir / ".env"
+        
+        if global_env_file.exists():
+            try:
+                self.global_env_vars = dotenv_values(str(global_env_file))
+                logger.info(f"Loaded {len(self.global_env_vars)} global environment variables from plugins/.env")
+                logger.debug(f"Global environment variables: {list(self.global_env_vars.keys())}")
+            except Exception as e:
+                logger.warning(f"Failed to load global .env file: {e}")
+                self.global_env_vars = {}
+        else:
+            logger.debug("No global .env file found in plugins directory")
+            self.global_env_vars = {}
+    
+    def _merge_env_vars(self, plugin_env_vars: Dict[str, str]) -> Dict[str, str]:
+        """
+        合并全局和插件级环境变量
+        插件级配置优先于全局配置
+        """
+        # 从全局配置开始
+        merged_env = self.global_env_vars.copy()
+        
+        # 插件配置覆盖全局配置
+        merged_env.update(plugin_env_vars)
+        
+        return merged_env
     
     def enable_hot_loading(self):
         """启用热加载功能"""
@@ -157,34 +192,43 @@ class PluginManager:
         logger.info(f"Loaded {len(self.plugins)} plugins")
     
     def _load_plugin_metadata(self, plugin_dir: Path):
-        """加载单个插件的元数据"""
+        """加载单个插件的元数据，支持多级环境变量配置"""
         metadata_file = plugin_dir / "plugin.json"
         
         with open(metadata_file, 'r', encoding='utf-8') as f:
             metadata_dict = json.load(f)
         
-        # 加载插件的环境变量
+        # 加载插件级环境变量
         plugin_env_file = plugin_dir / ".env"
         plugin_env_vars = {}
         
         if plugin_env_file.exists():
             try:
-                # 读取插件的 .env 文件
                 plugin_env_vars = dotenv_values(str(plugin_env_file))
-                logger.info(f"Loaded {len(plugin_env_vars)} environment variables for plugin {metadata_dict['name']}")
+                logger.debug(f"Loaded {len(plugin_env_vars)} plugin-specific environment variables for {metadata_dict['name']}")
             except Exception as e:
                 logger.warning(f"Failed to load .env file for plugin {metadata_dict['name']}: {e}")
         
-        # 将环境变量添加到元数据中
-        if plugin_env_vars:
-            metadata_dict['env_vars'] = plugin_env_vars
+        # 合并全局和插件级环境变量（插件级优先）
+        merged_env_vars = self._merge_env_vars(plugin_env_vars)
+        
+        # 将合并后的环境变量添加到元数据中
+        if merged_env_vars:
+            metadata_dict['env_vars'] = merged_env_vars
         
         metadata = PluginMetadata(**metadata_dict)
         self.plugins[metadata.name] = metadata
         
+        # 记录加载结果
+        global_count = len(self.global_env_vars)
+        plugin_count = len(plugin_env_vars)
+        total_count = len(merged_env_vars)
+        
         logger.info(f"Loaded plugin metadata: {metadata.name} v{metadata.version}")
-        if metadata.env_vars:
-            logger.debug(f"Plugin {metadata.name} environment variables: {list(metadata.env_vars.keys())}")
+        if total_count > 0:
+            logger.info(f"Plugin {metadata.name}: configured with {total_count} environment variables "
+                       f"(global: {global_count}, plugin-specific: {plugin_count})")
+            logger.debug(f"Plugin {metadata.name} final environment variables: {list(merged_env_vars.keys())}")
     
     def _create_virtual_env(self, plugin_name: str, dependencies: List[str]) -> str:
         """为插件创建虚拟环境"""

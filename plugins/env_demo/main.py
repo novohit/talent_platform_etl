@@ -1,220 +1,125 @@
 """
 环境变量配置演示插件
-展示如何在插件中使用各种类型的环境变量配置
+展示多级环境变量配置的使用方法
 """
 
 import os
-import logging
-import json
-from datetime import datetime
-from typing import Dict, Any, Optional
+import time
+from typing import Dict, Any
 
-
-logger = logging.getLogger(__name__)
-
-
-def parse_env_bool(value: str, default: bool = False) -> bool:
-    """解析环境变量布尔值"""
-    if not value:
-        return default
-    return value.lower() in ('true', '1', 'yes', 'on', 'enabled')
-
-
-def parse_env_int(value: str, default: int = 0) -> int:
-    """解析环境变量整数值"""
-    try:
-        return int(value) if value else default
-    except ValueError:
-        logger.warning(f"Invalid integer value in environment: {value}, using default: {default}")
-        return default
-
-
-def parse_env_float(value: str, default: float = 0.0) -> float:
-    """解析环境变量浮点数值"""
-    try:
-        return float(value) if value else default
-    except ValueError:
-        logger.warning(f"Invalid float value in environment: {value}, using default: {default}")
-        return default
-
-
-def parse_env_list(value: str, separator: str = ',', default: list = None) -> list:
-    """解析环境变量列表值"""
-    if not value:
-        return default or []
-    return [item.strip() for item in value.split(separator) if item.strip()]
-
-
-def parse_env_json(value: str, default: dict = None) -> dict:
-    """解析环境变量JSON值"""
-    if not value:
-        return default or {}
-    try:
-        return json.loads(value)
-    except json.JSONDecodeError as e:
-        logger.warning(f"Invalid JSON in environment: {value}, error: {e}, using default")
-        return default or {}
-
-
-class EnvironmentConfig:
-    """环境配置管理类"""
+def demo_env_config(**kwargs) -> Dict[str, Any]:
+    """
+    演示多级环境变量配置的使用
     
-    def __init__(self):
-        # 基础配置
-        self.plugin_name = os.getenv('PLUGIN_NAME', 'env_demo')
-        self.debug = parse_env_bool(os.getenv('DEBUG', 'false'))
-        self.log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
-        
-        # 业务配置
-        self.max_items = parse_env_int(os.getenv('MAX_ITEMS', '1000'))
-        self.timeout = parse_env_float(os.getenv('TIMEOUT', '30.0'))
-        self.retry_count = parse_env_int(os.getenv('RETRY_COUNT', '3'))
-        self.batch_size = parse_env_int(os.getenv('BATCH_SIZE', '100'))
-        
-        # 功能开关
-        self.features_enabled = parse_env_list(os.getenv('FEATURES_ENABLED', 'basic,advanced'))
-        self.cache_enabled = parse_env_bool(os.getenv('CACHE_ENABLED', 'true'))
-        self.monitoring_enabled = parse_env_bool(os.getenv('MONITORING_ENABLED', 'true'))
-        
-        # 外部服务配置
-        self.api_base_url = os.getenv('API_BASE_URL', 'https://api.example.com')
-        self.api_key = os.getenv('API_KEY', 'default_key')
-        self.api_version = os.getenv('API_VERSION', 'v1')
-        
-        # 数据库配置
-        self.db_host = os.getenv('DB_HOST', 'localhost')
-        self.db_port = parse_env_int(os.getenv('DB_PORT', '3306'))
-        self.db_name = os.getenv('DB_NAME', 'default_db')
-        self.db_user = os.getenv('DB_USER', 'user')
-        self.db_password = os.getenv('DB_PASSWORD', 'password')
-        
-        # 高级配置（JSON格式）
-        self.custom_settings = parse_env_json(os.getenv('CUSTOM_SETTINGS', '{}'))
-        self.mapping_rules = parse_env_json(os.getenv('MAPPING_RULES', '{}'))
-        
-        # 文件路径配置
-        self.data_dir = os.getenv('DATA_DIR', '/tmp/plugin_data')
-        self.log_dir = os.getenv('LOG_DIR', '/tmp/logs')
-        self.backup_dir = os.getenv('BACKUP_DIR', '/tmp/backup')
-        
-        # 安全配置
-        self.ssl_verify = parse_env_bool(os.getenv('SSL_VERIFY', 'true'))
-        self.encryption_key = os.getenv('ENCRYPTION_KEY', '')
-        
-        if self.debug:
-            logger.info(f"Environment configuration loaded for {self.plugin_name}")
+    优先级：插件级 .env > 全局 plugins/.env > 系统环境变量
+    """
+    print("=" * 60)
+    print("环境变量配置演示")
+    print("=" * 60)
     
-    def to_dict(self) -> Dict[str, Any]:
-        """转换为字典格式"""
-        return {
-            'plugin_name': self.plugin_name,
-            'debug': self.debug,
-            'log_level': self.log_level,
-            'max_items': self.max_items,
-            'timeout': self.timeout,
-            'retry_count': self.retry_count,
-            'batch_size': self.batch_size,
-            'features_enabled': self.features_enabled,
-            'cache_enabled': self.cache_enabled,
-            'monitoring_enabled': self.monitoring_enabled,
-            'api_base_url': self.api_base_url,
-            'api_version': self.api_version,
-            'db_host': self.db_host,
-            'db_port': self.db_port,
-            'db_name': self.db_name,
-            'custom_settings': self.custom_settings,
-            'mapping_rules': self.mapping_rules,
-            'data_dir': self.data_dir,
-            'ssl_verify': self.ssl_verify,
-            'has_encryption_key': bool(self.encryption_key)
+    # 1. 展示全局配置项
+    print("\n1. 全局配置项（来自 plugins/.env）:")
+    global_vars = [
+        "API_BASE_URL", "API_VERSION", "API_TIMEOUT",
+        "DB_HOST", "DB_PORT", "DB_NAME", "DB_USER",
+        "LOG_LEVEL", "BATCH_SIZE", "SYSTEM_ENV"
+    ]
+    
+    for var in global_vars:
+        value = os.getenv(var, "未设置")
+        print(f"   {var} = {value}")
+    
+    # 2. 展示插件特定配置项
+    print("\n2. 插件特定配置项（来自 plugins/env_demo/.env）:")
+    plugin_vars = [
+        "PLUGIN_NAME", "PLUGIN_VERSION", "DEMO_MESSAGE",
+        "DEMO_ENABLED", "DEMO_MAX_ITERATIONS", "DEMO_API_KEY",
+        "TEMP_PREFIX", "CACHE_TTL"
+    ]
+    
+    for var in plugin_vars:
+        value = os.getenv(var, "未设置")
+        print(f"   {var} = {value}")
+    
+    # 3. 展示覆盖效果
+    print("\n3. 配置覆盖效果演示:")
+    print("   这些配置项在插件级配置中覆盖了全局配置:")
+    
+    override_demo = {
+        "API_BASE_URL": {
+            "global": "https://api.example.com",
+            "plugin": os.getenv("API_BASE_URL", "未设置")
+        },
+        "LOG_LEVEL": {
+            "global": "INFO", 
+            "plugin": os.getenv("LOG_LEVEL", "未设置")
+        },
+        "BATCH_SIZE": {
+            "global": "100",
+            "plugin": os.getenv("BATCH_SIZE", "未设置")
         }
-
-
-def process_with_env(operation: str, 
-                    data_source: str = "default",
-                    override_config: Optional[Dict] = None,
-                    **kwargs) -> Dict[str, Any]:
-    """
-    使用环境变量配置进行处理的演示函数
-    
-    Args:
-        operation: 操作类型
-        data_source: 数据源
-        override_config: 临时覆盖配置
-        **kwargs: 其他参数
-    
-    Returns:
-        处理结果字典
-    """
-    
-    # 加载环境配置
-    config = EnvironmentConfig()
-    
-    # 应用临时覆盖配置
-    if override_config:
-        logger.info(f"Applying override config: {list(override_config.keys())}")
-        for key, value in override_config.items():
-            if hasattr(config, key):
-                setattr(config, key, value)
-    
-    logger.info(f"Processing operation '{operation}' with data source '{data_source}'")
-    
-    if config.debug:
-        logger.debug(f"Environment configuration: {config.to_dict()}")
-    
-    # 模拟业务逻辑
-    results = []
-    
-    # 检查功能开关
-    if 'basic' in config.features_enabled:
-        results.append(f"Basic processing completed for {data_source}")
-    
-    if 'advanced' in config.features_enabled:
-        results.append(f"Advanced processing with batch size {config.batch_size}")
-    
-    if config.cache_enabled:
-        results.append("Cache optimization applied")
-    
-    if config.monitoring_enabled:
-        results.append("Monitoring metrics collected")
-    
-    # 模拟数据库连接信息（不包含密码）
-    db_info = f"Connected to {config.db_host}:{config.db_port}/{config.db_name}"
-    results.append(db_info)
-    
-    # 模拟API调用
-    api_info = f"API endpoint: {config.api_base_url}/{config.api_version}"
-    results.append(api_info)
-    
-    # 使用自定义设置
-    if config.custom_settings:
-        results.append(f"Applied custom settings: {list(config.custom_settings.keys())}")
-    
-    # 处理完成
-    processing_summary = {
-        "operation": operation,
-        "data_source": data_source,
-        "items_processed": min(len(results), config.max_items),
-        "timeout_used": config.timeout,
-        "retry_count": config.retry_count,
-        "features_used": config.features_enabled,
-        "ssl_verified": config.ssl_verify
     }
     
-    response = {
+    for var, values in override_demo.items():
+        print(f"   {var}:")
+        print(f"     全局配置: {values['global']}")
+        print(f"     插件配置: {values['plugin']} ({'✓ 已覆盖' if values['plugin'] != '未设置' else '✗ 使用全局'})")
+    
+    # 4. 实际使用示例
+    print("\n4. 配置实际使用示例:")
+    
+    # 使用合并后的配置
+    api_url = os.getenv("API_BASE_URL", "https://api.example.com")
+    batch_size = int(os.getenv("BATCH_SIZE", "100"))
+    demo_enabled = os.getenv("DEMO_ENABLED", "false").lower() == "true"
+    max_iterations = int(os.getenv("DEMO_MAX_ITERATIONS", "5"))
+    
+    print(f"   API基础URL: {api_url}")
+    print(f"   批处理大小: {batch_size}")
+    print(f"   演示模式: {'启用' if demo_enabled else '禁用'}")
+    
+    if demo_enabled:
+        print(f"\n5. 执行演示任务 (最大 {max_iterations} 次迭代):")
+        for i in range(min(max_iterations, 3)):  # 限制演示次数
+            print(f"   第 {i+1} 次迭代: 处理 {batch_size} 条记录...")
+            time.sleep(0.5)  # 模拟处理时间
+        
+        if max_iterations > 3:
+            print(f"   ... 还有 {max_iterations - 3} 次迭代（演示中省略）")
+    
+    # 5. 配置验证
+    print("\n6. 配置验证:")
+    validation_results = []
+    
+    # 检查必需的配置
+    required_configs = ["PLUGIN_NAME", "API_BASE_URL", "DB_HOST"]
+    for config in required_configs:
+        value = os.getenv(config)
+        if value:
+            validation_results.append(f"✓ {config}: 已配置")
+        else:
+            validation_results.append(f"✗ {config}: 缺失")
+    
+    for result in validation_results:
+        print(f"   {result}")
+    
+    # 返回结果
+    result = {
         "status": "success",
-        "operation": operation,
-        "plugin_name": config.plugin_name,
-        "timestamp": datetime.now().isoformat(),
-        "environment_config": config.to_dict(),
-        "processing_summary": processing_summary,
-        "results": results,
-        "debug_mode": config.debug
+        "plugin_name": os.getenv("PLUGIN_NAME", "env_demo"),
+        "config_source": "multi-level",
+        "global_vars_loaded": len([v for v in global_vars if os.getenv(v)]),
+        "plugin_vars_loaded": len([v for v in plugin_vars if os.getenv(v)]),
+        "demo_enabled": demo_enabled,
+        "iterations_completed": min(max_iterations, 3) if demo_enabled else 0,
+        "api_endpoint": api_url,
+        "batch_size": batch_size,
+        "message": os.getenv("DEMO_MESSAGE", "环境变量演示完成！")
     }
     
-    logger.info(f"Environment demo completed: processed {len(results)} items")
-    
-    if config.debug:
-        logger.debug(f"Full response: {json.dumps(response, indent=2, default=str)}")
-    
-    return response 
+    print(f"\n演示完成！插件返回: {result['message']}")
+    return result
+
+
+# 兼容性别名
+process_data = demo_env_config 

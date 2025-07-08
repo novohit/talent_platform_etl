@@ -38,6 +38,7 @@ def index_data(operation: str = "update_teacher_index",
     """
     logger.info(f"env {os.getenv('ES_PASSWORD')}")
     logger.info(f"env {os.getenv('HELLO')}")
+    logger.info(f"env {os.getenv('GLOBAL_PLUGIN_VERSION')}")
     logger.info(f"==！！！！！！！！===uer_index")
     logger.info(f"Starting ES indexing: operation={operation}, index={index_name}")
     
