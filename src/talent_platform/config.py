@@ -26,9 +26,8 @@ class Config:
     ES_TIMEOUT = int(os.getenv("ES_TIMEOUT", "30"))
 
     # Celery配置
-    REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
-    CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL", REDIS_URL)
-    CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND", REDIS_URL)
+    CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL", "redis://localhost:6379/0")
+    CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND", "redis://localhost:6379/1")
     
     # 插件系统配置
     PLUGINS_DIR = os.getenv("PLUGINS_DIR", "plugins")
