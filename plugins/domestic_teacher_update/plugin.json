@@ -1,0 +1,26 @@
+{
+  "name": "domestic_teacher_update",
+  "version": "1.0.0",
+  "description": "国内教师简介更新 通过已有链接以及谷歌搜索方式更新",
+  "author": "Talent Platform Team",
+  "entry_point": "main.run",
+  "parameters": {
+    "operation": {
+      "type": "string",
+      "description": "要更新的教师id",
+      "default": ""
+    }
+  },
+  "dependencies": [
+    "aiohttp>=3.10.5",
+    "lxml>=4.9.2",
+    "openai>=1.93.2",
+    "pandas>=2.3.1",
+    "PyMySQL>=1.1.1",
+    "pypinyin>=0.54.0",
+    "Requests>=2.32.4",
+    "tenacity>=8.2.3"
+  ],
+  "python_version": ">=3.8",
+  "enabled": true
+}

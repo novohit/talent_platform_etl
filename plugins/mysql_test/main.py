@@ -10,6 +10,7 @@ import logging
 from typing import Dict, List, Any, Optional, Tuple
 from datetime import datetime
 from contextlib import contextmanager
+from core.test import test
 
 try:
     import pymysql
@@ -358,7 +359,8 @@ def test_mysql_connection(operation: str = "query_test", timeout: int = 30, **kw
         测试结果字典
     """
     logger.info(f"MySQL测试插件启动 - 操作: {operation}")
-    
+    test()
+
     try:
         tester = MySQLTester()
         

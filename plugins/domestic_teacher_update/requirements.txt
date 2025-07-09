@@ -1,0 +1,7 @@
+aiohttp
+lxml
+openai
+PyMySQL
+pypinyin
+Requests
+tenacity

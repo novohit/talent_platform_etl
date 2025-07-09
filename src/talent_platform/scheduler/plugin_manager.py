@@ -273,8 +273,63 @@ class PluginManager:
             
             return self._load_plugin_module(plugin_name)
     
+    def _get_plugin_directories(self, plugin_dir: Path) -> List[str]:
+        """获取插件目录下的所有子目录名称"""
+        directories = []
+        try:
+            for item in plugin_dir.iterdir():
+                if item.is_dir() and not item.name.startswith('.') and not item.name.startswith('__'):
+                    directories.append(item.name)
+        except Exception:
+            pass
+        return directories
+
+    def _clear_conflicting_modules(self, plugin_name: str, plugin_dirs: List[str]):
+        """精确清理可能冲突的模块"""
+        modules_to_remove = []
+        
+        for module_name in list(sys.modules.keys()):
+            # 检查是否是可能冲突的模块
+            should_remove = False
+            
+            # 1. 检查是否是当前插件的子目录模块（可能来自其他插件）
+            for dir_name in plugin_dirs:
+                if (module_name == dir_name or 
+                    module_name.startswith(f"{dir_name}.") or
+                    module_name.startswith(f"plugin_{plugin_name}") or
+                    (module_name == plugin_name or module_name.startswith(f"{plugin_name}."))):
+                    should_remove = True
+                    break
+            
+            if should_remove:
+                # 保护系统模块
+                protected_prefixes = [
+                    'sys', 'os', 'builtins', 'io', 'collections', 'datetime',
+                    'json', 'logging', 'pathlib', 'typing', 'asyncio', 'time',
+                    'talent_platform', 'celery', 'sqlmodel', 'pandas', 'numpy'
+                ]
+                
+                is_protected = any(
+                    module_name.startswith(prefix) or module_name == prefix 
+                    for prefix in protected_prefixes
+                )
+                
+                if not is_protected:
+                    modules_to_remove.append(module_name)
+        
+        # 清理模块缓存
+        for module_name in modules_to_remove:
+            try:
+                del sys.modules[module_name]
+                logger.debug(f"Cleared conflicting module: {module_name}")
+            except KeyError:
+                pass
+        
+        if modules_to_remove:
+            logger.debug(f"Cleared {len(modules_to_remove)} conflicting modules for plugin {plugin_name}")
+
     def _load_plugin_module(self, plugin_name: str) -> Optional[Any]:
-        """内部模块加载方法，不进行热加载检查，避免递归调用"""
+        """内部模块加载方法，使用临时路径隔离避免冲突"""
         # 如果已经加载，直接返回
         if plugin_name in self.loaded_modules:
             return self.loaded_modules[plugin_name]
@@ -288,6 +343,9 @@ class PluginManager:
             logger.warning(f"Plugin {plugin_name} is disabled")
             return None
         
+        # 记录原始sys.path
+        original_sys_path = sys.path.copy()
+        
         try:
             # 创建虚拟环境（如果需要）
             if metadata.dependencies:
@@ -300,45 +358,22 @@ class PluginManager:
                 if site_packages.exists():
                     sys.path.insert(0, str(site_packages))
             
-            # 加载插件模块 - 支持包结构
+            # 🔥 使用临时路径隔离加载插件，避免模块冲突
             plugin_dir = self.plugins_dir / plugin_name
-            module_name = metadata.entry_point.split('.')[0]
             
-            # 检查是否是包结构（有多个.py文件或子目录）
-            python_files = list(plugin_dir.glob("*.py"))
-            subdirs = [d for d in plugin_dir.iterdir() if d.is_dir() and not d.name.startswith('.')]
+            # 1. 获取插件的子目录列表
+            plugin_dirs = self._get_plugin_directories(plugin_dir)
             
-            if len(python_files) > 1 or subdirs:
-                # 包结构：支持绝对导入 - 关键是将插件目录本身添加到sys.path
-                plugin_parent = str(plugin_dir.parent)
-                plugin_dir_str = str(plugin_dir)
-                
-                # 添加插件父目录到路径（为了包导入）
-                if plugin_parent not in sys.path:
-                    sys.path.insert(0, plugin_parent)
-                
-                # 关键：添加插件目录本身到路径（为了绝对导入）
-                if plugin_dir_str not in sys.path:
-                    sys.path.insert(0, plugin_dir_str)
-                
-                try:
-                    # 先尝试导入包
-                    package_module = importlib.import_module(plugin_name)
-                    
-                    # 然后导入具体模块
-                    if '.' in metadata.entry_point:
-                        module_path = f"{plugin_name}.{module_name}"
-                        module = importlib.import_module(module_path)
-                    else:
-                        module = package_module
-                        
-                except ImportError as e:
-                    logger.warning(f"Failed to import as package, trying file-based import: {e}")
-                    # 回退到文件加载方式
-                    module = self._load_plugin_as_file(plugin_name, plugin_dir, metadata)
-            else:
-                # 单文件：使用原来的方式
-                module = self._load_plugin_as_file(plugin_name, plugin_dir, metadata)
+            # 2. 精确清理可能冲突的模块
+            self._clear_conflicting_modules(plugin_name, plugin_dirs)
+            
+            # 3. 临时将插件目录添加到sys.path最前面（最高优先级）
+            plugin_dir_str = str(plugin_dir)
+            if plugin_dir_str not in sys.path:
+                sys.path.insert(0, plugin_dir_str)
+            
+            # 4. 加载插件模块
+            module = self._load_plugin_as_file(plugin_name, plugin_dir, metadata)
             
             if module:
                 self.loaded_modules[plugin_name] = module
@@ -349,6 +384,10 @@ class PluginManager:
         except Exception as e:
             logger.error(f"Failed to load plugin {plugin_name}: {e}")
             return None
+        finally:
+            # 5. 恢复原始sys.path（移除临时添加的路径）
+            sys.path[:] = original_sys_path
+            logger.debug(f"Restored sys.path after loading plugin {plugin_name}")
     
     def _load_plugin_as_file(self, plugin_name: str, plugin_dir: Path, metadata) -> Optional[Any]:
         """作为单文件加载插件"""
@@ -383,7 +422,7 @@ class PluginManager:
             return None
     
     def execute_plugin(self, plugin_name: str, **kwargs) -> Any:
-        """执行插件"""
+        """执行插件（使用临时路径隔离确保模块正确加载）"""
         # 在执行前检查热加载更新
         if self.enable_hot_reload and self._hot_loader:
             try:
@@ -411,7 +450,15 @@ class PluginManager:
         
         logger.info(f"Executing plugin {plugin_name} with parameters: {list(kwargs.keys())}")
         
+        # 🔥 执行时也使用临时路径隔离，确保插件运行时能找到正确的模块
+        original_sys_path = sys.path.copy()
         try:
+            # 临时将插件目录添加到sys.path最前面
+            plugin_dir = self.plugins_dir / plugin_name
+            plugin_dir_str = str(plugin_dir)
+            if plugin_dir_str not in sys.path:
+                sys.path.insert(0, plugin_dir_str)
+            
             with plugin_environment(metadata.env_vars):
                 result = plugin_function(**kwargs)
             logger.info(f"Plugin {plugin_name} executed successfully")
@@ -419,6 +466,9 @@ class PluginManager:
         except Exception as e:
             logger.error(f"Plugin {plugin_name} execution failed: {e}")
             raise
+        finally:
+            # 恢复原始sys.path
+            sys.path[:] = original_sys_path
     
     def force_reload_plugin(self, plugin_name: str) -> bool:
         """强制重新加载插件"""
@@ -429,8 +479,13 @@ class PluginManager:
             if plugin_name in self.loaded_modules:
                 del self.loaded_modules[plugin_name]
             
-            # 重新加载元数据
+            # 🔥 精确清理插件相关的模块
             plugin_dir = self.plugins_dir / plugin_name
+            if plugin_dir.exists():
+                plugin_dirs = self._get_plugin_directories(plugin_dir)
+                self._clear_conflicting_modules(plugin_name, plugin_dirs)
+            
+            # 重新加载元数据
             if plugin_dir.exists():
                 self._load_plugin_metadata(plugin_dir)
             

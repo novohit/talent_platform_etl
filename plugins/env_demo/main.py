@@ -6,6 +6,7 @@
 import os
 import time
 from typing import Dict, Any
+from core.test import init_db
 
 def demo_env_config(**kwargs) -> Dict[str, Any]:
     """
@@ -16,7 +17,7 @@ def demo_env_config(**kwargs) -> Dict[str, Any]:
     print("=" * 60)
     print("环境变量配置演示")
     print("=" * 60)
-    
+    init_db()
     # 1. 展示全局配置项
     print("\n1. 全局配置项（来自 plugins/.env）:")
     global_vars = [

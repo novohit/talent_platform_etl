@@ -1,0 +1,2262 @@
+"id","province","school_name","college_name","teacher_name","description","status","data_source","data_source_id","create_time","update_time","deleted","link"
+"18","广东省","东莞理工学院","化学工程与能源技术学院","何奎","一、基本信息：
+学位：博士研究生
+职称：特聘副研究员、硕士生导师
+联系电话：18520771861
+电子邮箱：hek@dgut.edu.cn
+二、教育、工作经历：
+2020年5月-至今   东莞理工学院 助理研究员、副研究员
+2016年6月-2019年12月 华南理工大学 博士后、助理研究员
+2011年9月-2015年12月 谢菲尔德大学 博士
+2007年9月-2010年6 月 华南理工大学 硕士
+2003年9月-2007年6 月 安徽工业大学 本科
+三、研究领域：
+主要从事能源转化过程中的热质传递过程、微流控、连续流化学反应器、计算流体力学、湍流等研究。能熟练使用Fortran语言编写科学计算程序，熟练掌握Fluent、COMSOL等软件，精通高速摄像系统、高速粒子成像系统（PIV）、荧光显微镜、激光共聚焦显微镜、微流控芯片设计、数控机床加工等。
+近年来共发表论文20余篇，其中第一作者论文10多篇，均发表于SCI一区/二区期刊。申请获批中国和美国发明专利5项。主持国家自然科学基金青年项目1项，广东省自然科学基金项目2项，企业横向课题1项，到账科研经费达100多万元。
+教学经历：本科生课程《工程伦理》、《药品生产质量管理规范（GMP）》、《传热学》, 研究生课程《计算传热学》等。
+四、代表性研究成果：
+（一）代表性论文/论著
+[1] Kui He, Hongliang Qian, Haibin Zhang, Si-Min Huang, Experimental study of ensemble phase splitting features of water-oil slug/droplet flow at a branching micro-T-junction, Chemical Engineering Research and Design, 2023, 191: 552-563.
+[2] Ziyu Wang, Yimo Qin, Xin Wu, Kui He, Xiaolong Li, Juan Wang, Interfacial engineering of 1D/2D heterostructured photoanode for efficient photoelectrochemical water splitting, 2022, Nanotechnology, 33: 495402.
+[3] Kui He, Yi Lin, Yanxin Hu, Si-Min Huang, Phase separation features of oil-water parallel flow at hydrophobic and hydrophilic micro-T-junctions, 2022, Chemical Engineering Science 253(6): 117520.
+[4] Kui He, Yi Lin, Xiao-Juan Guo, Wu-zhi Yuan, Ya Ge, Si-Min Huang, Phase-splitting features and polydispersity of droplet/slug flow split in a mini-T-junction: Effect of wall wettability, Experimental Thermal and Fluid Science, 2022, 133: 110579.
+[5] Kui He, Yimo Qin, Juan Wang, Facile fabrication of binder-free photoelectrode for sensitive glucose sensing, 2021, Nanotechnology, 33(5).
+[6] Ya Ge, Kui He, Liehui Xiao, Si-Min Huang, Geometric optimization for the thermoelectric generator with variable cross-section legs by coupling, 2022, Renewable Energy, 183: 294-303.
+[7] Wu-zhi Yuan, Zhixing Liao, Kui He, Si-Min Huang, Mechanism of photovoltaic module soiling in the presence of dew, 2022, Solar Energy Materials and Solar Cells, 248: 111962.
+[8] Kui He, Lizhi Zhang, Cross flow and heat transfer of hollow-fiber tube banks with complex distribution patterns and various baffle designs, International Journal of Heat and Mass Transfer, 2020, 147: 118937.
+[9] Kui He, Lizhi Zhang, Fluid flow and heat transfer of cross flow hollow fiber membrane contactors with randomly distributed fibers: A topological study, International Journal of Heat and Mass Transfer, 2019, 135: 186-198. 
+[10] Kui He, Shuangfeng Wang, Lizhi Zhang, Transient split features of slug flow at an impacting micro-T-junction: A numerical study, International Journal of Heat and Mass Transfer, 2017, 112: 318-332.
+[11] Kui He, Shunquan Chen, Chih-ching Huang, Lizhi Zhang, Fluid flow and mass transfer in an industrial-scale hollow fiber membrane contactor scaled up with small elements, International Journal of Heat and Mass Transfer, 2018, 127: 289-301.
+[12] Shuisheng He, Kui He, Mehdi Sedighi, Laminarisation of flow at low Reynolds number due to streamwise body force, Journal of Fluid Mechanics, 2016, 809: 31-71.
+[13] Kui He, Shuisheng He, Mehdi Sedighi, DNS study of a pipe flow following a step increase in flow rate, International Journal of Heat and Fluid Flow, 2016, 57: 130-141. 
+[14] Kui He, Shuangfeng Wang, Jizhan Huang, The effect of flow pattern on split of two-phase flow through a micro-T-junction, International Journal of Heat and Mass Transfer, 2011, 54(15): 3587-3593. 
+[15] Kui He, Shuangfeng Wang, Jianzhen Huang, The effect of surface tension on phase distribution of two-phase flow in a micro-T-junction, Chemical Engineering Science, 2011, 66(17): 3962-3968.
+[16] Shuangfeng Wang, Kui He, Jianzhen Huang, Phase splitting of a slug–annular flow at a horizontal micro-T-junction, International Journal of Heat and Mass Transfer, 2011, 54(1-3): 589-596.
+[17] Shuangfeng Wang, Jianzhen Huang, Kui He, Jinfang Chen, Phase split of nitrogen/non-Newtonian fluid two-phase flow at a micro-T-junction, International Journal of Multiphase flow, 2011, 37(9): 1129-1134.
+[18] Wanchun Sun, Yanchu Liu, Kui He, Shuangfeng Wang, The phase distribution of gas-liquid two-phase flow in microimpacting T-junctions with different branch channel diameters, Chemical Engineering Journal, 2017, 333: 34-42.
+[19] 汪双凤, 何奎, 黄间珍. 气液两相流在微小T型三通中的相分配特性, 化工学报, 2011, 62: 92-96. EI。 
+[20] 何奎, 赵媛媛, 张立志. 双尺度密集纤维管束的多孔介质渗透特性, 工程热物理学报, 2018, 39(10): 2301-2306. EI. 
+ （二）科研项目
+[1] 广东省自然科学基金，青年提升项目，仿生人工膜肺中的血液流动与气体耦合传质机理研究，2023-01至2025-12, 30万元，在研，主持。
+[2] 横向课题，连续流反应器结构优化研究，10万元，在研，主持。
+[3] 国家自然科学基金委员会，青年科学基金项目，51706073，模块化构建的中空纤维膜组件流动特性与热质传递机理研究, 2018-01-01至2020-12-31，27万元，结题，主持。
+[4] 国家自然科学基金委员会，重点项目，51936005，基于凝胶的软物质的热质传递机理与性能调控，2020-01-01 至 2024-12-31, 300万元，在研，参与。
+[5] 国家自然科学基金委员会，面上项目，51876067，电解质膜除湿：热-质-电耦合传递机理及性能调控研究，2019-01-01 至 2022-12-31，60万元，资助期满，参与。
+（三）专利
+[1] 何奎, 张立志. 一种模块化太阳能中空纤维膜海水淡化器及其淡化方法, 中国发明专利, 申请号: 201810233319.7.
+[2] 何奎, 张立志. 一种新型气液膜接触器, 中国发明专利, 申请号: 201810719879.3.
+[3] 何奎, 黄斯珉，杨敏林. 一种皂膜式微化学反应器, 中国发明专利, 专利号: ZL 2022 1 0548500.3.
+ 五、获奖、荣誉称号：
+[1] 热能储控过程多尺度热质传递现象及机理。广东省自然科学二等奖，排名第8。
+[2] 东莞理工学院化学工程与能源技术学院2021年度青年教师教学技能竞赛 二等奖。
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8643.htm"
+"32","广东省","东莞理工学院","化学工程与能源技术学院","何清","一、
+
+
+基本信息：
+学位：博士研究生
+职称：特聘副教授、硕士生导师
+电子邮箱：heqing@dgut.edu.cn
+ 二、教育、工作经历：
+2021年01月- 至今，东莞理工学院化学工程与能源技术学院，特聘副教授
+2016年06月-2020年12月，东莞理工学院化学工程与能源技术学院，讲师
+2011年09月- 2016年06月，华中科技大学，热能工程专业，硕博连读
+2005年09月- 2009年07月，武汉理工大学，能源动力系统及自动化专业，学士
+三、研究领域：
+主要从事颗粒动力学及计算流体力学等方面的研究工作。
+累计主持国家自然科学基金青年基金项目1项，东莞理工学院校级质量工程项目2项。已累计接收和发表SCI收录的学术论文20余篇，其中以第一/通讯作者在physics of fluids、Physics A等国际知名期刊上发表论文11篇，申请国家发明专利2项。
+四、代表性研究成果：
+（一）代表性论文/论著
+1.  He Q., Tao S.*, Yang X.P., Lu W.J., He Z.R. Discrete unified gas kinetic scheme simulation of microflows with complex geometries in Cartesian grid. Physics of Fluids, 2021, 33, 042005.
+2. He Q.*, Xie M.L.* Thermodynamic Analysis of Brownian Motion-Induced Particle Agglomeration Using the Taylor-Series Expansion Method of Moments. Processes, 2021, 9(7), 1218.
+3. Xie M.L.*, He Q.* Solution of Smoluchowski coagulation equation for Brownian motion with TEMOM. Particuology, 2022, 64-71.
+4. Tao S.∗, He Q.∗, Chen B.M., Qin G.F., Lin Y.S. A ghost-cell discrete unified gas kinetic scheme for thermal flows with heat flux at curved interface. International Journal of Heat and Mass Transfer, 2020, 162, 120365.
+5. He Q., Shchekin A. K., Xie M. L. New analytical TEMOM solutions for a class of collision kernels in the theory of Brownian coagulation. Physics A. 2015, 428: 435-442.
+（二）科研项目
+1. 国家自然科学基金：热边界层内气溶胶颗粒的沉积特性研究 (11902075)，23万，结题，主持。
+五、获奖、荣誉称号：
+1.  2019年度东莞理工学院优秀班主任
+2.  2020年度东莞理工学院优秀班主任","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8653.htm"
+"21","广东省","东莞理工学院","化学工程与能源技术学院","傅小波","一、
+
+
+基本信息：
+学位：博士研究生
+职称：教授、硕士生导师
+联系电话：0769-22862039
+电子邮箱：fuxb@dgut.edu.cn
+二、教育、工作经历：
+2018年11月- 至今，东莞理工学院化学工程与能源技术学院，教授
+2013年04月-2020年12月，东莞理工学院化学工程与能源技术学院，副教授
+2010年06月-2014年3月，暨南大学化学系，副教授
+2008年07月-2010年06月，香港科技大学化工与生物分子系，访问学者
+2003年09月- 2008年07月，华南理工大学，化学工程专业，博士
+1999年09月- 2003年07月，华南理工大学，化学工程与工艺专业，学士
+三、研究领域：
+主要从事碳纳米材料的可控合成、金属氧化物催化及新能源电池等方面的研究工作。
+累计主持国家自然科学基金青年基金项目1项、广东省自然科学基金项目1项、东莞市社会科技发展重点项目1项。已累计接收和发表SCI收录的学术论文30余篇，其中以第一/通讯作者在ChemsusChem、ChemElectroChem、Nanotechnology等国际知名期刊上发表论文20余篇，申请国家发明专利3余项。
+四、代表性研究成果：
+（一）代表性论文/论著
+1.Zhong, GY; Huang, JN; Yao, ZJ ; Luo, BJ ; Li, KB; Xu, SR; Fu, XB*; Cao, YH;Intrinsic acid resistance and high removal performance from the incorporation of nickel nanoparticles into nitrogen doped tubular carbons for environmental remediation, Journal of Colloid and Interface Science, 2022,566,46-69
+2. Zhong, GY; Xu, SR; Liu, L ; Zheng, CZ ; Dou, JJ ; Wang, FY; Fu, XB*; Liao, WB ; Wang, HJ ; Effect of Experimental Operations on the Limiting Current Density of Oxygen Reduction Reaction Evaluated by Rotating-Disk Electrode, ChemElectroChem, 2020,7,1107-114.
+3. Zhong, GY; Xu, SR ; Chao, J ; Fu, XB*; Liao, WB ; Xu, YJ ; Liu, ZW ; Cao, YH;Biomass-Derived Nitrogen-Doped Porous Carbons Activated by Magnesium Chloride as Ultrahigh-Performance Supercapacitors, Industrial & Engineering Chemistry Research, 2020, 59,21756-21767.
+4. Zhong, GY; Meng, Z ; Xu, MJ; Xie, HM ; Xu, SR ; Fu, XB* ; Liao, WB ; Zheng, SN ; Xu, YJ,Self-nitrogen-doped porous carbon prepared via pyrolysis of grass-blade without additive for oxygen reduction reaction, Diamond and Related Materials, 2022,12,165-172.
+5. Xu, SR ; Lin, BQ ; Huang, QH ; Qiu, WT; Yuan, WQ  Xu, WR ; Xue, XF ; Zhong, GY ; Liao, WB ; Wang, WL; Fu, XB*, Enhanced activity of alcohol oxidation on nitrogen-doped carbon by Fe-N interaction, Diamond and Related Materials, 2022, 132, 252-230.
+ （二）科研项目
+1. 国家自然科学青年基金：用于醇类催化氧化的非金属碳纳米量子点催化剂的合成与性能研究(21306061)，结题，主持。
+2. 广东省自然科学基金自由申请：非金属碳纳米量子点催化剂的合成及其醇类催化氧化性能研究（2014A030313628），结题，主持
+3.  东莞市社会发展重点项目：g-C3N4纳米量子点催化剂的结构设计及其分子氧的活化机制，结题（2020507140154），结题，主持
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8843.htm"
+"28","广东省","东莞理工学院","化学工程与能源技术学院","元武智","一、基本信息：
+学位：博士研究生
+职称：讲师、硕士生导师
+电子邮箱：yuanwz@dgut.edu.cn
+二、教育、工作经历：
+2018年06月- 至今，东莞理工学院化学工程与能源技术学院，讲师
+2013年09月- 2018年06月，华南理工大学，能源化学工程专业，硕、博士
+2009年09月- 2013年06月，合肥工业大学，化学工程与工艺专业，学士
+三、研究领域：
+主要从事先进功能表面制备及其在新能源利用中的应用、相变储能、光伏系统运维等方面的研究工作。近5年，主持广东省基础与应用基础研究基金项目2项，东莞市企业科技特派员项目1项，横向项目1项；在Applied surface science、Solar energy materials & solar cells等SCI期刊发表论文10余篇，申请专利10余件。指导学生获得第十二届“挑战杯”广东省赛银奖、“节能减排大赛”校赛一等奖等；多次被评为“年度优秀”。
+ 四、代表性研究成果：
+（一）代表性论文/论著
+1. Wu-Zhi Yuan; Zhixing Liao; Kui He; Si-Min Huang. Mechanism of photovoltaic module soiling in the presence of dew, Solar Energy Materials & Solar Cells, 2022, 248: 111962-111962. (SCI 2区, IF=7.305)
+2. Wu-Zhi Yuan; Zhixing Liao; Kui He; Quanbing Liu; Si-Min Huang. An experimental investigation on condensation-induced self-cleaning of dust on superhydrophobic surface, Applied Surface Science, 2021, 566: 1-12. (SCI 1区, IF=7.392)
+3. Wu-Zhi Yuan, Li-Zhi Zhang. A Lattice Boltzmann Simulation of Droplets Impacting on Superhydrophobic Surfaces with Randomly Distributed Rough. Langmuir. 2017, 33: 820–829. (SCI 2区, IF=3.833)
+4. Wu-Zhi Yuan, Li-Zhi Zhang. Pinning-depinning mechanisms of the contact line during evaporation of micro-droplets on rough surfaces: A lattice Boltzmann simulation. Langmuir.  2018, 34: 7906-7915. (SCI 2区, IF=3.833)
+5. Li-Zhi Zhang, Wu-Zhi Yuan. A lattice Boltzmann simulation of coalescence-induced droplet jumping on superhydrophobic surfaces with randomly distributed structures. Applied Surface Science, 2018, 436: 172-182. (SCI 2区, IF=3.38).
+6. 廖智兴, 刘全兵, 黄斯珉, 元武智*. 基于表面改性的光伏组件冷凝除尘特性研究, 太阳能学报，2022, 43(11): 34-40.
+7. 牟春丽, 杨敏林, 刘雪峰, 黄斯珉, 元武智*. 温湿度对超疏水表面结露特性的影响, 工程热物理学报, 2020, 41(10): 2491-2500
+ （二）科研项目
+1. 广东省基础与应用基础研究基金项目(地区培育)：表界面调控及其在光伏组件自清洁中的应用(2022A1515140024)，2023.01-2025.12，30万，在研，主持。
+2. 广东省基础与应用基础研究基金项目(青年基金)：随机分布粗糙结构超疏水表面上冷凝液滴润湿特性及合并弹跳机理研究(2019A1515110498)，2020.01-2022.12，10万元, 结题, 主持。
+3. 东莞市企业科技特派员项目：用于光伏玻璃的抗污增透涂层研发与产业化(20231800500162), 2023.04-2023.12, 10万，在研，主持。
+4. 东莞理工学院引进人才科研启动专项经费，2019.01-2021.12, 30万，结题，主持。
+ （三）专利
+1. 黄斯珉，何奎，元武智。一种中空纤维膜丝的自动操纵装置。发明专利，公开号：CN108993160A.
+2. 黄斯珉，杨敏林，元武智，曾少鸿。一种太阳能驱动的空气隙膜制冷装置。发明专利，公开号：CN208332739U
+ 五、获奖、荣誉称号：
+1. 第十二届“挑战杯”广东大学生创业大赛大学生创业计划竞赛银奖，2020.07，指导老师。
+2. 东莞理工学院2021-2022学年度优秀班主任，2022.12。 
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8733.htm"
+"36","广东省","东莞理工学院","化学工程与能源技术学院","宋金刚","一、基本信息：
+学位：博士研究生
+职称：讲师、硕士生导师
+电子邮箱：songjingang1987@126.com
+二、教育、工作经历：
+2011年、2014年及2018年在济南大学和山东大学分别获得学士学位、硕士学位和博士学位。2018年6月至今于东莞理工学院从事教学科研工作。
+三、研究领域：
+主要从事“硫化物催化剂的光解水产氢应用”、“无偏压分解水电池的设计及其性能研究”等多方面的研究工作。以一作和通讯身份，发表了SCI期刊论文总计8篇，其中JCR一区论文2篇，H因子11，单篇文章（Energy Environ. Sci., 2017, 10, 225）影响因子高达39.714，被引150余次。申请国家发明专利12件，已授权6件。主持粤莞联合基金及东莞理工学院博士科研启动基金各一项。
+
+四、代表性研究成果：
+（一）代表性论文/论著
+1. Jingang Song; Haitao Zhao; Ranran Sun; Xiyou Li; Dejun Sun ; An efficient hydrogen evolution catalyst composed of palladium phosphorous sulphide (PdP~0.33S~1.67) and twin nanocrystal Zn0.5Cd0.5S solid solution with both homo- and hetero-junctions, Energ. Environ. Sci., 2017, 10, 225-235.
+2. Jingang Song; Ranran Sun; Yanli Chen; Dejun Sun; Xiyou Li ; L-Cysteine assisted synthesis of Zn0.5Cd0.5S solid solution with different morphology, crystal structure and performance for H2 evolution, Int. J. Hydrogen Energy, 2018, 43, 18220-18231.
+3. Jingang Song*; Hai-Yan Su; Ming Fang; Lu Han; Jiayu Chu; Chao Li; Rongrong Miao; Wenlong Yao; Gang Zhang; Ao You; Photochemical construction of ZnCdS/PO/FeCoNiPi-MnO composite for efficient tandem application of photocatalytic partial water splitting and overall water splitting, J. Mater. Chem. A, 2022, 10, 16029-16036.
+4. Jingang Song*; Hai-Yan Su; Guoyu Zhong; Yang Liu; Xi Huang; Jun Zhou; Rongrong Miao; Chao Li; Wenbo Liao; Xiaobo Fu; Shimin Kang; Zi-Yian Lim; Heyuan Liu; Xiyou Li; Ao You; Feng Peng; Photosynthesis assembling of ZCS/PO/Ni3Pi2 catalyst for three-stage photocatalytic water splitting into H2 and H2O2, Colloids Surfaces A, 2022, 656, 130417-130427.
+5. Ao You; Jingang Song*; Hailang Deng; Canhui Zhou; Jie Chao; Guoyu Zhong; Wenbo Liao; Design and assembly of TZCS/PO/Ni2P-MnOx composite with “homojunction + protection layer + cocatalyst” structure for photocatalytic overall water splitting, Colloids Surfaces A,2023, 667, 131374-131382.
+（二）科研项目
+1. 广东省基础与应用基础研究基金委员会, 区域联合基金-青年基金项目, 2019A1515111013, 孪晶硫化锌镉-含铜多元硫化物-PSII型人工-自然催化体系构筑及其全分解水性质研究, 2020-01至2022-12，10万元，结题，主持。
+2. 东莞理工学院博士科研启动基金，25万，在研，主持。
+（三）专利
+1.宋金刚; 邓海朗; 羊广任; 林莎; 一种可用于光催化分解纯水的催化剂的制备方法, 2023-6-2, 中国, ZL202111139492.9。
+2.游遨; 宋金刚; 肖吉; 刘洋; 一种可用于光催化分解纯水的Zn1-xCdxS/D-ZnS(en)0.5/Pi/NiaPi型催化剂的制备方法, 2023-5-2, 中国, ZL202111140812.2。
+3.游遨; 宋金刚; 肖吉; 刘洋; 一种可用于光催化分解纯水的催化剂的制备方法, 2023-11-14, 中国, ZL202111139980.X。
+4.刘洋; 游遨; 肖吉; 宋金刚; 一种可用于光催化分解纯水的催化剂的制备方法, 2023-4-11, 中国,
+ZL202111139723.6。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1250.htm"
+"7","广东省","东莞理工学院","化学工程与能源技术学院","尹辉斌","一、
+
+
+基本信息：
+学位：博士
+职称：教授
+电子邮箱：yinhb@dgut.edu.cn
+二、教育、工作经历：
+2011年7月-至今，东莞理工学院，教师（其间：2014年9月-2015年8月，挂职任东莞市沙田镇人民政府镇长助理；2020年1月-2020年7月，香港城市大学访问学者；2016年10月起任化学工程与能源技术学院副院长、党委书记）
+2009年8月-2011年7月，中山大学，博士后
+2006年9月-2009年6月，华南理工大学，化学工程专业，博士
+2003年9月-2006年6月，华南理工大学，化学工程专业，硕士
+2002年7月-2003年8月，中国石化巴陵分公司，技术员
+1998年9月- 2002年6月，湘潭大学，化学工程与工艺专业，本科
+三、研究领域：
+主要从事功能材料开发及应用、传递过程强化与节能、可再生能源高效利用等方面的研究工作。
+主持了国家自然科学基金青年科学基金项目、863计划项目子课题、广东省自然科学基金项目、广东省科技计划项目等科研项目9项，发表学术论文30余篇，合作出版学术专著1部，受聘为东莞理工学院与英国诺丁汉大学等境外高校联合培养博士项目博士生导师。
+四、代表性研究成果：
+（一）代表性论文/论著
+1．Huibin Yin, Hongtong Xie, Jiahao Liu, Xuelin Zou, Jian Liu. Graphene tube shaped photothermal layer for efficient solar-driven interfacial evaporation. Desalination, 2021
+2．Huibin Yin, Shiyuan Gao, Zhuodi Cai, Huixing Wang, Liling Dai, Yongjun Xu, Jian Liu, Hong Li. Experimental and numerical study on thermal protection by silica aerogel based phase change composite. Energy Reports, 2020
+3．Huibin Yin, Shiyuan Gao, Chengcheng Liao, Chaomei Li, Zhuodi Cai, Yongjun Xu, Jian Liu. Self-assembly of 3D-graphite block infiltrated phase change materials with increased thermal conductivity. Journal of Cleaner Production, 2019
+4．Huibin Yin, Shiyuan Gao, Jian Liu. Enhanced optical absorptive property and effective thermal storage capacity charging rate of phase change material based photo-thermal cells. Solar Energy Materials and Solar Cells, 2019
+5．杨晓西，丁静，尹辉斌，左远志，杨小平，杜娟，秦贯丰，丁栴. 中高温蓄热技术及应用. 北京：科学出版社，2014
+（二）科研项目
+1．国家自然科学基金：多尺度结构高温混合蓄热的热过程特性及强化机理，结题，主持
+2．广东省基础与应用基础研究基金联合基金项目：基于磁响应碳基材料的界面型光热蒸发过程特性及强化机理，在研，主持
+3．广东省科技计划项目：基于改性松香的精密铸造模料关键技术，结题，主持
+4．广东省自然科学基金项目：基于熔融盐/多孔介质复合材料的高温传热蓄热性能研究，结题，主持
+5．“863计划”项目子课题：次高参数塔式太阳能热发电技术研究与示范—熔融盐储热系统性能模拟研究，结题，主持
+6．广东省科学技术厅省级农村科技特派员项目：农作物冷链贮运技术推广及应用示范，结题，主持
+7．广东省高等学校特色创新项目：基于高导热复合相变材料的电子器件温控研究，结题，主持
+8．中国博士后科学基金项目：多孔介质中熔融盐流动与传热现象，结题，主持
+9．广东省分布式能源系统重点实验室重点领域攻坚项目：太阳能驱动的界面型水蒸发特性及强化机理，结题，主持
+（三）专利
+1．尹辉斌，陈祥辉，袁嘉欣，王文豪，高宇. 一种海水淡化蒸汽收集装置. 实用新型专利，授权号：ZL202223383476.7
+2．尹辉斌，王文豪，刘鉴，徐勇军，左远志，翁万良. 基于导热增强型熔融盐复合相变材料的高温蓄热装置. 实用新型专利，授权号：ZL201721769730.3
+五、获奖、荣誉称号：
+1．广东省高等学校“千百十人才培养工程”校级培养对象
+2．第八届中国国际“互联网+”大学生创新创业大赛广东省分赛优秀创新创业导师奖（2022）
+3．第八届中国国际“互联网+”大学生创新创业大赛广东省分赛金奖（指导学生获奖，2022）
+4．第十三届“挑战杯”广东大学生创业计划竞赛铜奖（指导学生获奖，2022）
+5．东莞理工学院优秀教师（2017-2018学年）
+6．广东省科学技术奖三等奖（2013）
+7．中国工程热物理学会传热传质学术会议青年优秀论文一等奖（2012）
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8793.htm"
+"31","广东省","东莞理工学院","化学工程与能源技术学院","左远志","左远志，男，工学博士，教授。
+籍贯：湖南湘乡。
+专业：热能与动力工程。
+现任东莞理工学院能源与化工系副主任，广东省分布式能源系统重点实验室教授。
+1987.09-1994.07月，在华中理工大学动力工程系获工学学士与硕士学位；2004.09-2010.12月在华南理工大学化工与能源学院获工学博士学位。1994.04月至今，在东莞理工学院工作，2004年晋升为副教授，2012年晋升为教授。
+主要从事先进能源技术领域及其工程应用的科研与教学工作。目前研究方向有：中高温蓄热技术、制冷空调技术、除湿技术以及太阳能热利用技术。主持或参加10多项国家、省市级科研项目；获得发明专利授权2项与实用新型专利授权2项；以第一作者发表论文40多篇，其中三大索引收录论文8篇，核心期刊论文20多篇。同时主讲《制冷原理与设备》、《空气调节》等课程。获得过东莞理工学院“师德标兵”称号、3次校教学质量优秀奖与2次校教学成果奖二等奖（排名第1）；10多次指导学生竞赛获奖。
+联系电话：0769-22861861，E-mail: zuoyz@dgut.edu.cn","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1280.htm"
+"3","广东省","东莞理工学院","化学工程与能源技术学院","康世民","一、
+
+基本信息
+学位：博士研究生
+职称：副研究员、硕士生导师、博士后合作导师
+联系电话：13433630966
+电子邮箱：kangshimin@dgut.edu.cn
+二、教育、工作经历
+2016年11月-至今，东莞理工学院化学工程与能源技术学院，副研究员
+2019年09月-2019年12月，美国纽约州立大学环境与林业科学学院，访问学者
+2015年12月-2016年10月，东莞理工学院化学工程与能源技术学院，讲师
+2013年08月-2015年10月，美国夏威夷大学自然能源研究所，博士后
+2008年09月- 2013年06月，华南理工大学，化学工程专业，博士
+三、研究领域
+主要从事生物质基可再生能源、医药化学品技术攻关方面的研究；2022和2023连续两年入选全球能源领域前2%顶尖科学家。
+主持国家自然科学基金青年基金、广东省自然科学基金、东莞市社会科技发展重点等纵向科研项目10多项。发表SCI收录的学术论文70多篇，其中以第一/通讯作者在Energy, Renewable and Sustainable Energy Reviews等能源领域知名期刊上发表论文65篇；申请发明专利60多项，已授权发明专利32项（实现转让23项），专利培育成果获2020年“湾高赛”优秀奖（排名第一）。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8773.htm"
+"1","广东省","东莞理工学院","化学工程与能源技术学院","廖俊旭","      廖俊旭
+ 基本信息：
+学位：博士
+职称：讲师
+电子邮箱：liaojx@dgut.edu.cn
+教育、工作经历：
+2018年9月- 至今，      东莞理工学院化学工程与能源技术学院，讲师
+2016年7月-2019年1月，华南理工大学化学与化工学院，博士后；
+2013年9月-2016年6月，华南理工大学化学与化工学院，博士；
+2011年4月-2013年9月，东莞市清洁生产科技中心，工程师；
+2010年6月-2011年4月，上海睿智化学研究有限公司，研发工程师；
+2009年6月-2010年6月，上海药明康德新药开发有限公司，研发工程师；
+2006年9月-2009年6月，湘潭大学化学学院，硕士；
+2002年9月-2006年6月，湘潭大学化学学院，学士；
+研究领域：
+有机/聚合物太阳能电池、发光材料与器件
+生物质碳量子点发光材料与器件
+高性能模型材料（光固化3D打印材料）
+讲授课程：
+大学化学、有机化学、精细有机合成与单元反应、有机化学实验
+代表性研究成果：
+（一）论文/论著
+1. Junxu Liao, Hongbin Zhao*, Zhuodi Cai, Yongjun Xu*, Frank G. F. Qin*, Qiao Zong, Fei Peng, Yutang Fang, BODIPY based panchromatic chromophore for efficient organic solar cell, Organic Electronics, 2018, 61, 215-222.
+2. Junxu Liao, Yongjun Xu*, Hongbin Zhao*, Qiao Zong, Yutang Fang. Novel A-D-A type small molecules with β-alkynylated BODIPY flanks for bulk heterojunction solar cells, Organic Electronics, 2017, 49 321–333.
+3. Junxu Liao, Hongbin Zhao*, Yongjun Xu*, Weinan Zhou, Fei Peng, Yutang Fang. Novel BODIPY dyes with electron donor variety for dye-sensitized solar cells, RSC Advances, 2017, 7, 33975–33985.
+4. Junxu Liao，Hongbin Zhao*, Yongjun Xu*, Zhuodi Cai, Zaixi Peng, Wentao Zhang, Bohong Li, Weinan Zhou, Qiao Zong, Xiaoxi Yang. Novel D-A-D type dyes based on BODIPY platform for solution processed organic solar cells, Dyes and Pigments, 2016, 128, 131–140。
+5. Yongjun Xu*, Junxu Liao, Qiwen Cai, Xiaoxi Yang. Preparation of a highly- reflective TiO2/SiO2/Ag thin film with self-cleaning properties by magnetron sputtering for solar front reflectors, Solar Energy Materials & Solar Cells, 2013, 113, 7–12.
+6. Hongbin Zhao*, Junxu Liao, Jingheng Ning, Yujia Xie, Yingjie Cao, Liang Chen, Deliang Yang, Bangying Wang. Bangying Wang. Efficient Synthesis of novel bis(dipyrromethanes) with versatile linkers via Indium(Ⅲ) chloride-catalyzed condensation of pyrrole and dialdehydes, Advanced Synthesis & Catalysis, 2010, 352, 3083–3088.
+（二）科研项目
+1. 广东省自然科学基金面上项目“基于稠环卟啉的高效非富勒烯全小分子有机太阳能电池的构建与性能研究”2018.09-2021.09，在研，主持
+2. 中国博士后科学基金面上项目“基于多维共轭卟啉的非富勒烯全小分子太阳能电池研究” 2017.06-2019.05，结题，主持
+3. 广东省普通高校青年创新人才项目“高效有机小分子光伏材料的构建与性能研究”，2017.01-2018.12，在研，主持
+4. 东莞理工学院博士后启动基金“新型高效非富勒烯有机太阳能电池的构建及其光伏性能研究”2017.09-2019.12，在研，主持
+5. 东莞理工学院引进人才科研启动基金“基于新型稠环卟啉的近红外非富勒烯受体材料的设计、合成及光伏性能研究”2019.01-2021.12，在研，主持
+6. 国家自然科学基金主任基金项目“新型供价卟啉阵列一步合成法的构建及其光电性能研究”，2013.01-2013.12，结题，排名第二
+7. 国家自然科学基金青年基金项目“分子设计原位配位络合新型丁晴橡胶阴离子受体的制备及其结构与性能关系研究”，2014.01-2016.12，结题，排名第三
+8. 国家自然科学基金面上项目“基于相变潜热强化的生物质闪速热解机理研究”，2015.01-2018.12，结题，排名第六
+（三）发明专利
+1. 廖俊旭，赵鸿斌，韩利芬，彭再喜，张文涛，刘传生，彭飞，宗乔；一种中位烷氧基苯基取代及2,6位强给电子基取代的氟化硼络合二吡咯甲川衍生物有机染料及其制备方法；专利号：ZL201610057969.1
+2. 赵鸿斌，廖俊旭，王育才，张文涛，彭敏，李柏鸿，刘晓杰；一种中位烷基噻吩取代及3,5 位强给电子基取代的氟化硼络合二吡咯甲川衍生物及其制备方法；专利号：ZL201510642416.8
+3. 赵鸿斌，廖俊旭，徐勇军，韩利芬，周伟男，李钧华，肖永，招兆林；一种新型含 BODIPY类共轭单元有机染料敏化剂及其制备方法；专利号：ZL201610648381.3
+4. 赵鸿斌，韩利芬，廖俊旭，彭敏，王育才，周伟男，张文涛，范素娟；一种 meso 位三苯胺类取代 3,5 位芳基修饰的氟化硼络合二吡咯甲川衍生物及其制备方法；授权专利号：ZL201410852181.0
+5. 赵鸿斌，韩利芬，廖俊旭，彭再喜，张文涛，彭敏，周伟男，崔云增；一种苯并噻二唑或苯并二噻吩桥联的双氟化硼络合二吡咯甲川衍生物有机染料及其制备方法；专利号：ZL201410837575.9
+  ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1248.htm"
+"6","广东省","东莞理工学院","化学工程与能源技术学院","彭可文","彭可文
+基本信息：
+学位：博士
+职称：讲师
+电子邮箱：pengkw@dgut.edu.cn
+
+教育、工作经历：
+2018年6月-至今，东莞理工学院化学工程与能源技术学院，教师
+2013年9月- 2018年6月，中国石油大学（北京），工学博士
+2007年9月-2011年6月，中国石油大学（北京），学士
+
+研究领域：
+空化基础理论及其在超声化学、生物医学等方面的应用研究；高压空化射流在油气钻井中的应用研究；冷冻浓缩技术优化及装备研发；能源动力系统中流动传热的基础研究。主持广东省基础与应用基础研究基金项目1项、东莞市社会科技发展项目1项，油气资源与探测国家重点实验室开放课题1项，东莞理工学院科研启动项目1项。以第一作者身份在Journal of Applied Physics，Ultrasonics Sonochemistry，Wear等期刊发表论文十余篇，受邀担任Ultrasonics Sonochemistry，Ocean Engineering，Journal of Petroleum Science and Engineering，Molecules等学术期刊审稿人。
+
+讲授课程：
+流体力学
+
+代表性研究成果：
+（一）论文
+1. Kewen Peng, Frank G. F. Qin, Runhua Jiang, et al. “Reactive species created in the collapse of laser-induced cavitation bubbles: Generation mechanism and sensitivity analysis”, Journal of Applied Physics, 2022, 131(4): 043101. DOI:10.1063/5.0077976.
+2. Kewen Peng, Hongkai Yang, Huibin Yin, et al. “Integrated and intelligently controlled unit for suspension freeze concentration: design and experimental verification”, Instrumentation Science & Technology, 2022, 50:1, 16-31. DOI:10.1080/10739149.2021.1945621.
+3. Kewen Peng, Frank G. F. Qin, Shouceng Tian, et al. “An inverse method to fast-track the calculation of phase diagrams for sonoluminescing bubbles”. Ultrasonics Sonochemistry, 2021, 73: 105534. DOI: 10.1016/j.ultsonch.2021.105534.
+4. Kewen Peng, Frank G. F. Qin, Runhua Jiang, et al. “Interpreting the influence of liquid temperature on cavitation collapse intensity through bubble dynamic analysis”. Ultrasonics Sonochemistry, 2020, 69: 105253. DOI: 10.1016/j.ultsonch.2020.105253.
+5. Kewen Peng, Frank G. F. Qin, Runhua Jiang, et al. “Effect of Tube Size on the Thermal Stress in Concentrating Solar Receiver Tubes”, Journal of Solar Energy Engineering- Transactions of the ASME, 2020,142.5. DOI: 10.1115/1.4046466.
+6. Kewen Peng, Shouceng Tian, Gensheng Li, et al. “Mapping cavitation impact field in a submerged cavitating jet”, Wear, 2018, 396:22-33. DOI: 10.1016/j.wear.2017.11.006.
+7. Kewen Peng, Shouceng Tian, Gensheng Li, et al. “Bubble dynamics characteristics and influencing factors on the cavitation collapse intensity for self-resonating cavitating jets”. Petroleum Exploration and Development, 2018, 45(2): 343-350. DOI: 10.1016/S1876-3804(18)30038-7.
+8. Kewen Peng, Can Kang, Gensheng Li, et al. “Effect of heat treatment on the cavitation erosion resistance of stainless steel”, Materials and Corrosion, 2018, 69(4): 536-544. DOI: 10.1002/maco.201709818.
+9. Kewen Peng, Shouceng Tian, Gensheng Li, et al. “Cavitation in water jet under high ambient pressure conditions”, Experimental Thermal and Fluid Science, 2017, 89: 9-18. DOI: 10.1016/j.expthermflusci.2017.07.021.
+10. Kewen Peng, Gensheng Li, Shouceng Tian, et al. “Triggering Cavitation in Multilateral Coiled Tubing Drilling by High Pressure Water Jet”, SPE/IATMI Asia Pacific Oil & Gas Conference and Exhibition, Jakarta, 2017. DOI: 10.2118/186380-MS.
+（二）专利
+彭可文，秦贯丰，尹辉斌 等，利用二氧化碳水合物生成和分解实现溶液冷冻浓缩的装置，实用新型专利，申请号：202122278143.7，已授权。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/4176.htm"
+"20","广东省","东莞理工学院","化学工程与能源技术学院","彭敏","彭敏
+基本信息：
+学位：硕士
+职称：副教授
+电子邮箱：pengm@dgut.edu.cn
+教育、工作经历：
+1997年09月- 2001年06月，中南大学，应用化学专业，学士
+2001年09月- 2004年06月，湘潭大学，分析化学专业，硕士
+2004年07月-2006年10月，东莞理工学院化学与生物工程院，助教
+2006年11月- 2012年10月，东莞理工学院化学与环境工程院，讲师
+2012年11月- 现在，东莞理工学院化学工程与能源技术学院，副教授
+研究领域：
+2004年-2008年前主要从事表面分析，利用原子力显微镜，扫描电镜，俄歇电子能谱仪等表面分析仪器进行微观分析及反应过程机理的探讨，研究了细胞色素C、谷胱甘肽等人体活性物质在汞表面的特性吸附，研究了碘嵌入淀粉中微观结构变化对宏观现象的影响等。
+2008年-2015年主要从事水分析，利用色谱与质谱联用的仪器测定水中微量有机物；利用氮测定仪，研究了自来水管网中三氮转化规律；触及了饮用水的开发研究。
+2015年以后主要从事食品分析，定位油脂的提炼及高档产品的开发；解决食品企业生产实际中的问题及内含的化学机理的研究。
+讲授课程：
+《分析化学》，《精细化学品分析》，《食品营养与健康》，《现代仪器分析》，《仪器分析》，《精细化学品工艺学》，《 大学化学》，《仪器分析实验》，《三级基础化学实验I》，《三级基础化学实验Ⅱ》，《二级基础化学实验》，《一级基础化学实验》，《无机化学实验》，《思想道德Ⅱ》，《分析化学实验》，《有机化学实验》，《现代生活与化学》，《社区护理》，《就业指导》，《循环经济与可持续发展》，《应化导读（食品化学）》。
+ 代表性研究成果：
+（一）论文/论著
+1.彭敏等，在专业基础课、专业课、毕业论文环节中逐步培养学生的应用能力，东莞理工学院学报，2019，26（1），111-113
+2.彭敏，兰善红，赵鸿斌，统筹思想指导下的化学实验教学改革研究，实验室研究与探索，2016，35（12），191-193
+3.彭敏，吕斯濠，范洪波，不同游离碱含量的次氯酸钠消毒效果与消毒副产物比较，给水排水，2016，42（7），12-14
+4.Yucai Wang, Junxu Liao, Bangying Wang, Hongbiao Chen, Hongbin Zhao, Min Peng, Sujuan Fan, Synthesis and properties of novel borondipyrromethene  (BODIPY)-tethered triphenylamine conjugates, Aust. J. Chem., 2015, 68, 1485–1491. (IF= 1.56, SCI)
+5.彭敏，阮湘元，范洪波，陈钻珍，淀粉及碘嵌入淀粉结构的原子力显微镜观测，高分子材料科学与工程（EI检索）, 2009, 25（4）, 102-104.
+6.彭敏，ICP-MS法测定食品添加剂氢氧化钠中五种重金属，东莞理工学院学报，2016，22（3），67-70
+7.彭敏，水厂常规处理工艺及管网中三氮转化规律及影响因素，环境与健康杂志，2014，31（11），996-998
+8.彭敏等，以产品为主体授之以""渔""的模块式教学方式的实践，东莞理工学院学报，2014，21（1），109-111
+9.彭敏，环境水体中致嗅物质甲硫醚和二甲基三硫醚的吹扫-捕集-气相色谱-质谱测定法，环境与健康杂志，2012，29（3），260-261
+10.彭敏，刘传生，固相萃取-柱前衍生-气相色谱-质谱联用法测定水中2,4-滴和灭草松，理化检验-化学分册，2009，45（7），791-793
+11.彭敏，细胞色素C在汞表面生长性质的原子力显微镜研究——吸附自组装机理，东莞理工学院学报，2009，16（3）：106-109
+12.彭敏等，饮用水中氯苯类化合物的吹扫捕集与气相色谱-质谱联用测定法，环境与健康杂志，2008，25（4），253-254
+13.彭敏等，粉煤灰表面形貌和组成的电子显微镜、能量色散谱、聚焦离子束分析，分析化学，2004，32（9），1196-1198
+（二）科研项目
+1.广东省自然科学基金项目（自由申请），2016A030313128，一步法合成新型卟啉阵列研究，2016/6—2019/6，10.0万元，在研，主持。   
+2.国家自然科学基金，51206029，钇氮共掺杂的铌酸钾太阳能可见光光催化剂的制备及其性能研究，2013/1—2015/12，10万元，已结题，参与（排名第二）
+3.国家十二五水专项，2012ZX07206-004，水体污染控制与治理（子课题4：东深供水典型优控污染物控源减排技术集成与示范），2012/1——2017/12，结题，参与（排名第九）。
+4.广东省东莞市科技计划项目，201010814009，东莞运河致嗅物分析及去除工艺研究， 2010/01-2012/12，9.0万元，已结题，主持
+5.广东省东莞市科技计划项目，2007108101024，粉煤灰改性高效钙基烟气脱硫剂的固相水热合成研究及应用，2008/01-2010/12，10.0万元，已结题，主持
+（三）专利
+1.苯并噻唑烷基黄原酸酯衍生物及其制备方法与应用，2014.11.19，中国，ZL201010586716.6
+2.一种meso位三苯胺类取代3,5位芳基修饰的氟化硼络合二吡咯甲川衍生物及其制备方法，2015.5.20（公开日），中国，201410852181.0
+3.氨基噻唑烷基黄原酸酯衍生物及其制备方法与应用，2013.06.05，中国，ZL201010585026.9
+4.集絮凝、吸附、氧化降解、过滤于一体的污水处理方法，2006.02.08，中国，ZL200410051387.X
+5.多功能粉煤灰污水处理材料的制备方法，2006.02.08，中国，ZL200410015358.8
+6.多微孔粉煤灰砖碎片制备污水处理材料的方法，2011.02.16，中国，ZL200810219487.7
+7.一种采用有序介孔炭识别水相中超滤膜污染物的方法，2016.2.10，中国，ZL201410272029.5
+8.刚果红定性半定量试纸测定方法及其试纸的制备方法，2018.12.11，中国，201811508302.4
+9.一种鸡蛋协同坚果、柠檬防褐变饮品的加工方法，2018.12.11，中国，201811508311.3   
+获奖、荣誉称号：
+1.     专利——多功能粉煤灰污水处理材料的制备方法在第十六全国发明展览会获铜奖。
+2.     2017年4月-2019年4月指导学生参加东莞理工大学生创新创业训练计划项目（国家级）申请了相关专利一项，并获优秀。
+3.     2005-2006学年考核优秀；2005年院系教学排名第二名；2011年获得东莞理工学院“三育人”先进个人；2010年、2011年、2014年东莞理工妇女工作先进个人；2017年东莞理工学院优秀班主任；2017年考核优秀。
+-----------------------------------------------------------------------------------------","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1255.htm"
+"27","广东省","东莞理工学院","化学工程与能源技术学院","方百增","一、基本信息：
+学位：博士研究生
+职位：校长特聘岗位（教授）
+电话：13622697401
+电邮：baizengfang@163.com
+二、教育与工作经历：
+2023年9月-至今，东莞理工学院，化学工程与能源技术学院任校长特聘岗位（教授）。
+2010年7月-2023年，世界一流大学(加拿大)不列颠哥伦比亚大学(The University of British Columbia,拥有7位诺贝尔奖得主,全球大学排名前三十五), 资深研究员及研究教授。
+1998年2月起，荷兰能源研究中心(The Energy Research Center of the Netherlands,ECN)、日本产业创造研究所(Institute of Research & Innovation)、日本产业技术综合研究所 (AIST, National Institute of Advanced Industrial Science & Technology)、奥地利的格拉茨工业大学(Graz University of Technology)、韩国的韩南大学(Hannam University)及高丽大学(Korea University) 担任博士后研究员、日本学术振兴会(JSPS, The Japan Society for the Promotion of Science) 研究员、Lise Meitner 科学家及研究教授。
+1993年9月-1997年6月 北京科技大学材料科学学院表面科学与腐蚀工程系攻读博士学位。指导导师：段淑贞教授。
+1990年9月-1993年4月 北京科技大学材料科学学院表面科学与腐蚀工程系攻读硕士学位。指导导师：李长荣教授。
+1983年9月-1987年7月 中南大学(原中南工业大学)化学系分析化学专业攻读学士学位。
+三、研究领域：
+新型的纳米电催化剂应用于低温燃料电池及电解水制氢
+新型的多孔电极材料应用于电化学储氢、锂离子/金属电池、染料敏化/钙钛矿太阳能电池、电化学电容器、金属-空气燃料电池
+新型的纳米光催化剂应用于光解水制氢及光还原二氧化碳为可重新使用的燃料
+催化、电化学、能源科学、环境科学、生物医学、化学及材料科学等其它研究领域
+四、代表性研究成果：
+在清洁再生新能源材料研究领域发表同行评审 SCI论文200余篇，包括Cell Press旗舰期刊 Matter（7篇）、Device (2篇) 、Chem (1 篇)，中科院认定的50多种顶级学术期刊上发表论文126篇。另外，同其他科学家合作撰写英文专著4部。第一作者或通讯作者论文139篇。论文他引次数过万，H指数(h-Index)65。高被引、热点文章30余篇。近几年连续入围全球能源领域2%顶尖科学家榜单。由于在化学科学研究方面取得突出成就和为推动化学科学发展做出卓越贡献，去年4月当选英国皇家化学会会士(Fellow of the Royal Society of Chemistry)。此外，今年11 月入围高被引科学家榜单。
+1) Guangfu Liao,* Yingluo He, Haijiang Wang, Baizeng Fang,* Noritatsu Tsubaki* and Chunxue Li,* Carbon neutrality enabled by structure-tailored zeolite-based nanomaterials, Device 2023, 1, 100173, https://doi.org/10.1016/j.device.2023.100173
+2) Qian-Qian Chu, Zhijian Sun, Dong Wang, Bo Cheng,* Haijiang Wang* and Ching-Ping Wong* and Baizeng Fang,* Encapsulation: The path to commercialization of stable perovskite solar cells, Matter 2023, 6, 3838-3863.
+3) Linfang Lu,* Hui Zheng, Yunxia Li, Yuheng Zhou and Baizeng Fang,* Ligand-free synthesis of noble metal nanocatalysts for electrocatalysis, Chem. Eng. J. 2023, 451, 138668 (IF: 16.744) (38 citations) (Top) (热点/高被引)
+4) Bingxin Zhou, Arman Bonakdarpour, Ivan Stoševski, Baizeng Fang* and David P. Wilkinson,* Modification of Cu current collectors for lithium-metal batteries – A review, Prog. Mater. Sci. 2022, 130, 100996 (IF: 48.165) (41 citations) (Top) (热点)
+5) Guangfu Liao, Chunxue Li,* Shi-Yong Liu, Baizeng Fang* and Huaming Yang,* Z-scheme systems: from fundamental principles to characterization, synthesis, and photocatalytic fuel-conversion applications, Phys. Rep. 2022, 983, 1-41 (IF: 30.51) (38 citations) (Top) (高被引)
+6) Guangfu Liao, Li Zhang,* Chunxue Li, Shi-Yong Liu, Baizeng Fang* and Huaming Yang,* Emerging carbon-supported single-atom catalysts for biomedical applications, Matter 2022, 5, 3341-3374 (IF: 19.967) (21 citations) (Top)
+7) Guangfu Liao,* Chunxue Li, Shi-Yong Liu, Baizeng Fang* and Huaming Yang,* Emerging frontiers of Z-scheme photocatalytic systems, Trends Chem. 2022, 4, 111-127 (IF: 22.448) (81 citations) (Top) (高被引)
+8) Pooja Shandilya,* Shabnam Sambyal, Rohit Sharma, Parteek Mandyal and Baizeng Fang,* Properties, optimized morphologies and advanced strategies for enhanced photocatalytic applications of WO3 based photocatalysts, J. Hazard. Mater. 2022, 428, 128218 (IF: 14.224) (102 citations) (Top) (热点/高被引)
+9) Guangfu Liao,* Chunxue Li, Xinzheng Li and Baizeng Fang,* Emerging polymeric carbon nitride Z-scheme systems for photocatalysis, Cell Rep. Phys. Sci. 2021, 2, 100355 (IF: 7.832) (120 citations) (高被引)
+10) Linfang Lu,* Shihui Zou* and Baizeng Fang,* The critical impacts of ligands on heterogeneous nanocatalysis: a review, ACS Catal. 2021, 11, 6020-6258 (IF: 13.700) (143 citations) (Top) (热点/高被引)
+11) Guiying Xu, Xiaolong Guo, Xingxing Cheng,* Jian Yu and Baizeng Fang,* A review of Mn-based catalysts for low-temperature NH3-SCR: NOx removal and H2O/SO2 resistance, Nanoscale 2021, 13, 7052-7080 (IF: 8.307) (78 citations) (Top) (高被引)
+12) Yanping Liu,* Shijie Shen, Zhigang Li, Dandan Ma, Gang Xu and Baizeng Fang,* Mesoporous g-C3N4 nanosheets with improved photocatalytic performance for hydrogen evolution, Mater. Charact. 2021, 174, 111031 (IF: 4.537) (43 citations) (Top) (高被引)
+13) Liu Zhong, Ruizheng Zhao, Huinan Che, Haiyang Gao* and Baizeng Fang,* Emerging graphitic carbon nitride-based materials for biomedical applications, Prog. Mater. Sci., 2020, 112, 100666 (IF: 48.165) (174 citations) (Top) (高被引)
+14) Guangfu Liao, Yan Gong, Li Zhang, Haiyang Gao,* Guan-Jun Yang* and Baizeng Fang,* Semiconductor polymeric graphitic carbon nitride photocatalysts: the “holy grail” for the photocatalytic hydrogen evolution reaction under visible light, Energy Environ. Sci. 2019, 12, 2080-2147 (IF: 39.714) (708 citations) (Top) (热点/高被引)
+15) Guangfu Liao, Yan Gong, Jiasheng Fang, Li Zhang, Liu Zhong, Zushun Xu,* Haiyang Gao* and Baizeng Fang,* Unlocking the door to highly efficient Ag-based nanoparticles catalysts for NaBH4-assisted nitrophenol reduction, Nano Res. 2019, 12, 2407-2436 (IF: 10.269) (103 citations) (Top)
+16) Guangfu Liao, Jiasheng Fang,* Sihan Li, Qing Li,* Zushun Xu and Baizeng Fang,* Ag-based nanocomposites: synthesis and applications in catalysis, Nanoscale 2019, 11, 7062-7096 (IF: 8.307) (192 citations) (Top) (高被引)
+17) Wenwu Zhong, Zhiping Lin,* Shangshen Feng, Da Wang, Shijie Shen, Qinghua Zhang, Lin Gu, Zongpeng Wang* and Baizeng Fang,* Improved oxygen evolution activity of IrO2 by in situ engineering of ultra-small Ir sphere shell utilizing pulse laser, Nanoscale 2019, 11, 4407-4413 (IF: 8.307) (96 citations) (Top) (高被引)
+18) Yan-Jie Wang,* Wenyu Long, Lele Wang, Rusheng Yuan,* Anna Ignaszak, Baizeng Fang* and David P. Wilkinson,* Unlocking the door to highly active ORR catalysts for PEMFC applications: polyhedron-engineered Pt-based nanocrystals, Energy Environ. Sci. 2018, 11, 258-275 (IF: 39.714) (329 citations) (Top) (高被引)
+五、获奖与荣誉称号：
+2023 年高被引科学家 (Highly Cited Researcher)
+2021-2023 年全球顶尖百分之二科学家
+英国皇家化学会会士 (Fellow of the Royal Society of Chemistry),2022
+北京科技大学研究生海外合作导师 （2021年9月 至 2023年7月）
+西安交通大学博士生海外合作导师 （2014年9月 至 2019年7月）
+奥地利 Lise Meitner 科学家 (2005 年 6 月至 2006 年 5 月)
+日本学术振兴会研究员 (The Japan Society for the Promotion of Science (JSPS) Research Fellow, 2000 年 10月至 2002 年 9月)","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/10633.htm"
+"10","广东省","东莞理工学院","化学工程与能源技术学院","易莉芝","易莉芝
+   基本情况：
+出生年月：1985年1月         籍贯：湖南长沙
+学位：博士
+职称：讲师
+电子邮箱：yilz@dgut.edu.cn
+教育、工作经历：
+2017年11月-至今，东莞理工学院化学工程与能源技术学院，教师
+2014年7月- 2017年10月，中国科学院广州能源研究所，助理研究员
+2011年9月-2014年6月，中国科学院大学，热能工程，博士
+2007年9月-2010年6月，华南理工大学，化学工程，硕士
+2003年9月-2007年6月，莆田学院，生物技术，本科
+研究领域：
+水合物相关分子模拟、化工过程模拟
+讲授课程：
+分析化学、化工分离工程
+代表性研究成果：
+（一）论文情况
+1. Yi Lizhi, Liang Deqing, Prediction of the phase equilibria of nitrogen hydrates: a molecular dynamics simulation study, The 9th International Conference on Gas Hydrates. Colorado, USA, 2017.
+2. 易莉芝，梁德青*，周雪冰. NaCl溶液中CO2置换CH4水合物的分子动力学模拟，工程热物理学报, 2016; 37,1383-1387.
+3. Yi Lizhi, Liang Deqing, Liang Shuai, Zhou Xuebing. Molecular dynamics study of CH4–CO2 mixed hydrate dissociation, Asia-Pacific Journal of Chemical Engineering, 2015; 10, 823-832.
+（二）科研项目
+1. CO2-N2混合水合物结晶的分子机理研究，国家自然科学基金青年基金51606199，20万，2017.1-2019.12，主持
+2. 水合物法分离烟气中CO2的分子机理研究，广东省自然科学基金2015A030310422， 10万，2015.8-2018.8，主持","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1271.htm"
+"29","广东省","东莞理工学院","化学工程与能源技术学院","曲万军","一、基本信息：
+学位：博士研究生
+职称：特聘副教授、硕士生导师
+电子邮箱：quwanjun@dgut.edu.cn
+二、教育、工作经历：
+2020-04至今，东莞理工学院，化学工程与能源技术学院，特聘副教授；
+2016-09至2020-01，中国科学院大学/中国科学院工程热物理研究所，工程热物理，博士，导师：洪慧研究员，金红光院士课题组；
+2013-09至2016-03，华北电力大学（北京），热能工程，硕士，导师：段立强教授，杨勇平校长课题组；
+2009-09至2013-07，集美大学，热能与动力工程，学士。
+三、研究领域：
+主要从事太阳能全光谱高效制氢及分布式能源系统。具体包括1) 光伏-光热耦合制氢机理、方法与实验。2) 太阳能高效聚光集热方法与技术。3) 多能互补冷、热、电系统集成与优化。
+累计主持国家自然科学基金青年基金项目1项、广东省自然科学基金项目2项、广东省分布式能源系统重点实验室重点领域攻坚项目1项；已在Applied Energy, Energy Conversion and Management等国内外知名期刊发表论文33余篇，授权发明专利7项。
+四、代表性研究成果：
+（一）代表性论文/论著
+[1] Wanjun Qu, Yang Gao, Song He, Jing Zhang, Kewen Peng, Haifeng Wu, Ruilin Wang, Hui Hong. Further study on carbon fixation using green power for a solar-assisted multi-generation system with carbon capture. Energy Conversion and Management, 2023, 276: 116574.（一 区，top期刊，IF:11.533）
+[2] Wanjun Qu, Jing Zhang, Runhua Jiang, Xiangyu Liu, Hao Zhang, Yang Gao, Hui Hong, Tong Liu. An energy storage approach for storing surplus power into hydrogen in a cogeneration system. Energy Conversion and Management, 2022, 268:116032. （一 区，top期刊，IF:11.533）
+[3] Wanjun Qu, Jing Zhang, Hui Hong, Runhua Jiang, Kewen Peng, Ruilin Wang, Haifeng Wu, Runsheng Yan. An approach of studying the full-spectrum conversion potential for solar photovoltaic and thermal processes. Energy Conversion and Management, 2022, 253:115194. （一 区，top期刊，IF:11.533）
+[4] Wanjun Qu, Xueli Xing, Yali Cao, Taixiu Liu, Hui Hong, Hongguang Jin. A concentrating solar power system integrated photovoltaic and mid-temperature solar thermochemical processes. Applied Energy, 2020, 262:114421.（一 区，top期刊，IF:9.746）
+[5] Wanjun Qu, Hui Hong, Hongguang Jin. A spectral splitting solar concentrator for cascading solar energy utilization by integrating photovoltaics and solar thermal fuel. Applied Energy, 2019, 248: 162-173.（一区，top期刊，IF:8.848）
+[6] Wanjun Qu, Hui Hong, Bosheng Su, Sanli Tang, Hongguang Jin. A concentrating photovoltaic /Kalina cycle coupled with absorption chiller. Applied Energy, 2018, 224: 481-493.（一区，top期刊，IF:8.426）
+[7] Wanjun Qu, Hui Hong, Qiang Li, Yimin Xuan. Co-producing electricity and solar syngas by transmitting photovoltaics and solar thermochemical process. Applied Energy, 2018, 217: 303-313.（一区，top期刊，IF:8.426）
+[8] Wanjun Qu, Ruilin Wang, Hui Hong, Jie Sun, Hongguang Jin. Test of a solar parabolic trough collector with rotatable axis tracking. Applied Energy, 2017, 207: 7-17.（一区，top期刊，IF:7.9）
+[9] Ruilin Wang, Wanjun Qu, Hui Hong, Jie Sun, Hongguang Jin. Experimental performance of 300 kWth prototype of parabolic trough collector with rotatable axis and irreversibility analysis. Energy, 2018, 161: 595-609.（共同一作，二区，top期刊，IF:5.537）
+[10] Bosheng Su, Wanjun Qu, Wei Han, Hongguang Jin. Feasibility of a hybrid photovoltaic/thermal and liquid desiccant system for deep dehumidification. Energy Conversion and Management, 2018, 163: 457-467.（一区，top期刊，IF:7.181）
+（二）科研项目
+1. 国家自然科学基金青年科学基金项目，光电光热协同甲烷重整机理及燃料电池-热机复合动力系统研究，30万，2024.01-2026.12，在研，主持；
+2. 广东省基础与应用基础研究基金面上基金项目，聚光太阳能光电-光热协同驱动甲烷重整制氢机理与方法研究，15万，2024.01-2026.12，在研，主持；
+3. 广东省基础与应用基础研究基金项目，聚光太阳能-化学链发电系统液态燃料固碳的集成机理与方法研究，10万，2020.10-2023.09，结题，主持；
+4. 广东省分布式能源系统重点实验室重点领域攻坚项目，多能互补分布式能源系统中太阳能制氢/储氢不可逆性机理研究，10万，2020.11-2022.10，结题，主持；
+5. 国家自然科学基金重大项目，太阳能利用中的能量传递与转换, 1500万，2016.01-2020.12，结题，参加；
+6. 国家科技部重点基础研究发展计划（973计划）项目，燃煤发电系统能源高效清洁利用的基础研究，1653万，2015-01至2019-08，结题，参加；
+7. 中国科学院知识创新工程重要方向项目，太阳能与燃煤互补发电技术研究， 492万，2011.01-2017.07，结题，参加。
+
+（三）专利
+[1] 曲万军，高阳，张静，林有胜，黄斯珉，杨敏林. 一种太阳能和甲烷互补驱动的零排放多联产系统，国家发明专利授权号：ZL 2023 1 0641008.5..
+[2] 曲万军，张静，刘泰秀. 一种便携式自控吸水即时降温装置及其使用方法，国家发明专利授权号：ZL 2021 1 1044846.1.
+[3] 曲万军，黄赐坤，龙云飞，林敏榆，洪茄祥. 一种利用可再生清洁能源的空气取水装置，国家实用新型专利授权号：ZL 2021 2 2159093.0.
+[4] 张静，曲万军，高燕，杨世濠，白云香，彭可文，葛亚. 一种仿生花朵的无跟踪自聚光海水淡化装置，国家发明专利申请号：202211142816.9.（授权公告封卷）
+[5] 杨世濠，陈勋祥，谢斯菡，余立权，黄晓敏，曲万军，陈佰满，高阳. 一种便携式吸水降温装置, 国家实用新型专利授权号：ZL 2022 2 1417007.X.
+[6] 黄嘉栋，杨海洲，谢培龙，曲万军，高阳. 一种电能低损耗驱动的主动式冷、热保温箱, 国家实用新型专利授权号：ZL 2022 2 0860579.9.
+[7] 洪慧，曲万军，张浩. 全光谱太阳能制氢-储氢一体化系统，国家发明专利授权号：CN109336051B.（授权日：2020-08-25）
+[8] 洪慧，金红光，曲万军，唐三力，孙杰. 一种线聚焦聚光光伏-光热全光谱梯级利用装置，国家发明专利授权号：CN106788236B.（授权日：2018-06-19）
+[9] 段立强，曲万军，乐龙，夏堃，杨勇平. 一种太阳热互补联合循环发电系统，国家发明专利授权号：CN104963776B.（授权日：2016-11-23）
+[10] 段立强，夏堃，曲万军，乐龙，杨勇平. 用熔融碳酸盐燃料电池捕获燃煤电厂CO2的系统及方法，国家发明专利授权号：CN104847424B.（授权日：2016-05-18）
+
+五、获奖、荣誉称号：
+1. 东莞市三类特色人才，2023；
+2. 中国科学院优秀博士学位论文奖，2021，全国共100人；
+3.  中国工程热物理学会吴仲华优秀研究生奖，2020，全国共9人；
+4. 北京市优秀毕业生，2020；
+5. 中国科学院大学优秀毕业生，2020；
+6. 宝钢优秀学生奖，2019，国科大共10人；
+7. 博士研究生国家奖学金，2018。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8713.htm"
+"41","广东省","东莞理工学院","化学工程与能源技术学院","朝洁","朝洁
+基本信息：                                  
+学位：博士
+职称：讲师
+电子邮箱：chaojie1031@163.com
+教育、工作经历：
+2018年9月-至今，东莞理工学院化学工程与能源技术学院，教师
+2014年9月- 2018年6月，华南理工大学，材料加工工程专业，博士
+2012年9月-2014年6月，东华大学，材料工程专业，硕士
+2008年9月-2012年6月，河南工业大学，材料科学与工程专业，学士
+研究领域：
+1、  锂离子电容器、高容量MoS2基电极材料结构与性能调控
+2、  锂离子电池负极材料结构与性能调控
+讲授课程：
+《纳米技术材料》
+代表性研究成果：
+（一）论文/论著
+1. (1) Jie Chao, Junwen Deng, Weijia Zhou, Jiangwen Liu, Renzong Hu, Lichun Yang*, Min Zhu, Oliver G. Schmidt. Hierarchical nanoflowers assembled from MoS2/polyaniline sandwiched nanosheets for high performance supercapacitors.
+Electrochimica Acta. 2017, 243, 98-104.
+2. Jie Chao, Lichun Yang, Jiangwen Liu, Renzong Hu, Min Zhu*. Sandwiched MoS2/polyaniline nanosheets array vertically aligned on reduced graphene oxide for high performance supercapacitors. Electrochimica Acta. 2018. 270, 387-394.
+3. Jie Chao, Lichun Yang, Jiangwen Liu, Renzong Hu, Min Zhu*.Oxygen incorporated and polyaniline intercalated 1T/2H hybrid MoS2 nanosheets arrayed on reduced graphene oxide for high performance supercapacitors. Journal of Physical Chemistry C. 2018. 122, 8128-8136.
+4. Kaibing Xu, Jie Chao, Wenyao Li, Qian Liu, Zhijie Wang, Xijian Liu, Rujia Zou, Junqing Hu*. CoMoO4·0.9H2O nanorods grown on reduced graphene oxide as advanced electrochemical pseudocapacitor materials. RSC Advances, 2014, 4, 34307-34314.（共同一作）
+（二）科研项目
+1. 面上项目：非层状过渡金属碳化物基纳米材料的结构调控、储锂性能及机理(51671089)，在研，参与
+（三）专利
+1. 胡俊青*，朝洁，徐开兵，安磊。一种钼酸镍与石墨烯纳米复合材料的制备方法。授权公告号：CN103779105B
+2. 胡俊青*，朝洁，徐开兵，安磊。一种钼酸钴与石墨烯纳米复合材料的制备方法。授权公告号：CN103811189B
+   ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1252.htm"
+"33","广东省","东莞理工学院","化学工程与能源技术学院","李志勇","一、
+
+基本信息：                           
+学位：博士研究
+职称：副教授、硕士生导师
+电子邮箱：lizhiyong.dgut@foxmail.com;
+ 二、教育、工作经历：
+2020/09-至今东莞理工学院，化学工程与能源技术学院，能源系，讲师
+2018/03-2020/08，南方科技大学，力学与航空航天系，博士后
+2017/10-2018/01，南方科技大学，力学与航空航天系，访问学者
+2012/09-2017/06，美国肯塔基大学，机械工程系，博士，导师：Sean Bailey
+2009/09-2012/06, 中南大学，热能与动力工程系，硕士，导师：孙志强
+2005/09-2009/06，中南大学，热能与动力工程系，学士
+ 三、研究领域：
+主要研究方向是计算流体力学，计算传热学。回溯性自适应湍流模型研究，数据驱动型计算流体力学，基于机器学习的湍流数值模型；多孔介质与可压缩湍流数值模型开发，流致噪声大规模并行计算；旋转机械流固耦合计算和叶片表面应力分析；浸没边界法湍流边界层建模与求解；目前主持国家自然科学基金1项、广东省分布式能源系统重点实验室重点领域项目1项；已发表SCI检索论文10余篇，并担任physics of fluids和Aerospace Science and Technology多个期刊审稿人。
+  三、代表性研究成果：
+（一）代表性论文/论著
+(1) Zhiyong Li, Tingting Tang T, Liu Yu, Arcondoulis EJG, Yang Y. (2020) Numerical study of aerodynamic and aeroacoustic characteristics of flow over porous coated cylinders: Effects of porous properties. Aerospace Science and Technology. (中科院一区)
+(2) Zhiyong Li, Tingting Tang, Yu Liu, Elias JG Arcondoulis, and Yannian Yang. ""Implementation of compressible porous-fluid coupling method in an aerodynamics and aeroacoustics code–Part II: Turbulent flow."" Applied Mathematics and Computation 373 (2020): 124988.(中科院一区)
+(3) Wen, Kaibin, Elias JG Arcondoulis, Zhiyong Li, and Yu Liu. ""Structure resolved simulations of flow around porous coated cylinders based on a simplified pore-scale model."" Aerospace Science and Technology 119 (2021): 107181.(中科院一区，本人指导本科生发表)
+(4) Tang, Tingting, Zhiyong Li, Shimin Yu, Jianhui Li, and Peng Yu. ""Opposing-buoyancy mixed convection through and around arrays of heated cylinders."" Journal of Fluid Mechanics 949 (2022): A8.(共同一作，本领域顶刊)
+(5) Liu, Zhiyuan, Zhiyong Li, Yuan Zhang, Yidian Zhang, and Ben Zhao. ""Thermodynamic analysis of using chemical-looping combustion in Allam-Z cycle instead of common combustion."" Energy Conversion and Management 254 (2022): 115229.(中科院一区)
+(6) Zhiyong Li, Huaibao Zhang, Yu Liu, and James M. McDonough. ""Implementation of compressible porous–fluid coupling method in an aerodynamics and aeroacoustics code part I: Laminar flow."" Applied Mathematics and Computation 364 (2020): 124682.(中科院一区)
+(7) Zhiyong Li, Jesse B. Hoagg, Alexandre Martin, and Sean C.C. Bailey. ""Retrospective cost adaptive Reynolds-averaged Navier–Stokes k–ω model for data-driven unsteady turbulent simulations."" Journal of Computational Physics 357 (2018): 353-374.(中科院二区，本领域顶刊)
+(8) Zhiyong Li, Huaibao Zhang, Sean C.C. Bailey, Jesse B. Hoagg, Alexandre Martin, A data-driven adaptive Reynolds-averaged Navier–Stokes k–ω model for turbulent flow, In Journal of Computational Physics, Volume 345, 2017, Pages 111-131, ISSN 0021-9991.(中科院二区，本领域顶刊)
+(9) Yang, Y., Liu, Y., Hu, H., Liu, X., Wang, Y., Arcondoulis, E. J., & Li, Z. (2020). Experimental study on noise reduction of a wavy multi-copter rotor. Applied Acoustics, 165, 107311.(JCR 二区)
+(10) Arcondoulis, Elias JG, Yu Liu, Zhiyong Li, Yannian Yang, and Yong Wang. ""Structured Porous Material Design for Passive Flow and Noise Control of Cylinders in Uniform Flow."" Materials 12, no. 18 (2019): 2905. (JCR 二区)
+（二）科研项目
+（1） 国家自然科学基金青年项目，跨音速流与多孔介质流耦合模型及其自适应优化算法研究，2023/01-2025/12，30万，主持，在研
+（2） 横向课题，浸没边界法湍流边界层算法，2022/10-2023/10，10万，主持，在研
+（3） 横向课题，离心压气机数值模拟与流场分析，2021/07-2022-07,16.4万，主持，已结题
+（4）  Kentucky Science and Engineering Research and Development Excellence program, grant number KSEF-3396-RDE-0181, 2013/07-2016/12，参加
+（5） NASA Kentucky EPSCoR Award, NNX10AV39A, 2016/07-2017/07，参加
+ （三）专利
+无
+ 五、获奖、荣誉称号：
+1.  2020-广东省本科高校课程思政优秀案例-能源与动力工程专业英语中的课程思政
+  ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8673.htm"
+"8","广东省","东莞理工学院","化学工程与能源技术学院","李超"," 李超
+基本信息：
+学位：博士
+职称：讲师
+联系电话：0769-22861296
+电子邮箱：lichao@dgut.edu.cn
+教育、工作经历：
+2018年6月-至今，东莞理工学院化学工程与能源技术学院，教师
+2014年6月-2018年6月，重庆大学，供热、供燃气、通风及空调工程，博士
+2010年11月-2014年6月，中航工业长沙设计院，暖通空调设计，机电工程师
+2007年9月-2010年7月，青岛生物能源研究所/广州能源研究所，热能工程，硕士
+2003年9月-2007年6月，中南大学，热能与动力工程，学士
+研究领域：
+建筑能源应用、暖通空调设计、室内环境
+讲授课程：
+工程力学、工程热力学
+代表性研究成果：
+（一）论文/论著
+1. Chao Li ; Hong Liu* ; Baizhan Li; Yong Cheng; Chengqiu Du; Aihong Sheng, Human responses to the air relative humidity ramps: A chamber study, Building and Environment, 2017.7.19, 123: 458~468
+2. Chao Li ; Hong Liu* ; Baizhan Li; Aihong Sheng,Seasonal effect of humidity on human comfort in a hot summer/cold winter zone in China, Indoor And Built Environment, 2019.2.1, 28(2): 264~277","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1267.htm"
+"17","广东省","东莞理工学院","化学工程与能源技术学院","杨小平","一、
+
+基本信息：
+学位：博士研究生
+职称：副教授、硕士生导师
+电子邮箱：yangxp@dgut.edu.cn
+二、教育、工作经历：
+2015年01月- 至今，东莞理工学院化学工程与能源技术学院，副教授
+2012年07月-2014年12月，东莞理工学院化学工程与能源技术学院，讲师
+2019年09月- 2012年06月，华南理工大学，化学工程专业，博士
+2002年09月- 2005年06月，中科院广州能源研究所，热能工程专业，硕士
+1998年09月- 2002年06月，浙江大学，制冷与低温工程专业，学士
+三、研究领域：
+主要从事动力电池热管理、太阳能热发电、高温蓄热、节能技术等研究。
+主持国家自然科学基金项目1项、广东省自然科学基金项目2项，广东省普通高校特色创新类项目1项，省级教研教改项目1项，参与4项国家重点研发计划项目子课题；在SCI/EI刊物上发表论文32篇，其中，第一作者20篇；授权中国发明专利6件，实用新型12件。
+四、代表性研究成果：
+（一）代表性论文/论著
+1. X. Yang, G. Deng, Z. Cai, H. Li, J. Zeng, H. Yang, Experimental study on novel composite phase change materials with room-temperature flexibility and high-temperature shape stability in a battery thermal management system, International Journal of Heat and Mass Transfer 206 (2023).
+2. X. Yang, Z. Zhang, Z. Cai, Y. Chen, Experimental investigation on room-temperature flexible composite phase change materials in thermal management of power battery pack, Applied Thermal Engineering 213 (2022).
+3. X. Yang, Z. Cai, Thermodynamic performance analysis of supercritical CO2 Brayton cycle, Thermal Science 25 (2021) 3933-3943.
+4. X. Yang, Z. Cai, Y. Zuo, Heat transfer performance of a storage system of molten-salt thermocline-packed bed, Journal of Renewable and Sustainable Energy 12 (2020).
+5. X. Yang, Z. Cai, T. Luo, A special type of tube receiver unit for solar thermal power generation towers, Energy Reports 6 (2020) 2841-2850.
+6. X. Yang, Z. Cai, An analysis of a packed bed thermal energy storage system using sensible heat and phase change materials, International Journal of Heat and Mass Transfer 144 (2019).
+（二）科研项目
+1. 国家自然科学基金：高温熔盐在多孔介质填料床蓄热过程中的传热特性和机理研究 (51306039)，25万，结题，主持。
+2. 国家自然科学基金：低温余热除湿的分布式能源系统及其集成机理研究（51276042），80万，结题，参与。
+3. 国家科技部973项目：多能源互补的全工况系统集成（2010CB227306），458万，结题，参与。
+4. 广东省自然科学基金委员会项目：太阳能热发电中填充床蓄热过程的传热特性和机理研究（2015A030313655），10万，结题，主持。
+5. 广东省自然科学基金委员会项目：常温柔性相变材料耦合平板热管的电池热管理系统传热特性研究（2022A1515011053），10万，在研、主持。
+6. 广东省“创新强校工程”创新项目：高温熔盐级联式相变填充床蓄热系统的传热性能研究，（2021KTSCX131），3万，结题，主持。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8823.htm"
+"12","广东省","东莞理工学院","化学工程与能源技术学院","杨敏林","一、基本信息：
+学位：博士研究生
+职称：教授、博士生导师
+联系电话：0769-22861998
+电子邮箱：yangml@dgut.edu.cn
+二、教育、工作经历：
+2013年12月-至今，东莞理工学院党委委员、副校长
+2010年12月-至今，东莞理工学院，教授
+2004年09月-2009年06月，华南理工大学，化学工程专业，博士
+1991年12月-至今，东莞理工学院，教师
+1988年06月-1991年12月，华中理工大学电力系电力技术研究所，讲师
+1985年08月-1988年05月，华中理工大学，流体机械及动力工程专业，硕士
+1981年09月-1985年07月，华中理工大学，水力机械专业，学士
+三、研究领域：
+主要从事分布式能源系统、膜式液体除湿及膜式热泵等方面的研究工作。主持国家自然科学基金面上项目3项、国家自然科学基金重点项目子课题1项、国家重点研发计划子课题1项；作为项目副组长主持国家863目标导向项目1项、广东省重大科技专项1项；参与国家863重点项目、973项目等多项；发表研究论文70余篇，其中被SCI收录50余篇；获授权发明专利10余件，获得全国发明展览会铜奖1项，完成省级科技成果鉴定1项。
+四、代表性研究成果：
+（一）代表性论文/论著
+1. Zhang W K, Yang M (共同一作), Chen J C, et al. Quasi-counter flow parallel-plate membrane contactors (QCPMC) for liquid desiccant air dehumidification: Conjugate heat and mass transfer. International Journal of Thermal Sciences, 2018, 134: 665-672.
+2. Xiao L, Yang M, Yuan W Z, et al. Macroporous ceramic membrane condenser for water and heat recovery from flue gas. Applied Thermal Engineering, 2021, 186: 116512.
+3. Xiao L, Yang M, Zhao S, et al. Entropy generation analysis of heat and water recovery from flue gas by transport membrane condenser. Energy, 2019, 174: 835-847.
+4. Xiao L, Yang M, Yuan W Z, et al. Performance characteristics of a novel internally-cooled plate membrane liquid desiccant air dehumidification system. Applied Thermal Engineering, 2020, 172: 115193.
+5. Low E, Huang S M, Yang M, et al. Design of cascade analysis for renewable and waste heat recovery in a solar thermal regeneration unit of a liquid desiccant dehumidification system. Energy, 2021, 235: 121284.
+6. Huang S M, Yuan W Z, Yang M. Advances in heat and mass transfer in the membrane-based dehumidifiers and liquid desiccant air dehumidification systems[J]. International Journal of Heat and Mass Transfer, 2019, 139: 881-906.
+（二）科研项目
+1. 国家自然科学基金：液-液气隙膜接触器传递过程热力学特性研究，60万，主持。
+2. 国家自然科学基金：多能互补的能质能势表征与提质增效机理，150万，主持。
+3. 国家重点研发计划子课题：多能源驱动的溶液直接吸收热泵与制冷，180万，主持。
+（三）专利
+1. 何奎，黄斯珉，杨敏林。一种皂膜式微化学反应器。发明专利，授权号：ZL202210548500.3。
+2. 肖烈晖，黄斯珉，杨敏林。一种脱硫废水浓缩协同烟气热湿回收系统及方法。发明专利，授权号：ZL202111660965.X。
+3. 肖烈晖，黄斯珉，杨敏林，元武智。一种基于亲水性中空纤维膜的污染物脱除、水分及余热回收一体化装置及方法。发明专利，授权号：ZL202111535630.5。
+4. 黄斯珉，肖烈晖，杨敏林。一种基于陶瓷膜热湿回收装置的水分及余热回收利用系统。发明专利，授权号：ZL201910121434.X。
+5. 黄斯珉，何奎，杨敏林，杨宇，元武智。一种生产中空纤维膜组件的方法及其装置。发明专利，授权号：ZL201711269631.3。
+五、获奖、荣誉称号：
+1. 2020年中国产学研合作创新与促进奖（优秀奖）：传热传质强化型微反应器、膜接触器及其应用，本人排名：2。
+2. 2020年东莞理工学院教学成果奖（一等奖）：一核心、双模式、三特征、四路径： 两岸合作培养新工科人才的突破与创新，本人排名：1。
+3. 省重点实验室主任，授予单位：广东省科学技术厅，授予时间：2020.11。
+4. 省重点学科带头人，授予单位：广东省教育厅，授予时间：2018.1。
+5. 中国工程热物理学会理事，授予单位：中国工程热物理学会，授予时间：2019.10。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8863.htm"
+"35","广东省","东莞理工学院","化学工程与能源技术学院","林有胜","一、基本信息：
+学位：博士研究生
+职称：特聘副研究员、硕士生导师
+电子邮箱：linys@dgut.edu.cn
+二、教育、工作经历：
+2023年3月-至 今，东莞理工学院化学工程与能源技术学院，特聘副研究员
+2019年5月-2023年2月，东莞理工学院化学工程与能源技术学院，讲师
+2018年7月-2019年4月，广州能源检测研究院，工程师
+2013年7月-2018年6月，华南理工大学，电站系统及控制，工学博士
+2009年9月-2013年6月，华南理工大学，热能与动力工程，学士
+
+三、研究领域：
+主要从事化学链燃烧、生物质能源清洁高效利用等方面的研究工作。累计主持国家自然科学基金青年科学基金项目1项、广东省自然科学基金项目2项、广东省能源高效清洁利用重点实验室开放基金1项。已在Energy、Fuel、Bioresource Technology、Energy & Fuels等国际知名期刊上发表论文30余篇，授权国家发明专利4项。
+
+四、代表性研究成果：
+（一）代表性论文/论著
+1. Y.S. Lin; Z.F. Hu, Y. Ge, et al., Chemical looping with oxygen uncoupling of biomass-derived hydrochar with Cu-based oxygen carriers modified by alkaline earth metals.Energy 280, 2023, 128211.
+2.Y.S. Lin; Y. Ge; Q. He, et al., The redistribution and migration mechanism of chlorine during hydrothermal carbonization of waste biomass and fuel properties of hydrochars. Energy 2022, 244, 122578.
+3.Y. S. Lin; Y. Ge; H. M. Xiao, et al., Investigation of hydrothermal co-carbonization of waste textile with waste wood, waste paper and waste food from typical municipal solid wastes. Energy 2020, 210.
+4.Y. S. Lin; Y. Ge; Q. He, et al., Chemical structure analysis and fast micro-pyrolysis study of hydrochar derived from hydrothermal treatment of municipal solid waste. Waste Management & Research 2021, 39 (2), 270-278.
+5.Y. S. Lin; X. Q. Ma; X. W. Peng, et al., Hydrothermal carbonization of typical components of municipal solid waste for deriving hydrochars and their combustion behavior. Bioresource Technology 2017, 243, 539-547.
+6.Y. S. Lin;X. Q. Ma; X. W. Peng, et al., Forecasting the byproducts generated by hydrothermal carbonisation of municipal solid wastes. Waste Management & Research 2017, 35 (1), 92-100.
+7.Y. S. Lin; X. Q. Ma; X. W. Peng, et al., Combustion, pyrolysis and char CO2-gasification characteristics of hydrothermal carbonization solid fuel from municipal solid wastes. Fuel 2016, 181, 905-915.
+8.Y. S. Lin; X. Q. Ma; X. W. Peng, et al., A Mechanism Study on Hydrothermal Carbonization of Waste Textile. Energy & Fuels 2016, 30 (9), 7746-7754.
+9.Y. S. Lin; X. Q. Ma; X. W. Peng, et al., Effect of hydrothermal carbonization temperature on combustion behavior of hydrochar fuel from paper sludge. Applied Thermal Engineering 2015, 91, 574-582.
+10.Y. S. Lin; X. Q. Ma; X. X. Ning, et al., TGA FTIR analysis of co-combustion characteristics of paper sludge and oil-palm solid wastes. Energy Conversion and Management 2015, 89, 727-734.
+
+（二）科研项目
+1.国家自然科学基金青年科学基金项目，52306132，主持。
+2.广东省基础与应用基础研究基金自然科学基金广东省自然科学基金-面上项目，2023A1515011333，主持。
+3.广东省基础与应用基础研究基金自然科学基金区域联合基金-青年基金项目，2019A1515110271，结题，主持。
+4.广东省能源高效清洁利用重点实验室开放基金，X2d/B2180320，结题，主持。
+5.国家自然科学基金面上项目，51676074，60万，结题，参与。
+6.国家自然科学基金面上项目，51476060，80万，结题，参与。
+
+（三）专利
+1.林有胜，何涛，何清，肖汉敏，葛亚。一种热力发电厂的供电分配方法、装置及电子设备，2024-01-02，中国，CN116703115B (发明专利)。
+2. 林有胜，何清，葛亚，肖汉敏。一种基于无碱型脱氯剂的生物质脱氯方法，2023-03-14，中国，CN115029168B (发明专利)。
+3.林有胜，何清，葛亚，肖汉敏。一种基于无碱型脱氯剂的生物质脱氯方法，2023-3-14，中国，CN115029168B (发明专利)。
+4.林有胜，陈鹏威，冯梓峰，张一帆，肖汉敏，陈佰满。一种用于高氯农林生物质水热脱氯的反应釜，2021-7-23，中国，ZL202021967015.2 (实用新型专利)
+5.马晓茜，林有胜，余昭胜。一种基于CFD的工业锅炉SNCR脱硝装置，2015-7-1，中国, ZL20121050102(发明专利)。
+6.马晓茜，林有胜，胡善超。一种工业污泥协同脱除SO2/NOx污染物的装置，2014-9-10，中国，ZL201420213038.2。(实用新型专利)。
+
+五、获奖、荣誉称号：
+1.第十五届全国大学生节能减排社会实践与科技竞赛三等奖（第一指导老师）
+2.东莞理工学院优秀共产党员","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8683.htm"
+"11","广东省","东莞理工学院","化学工程与能源技术学院","楚家玉","一、  
+
+基本信息：     
+学位：博士研究生
+职称：讲师、硕士生导师
+电子邮箱：chujy@dgut.edu.cn
+二、教育、工作经历：
+(1)2015-09 至 2020-01, 哈尔滨工业大学, 化学工程与技术, 博士
+(2)2013-09 至 2015-07, 哈尔滨工业大学, 分析化学, 硕士
+(3)2009-09 至 2013-07, 齐齐哈尔大学, 化学, 学士
+三、研究领域：
+主要从事新能源材料的制备、及其在制氢及储能方面的应用研究。在能的综合梯级利用及太阳能化学发电等方面开展创新研究。
+
+四、代表性研究成果：
+（一）代表性论文/论著
+1.Zhen Yu, Yihang Li, Ruonan Gu, Jingang Song, Shaoan Cheng*, Jiayu Chu*. Polymeric solid wastes for efficient and stable solar desalination and the outdoor clean water production performance prediction [J]. Separation and Purification Technology, 2022, 131, 121938.
+2.Zhen Yu, Shuning Li, Yang Chen，Xiaoting Zhang, Jiayu Chu*, Yaoxin Zhang, Swee Ching Tan*. Intensifying the co-production of vapor and salts by a one-waybrine-flowing structure driven by solar irradiation or waste heat [J]. Desalination, 2022, 539, 115942.
+3.Jiayu Chu, Guoji Sun, Xijiang Han*, Xin Chen, Jiajun Wang, Wen Hu, Iradwikanari Waluyo, Adrian Hunt, Yunchen Du, Bo Song* and Ping Xu*. Ultrafine CoO nanoparticles as a cocatalyst for enhanced photocatalytic hydrogen evolution[J]. Nanoscale, 2019, 11(33), 15633-15640.
+4.Jiayu Chu, Yanchun Sun, Xijiang Han*, Bin Zhang, Yunchen Du, Bo Song* and Ping Xu*. A mixed titanium oxides strategy for efficient photocatalytic hydrogen evolution[J]. ACS Applied Materials & Interfaces. 2019, 11(20), 18475–18482.
+5.Jiayu Chu, Xijiang Han*, Zhen Yu, Yunchen Du, Bo Song* and Ping Xu*. Highly efficient visible-light-driven photocatalytic hydrogen production on CdS/Cu7S4/g-C3N4 ternary heterostructures[J]. ACS Applied Materials & Interfaces. 2018, 10(24), 20404–20411.
+6.Leilei Kang, Jiayu Chu, Hongtao Zhao, Ping Xu* and Mengtao Sun. Recent progresses on the applications of graphene in surface-enhanced raman scattering and plasmon-induced catalytic reactions[J]. Journal of Materials Chemistry C. 2015, 3(35), 9024-9037.（共同一作）
+7.Jiayu Chu, Peng Miao, Xijiang Han*, Yunchen Du, Xianjie Wang, Bo Song* and Ping Xu*. Ultrafast surface plasmon-induced photodimerization of p-aminothiophenol on Ag/TiO2 nanoarrays[J]. ChemCatChem. 2016, 8(10), 1819-1824.
+8.Jiayu Chu, Xijiang Han*, Zhen Yu, Yunchen Du, Bo Song* and Ping Xu*. Fabrication of H-TiO2/CdS/Cu2-xS ternary heterostructures for enhanced photocatalytic hydrogen production[J]. ChemistrySelect. 2017, 2(9), 2682-2687.
+（二）科研项目
+(1) 广东省基础与应用基础研究基金委员会, 省自然科学基金联合基金项目, 2021A1515111189, CdS基异 质结构中光生电荷分离调控策略及光催化产氢研究, 2021-10 至 2024-09, 10万元, 在研, 主持
+(2) 清华海峡研究院（厦门）, 应用研究, 11001202112134, 可再生能源制氢成本及优化配置研究, 2021- 12 至 2022-04, 18万元, 结题, 主持
+(3)博士科研启动项目
+（三）专利
+(1) 楚家玉; 冯乐军; 王晓季; 张德兴 ; 一种CdS/Cu7S4/CdMoO4纳米异质结构的制备方法及应用, 2021- 8-23, 中国, ZL 2021 1 0966602.2
+(2) 楚家玉; 于桢; 冯乐军; 宋金刚; 王择颖; 翟子锋; 陈逸飞; 刘湘虹 ; 一种太阳能驱动的盐提取蒸发 器, 2022-01-29, 中国, 202210111615.6
+(3) 楚家玉; 于桢; 冯乐军; 宋金刚; 黄锦沛; 周嘉敏; 何世杰; 匡永欣 ; 一种处理高盐混合卤水零液体 排放的太阳能结晶器, 2022-2-21, 中国, 202210157115.6
+(4) 徐平; 楚家玉; 韩喜江; 杜耘辰; 张彬 ; 一种二氧化钛/三氧化二钛纳米复合材料的原位合成方法, 2018-9-3, 中国, ZL201811022986.7
+(5) 徐平; 楚家玉; 韩喜江; 杜耘辰; 张彬 ; 一种CdS/CoO纳米异质结构的制备方法, 2018-12-21, 中国, ZL201811573324.9
+(6) 徐平; 楚家玉; 韩喜江; 张彬; 杜耘辰 ; 一种H#TiO2/CdS/Cu2#xS纳米带的制备方法, 2016-12-30, 中国, ZL201611253917.8","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/11223.htm"
+"34","广东省","东莞理工学院","化学工程与能源技术学院","洪南龙","一、基本信息：
+学位：博士研究生
+职称：特聘副教授、硕士生导师
+联系电话：13751858154
+电子邮箱：hongnl@dgut.edu.cn
+二、教育、工作经历：
+2018年01月- 至今，东莞理工学院化学工程与能源技术学院，特聘副教授
+2016年09月-2017年12月，惠州学院化学与材料工程学院，讲师
+2011年09月- 2016年06月，华南理工大学，化学工程专业，博士
+2007年09月- 2011年06月，广东工业大学，生物化学专业，学士
+三、研究领域：
+主要从事木质素的改性与高值化利用、太阳能电池空穴传输材料的制备与光伏性能研究及Pickering乳液的制备与应用等方面的研究工作。累计主持广东省自然科学基金面上项目1项、广东省粤莞联合基金青年基金项目1项、广东省科技厅农村科技特派员项目1项。以第一作者/通讯作者已累计接收和发表SCI收录的学术论文10余篇，授权国家发明专利3项。
+四、代表性研究成果：
+（一）代表性论文/论著
+1. Hong N, Wang J, You J. Lignin-based polymer with high phenolic hydroxyl group content prepared by the alkyl chain bridging method and applied as a dopant of PEDOT[J]. Frontiers of Chemical Science and Engineering, 2023,17(8):1075-1084.
+2. Hong N. Pickering emulsions stabilized by an alkyl chain-bridged lignin-based polymer without additives and organic solvents[J]. Journal of Agricultural and Food Chemistry, 2022, 70(4): 1196-1202.
+3. Hong N, Qiu X. Structure-adsorption behavior–dispersion property relationship of alkyl chain cross-linked lignosulfonate with different molecular weights [J]. ACS Omega, 2020, 5(10): 4836-4843.
+4. Hong N, Xiao J, Li Y, et al. Unexpected fluorescent emission of graft sulfonated-acetone–formaldehyde lignin and its application as a dopant of PEDOT for high performance photovoltaic and light-emitting devices[J]. Journal of Materials Chemistry C, 2016, 4(23): 5297-5306.
+5. Hong N, Li Y, Qiu X. A highly efficient dispersant from black liquor for carbendazim suspension concentrate: Preparation, self‐assembly behavior and investigation of dispersion mechanism[J]. Journal of Applied Polymer Science, 2016, 133(9).
+6. Hong N, Yu W, Xue Y, et al. A novel and highly efficient polymerization of sulfomethylated alkaline lignins via alkyl chain cross-linking method[J]. Holzforschung, 2016, 70(4): 297-304.
+7. Hong N, Zhang S, Yi C, et al. Effect of polycarboxylic acid used as high-performance dispersant on low-rank coal-water slurry[J]. Journal of Dispersion Science and Technology, 2016, 37(3): 415-422.
+8. Hong N, Li Y, Zeng W, et al. Ultrahigh molecular weight, lignosulfonate-based polymers: preparation, self-assembly behaviours and dispersion property in coal–water slurry[J]. RSC Advances, 2015, 5(28): 21588-21595.
+9. Hong N, Li Y, Zeng W, et al. Ultrahigh molecular weight, lignosulfonate-based polymers: preparation, self-assembly behaviours and dispersion property in coal–water slurry[J]. RSC Advances, 2015, 5(28): 21588-21595.
+10. Li Y, Hong N. An efficient hole transport material based on PEDOT dispersed with lignosulfonate: preparation, characterization and performance in polymer solar cells[J]. Journal of Materials Chemistry A, 2015, 3(43): 21537-21544.
+（二）科研项目
+1. 广东省自然科学基金面上项目：功函数可调的木质素基空穴传输材料的设计及其在太阳能电池中的应用 (2023A1515010830)，10万，在研，主持。
+2. 广东省粤莞联合基金青年基金项目：基于木质素基聚合物的Pickering乳液的构建与调控(2019A1515111167)，10万，结题(通过)，主持。
+3. 广东省科技厅农村科技特派员项目：农村科技扶贫项目(KTP20200245)，10万，结题，主持。
+4. 企事业单位委托科技项目：2018年科技产业创新服务专项行动任务书(GC200104-40)，25万元，结题，主要参加。
+（三）专利
+1. 洪南龙. 一种Pickering乳液及其制备方法和应用, 发明专利，申请号：CN201911017008 .8；授权号：ZL201911017008.8.
+2. 邱学青、易聪华、洪南龙、杨东杰、周明松、李远. 一种碱木质素改性聚羧酸系水煤浆分散剂的制备方法，发明专利，申请号：201410531726 .8；授权号：ZL201410531726.8.
+3. 邱学青、李远、杨东杰、洪南龙、楼宏铭、黄锦浩. 一种烷烃桥联的木质素基聚合物及其制备方法与应用，发明专利，申请号：201410225443.0；授权号：ZL201410225443.0.
+4. 洪南龙、李远、洪家珊、徐勇军、陈捷超、康世民. 一种木质素基聚合物、导电材料和太阳能电池，发明专利，申请号：202111445209 .5.
+5. 洪南龙. 一种木质素基聚合物聚集体及其制备方法和应用, 发明专利，申请号： CN202010735190.7.
+五、获奖、荣誉称号：
+1. 2021年被广东省科技厅授予“优秀农村科技特派员”荣誉称号。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8663.htm"
+"13","广东省","东莞理工学院","化学工程与能源技术学院","涂军令","一、  
+
+ 
+基本信息：
+学位：博士研究生
+职称：特聘副教授、硕士生生导师
+电子邮箱：tujl@dgut.edu.cn
+二、教育、工作经历：
+2015.09 – 至今    东莞理工学院，化学工程与能源技术学院，特聘副教授
+2012.09 – 2015.07  中国科学院大学，广州能源研究所，博士
+2009.09 – 2012.07  中国林业科学研究院，林产化学工业研究所，硕士
+2005.09–2009.07   中南林业科技大学，林学，学士
+三、研究领域：
+主要从事能源催化转化和催化材料设计合成方面的研究工作，主要研究方向包括制氢储氢、生物质制备液体燃料及化学品等过程的催化剂设计、制备和应用。主持国家自然科学基金青年基金（“生物质热解气合成航空燃油多功能催化体系的构建和机理研究，2017.1-2019.12,20万元”）1项，已结题。共同主持“2020年省级农村科技特派员项目，2020.7-2022.7,10万元”，作为科技特派员联系广东省清远市扶村村；参与973、863项目以及国家重点研发计划子课题3项，参与其它省部级项目3项，市厅级项目3项；以第一作者/通讯作者发表论文12篇，以第一发明人授权发明专利3项，实用新型专利3项；主持教研教改项目4项。
+四、代表性研究成果：
+（一）代表性论文/论著
+1. Anti-coking Ni encapsulated in SiO2 via one-pot reverse microemulsion method as a versatile catalyst for CO2 methane reforming, Journal of CO2 Utilization, 2023.
+2. Ni@ZrO2 yolk-shell catalyst for CO2 methane reforming: Effect of Ni@SiO2 size as the hard-template, Journal of Colloid and Interface Science. 2021.
+3. Enhanced porosity of Ni@Hollow meso-SiO2 catalyst for CO2 reforming of methane, International Journal of Hydrogen Energy, 2021.
+4. One-pot synthesis of carbon-coated Fe3O4 nanoparticles with tunable size for production of gasoline fuels, New Journal of Chemistry, 2018.
+5. Thermal Decomposition Behavior of Hydroxytyrosol (HT) in Nitrogen Atmosphere Based on TG-FTIR Methods, Molecules, 2018.
+6. Design of Carbon‐Encapsulated Fe3O4 Nanocatalyst with Enhanced Performance for Fischer–Tropsch Synthesis[J]. Chemcatchem, 2015, 7(15):2323-2327.
+7. Synthesis of Fe3O4-nanocatalysts with different morphologies and its promotion on shifting C5+, hydrocarbons for Fischer–Tropsch synthesis[J]. Catalysis Communications, 2015, 59:211-215.
+（二）科研项目
+1. 生物质热解气合成航空燃油多功能催化体系的构建和机理研究，国家自然科学基金青年基金，主持，2017.1-2019.12，20万元，已结题
+2. 2020年省级农村科技特派员项目，2020.7-2022.7, 作为科技特派员联系广东省清远市扶村村，10万元
+（三）专利
+1. 一种蛋黄-蛋壳结构Fe@ZrO2费托合成催化剂的制备方法和应用，国家发明专利，授权公告号: CN114950430B, 2023
+2. 一种用于处理生态肥料产出废液的装置, 国家发明专利，授权公告号: CN114405371B, 2023
+3. 一种节能型的有机肥原料好氧发酵设备, 国家发明专利，授权公告号: CN114349555B, 2022
+五、获奖、荣誉称号：
+1. 东莞市特色人才；
+2. 2022年东莞理工学院青年教师教学技能竞赛三等奖；
+3. 东莞理工学院2022年“课程思政”优秀教学案例二等奖；
+4. 2023年东莞理工学院课程思政课堂教学设计大赛二等奖；
+5. 2023年东莞理工学院教学创新大赛二等奖；
+6. 东莞理工学院2021年度优秀共产党员；
+7. 东莞理工学院2019-2020年度优秀教师。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/11273.htm"
+"16","广东省","东莞理工学院","化学工程与能源技术学院","潘格川崎","一、
+
+
+基本信息：
+学位：博士
+职称：讲师、硕士生导师
+联系电话：0769-22862039
+电子邮箱：pangechuanqi@163.com
+二、教育、工作经历：
+2022年01月-至今，东莞理工学院化学工程与能源技术学院，讲师
+2018年08月-2021年02月，中山大学，博士后
+2012年09月-2018年06月，中山大学，力学（热流工程）专业，博士
+2008年09月-2012年06月，中山大学，热能与动力工程专业，学士
+三、研究领域：
+主要从事先进储能材料与储能系统设计及性能调控、储能材料热性能数据库构建等方面的研究工作。
+长期从事储能材料与储能技术研究。主持和参与了相关国家自然科学基金多项，累计主持国家自然科学基金青年基金项目1项，参与国家自然科学基金重点项目1项、国家自然科学基金国际合作项目1项、广东省重点领域研发计划项目1项。在上述项目中，解决了含氧酸盐和卤化物熔盐材料微结构与热物性的理论计算问题，相关结果先后在International Journal of Heat and Mass Transfer、Nano Energy、Applied Energy和Solar Energy Materials and Solar Cells等国际知名期刊上发表论文十余篇，并得到业内何雅玲院士、丁玉龙教授的认可和引用。
+四、代表性研究成果：
+（一）代表性论文/论著
+1. Pan Gechuanqi;Ding Jing;Chen Pin;Yan Hui;Du Yunfei;Lee Du-jong;Lu Yutong, Finite-size effects on thermal property predictions of molten salts. Solar Energy Materials and Solar Cells 2020, 221(1), 110884.
+2. Pan, Gechuanqi; Wei, Xiaolan; Yu, Chao; Lu, Yutong; Li, Jiang; Ding, Jing; Wang, Weilong; Yan, Jinyue, Thermal performance of a binary carbonate molten eutectic salt for high-temperature energy storage applications. Applied Energy 2020, 262, 114418.
+3. Ding Jing;Pan Gechuanqi;Du Lichan;Lu Jianfeng;Wang Weilong;Wei Xiaolan;Jiang Li, Molecular dynamics simulations of the local structures and transport properties of Na2CO3 and K2CO3. Applied Energy 2018, 227, 555-563.
+4. Ding Jing;Pan Gechuanqi;Du Lichan;Lu Jianfeng;Wei Xiaolan;Li Jiang;Wang Weilong;Yan Jinyue, Theoretical prediction of the local structures and transport properties of binary alkali chloride salts for concentrating solar power. Nano Energy 2017, 39, 380-389.
+5. Pan Ge Chuanqi;Jing Ding;Wang Weilong;Lu Jianfeng;Jiang Li;Wei Xiaolan, Molecular simulations of the thermal and transport properties of alkali chloride salts for high-temperature thermal energy storage. International Journal of Heat and Mass Transfer 2016, 103, 417-427.
+（二）科研项目
+1. 国家自然科学基金：含极化效应卤化物熔盐热质输运特性及热稳定性机理研究(52106233)，30万，在研，主持。
+2. 国家自然科学基金：熔盐传热蓄热材料及大规模储热系统应用中关键科学问题(51961165101)，110万，结题，参与。
+3. 国家自然科学基金：基于熔盐材料的热能储存与输运的关键热科学问题(51436009)，395万，结题，参与。
+4. 广东省重点领域研发计划项目：高通量计算与数据融合的新材料设计平台(2019B010940001)，2000万，结题，参与。","3","","","2024-09-19 22:18:23","2024-09-27 17:34:49","0",""
+"2","广东省","东莞理工学院","化学工程与能源技术学院","王晓季","王晓季
+基本信息
+学位：博士
+职称：二级教授、硕士生导师
+电子邮箱：172911664@qq.com
+教育、工作经历
+2018年9月-至今，东莞理工学院化学工程与能源技术学院，二级教授
+2016年3月-2019年4月，江西科技师范大学生命科学学院，院长
+2013年4月-2016年3月，江西科技师范大学学科建设办公室，主任
+2010年6月-2013年4月，江西科技师范大学科研处，处长
+2005年12月-2010年6月，江西科技师范学院药学院，副院长
+2004年6月-2005年12月，中国检验认证集团技术开发部，技术主管
+2002年3月- 2004年6月，天津大学，应用化学专业，博士
+1999年9月-2002年3月，天津大学，应用化学专业，硕士
+1993年9月-1997年6月，天津理工大学，精细化工专业，学士
+研究领域
+主要研究方向为生物活性天然产物的全合成、手性药物、医药中间体以及精细化学品的合成、开发与工艺改进。
+讲授课程：
+《有机化学》、《绿色化学》、《食品工程原理》、《精细化学合成》、《食品工艺学》、《天然产物化学》等。
+ 代表性研究成果
+（一）论文/论著
+[1] Jiwu Wang, Wang Li, Lixia Liu, Bo Wang, Yi Zhou, Shuangping Huang*, Xiaoji Wang*. A unified and straightforward total synthesis of (+)-porantheridine and (−)-6-epi-porantheridine. Org. Chem. Front., 2019, DOI: 10.1039/c8qo01398e. （SCI 一区）
+[2] Shipeng Chen, Baohao Zhang, Nanxiang Zhang, Fengsheng Ge, Bao Zhang, Xiaoji Wang*, and Jian Song*. Development of Self-Healing D‑Gluconic Acetal-Based Supramolecular Ionogels for Potential Use as Smart Quasisolid Electrochemical Materials. ACS Appl. Mater. Interfaces 2018, 10, 5871−5879. (SCI 一区)
+[3] Qu, S. W.; Chen, Y.; Wang, X. J.; Chen, S. P.; Xu, Z. S. *; Ye, T.* Total Synthesis of Largamide B. Chem. Commun. 2015, 51, 2510-2513. （SCI 一区）
+[4] Long Zhen, Hui Fan, Xiaoji Wang, Liqin Jiang*. Synthesis of Thiocarbamoyl Fluorides and Isothiocyanates Using CF3SiMe3 and Elemental Sulfur or AgSCF3 and KBr with Amines. Org. Lett., 2019, DOI: 10.1021/acs.orglett.9b00383. （SCI 一区）
+[5] Zhibin Zhang, Xiao Leng, Shenkun Yang, Cheng Liang, Shuangping Huang*, Xiaoji Wang*. A novel total synthesis of aculeatin A via a stepwise approach., RSC Adv., 2017, 7, 9813–9818. （SCI 二区）
+[6] Shuangjie Lin, Jianting Zhang, Zhibin Zhang, Tianxiang Xu, Shuangping Huang*, XiaojiWang*. Asymmetric Total Synthesis of Ieodomycin B., Marine Drugs. 2017, 15, 17. （SCI 二区）
+[7] Xiaoji Wang*, Junmin Feng, Zhengshuang Xu*, Tao Ye*, Yi Meng, Zhiyu Zhang. Total Synthesis and Stereochemical Assignment of Nostosin B., Marine Drugs. 2017, 15, 58. （SCI 二区）
+[8] Wang, X. J.*; Lv, C. S.; Feng, J. M.; Tang, L. J.; Wang, Z.; Liu, Y. Q.; Meng, Y.; Ye, T.*; Xu, Z. S.* Studies toward the Total Synthesis of Itralamide B and Biological Evaluation of Its Structural Analogs. Marine Drugs. 2015, 13(4): 2085–2104. （SCI 二区）
+[9] YingPeng, YongliSun, BoWang, YiZhou, ShuangpingHuang*, XiaojiWang*. Formal synthesis of (±)-aplykurodinone-1 through an intramolecular Michael addition. Tetrahedron Letters, 2019, 60(12), 839-842.（SCI 三区）
+[10] Bo Wang, Liping Wang, Ying Peng, Yiying Pang, Hesheng Xiao, Xiaoji Wang*, Shuangping Huang*. The First Total Synthesis of (±)-Methyl Salvianolate A Using a Convergent Strategy. Molecules, 2019, 24, 999. （SCI 三区）
+[11] Lixia Liu, Yongli Sun, Jiwu Wang, Wentao Ou, Xiaoji Wang*, Shuangping Huang*. A New Formal Synthetic Route to Entecavir. Synlett., 2019, DOI: 10.1055/s-0037-1612215. （SCI 三区）
+[12] Feifei Huang, Xiaotong Li, Shuangjie Lin, Cheng Liang, Shuangping Huang, Xiaoji Wang* Stereoselective total synthesis of (–)-(6S,2′R)-cryptocaryalactone., Natural Product Research., 2017, 31, (20), 2420-2427. （SCI 三区）
+[13] Huang, S.P.; Chen, S.P.; Wang, G. P.; Zhang, J. T.; Tang, L. J.; Du, G. Y.; Wang, X. J. * Total synthesis of aculeatins A, B, and formal synthesis of aculeatin D and 6-epi-aculeatin D through an asymmetic aldol reaction., Synthesis. 2015, 47, 1303-1308. （SCI 三区）
+[14] Xiaoji Wang*, Changshan Lv, Linjun Tang, Junmin Feng, Shoubin Tang, Zhuo Wang, Yuqing Liu, Yi Meng, Tao Ye, Zhengshuang Xu*. Total Synthesis of the Proposed Structure for Itralamide B. Synlett., 2014, 25, (7), 1014-1018. （SCI 三区）
+[15] Shuangping Huang, Dongwang Liu, Linjun Tang, Feifei Huang, Wei Yang, Xiaoji Wang*. A Concise and Versatile Total Synthesis of All Stereoisomers of Tarchonanthuslactone. Synlett. 2015; 26(14): 2019-2023. （SCI 三区）
+（二）科研项目
+[1] 主持在研国家自然科学基金（21562020）：天然产物Actinoallolides A-E的全合成及其类似物的生物活性研究。
+[2] 主持完成国家自然科学基金（21062006）：天然环肽化合物Itralamide B的全合成及其生物活性研究。
+[3] 主持完成江西省科技支撑重点研发计划项目（20151BBE50004）：手性催化脱羧合成非天然Beta-氨基酸的应用研究。[4] 主持完成江西省青年科学家项目：科技厅赣科发计字[2013]138号。
+[5] 主持完成江西省产学研落地计划（KJLD12036）：非天然氨基酸合成砌块制备方法的研究。
+[6] 主持完成江西省自然科学基金（20151BAB203007）：天然产物Aculeatin A和Apicularen A的全合成研究。
+[7] 主持完成江西省科技厅科技支撑计划项目（20111BBE50003）：基于自由基加成的二烷基膦酸有色金属萃取剂的设计与合成。
+[8] 主持完成江西省自然科学基金（20132BAB205075）：新型抗老年痴呆候选海洋寡糖药物MAOSC与TAU蛋白的相互作用机制及开发应用。
+（三）专利
+[1] 王晓季，刘帅，孙猛，黄双平，张志滨，王高鹏，林爽杰。2, 2, 6, 6-四甲基哌啶的合成方法，发明专利：ZL 201510789086.5。
+[2] 王晓季，冯俊敏，王李平，黄双平，孙猛，林爽杰，刘帅。合成非天然产物beta-氨基酸的新方法，发明专利：ZL 201510386306.X。
+[3] 王晓季，黄飞飞，黄双平，刘东旺，王高鹏，王李平，覃双林。一种合成天然产物Tarchonanthuslactone异构体的方法，发明专利：ZL 201410675605.0。
+[4] 王晓季，王高鹏，黄双平，张志滨，刘帅，陈世鹏。天然产物(+)-Strictifolione的合成方法，发明专利：ZL 201510789099.2。
+[5] 王晓季，冯俊敏，黄双平，林爽杰，冷晓，张志滨，粱程，杨申坤，徐天祥。一种天然产物Nostosin B的全合成方法，发明专利：ZL 201610013426.X。
+[6] 黄双平，王晓季，王高鹏，林爽杰，张志滨，冷晓。一种制备N-甲基哌嗪及其催化剂的方法，发明专利：ZL 201410675113.1。
+[7] 王晓季，黄双平，唐琳鈞，陈世鹏，王李平，吕常山，李玉萍。一种合成天然产物Jaspine B 异构体的方法，发明专利：ZL 201310568119.4。
+[8] 黄双平，覃双林，王晓季，林爽杰，冷晓，孙猛，张志滨。天然产物(+)-生物素的全合成方法，发明专利：ZL 201510386277.7。
+[9] 黄双平，张建廷，竹承林，王李平，王晓季。Ieodomycins A 和 B 立体选择性合成方法，发明专利：ZL 201310661259.6。
+[10] 王晓季，刘东旺，陈曦，吕常山，张建廷，陈世鹏，冯俊敏，唐琳钧，黄双平，1, 2, 3-三-O-乙酰基-5-脱氧-D-呋喃核糖的合成方法，发明专利：ZL 2011 1 0314660.3。
+[11] 王晓季，张建廷，刘东旺，吕常山，陈曦，孟玮，冯俊敏，陈世鹏，唐琳钧，药物中间体2-氨基降冰片烷的制备方法，发明专利：ZL 2012 1 0121279. X。专利申请日：2012.4.24.，授权公告日：2014.3.26.。
+[12] 王晓季，陈世鹏，冯俊敏，唐琳钧，张建廷，黄双平，一种合成天然环肽化合物Obyanamide的新方法，发明专利：ZL 2011 1 0218261.7
+获奖、荣誉称号：
+2013.07  江西省青年科学家
+2013.05  江西省“百千万人才”
+2013.01  南昌市政府特殊津贴专家
+2011.08  江西省高校中青年学科带头人
+2007.09  江西省高校中青年骨干教师
+2011.07  江西省高校科技成果三等奖
+2013.02  江西省社会科学先进工作者
+2011.12  江西省科技工作先进个人
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1273.htm"
+"14","广东省","东莞理工学院","化学工程与能源技术学院","肖汉敏","肖汉敏，男，工学博士，专任教师。
+
+专长及研究领域：
+1.新型燃烧技术、工业设备节能优化及监测、新能源开发等；
+2.固体废弃物热处理；
+3.电机系统及注塑机节能；
+主讲课程：《燃烧学》、《热力发电厂》、《测试技术》。
+科研论文:
+以第一作者发表论文多篇，其中SCI收录2篇，EI收录4篇，ISTP 收录1篇。论文列表如下：
+[1]. Han-min Xiao, Xiao-qian Ma, Zhi-yi Lai. Isoconversional kinetic analysis of co-combustion of sewage sludge with straw and coal. Applied Energy. 2009,86(9):1741-1745.(SCI:000265735300045；EIP20091512020913）.
+[2].Xiao Hanmin, Ma Xiaoqian, Liu Kai. Co-combustion kinetics of sewage sludge with coal and coal gangue under different atmospheres. Energy Conversion & Management. 2010，51(10):1976-1980.（SCI:000278730100017; EIP20103213134703）.
+[3].  H.M. Xiao, X.Q. Ma, K. Liu, Z.S. Yu, numerical simulation of sludge dryness under flue gas atmosphere in the riser of a fluidized bed. Proceedings of the 20th International Conference on Fluidized Bed conference.2009:812-816（EIP20100512674175）
+[4]. 肖汉敏, 马晓茜. 污泥与煤和煤矸石共燃特性研究. 燃料化学学报. 2008,36（5）：545-510.（EIP20084711720660）
+[5]. Xiao Hanmin. Thin-layer drying characteristics and modeling of paper sludge. 3rd International Conference on Digital Manufacturing and Automation, ICDMA 2012，575-580，Guangxi, China，2012.8.1-2012.8.2。(EIP20121011523570)
+[6] 肖汉敏，邹大勇.造纸污泥与煤流化床掺烧试验研究.肇庆学院学报.2011,32（02）:31-34.
+[7] 肖汉敏.造纸污泥催化热解特性及其动力学研究.肇庆学院学报.2012,33（02）:28-32.
+
+主持的科研项目:
+（1）广东高校优秀青年创新人才培养计划项目“造纸污泥干燥焚烧处理机理研究”。
+（2）能源高效清洁利用广东普通高校重点实验室开放基金项目“污泥热干燥和焚烧特性研究”
+
+参与的科研项目：
+(1)东莞市经济和信息化局“电机能效提升及注塑机节能伺服改造第三方核查工作服务供应商入库招标项目”。
+(2)国家自然基金面上项目“结晶洗涤柱分离冰晶与粘稠母液的操作原理及动态特性分析”。
+ 
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1279.htm"
+"4","广东省","东莞理工学院","化学工程与能源技术学院","肖烈晖","一、基本信息：
+学位：博士研究生
+职称：讲师、硕士生导师
+电子邮箱：xiaoliehui@163.com
+二、教育、工作经历：
+2020年11月至今，东莞理工学院化学工程与能源技术学院，讲师
+2018年09月-2020年10月，西安交通大学，动力工程及工程热物理，博士后
+2013年09月-2018年06月，华北电力大学，热能工程专业，博士
+2012年09月-2013年06月，华北电力大学，热能工程专业，硕士
+2008年09月-2012年06月，华北电力大学，热能与动力工程专业，学士
+ 三、研究领域：
+主要从事膜式烟气热湿回收、膜式液体除湿等方面研究工作。主持国家自然科学基金1项、广东省基础与应用基础研究基金1项，共发表SCI期刊论文20余篇（第一作者9篇），以第一发明人授权中国发明专利2件，获得中国产学研合作创新与促进奖1项。
+ 四、代表性研究成果：
+（一）代表性论文/论著
+1. Xiao L, Yang M, Yang Y, et al. Performance study of transport membrane condenser using condensate water to recover water and heat from flue gas. Journal of Cleaner Production, 2022, 371: 133573.
+2. Xiao L, Yang M, Huang S M, et al. Performance analysis of a cross-flow transport membrane condenser for heat and moisture recovery from flue gas. International Journal of Thermal Sciences, 2023, 183: 107880.
+3. Xiao L, Yang M, Yuan W Z, et al. Macroporous ceramic membrane condenser for water and heat recovery from flue gas. Applied Thermal Engineering, 2021, 186: 116512.
+4. Xiao L, Yang M, Yuan W Z, et al. Performance characteristics of a novel internally-cooled plate membrane liquid desiccant air dehumidification system. Applied Thermal Engineering, 2020, 172: 115193.
+5. Xiao L, Yang M, Zhao S, et al. Entropy generation analysis of heat and water recovery from flue gas by transport membrane condenser. Energy, 2019, 174: 835-847.
+ （二）科研项目
+1. 国家自然科学基金：基于亲水性中空纤维膜的烟气热湿耦合传递机理研究，24万，主持。
+2. 广东省基础与应用基础研究基金项目：湿烟气中水蒸气基于多孔陶瓷膜的冷凝及跨膜热质输运机理研究，10万，主持。
+（三）专利
+1. 肖烈晖，黄斯珉，杨敏林。一种脱硫废水浓缩协同烟气热湿回收系统及方法。发明专利，授权号：ZL202111660965.X。
+2. 肖烈晖，黄斯珉，杨敏林，元武智。一种基于亲水性中空纤维膜的污染物脱除、水分及余热回收一体化装置及方法。发明专利，授权号：ZL202111535630.5。
+3. 黄斯珉，肖烈晖，杨敏林。一种基于陶瓷膜热湿回收装置的水分及余热回收利用系统。发明专利，授权号：ZL201910121434.X。
+五、获奖、荣誉称号：
+1. 2020年中国产学研合作创新与促进奖（优秀奖）：传热传质强化型微反应器、膜接触器及其应用，本人排名：4。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8723.htm"
+"39","广东省","东莞理工学院","化学工程与能源技术学院","胡冰","基本信息：
+学位：博士研究生                                    
+职称：高级工程师
+联系电话：
+电子邮箱：hubing@dgut.edu.cn
+教育、工作经历：
+2016年01月-至今，东莞理工学院化学工程与能源技术学院，教师
+2012年09月- 2015年06月，中国科学院大学，热能工程专业，博士
+2006年08月-2011年07月，广东省特种设备检测院  检验师
+2003年09月-2006年06月，广西大学，控制理论与控制工程，硕士
+1997年09月-2001年07月，武汉大学，热能与动力工程，本科
+研究领域：
+低温余热高效综合利用
+讲授课程：
+热交换原理与技术 机械制图 化工制图 发电厂集控运行 供热工程 传递过程基础
+代表性研究成果：
+（一）论文/论著
+1、Bing Hu, Xianbiao Bu, Weibin Ma. Thermodynamic Analysis of a Rankine Cycle Powered Vapor Compression Ice Maker Using Solar Energy. Scientific World Journal Volume 2014, Article ID 742606, 6 pages（SCI）
+2、胡冰,骆超,马伟斌. 简化Kalina循环系统的热力学分析[J].农业机械学报,2014,45(4):214-219  (EI)
+3、Bing Hu,Yuanshu Cao,Weibin Ma. ORC-based low-temperature geothermal  power generation system.  Advanced Materials Research Vols. 953-954 (2014) pp 663-666  (EI/ISTP)
+4、Bing Hu, Yuanshu Cao and Weibin Ma, 2015. Performance Analysis of Organic Rankine-vapor Compression Ice Maker Utilizing Food Industry Waste Heat .  Advance Journal of Food Science and Technology, 8(1): 72-77.(EI)
+5、胡冰,马伟斌. 基于有机朗肯循环的低温地热制冷系统热力学分析[J].新能源进展,2014 Vol. 2 (2): 122-128
+（二）科研项目
+1.基于横管降膜蒸发的中低温工业废热发电系统实验研究 东莞市社发重点项目
+（三）专利
+1.地热能冷热电联产系统
+2.一种地热能空气源吸收式热泵装置
+
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1244.htm"
+"30","广东省","东莞理工学院","化学工程与能源技术学院","苏海燕","一、基本信息
+学历：博士研究生
+职称：研究员
+邮箱：suhy@dgut.edu.cn
+二、简历介绍
+苏海燕，女，汉族，1980年生于黑龙江省。理学博士，研究员，博士生导师。2009年博士毕业于中科院大连化学物理研究所物理化学专业，师从包信和院士、李微雪研究员（杰青）；2009.1−2010.12在丹麦技术大学从事博士后研究，合作导师Jens Norskov、Jan Rossmeisl；2011.3-2019.8先后在中科院大连化学物理研究所催化基础国家重点实验室和分子反应动力学国家重点实验室工作；2019年8月以学科方向领军人才引进东莞理工学院化学工程与能源技术学院，应用化学系学术带头人。
+主要从事基于第一性原理计算和微观动力学的多相催化理论研究，研究方向包括能源催化转化过程，如CO、CO2催化加氢和电化学还原、水煤气变换、甲酸分解等的机理研究和材料设计；利用第一性原理和机器学习研究催化材料结构和性能的构-效关系等。
+共发表 SCI论文60余篇，其中以（共同）一作/通讯在Nat. Commun., J. Am. Chem. Soc., Angew. Chem. Int. Ed.和ACS Catal.等期刊发表论文35篇。1篇封面，1篇Feature article，3篇热点论文（1篇内页、1篇周精选），论文总引用6000余次，单篇最高引用2400余次，H因子31。主持国家自然科学基金青年基金1项和面上项目3项、大连化学物理研究所催化基础国家重点实验室自主研究课题及东莞理工学院高层次人才项目各1项；参与国家重点研发计划、中科院战略性先导科技专项和神华集团低碳研究所等项目。Computational Materials Science期刊Review Editor；Angew. Chem. Int. Ed., ACS Catal.和Adv. Funct. Mater.等期刊审稿人。
+三、发表论文
+1. Interplay between surface structure, reaction condition and mechanism for ammonia decomposition on Ru catalyst, X. X. Zou, H. Y. Su*, X. B. Sun, W. Y. Pang, X. F. Hao, Y. H. Xu, K. J. Sun*, Appl. Surf. Sci. 2024, 649, 159175
+2. W. B. Liao, W. C. Wu, G. Y. Zhong*, S. S. Zhang; J. G. Song, X. B. Fu, S. M. Huang, S. N. Zheng, Y. J. Xu, H. Y. Su*, Cobalt nanoparticles encapsulated in nitrogen-doped carbons derived from Co-metal-organic frameworks with superb adsorption capacity for tetracycline, Sep. Purif. Technol. 2023, 326, 124793
+3. A structure-sensitive descriptor for the design of active sites on MoS2 catalysts, H. Y. Su, F. Calle-Vallejo*, K. J. Sun*, Catal. Sci. Technol. 2023, 13, 5290
+4. Origin for the chloride and citrate ions tuned morphology of Pd particles, K. J. Sun, X. B. Sun, X. X. Zou, W. Y. Pang, X. F. Hao, Y. H. Xu, H. Y. Su*, Appl. Surf. Sci. 2023, 638, 158082
+5. First-principles and microkinetic simulation studies of CO2 hydrogenation mechanism and active site on MoS2 catalyst, H. Y. Su, W. B. Liao*, K. J. Sun*, Appl. Surf. Sci. 2023, 635, 157721
+6. Identification of Cu/Sc and Cu/Ti subsurface alloys for highly efficient CO electroreduction to C2 products, H. Y. Su, X. F. Ma*, K. J. Sun*, Appl. Surf. Sci. 2023, 627, 157314
+7. Structure and reaction condition dependent mechanism for ammonia synthesis on Ru-based catalyst, K. J. Sun, X. X. Zou, X. B. Sun, W. Y. Pang, X. F. Hao, Y. H. Xu, H. Y. Su*, Appl. Surf. Sci. 2023, 613, 156060
+8. Photosynthesis assembling of ZCS/PO/Ni3Pi2 catalyst for three-stage photocatalytic water splitting into H2 and H2O2, J. G. Song*, H. Y. Su*, G. Y. Zhong, Y. Liu, X. Huang, J. Zhou, R. R. Miao, C. Li, W. B. Liao, X. B. Fu, S. M. Kang, Z. Y. Lim, H. Y. Liu, X. Y. Li, A. You*, F. Peng*, Colloid Surface A 2023, 656, 130417
+9. Finding key factors for efficient water and methanol activation at metals, oxides, mxenes, and metal/oxide interfaces, H. Y. Su, K. J. Sun*, X. K. Gu, S. S. Wang, J. Zhu, W. X. Li, C. H. Sun, F. Calle-Vallejo*, ACS Catal. 2022, 12, 1237
+10. Photochemical construction of ZnCdS/PO/FeCoNiPi-MnO composite for efficient tandem application of photocatalytic partial water splitting and overall water splitting, J. G. Song*, H. Y. Su*, M. Fang, L. Han, J. Y. Chu, C. Li, R. R. Miao, W. L. Yao, G. Zhang, A. You*, J. Mater. Chem. A 2022, 10, 16029
+11. Single-atom metal tuned sulfur vacancy for efficient H2 activation and hydrogen evolution reaction on MoS2 basal plane, H. Y. Su, X. F. Ma, K. J. Sun*, Appl. Surf. Sci. 2022, 597, 153614
+12. Bridge sulfur vacancies in MoS2 catalyst for reverse water gas shift: A first-principles study, H. Y. Su, K. J. Sun*, J. X. Liu, X. F. Ma, M. Z. Jian, C. H. Sun, Y. J. Xu, H. B. Yin, W. X. Li*, Appl. Surf. Sci. 2021, 561, 149925
+13. A synergetic effect between a single Cu site and S vacancy on an MoS2 basal plane for methanol synthesis from syngas, H. Y. Su, X. F. Ma, C. H. Sun*, K. J. Sun*, Catal. Sci. Technol. 2021, 11, 3261
+14. Mechanistic insights into direct methane oxidation to methanol on single-atom transition-metal-modified graphyne, L. J. Arachchige, A. Dong, T. Y. Wang, H. Li*, X. L. Zhang, F. Wang, H. Y. Su, C. H. Sun*, ACS Appl. Nano Mater. 2021, 4, 12006
+15. Highly selective production of ethylene by electroreduction of carbon monoxide, R. X. Chen+, H. Y. Su+, D. Y. Liu, R. Huang, X. G. Meng, X. J. Cui, Z. Q. Tian, D. H. Zhang, D. H. Deng*, Angew. Chem. Int. Ed. 2020, 59, 154 (Hot paper/Frontispiece)
+16. Trends in C-O and N-O bond scission on rutile oxides described using oxygen vacancy formation energies, H. Y. Su, X. F. Ma, K. J. Sun*, C. H. Sun, Y. J. Xu, F. Calle-Vallejo*, Chem. Sci. 2020, 11, 4119 (2020 Chemical Science HOT Article Collection/2020 ChemSci Pick of the Week Collection)
+17. CO activation and methanation mechanism on hexagonal close-packed Co catalysts: effect of functionals, carbon deposition and surface structure, H. Y. Su, C. L. Yu, J. X. Liu, Y. H. Zhao, X. F. Ma, J. Luo, C. H. Sun, W. X. Li*, K. J. Sun*, Catal. Sci. Technol. 2020, 10, 3387
+18. Intermediate adsorption states switch to selectively catalyze electrochemical CO2 reduction, Z. Pan, K. Wang, K. H. Ye, Y. Wang, H. Y. Su, B. H. Hu, J. Xiao, T. W. Yu, Y. Wang*, S. Q. Song*, ACS Catal. 2020, 10, 3871
+19. Synthesis of iron-carbide nanoparticles: identification of the active phase and mechanism of Fe-based Fischer–Tropsch synthesis, H. B. Zhao+, J. X. Liu+, C. Yang+, S. Y. Yao, H. Y. Su, Z. R. Gao, M. Dong, J. H. Wang, A. I. Rykov, J. G. Wang, Y. L. Hou*, W. X. Li*, D. Ma*, CCS Chem. 2020, 2, 2712
+20. Application of coverage dependent micro kinetic study to investigate direct H2O2 synthesis mechanism on Pd(111) surface, K. J. Sun*, X. Song, X. F. Hao, H. Y. Su, Y. H. Xu, Theo. Chem. Acc. 2020, 139, 170
+21. Room-temperature electrochemical water-gas shift reaction for high purity hydrogen production, X. J. Cui+, H. Y. Su+, R. X. Chen+, L. Yu, J. C. Dong, C. Ma, S. H. Wang, J. F. Li, F. Yang, J. P. Xiao, M. T. Zhang, D. Ma, D. H. Deng*, D. H. Zhang, Z. Q. Tian, X. H. Bao, Nat. Commun. 2019, 10, 86 (Feature article)
+22. Single Ru sites-embedded rutile TiO2 catalyst for non-oxidative direct conversion of methane: A first-principles study, X. F. Ma, K. J. Sun, J. X. Liu, W. X. Li, X. M. Cai, H. Y. Su*, J. Phys. Chem. C 2019, 123, 14391
+23. Interplay between site activity and density of BCC iron for ammonia synthesis based on first-principles theory, B. Y. Zhang+, H. Y. Su+, J. X. Liu, W. X. Li*, ChemCatChem, 2019, 11, 1928
+24. Facet-dependent of catalytic selectivity: the case of H2O2 direct synthesis on Pd surfaces, X. Song, K. J. Sun*, X. F. Hao, H. Y. Su, X. F. Ma, Y. H. Xu, J. Phys. Chem. C 2019, 123, 26324
+25. Influence of cobalt crystal structures on activation of nitrogen molecule: A first-principles study, B. Y. Zhang+, P. P. Chen+, J. X. Liu*, H. Y. Su, W. X. Li*, J. Phys. Chem. C 2019, 123, 10956
+26. First-principles and microkinetic simulation studies of the structure sensitivity of Cu catalyst for methanol steam reforming, S. S. Wang+, X. K. Gu+, H. Y. Su, W. X. Li*, J. Phys. Chem. C 2018, 122, 10811
+27. Structures and stability of adsorbed methanol on TiO2 (110) surface studied by ab initio thermodynamics and kinetic Monte Carlo simulation, K. J. Sun*, H. Y. Su, W. X. Li*, Theo. Chem. Acc. 2018, 137, 128
+28. First-principles microkinetic study of methanol synthesis on Cu(221) and ZnCu(221) surfaces, S. S. Wang, M. Z. Jian, H. Y. Su, W. X. Li*, Chinese J. Chem. Phys. 2018, 31, 284
+29. Theoretical insights and the corresponding construction of supported metal catalysts for highly selective CO2-to-CO conversion, X. D. Chen+, X. Su+, H. Y. Su*, X. Y. Liu, S. Miao, Y. H. Zhao, K. J. Sun, Y. Q. Huang*, T. Zhang, ACS Catal. 2017, 7, 4613
+30. First-principles study of structure sensitivity of chain growth and selectivity in Fischer-Tropsch synthesis on HCP cobalt catalysts, H. Y. Su, Y. H. Zhao, J. X. Liu, K. J. Sun*, W. X. Li*, Catal. Sci. Technol. 2017, 7, 2967 (2017 Catalysis Science & Technology HOT Articles)
+31. Differentiating intrinsic reactivity of copper, copper-zinc alloy, and copper/zinc oxide interface for methanol steam reforming by first-principles theory, S. S. Wang+, H. Y. Su+, X. K. Gu, W. X. Li*, J. Phys. Chem. C 2017, 121, 21553
+32. H2O and CO coadsorption on Co (0001): The effect of intermolecular hydrogen bond, J. W. Wu, J. Chen, Q. Guo*, H. Y. Su*, D. X. Dai, X. M. Yang*, Surf. Sci. 2017, 663, 56
+33. Chemical insights into the design and development of face-centered cubic ruthenium catalysts for Fischer-Tropsch synthesis, W. Z. Li+, J. X. Liu+, J. Gu+, W. Zhou, S. Y. Yao, R. Si, Y. Guo, H. Y. Su, C. H. Yan, W. X. Li*, Y. W. Zhang*, D. Ma*, J. Am. Chem. Soc. 2017, 139, 2267 (引用>100次)
+34. Carbon induced selective regulation of cobalt based Fischer-Tropsch catalysts by ethylene treatment, P. Zhai+, P. P. Chen+, J. L. Xie, J. X. Liu, H. B. Zhao, L. L. Lin, B. Zhao, H. Y. Su, Q. J. Zhu, W. X. Li*, D. Ma*, Faraday Discuss. 2017, 197, 207
+35. Establishing and understanding adsorption−energy scaling relations with negative slopes, H. Y. Su+, K. J. Sun+, W. Q. Wang, Z. H. Zeng, F. Calle-Vallejo*, W. X. Li*, J. Phys. Chem. Lett. 2016, 7, 5302
+36. CO dissociation on face-centered cubic and hexagonal close-packed nickel catalysts: A first-principles study, J. X. Liu, B. Y. Zhang, P. P. Chen, H. Y. Su, W. X. Li*, J. Phys. Chem. C 2016, 120, 24895
+37. DFT study of the stability of oxygen vacancy in cubic ABO3 perovskites, H. Y. Su, K. J. Sun*, J. Mater. Sci. 2015, 50, 1701
+38. High alcohols synthesis via Fischer-Tropsch reaction at cobalt metal/carbide interface, Y. P. Pei, J. X. Liu, Y. H. Zhao, Y. J. Ding*, T. Liu, W. D. Dong, H. J. Zhu, H. Y. Su, L. Yan, J. L. Li, W. X. Li*, ACS Catal. 2015, 5, 3620 (引用>100次)
+39. Preferential cleavage of C-C bonds over C-N bonds at interfacial CuO-Cu2O sites, M. Wang, X. K. Gu, H. Y. Su, J. M. Lu, J. P. Ma, M. Yu, Z. Zhang, F. Wang*, J. Catal. 2015, 330, 458
+40. A first-principles study of carbon-oxygen bond scission in multiatomic molecules on flat and stepped metal surfaces, Y. H. Zhao, J. X. Liu, H. Y. Su*, W. X. Li*, ChemCatChem 2014, 6, 1755
+41. Single Pd atom embedded in CeO2(111) for NO reduction with CO: A first-principles study, W. C. Ding, X. K. Gu, H. Y. Su, W. X. Li*, J. Phys. Chem. C 2014, 118, 12216
+42. Co–Co2C and Co–Co2C/AC Catalysts for Hydroformylation of 1-Hexene under Low Pressure: Experimental and Theoretical Studies, W. D. Dong, J. X. Liu, H. J. Zhu, Y. J. Ding*, Y. P. Pei, J. Liu, H. Du, M. Jiang, T. Liu, H. Y. Su, W. X. Li*, J. Phys. Chem. C 2014, 118, 19114
+43. Stability of Polar ZnO Surfaces Studied by Pair Potential Method and Local Energy Density Method, K. J. Sun, H. Y. Su, W. X. Li*, Theo. Chem. Acc. 2014, 133, 1427
+44. Crystallographic Dependence of CO Activation on Cobalt Catalysts: HCP versus FCC, J. X. Liu+, H. Y. Su+, D. P. Sun, W. X. Li, J. Am. Chem. Soc. 2013, 135, 16284 (引用>300次)
+45. Structure Sensitivity of CO Methanation on Co (0001), (10-12) and (11-20) Surfaces: Density Functional Theory Calculations, J. X. Liu, H. Y. Su*, W. X. Li*, Catal. Today 2013, 215, 36
+46. Platinum-Modulated Cobalt Nanocatalysts for Low-Temperature Aqueous-Phase Fischer-Tropsch Synthesis, H. Wang, W. Zhou, J. X. Liu, R. Si, G. Sun, M. Q. Zhong, H. Y. Su, S. J. Pennycook, J. C. Idrobo, W. X. Li*, Y. Kou*, D. Ma*, J. Am. Chem. Soc. 2013, 135, 4149 (引用>100次)
+47. Number of Outer Electrons as Descriptor for Adsorption Processes on Transition Metals and Their Oxides, F. Calle-Vallejo, N. G. Inoglu, H. Y. Su, J. I. Martinez, I. C. Man, MTM. Koper, J. Kitchin, J. Rossmeisl, Chem. Sci. 2013, 4, 1245 (引用>200次)
+48. First-principles Study of Water Activation on Cu-ZnO Catalysts, K. Yao, S. S. Wang, X. K. Gu, H. Y. Su, W. X. Li*, Chinese J. Catal. 2013, 34, 1705
+49. Ab Initio Atomistic Thermodynamics Study of Pt3Ni (111) Surface under Oxygen Environments, D. P. Sun, Y. H. Zhao, H. Y. Su, W. X. Li*, Chinese J. Catal. 2013, 34, 1434
+50. Identifying Active Surface Phases for Metal Oxide Electrocatalysts: A Study of Manganese Oxide Bi-functional Catalysts for Oxygen Reduction and Water Oxidation Catalysis, H. Y. Su, Y. Gorlin, I. C. Man, F. Calle-Vallejo, J. K. Norskov, T. F. Jaramillo*, J. Rossmeisl*, Phys. Chem. Chem. Phys. 2012, 14, 14010 (引用>200次)
+51. CO Oxidation at the Perimeters of an FeO/Pt(111) Interface and How Water Promotes the Activity: A First-Principles Study, X. K. Gu, R. H. Ouyang, D. P. Sun, H. Y. Su, W. X. Li*, ChemSusChem 2012, 5, 871
+52. Theoretical Study of the Role of a Metal-Cation Ensemble at the Oxide-Metal Boundary on CO Oxidation, D. P. Sun, X. K. Gu, R. H. Ouyang, H. Y. Su, Q. Fu, X. H. Bao, W. X. Li*, J. Phys. Chem. C 2012, 116, 7491
+53. Structural and Electronic Properties of Cobalt Carbide Co2C and Its Surface Stability: Density Functional Theory Study, Y. H. Zhao, H. Y. Su, K. J. Sun, W. X. Li*, Surf. Sci. 2012, 606, 598
+54. Force Reversed Method for Locating Transition States, K. J. Sun, Y. H. Zhao, H. Y. Su, W. X. Li*, Theo. Chem. Acc. 2012, 131, 1118
+55. Density Functional Theory Study of Ethylene Hydroformylation on Rh(111) and RhCu(111) Surface, X. F. Ma, Y. H. Zhao, H. Y. Su, W. X. Li*, Chinese J. Catal. 2012, 33, 1706
+56. Structure Evolution of Pt-3d Transition Metal Alloys under Reductive and Oxidizing Conditions and Effect on the CO Oxidation: A First-principles Study, H. Y. Su, X. K. Gu, X. F. Ma, Y. H. Zhao, X. H. Bao, W. X. Li*, Catal. Today 2011, 165, 89
+57. Rh-Decorated Cu Alloy Catalyst for Improved C2 Oxygenate Formation from Syngas, Y. H. Zhao, M. M. Yang, D. P. Sun, H. Y. Su*, K. J. Sun, J. X. Liu, X. H. Bao, W. X. Li*, J. Phys. Chem. C 2011, 115, 18247
+58. Carbon Chain Growth by Formyl Insertion on Rhodium and Cobalt Catalysts in Syngas Conversion, Y. H. Zhao, K. J. Sun, X. F. Ma, J. X. Liu, D. P. Sun, H. Y. Su, W. X. Li*, Angew. Chem. Int. Ed. 2011, 50, 5335 (引用>100次)
+59. Universality in Oxygen Evolution Electrocatalysis on Oxide Surfaces, I. C. Man, H. Y. Su, F. Calle-Vallejo, J. I. Martinez, N. G. Inoglu, J. Kitchin, T. F. Jaramillo, J. Norskov, J. Rossmeisl*, ChemCatChem 2011, 3, 1159 (Cover，引用>200次)
+60. Tailoring the Activity for Oxygen Evolution Electrocatalysis on Rutile TiO2(110) by Transition-Metal Substitution, M. Mota, A. Vojvodic, H. Metiu, I. C. Man, H. Y. Su, J. Rossmeisl, J. K. Norskov*, ChemCatChem 2011, 3, 1607 (引用>100次)
+61. Carbon Monoxide Adsorption and Dissociation on Mn-decorated Rh(111) and Rh(553) Surfaces: A First-principles Study, X. F. Ma, H. Y. Su, H. Q. Deng, W. X. Li*, Catal. Today 2011, 160, 228
+62. Interface-Confined Ferrous Centers for Catalytic Oxidation, Q. Fu+, W. X. Li+, Y. X. Yao, H. Y. Liu, H. Y. Su, D. Ma, X. K. Gu, L. M. Chen, Z. Wang, H. Zhang, B. Wang, X. H. Bao*, Science 2010, 328, 1141 (引用>700次)
+63. First-Principles Study of Carbon Monoxide Oxidation on Ag(111) in Presence of Subsurface Oxygen and Stepped Ag(221), H. Y. Su, Z. H. Zeng, X. H. Bao*, W. X. Li*, J. Phys. Chem. C 2009, 113, 8266
+64. Reversible Structural Modulation of Fe-Pt Bimetallic Surfaces and Its Effect on Reactivity, T. Ma, Q. Fu*, H. Y. Su, H. Y. Liu, W. X. Li, X. H. Bao*, Chem. Phys. Chem. 2009, 10, 1013
+65. The Effect of Water on the CO Oxidation on Ag(111) and Au(111) Surfaces: A First-Principle Study, H. Y. Su, M. M. Yang, X. H. Bao*, W. X. Li*, J. Phys. Chem. C 2008, 112, 17303 (引用>100次)
+66. Modulating the Reactivity of Ni-containing Pt(111)-skin Catalysts by Density Functional Theory Calculations, H. Y. Su, X. H. Bao*, W. X. Li*, J. Chem. Phys. 2008, 128, 194707
+67. Density Function Theory Study of CO Catalytic Oxidation on Pt(111) Pt3Ni(111) Surfaces, H. Y. Su, W. X. Li*, X. H. Bao*, Chinese J. Catal. 2008, 29, 683
+
+四、承担科研项目
+1. 国家自然科学基金委员会，面上项目，22172026，基于机器学习的高熵合金电化学水气变换阳极材料设计，2022-01至2025-12，60万元，在研，主持。
+2. 国家自然科学基金委员会，面上项目，21872136，硫化钼基材料表面配位环境和协同效应对合成气选择性调控的理论研究，2019-01至2022-12，65万元，在研，主持。
+3. 国家自然科学基金委员会，面上项目，21273224，基于金属催化材料形貌的反应动力学理论研究，2013-01至2016-12，65万元，已结题，主持。
+4. 国家自然科学基金委员会，青年科学基金项目，21103164，高温固体氧化物电解池阳极材料的密度泛函理论研究，2012-01至2014-12，25万元，已结题，主持。
+5. 中国科学院大连化学物理研究所催化基础国家重点实验室，自主研究课题，基于金属催化材料形貌的反应动力学理论研究，2012-05至2014-04，30万元，已结题，主持。
+6. 东莞理工学院，高层次人才项目，2017-11至2022-11，80万元，已结题，主持。
+7. 中国科学院，战略性先导科技专项，XDA09030101，甲烷直接制乙烯、苯和氢气，2013-07至2018-06，4033.71万元，已结题，参加（个人获得经费89万元）。
+8. 科学技术部，国家重点研发计划纳米科技专项，2017YFA0204800，新型纳米材料高效结构优化、功能预测及材料设计，2017-07至2022-06，2360万元，已结题，参加（个人获得经费75万元）。
+9. 神华集团低碳研究所，研究项目，RD1102010，高温电化学电解水和二氧化碳工艺，2010-12至2011-11，110万元，已结题，参加（个人获得经费30万元）。
+10. 科学技术部，国家重点研发计划，2021YFB2400202，固态电池失效与热失控行为研究，2021-12至2025-11，4429万元，在研，参加。
+11. 中国科学院，前沿科学重大突破择优支持项目，表界面催化反应过程本质，2014-01至2015-12，1100万元，已结题，参加。
+五、计算模拟程序（Program）
+本课题组采用的微观动力学模拟程序详见附件，更多关于该方法的介绍请参考我们最近的工作Appl. Surf. Sci. 2024, 649, 159175。
+（The microkinetic modeling program YSU_MKM used by our research group can be downloaded in the attachment. For more information on this method, please refer to our recent work Appl Surf Sci 2024, 649, 159175.）","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/11153.htm"
+"26","广东省","东莞理工学院","化学工程与能源技术学院","葛亚","一、
+
+
+基本信息：
+学位：博士研究生
+职称：副教授、硕士生导师
+电子邮箱：gey@dgut.edu.cn
+二、教育、工作经历：
+2019年7月-至今，东莞理工学院化学工程与能源技术学院，教师；
+2013年9月- 2019年6月，华中科技大学，工程热物理，工学博士。导师：刘志春；
+2009年9月- 2013年6月，华中科技大学，热能与动力工程，学士。
+三、研究领域：
+主要研究领域为传热强化理论与技术，低品位能源利用，智能算法与机器学习，多目标最优化及决策。在热管理系统、余热回收系统的主动优化有较为丰富的经验。
+目前主持/结题国家自然科学基金1项、广东省基础与应用基础研究基金项目1项、广东省分布式能源系统重点实验室重点领域攻坚项目1项、东莞理工学院科研启动项目1项。以第一作者身份已在Energy、International Journal of Heat and Mass Transfer、Renewable Energy等期刊发表了11篇SCI检索论文，授权国家发明专利、实用新型专利各1件，受邀担任Frontiers in Energy Research客座编辑，参加国际会议并作口头报告3次。
+四、代表性研究成果：
+（一）代表性论文/论著
+[1] Ge, Ya; Xiao, Qiyin; Wang, Wenhao, et al. Design of high-performance photovoltaic-thermoelectric hybrid systems using multi-objective genetic algorithm, Renewable Energy, 2022, 200: 136-145.
+[2] Ge Ya, He Qing, Lin Yousheng, et al. Multi-objective optimization of a mini-channel heat sink with non-uniform fins using genetic algorithm in coupling with CFD models. Applied Thermal Engineering, 2022: 118127.
+[3] Ge Ya, He Kui, Xiao Liehui, et al. Geometric optimization for the thermoelectric generator with variable cross-section legs by coupling finite element method and optimization algorithm. Renewable Energy, 2022, 183: 294-303.
+[4] Ge Ya, Lin Yousheng, He Qing, et al. Geometric optimization of segmented thermoelectric generators for waste heat recovery systems using genetic algorithm. Energy, 2021, 233: 121220.
+[5] Ge Ya, Lin Yousheng, Tao Shi, et al. Shape optimization for a tube bank based on the numerical simulation and multi-objective genetic algorithm. International Journal of Thermal Sciences, 161: 106787.
+[6] Ge Ya, Wang Shicheng, Liu Zhichun, et al. Optimal shape design of a minichannel heat sink applying multi-objective optimization algorithm and three-dimensional numerical method. Applied Thermal Engineering, 2019, 148: 120-128.
+[7] Ge Ya, Xin Feng, Pan Yao, et al. Optimal arrangement design of a tube bundle in cross-flow using computational fluid dynamics and multi-objective genetic algorithm. Journal of Heat Transfer, 2019, 141(7): 071801-071809.
+[8] Ge Ya, Liu Zhichun, Sun Henan, et al. Optimal design of a segmented thermoelectric generator based on three-dimensional numerical simulation and multi-objective genetic algorithm. Energy, 2018, 147: 1060-1069.
+[9] Ge Ya, Shan Feng, Liu Zhichun, et al. Optimal structural design of a heat sink with laminar single-phase flow using computational fluid dynamics-based multi-objective genetic algorithm. Journal of Heat Transfer, 2017, 140(2): 022803-022809.
+[10] Ge Ya, Liu Zhichun, Liu Wei. Multi-objective genetic optimization of the heat transfer for tube inserted with porous media. International Journal of Heat and Mass Transfer, 2016, 101: 981-987.
+[11] Ge Ya, Liu Zhichun, Liu Wei, et al. Active optimization design theory and method for heat transfer unit and its application on shape design of cylinder in convective heat transfer. International Journal of Heat and Mass Transfer, 2015, 90: 702-709.
+（二）科研项目
+[1] 国家自然科学基金青年基金项目（No. 52106081）, 30万元, 2022年1月至2024年12月, 主持；
+[2] 广东省基础与应用基础研究基金项目（No. 2019A1515110949）, 10万元, 2020年1月至2022年12月, 结题；
+[3] 广东省分布式能源系统重点实验室重点领域攻坚项目, 5万元, 2020年11月至2022年10月，结题。
+ （三）专利
+[1] 葛亚; 肖启颖; 王文豪; 谢杰; 赵浩键; 陈捷超; 林有胜; 黄斯珉; 一种变焦热电发电装置及方法, 2022-05-20, 发明专利, 授权公告号：CN114915213B.
+[2] 葛亚; 李兆熙; 肖启颖; 王文豪; 林有胜; 陈捷超; 元武智; 苗荣荣; 黄斯珉; 一种可均匀分配流量的微通道热沉, 2021-10-21, 实用新型专利, 授权公告号：CN216205587U.
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8633.htm"
+"5","广东省","东莞理工学院","化学工程与能源技术学院","蒋润花"," 基本信息：
+学位：博士
+职称：副教授，硕士生导师
+联系电话：0769-22862155
+电子邮箱：jiangrh@dgut.edu.cn
+教育、工作经历：
+2016年12月-至今，东莞理工学院化学工程与能源技术学院，教师，副教授
+2016年7月-2016年11月，东莞理工学院化学工程与能源技术学院，教师，助理研究员
+2012年4月-2016年7月，东莞理工学院能源与化工系，教师，助理研究员
+2009年6月-2012年4月，东莞理工学院广东省分布式能源系统重点实验室，助理研究员
+2011年9月-2014年7月，华南理工大学，化学工程专业，博士
+2006年9月-2009年7月，中国科学院工程热物理研究所，工程热物理专业，硕士
+2002年9月-2006年7月，天津商学院，热能与动力工程专业，学士
+研究领域：
+主要从事分布式能源系统集成、优化、调控和中低温余热高效利用等方面的研究。
+讲授课程：
+《工程热力学》、《内燃机原理》
+代表性研究成果：
+（一）论文/论著
+1.        Runhua Jiang, Huibin Yin, Kewen Peng, Yongjun Xu. Multi-objective optimization, design and performance analysis of an advanced trigenerative micro compressed air energy storage system. Energy Conversion and Management, 2019, 186:323-333.
+2.        Runhua Jiang, Huibin Yin, Minlin Yang, Xiaoxi Yang. Thermodynamic model development and performance analysis of a novel combined cooling, heating and power system integrated with trigenerative compressed air energy storage. Energy Conversion and Management, 2018, 168:49-59.
+3.         Runhua Jiang, Huibin Yin, Baiman Chen, Yongjun Xu, Minlin Yang, Xiaoxi Yang. Multi-objective assessment, optimization and application of a grid-connected combined cooling, heating and power system with compressed air energy storage and hybrid refrigeration. Energy Conversion and Management, 2018, 174:453-464.
+4.        Runhua Jiang, Wei Han, Frank G.F. Qin, Jun Sui, Huibin Yin, Minlin Yang, Yongjun Xu. Thermodynamic model development, experimental validation and performance analysis of a MW CCHP system integrated with dehumidification system. Energy Conversion and Management, 2018, 158: 176-185.
+5.        Runhua Jiang, Frank G.F. Qin, Xiaoxi Yang, Simin Huang, Baiman Chen. Performance analysis of a liquid absorption dehumidifier driven by jacket-cooling water of a diesel engine in a CCHP system. Energy and Buildings, 2018, 163: 70-78.
+6.        Runhua Jiang, Frank G.F. Qin, Huibin Yin, Minlin Yang, Yongjun Xu. Thermo-economic assessment and application of CCHP system with dehumidification and hybrid refrigeration. Applied Thermal Engineering, 2017, 125:928-936.
+7.        Runhua Jiang, Minlin Yang, Sheng Chen, Si-Min Huang, Xiaoxi Yang. Fluid flow and heat transfer across an elliptical hollow fiber membrane tube bank with randomly distributed features. International Journal of Heat and Mass Transfer, 2014,76:559-567.
+8.        Runhua Jiang, Frank G.F. Qin, Xiaoxi Yang, Simin Huang, Baiman Chen, Minlin Yang, Yongjun Xu, Youyuan Shao. Experimental study of a liquid dehumidification unit integrated in a CCHP system with varying operating condition. Energy procedia, 2015,75:1178-1188.
+9.        蒋润花, 李洪强, 尹辉斌, 黄斯珉, 杨敏林, 徐勇军. 冷热电联供系统多目标评估与运行策略研究. 工程热物理学报, 2019, 40(5):1-9.
+10.    蒋润花, 曾蓉, 李洪强, 张国强, 杨敏林, 徐勇军. 考虑气候条件及建筑类型等因素的分布式冷热电三联产系统的多目标优化及评估. 中国电机工程学报, 2016, 36(12):3206-3214.
+11.    蒋润花, 黄斯珉, 尹辉斌, 杨敏林. 分布式冷热电联供系统变工况性能实验研究. 热能动力工程, 2016,31(11):74-79.
+12.    蒋润花, 杨晓西, 杨敏林, 杨小平, 黄斯珉, 陈佰满. 内燃机缸套水低温余热驱动除湿机组实验研究. 工程热物理学报, 2014, 35(12):2338-2342.
+13.    蒋润花, 杨晓西, 杨敏林, 秦贯丰, 杨小平. 冷热电联供系统运行方式性能优化. 工程热物理学报, 2013, 34(10):1-4.
+14.    蒋润花，杨晓西，杨敏林，杨小平. 内燃机分布式冷热电联供技术应用及发展趋势. 节能技术. 2012, 30(2): 127-130.
+15.    蒋润花, 杨晓西, 蔡睿贤, 杨敏林, 杨小平. 大气环境对内燃机热电联供系统性能的影响. 工程热物理学报, 2011, 32(5):733-736.
+16.    蒋润花, 蔡睿贤, 崔平, 杨敏林. 内燃机冷热电联供系统典型变工况特性. 工程热物理学报, 2011, 32(5):201-204.
+17.    蒋润花, 蔡睿贤, 韩巍, 隋军. 太阳能与冷热电联产系统集成. 工程热物理学报，2009,30(5):721-724.
+18.    蒋润花, 尹辉斌, 陈佰满, 黄斯珉, 郭晓娟. 逻辑推理在《工程热力学》教学中的应用. 东莞理工学院学报, 2015, 22(5):95-97.
+19.    蒋润花, 左远志, 尹辉斌, 徐勇军. 探究式教学模式在《工程热力学》课程中的应用研究. 东莞理工学院学报, 2017, 24(3):111-114.
+20.    蒋润花, 左远志, 陈佰满, 徐勇军, 杨敏林. “新工科”建设背景下能源与动力工程专业人才培养模式改革探索. 东莞理工学院学报, 2018, 25(3): 118-121.
+21.    蒋润花, 左远志, 陈佰满, 杨小平, 徐勇军. 基于创新能力培养的工程热力学课程教学改革探索. 广东化工, 2018,45(20):180-181.
+（二）科研项目
+1.         国家自然科学基金青年科学基金项目，分布式冷热电联供系统全工况性能优化及主动调控机理研究、2016/01-2018/12、结题、主持。
+2.         广东省高等教育教学研究和改革项目，2017/09-2019/08、在研、主持。
+3.         国家重点研发计划项目子课题，多能互补与综合梯级利用的分布式能源系统、2016/07-2020/12、在研、参加。
+4.         国家自然科学基金重点项目，太阳能与化石能源互补系统理论与方法、2013/01-2017/12、结题、参加。
+5.         国家自然科学基金面上项目，基于相变潜热强化的生物质闪速热解机理研究、2015/01-2018/12、在研、参加。
+6.         国家自然科学基金面上项目，低温余热除湿的分布式能源系统及其集成机理研究、2013/01-2016/12、结题、参加。
+7.         国家自然科学基金面上项目，基于能效分析的分布式联供系统变工况性能研究、2012/01-2015/12、结题、参加。
+（三）专利
+1.        蒋润花，徐勇军，杨敏林，陈佰满. 一种生物质气化与太阳能热利用的冷热电联产系统，发明专利，授权专利号：ZL201610226352.8.
+2.        蒋润花，陈佰满，徐勇军，尹辉斌，杨敏林. 一种以太阳能和生物质驱动的冷热电联供系统，发明专利，授权专利号：ZL201610226351.3.
+3.        蒋润花，徐勇军，杨敏林，陈佰满. 一种以太阳能驱动的生物质气化三联供系统，发明专利，授权专利号：ZL201610226353.2.
+4.        徐勇军，蒋润花，尹辉斌，杨敏林.一种太阳能和生物质互补集成的冷热电三联供系统，发明专利，授权专利号：ZL201610226350.9.
+5.        蒋润花，王巨，邓乾锋，黄润和，汪振宇，张志豪. 一种高效太阳能蒸馏器，实用新型专利，专利授权号：ZL201621078684.8.
+6.        蒋润花，林坚金，张祖城，庄湛新，谢贝旭，杨良就，王益鸿. 一种空调机废热回收再利用装置，实用新型，专利授权号：ZL201621461187.6.
+7.        蒋润花，陈佰满，左远志，杨小平. 一种工业余热驱动喷射式制冷的海水淡化装置及应用方法，发明专利，专利申请号：201810836756.8.
+8.        蒋润花，尹辉斌，陈佰满，周燕雪. 一种集成压缩空气储能与复合制冷的冷热电联供系统，发明专利，专利申请号：201810786141.9.
+9. 蒋润花，尹辉斌，周燕雪，彭可文. 一种先进分布式多联供的压缩空气储能系统及应用方法，发明专利，专利申请号：201811642723.6.
+获奖、荣誉称号：
+1. 2017年东莞理工学院优秀教师。
+2. 2016年东莞理工学院优秀女教职员工","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1242.htm"
+"40","广东省","东莞理工学院","化学工程与能源技术学院","许书瑞","一、基本信息：
+学位：博士研究生
+职称：讲师/特聘副教授
+电子邮箱：xusr@dgut.edu.cn
+二、教育、工作经历：
+2017/12-至今，东莞理工学院化学工程与能源技术学院，特聘副教授
+2012/09-2017/06，华南理工大学，化学与化工学院，博士
+2008/09-2012/07，沈阳化工大学，化学工程学院，学士
+
+三、研究领域：
+主要围绕纳米新材料，特别是新型碳材料的制备与应用开展研究。具体包括：纳米碳材料与液相催化，特别是催化转化生物质制备高附加值化学品，光催化制备精细化学品，及污染物的吸附与降解。
+目前主持广东省粤莞基金项目1项、东莞理工学院科技产业创新服务专项行动项目1项。已累计接收和发表学术论文9篇，其中包括在 ACS Sustainable Chemistry & Engineering、Fuel等国际知名期刊上发表论文，申请国家发明专利10项、获授权5项。
+
+四、代表性研究成果：
+（一）代表性论文/论著
+[1] Shurui Xu, Guoyu Zhong, Linxin Qu, Zihao Liang, Tao Li, Yifei Yuan, Shaona Zheng, Wenbo Liao, Abdul Waqas Anjum, Xiaobo Fu*, Jing Xiao*. Unprecedented Selective Aerobic Oxidation of Alcohols to Carbonyl Compounds Over Drilled Carbon Nanotubes Assisted with Fe (NO3)3[J]. ACS Sustainable Chemistry & Engineering, 2022, 10(23): 7564-7575.
+[2] Shurui Xu, Guoyu Zhong, Baizeng Fang*. Improved stability of Pt-based electrocatalysts by enhanced metal-support interaction[J]. Chem Catalysis, 2024, 4(1)
+[3] Shurui Xu , Qiyi Li , Zhanchun Chen, Hengfei He , Lian Huang , Kaijun Xie , Hongping Yang , Wenbo Liao , Guoyu Zhong*, Baizeng Fang*. A composite catalyst of sugarcane-derived N-doped biochar and Fe (NO3)3 for improved electron transfer in stepwise oxidation of 5-hydroxymethylfurfuran under air[J]. Surfaces and Interfaces, 2024，46 : 103966.
+[4] Shurui Xu, Baoqiang Lin, Qihang Huang, Wenting Qiu, Wenqian Yuan, Weirui Xu, Xingfeng Xue, Guoyu Zhong, Wenbo Liao, Wenlong Wang, Xiaobo Fu*. Enhanced activity of alcohol oxidation on nitrogen-doped carbon by FeN interaction[J]. Diamond and Related Materials, 2023, 132: 109635.
+[5] Shurui Xu, Jie Wu, Peng Huang, Chunwen Lao, Hanchao Lai, Yuxiong Wang, Zhenyu Wang, Guoyu Zhong*, Xiaobo Fu, and Feng Peng*. Selective catalytic oxidation of benzyl alcohol to benzaldehyde by nitrates[J]. Frontiers in Chemistry, 2020, 8: 151.
+[6] Guoyu Zhong#, Shurui Xu#, Jie Chao, Xiaobo Fu, Wenbo Liao, Yongjun Xu, Ziwu Liu,* Yonghai Cao*. Biomass-derived nitrogen-doped porous carbons activated by magnesium chloride as ultrahigh-performance supercapacitors[J]. Industrial & Engineering Chemistry Research, 2020, 59(50): 21756-21767.
+[7] Guoyu Zhong*, Haomin Xie, Zhihao Xu, Sanyou Xu, Shurui Xu*, Zhuodi Cai, Xiaobo Fu, Wenbo Liao, and Rongrong Miao. Calcium Chloride Activation of Mung Bean: A Low-Cost, Green Route to Doped Porous Carbon for Supercapacitors[J]. ChemistrySelect, 2019, 4(12): 3432-3439.
+[8] Guoyu Zhong, Shurui Xu, Lei Liu, Cheng Zhi Zheng, Jingjing Dou, Fengye Wang, Xiaobo Fu*, Wenbo Liao, Hongjuan Wang*. Effect of experimental operations on the limiting current density of oxygen reduction reaction evaluated by rotating-disk electrode[J]. ChemElectroChem, 2020, 7(5): 1107-1114.
+[9] Guoyu Zhong, Simin Li, Shurui Xu, Wenbo Liao, Xiaobo Fu*, Feng Peng*. Nickel nanoparticles encapsulated in nitrogen-doped carbon nanotubes as excellent bifunctional oxygen electrode for fuel cell and metal-air battery[J]. ACS Sustainable Chemistry & Engineering, 2018, 6(11): 15108-15118.
+[10] Guoyu Zhong, Mengjie Xu, Shurui Xu, Xiaobo Fu*, Wenbo Liao*, Yongjun Xu. Green synthesis of iron and nitrogen co-doped porous carbon via","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/6313.htm"
+"24","广东省","东莞理工学院","化学工程与能源技术学院","赵莉丽","赵莉丽
+  基本信息：
+学位：博士
+职称：硕士生导师
+联系电话：
+电子邮箱：lilyaka@163.com
+教育、工作经历：
+2018年3月-至今，东莞理工学院化学工程与能源技术学院，教师
+2015年7月-2018年3月，东莞同济大学研究院，研发部部长
+2011年9月-2015年1月，中国科学院广州能源研究所，热能工程专业，博士
+2009年9月-2011年6月，中国海洋大学，材料物理与化学专业，硕士
+2005年9月-2009年6月，中国海洋大学，材料化学专业，学士
+研究领域：
+电致变色及热致变色节能窗的制备与应用
+光热转换材料在载药及成像领域的应用
+讲授课程：
+《无机化学》、《无机化学实验》、《涂料化学》
+代表性研究成果：
+（一）论文/论著
+1.    Zhao, L. L., Miao, L., Liu, C. Y., Li, C., Asaka, T., et al. Solution-processed VO2-SiO2 composite films with simultaneously enhanced luminous transmittance, solar modulation ability and anti-oxidation property [J]. Scientific Reports, 2014, 4: 7000.
+2.    Zhao, L. L., Miao, L., Tanemura, S., Zhou, J., Chen, L., Xiao, X., Xu, G. A low cost preparation of VO2 thin films with improved thermochromic properties from a solution-based process [J].Thin Solid Films 2013, 543: 157-161.
+3.    Zhao, L. L., Su, G., Liu, W., Cao, L. X., Wang, J., Dong, Z. Optical and electrochemical properties of Cu-doped NiO films prepared by electrochemical deposition [J]. Applied Surface Science, 2011, 257: 3974-3979.
+4.    Zhao, L. L., Miao, L., Liu, C. Y., Wang, H. L., et al. Enhanced thermochromic properties and solar-heat shielding ability of WxV1-xO2 thin films with Ag nanowires capping layers [J]. Journal of Nanoscience and Nanotechnology, 2015,15, 9192.
+5.    Zhao, L. L., Miao, L., Liu, C. Y., Li, C., Cheng, H. L. Facile Solution-Grown Mo-Doped Vanadium Dioxide Thermochromic Films with Decreased Phase Transition Temperature and Narrowed Hysteresis Loop Width [J]. Materials Science Forum, 2014, 787: 23-30.
+6. Liao, W. B., Zheng, S. N., Huang, X. X., Zhao, L. L., Ye, L. Y., He, Y. B., Kang, S. M., Preparation and hydrophobicity improvement of fluorinated poly (styreneacrylate)/ ferrocene composites[J]. Progress in Organic Coatings, 128 (2019) 32-39
+7. Ye, L. Y., Ma, G. H., Zheng, S. N., Huang, X. X., Zhao, L. L., Luo, H. B., Liao, W. B., Facile fabrication of fluorine-silicon-containing poly (styrene-acrylate)/SiO2 hydrophobic composites by combining physically mixing and sol-gel process, J. Coat. Technol. Res.
+8. 赵莉丽，苏革，曹立新，柳伟，王景，董征，宋美芹. 铜掺杂氧化镍电致变色薄膜的制备及性能[J].光学学报，2011，4（31）：0431001-1-6.
+9. Miao, L., Tanemura, S., Zhao, L. L., Xiao, X. D., Zhang, X. T. Ellipsometric studies of optical properties of Er-doped ZnO thin films synthesized by sol–gel method [J]. Thin Solid Films, 2013, 543, 125-129.
+10. Miao, L., Su, L. F., Tanemura, S., Fisher, C. A. J., Zhao, L. L., Liang, Q. Cost-effective nanoporous SiO2-TiO2 coatings on glass substrates with antireflective and self-cleaning properties [J]. Applied Energy, 2013, 112: 1198-1205.
+11. 王景，苏革，曹立新，柳伟，董征，赵莉丽，宋美芹. 钴掺杂对氧化镍薄膜电致变色性能的影响[J]. 材料研究学报，2011，25：179-182.
+12. 董征，刘青，苏革，柳伟，曹立新，王景，贾波，赵莉丽，宋美芹，刘晓云. 硅薄膜的恒电位诱导组装法制备及光学性能[J]. 功能材料，2011，42：30-33.
+（二）科研项目
+1. 2017年度广东省省级科技计划项目--公益研究与能力建设方向-科技装备动员项目，2017KZ01XXX，广东省亚波长功能结构与器件军民融合协同创新中心，2017/01-2019/12，50万元，在研，参与。
+2.      2017年东莞市科技装备动员项目，KZ2017-XXX，亚波长功能机构与器件军民融合协同创新中心建设，2018.01-2019.12，30万元，在研，参与。
+3.      国家自然科学基金面上项目，11774057，超构材料电磁散射的时空调控问题研究，2018.01-2021.12，72万元，在研，参与。
+4.      国家自然科学基金面上项目，11674248，超宽带双曲特异材料能带调控及布洛赫振荡研究，2017.01-2019.12，67万元，在研，参与。
+5.      广东省教育部产学研结合项目，2012B091000165，超级绝热SiO2冻干胶的制备及其在透明隔热贴膜中的示范应用，2012.09-2014.08，100万元，结题，参与。
+6. 中科院可再生能源与天然气水合物重点实验室基金，y307j51001，AZO纳米冻干胶透明隔热贴膜的研制，2011.01-2014.12，5万元，结题，参与。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1245.htm"
+"22","广东省","东莞理工学院","化学工程与能源技术学院","邵友元","邵友元
+基本信息：
+学位：博士学位
+职称：教授（研究生导师）
+联系电话：（0769-22861891）
+电子邮箱：shaoyouyuan@163.com
+ 教育经历：
+1、2001年9月至2005年9月：波兰华沙理工大学化学工程系化学工程专业
+（博士学位，国家公派留学，担任中国波兰学者学人联谊会主席）；
+2、1989年9月至1992年6月：上海华东理工大学、生物工程系生物工程专业 
+（硕士学位）；
+3、1982年9月至1986年7月：上海华东理工大学、化学工程系化学工程专业
+（学士学位）。
+工作经历：
+1、  2007年7月-至今，东莞理工学院化学工程与能源技术学院，教师（教授）
+2、1986/07-2007/06， 湖北工业大学，化学与环境工程学院，教授（2006/10），曾先后担任学院副院长、发展规划处副处长
+研究领域：
+化工现代分离技术：天然化合物分离提取；生化活性物质的分离提取。
+化工能源技术：分布式能源系统及节能技术。
+化工环保技术：工业废水治理及土壤重金属治理技术。
+讲授课程：
+《化工原理》、《食品工程原理》、《化工原理实验》、《化工原理课程设计》、《化工新型分离技术》及《专业英语》等。
+科研成果与获奖荣誉：
+在科研方面，主持并完成三十多项纵、横向项目。作为课题负责人承担了国家973计划1项、国家自然科学基金重点基金子课题1项、国家自然科学基金（面上项目）1项、教育部项目1项、国际合作项目1项、省市项目若干项。参编国家级教材一部、主编校自编教材1部。获湖北省科技进步奖三等奖一次（排名第一）。在国内外发表学术论文六十余篇。
+教学成果与获奖荣誉：
+在教学工作中，治学严谨，为人师表，教书育人，教学效果一直获得师生一致好评，曾多次获校优秀班主任、优秀党员、师德标兵、先进教师等光荣称号。先后承担和参加《化工原理》、《化学反应工程》校级、省教育厅精品课程建设项目。先后承担和参加校级和省教育厅教研教改项目多项。先后主讲过《化工原理》、《食品工程原理》、《化工原理实验》、《化工原理课程设计》、《化工新型分离技术》及《专业英语》等多门主干课程。曾先后获湖北省优秀毕业设计/论文指导教师一等奖、二等奖。
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1247.htm"
+"23","广东省","东莞理工学院","化学工程与能源技术学院","邹雪琳","一、基本信息：
+学位：博士研究生
+职称：讲师、硕士生导师
+电子邮箱：zouxl@dgut.edu.cn
+二、教育、工作经历：
+2018年09月-至今，东莞理工学院，专任教师
+2013年09月- 2018年06月，中山大学，材料物理与化学，博士
+2009年09月- 2013年06月，广西大学，化学工程与工艺专业，学士
+三、研究领域：
+（1）海水淡化过程机理探究；
+（2）工业过程中的热质传递过程机理研究。
+四、代表性研究成果：
+（一）代表性论文/论著
+1. Zou, Xuelin，Rui Zebao，Song Shiqi，Ji Hongbing，Enhanced methane combustion performance over NiAl2O4-interfacepromoted Pd/γ-Al2O3，Journal of Catalysis，338 (2016) 192–201.
+2. Zou Xuelin, Rui Zebao, Ji Hongbing, Core–Shell NiO@PdO Nanoparticles Supported on Alumina as an Advanced Catalyst for Methane Oxidation, ACS Catalysis, 7 (2017) 1615-1625.
+3. Zou Xuelin, Zilin Ma, Jiale Deng, Jiajin Zhong, Yunbing He, Jian Liu, Core-shell PdO@SiO2/Al2O3 with sinter-resistance and water-tolerance, Chemical Engineering Journal, 2020.4.30.
+（二）科研项目
+1. 国家自然科学基金青年基金：基于热质传递行为探讨Pd/CeO2@hol-ZSM-5中空多级核壳结构提升CH4催化燃烧性能的作用机制， 26万，结题，主持。
+2.广东省自然科学基金面上项目，2017A030313261，多级套管式Pd/Co3O4@hol-ZSM-5核壳结构强化热质传递过程提升CH4催化燃烧性能的作用机制研究，10万，在研，主持。
+  ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8743.htm"
+"9","广东省","东莞理工学院","化学工程与能源技术学院","郝永超","郝永超
+基本信息：
+学位：博士
+职称：教师
+电子邮箱：haoyc@dgut.edu.cn
+教育、工作经历：
+2018年12月-至今，东莞理工学院化学工程与能源技术学院，教师
+2017年7月- 2018年9月，中山大学，特聘副研究员
+2012年9月- 2017年6月，北京化工大学，化学工程与技术专业，博士学位
+2008年9月- 2012年6月，北京化工大学，应用专业，学士学位
+研究领域：
+主要从事无机纳米材料的设计合成及其电化学能源应用的研究，包括碳、纳米阵列、金属-有机框架材料（MOFs）为基础的纳米结构的制备以及在水分解（HER/OER）、燃料电池（ORR）、金属-空气电池（ORR/OER）方面的利用。目前已经以第一作者或者共同一作的身份在Materials Horizons、Journal of Materials Chemistry A等期刊发表SCI论文多篇，两篇曾入选ESI高被引论文，并担任Advanced Materials, Small, ChemSusChem, ChemCatChem等期刊的独立审稿人。
+讲授课程：
+目前担任《化工仪表及自动化》助教
+代表性研究成果：
+（一）论文/论著
+1. Y. Hao, Q. Liu, Y. Zhou, Z. Yuan, Y. Fan, Z. Ke, C. Y. Su, G. Li, A 2D NiFe Bimetallic Metal–Organic Frameworks for Efficient Oxygen Evolution Electrocatalysis, Energy Environ. Mater., 2019, 2, 18-21
+2. Y. Hao, Y. Xu, W. Liu, X. Sun, Co/CoP embedded in a hairy nitrogen-doped carbon polyhedron as an advanced tri-functional electrocatalyst, Mater. Horiz., 2018, 5, 108-115
+3. Y. Hao, Y. Xu, N. Han, J. Liu, X. Sun, Boosting the bifunctional electrocatalytic oxygen activities of CoOx nanoarrays with a porous N-doped carbon coating and their application in Zn–air batter, J. Mater. Chem. A, 2017, 5, 17804–17810
+4. Y. Hao, Y. Xu, J. Liu, X. Sun, Nickel–cobalt oxides supported on Co/N decorated graphene as an excellent bifunctional oxygen catalyst, J. Mater. Chem. A, 2017, 5, 5594–5600
+5. Y. Hao, Z. Lu, G. Zhang, Z. Chang, L. Luo, X. Sun, Cobalt-Embedded Nitrogen-Doped Carbon Nanotubes as High-Performance Bifunctional Oxygen Catalysts, Energy Technol. 2017, 5, 1265 – 1271
+6. Y. Xu#, Y. Hao#, G. Zhang, X. Jin, L. Wang, Z. Lu, X. Sun, One-Step Scalable Production of Co1-xS/Graphene Nanocomposite as High-Performance Bifunctional Electrocatalyst, Part. Part. Syst. Charact. 2016, 33, 569–575 (共同一作)
+7. Y. Xu#, Y. Hao#, G. Zhang, Z. Lu, S. Han, Y. Li, X. Sun, Room-temperature synthetic NiFe layered double hydroxide with different anions intercalation as an excellent oxygen evolution catalyst, RSC Adv., 2015, 5, 55131–55135 (共同一作)
+8. M. Luo, Z. Cai, C. Wang, Y. Bi, L. Qian, Y. Hao, L. Li, Y. Kuang, Y. Li, X. Lei, Z. Huo, W. Liu, X. Sun, X. Duan, Phosphorus oxoanion-intercalated layered double hydroxides for high-performance oxygen evolution, Nano Res. 2017, 10, 1732–1739
+9. W. Tian, H. Li, B. Qin, Y. Xu, Y. Hao, Y. Li, G. Zhang, J. Liu, X. Sun, X. Duan, Tuning the wettability of carbon nanotube arrays for efficient bifunctional catalysts and Zn–air batteries, J. Mater. Chem. A, 2017, 5, 7103–7110
+10. G. Zhang, L. Wang, Y. Hao, X. Jin, Y. Xu, Y. Kuang, L. Dai, X. Sun, Unconventional Carbon: Alkaline Dehalogenation of Polymers Yields N-Doped Carbon Electrode for High-Performance Capacitive Energy Storage, Adv. Funct. Mater. 2016, 26, 3340–3348
+11. X. Jin, G. Zhang, Y. Hao, Z. Chang, X. Sun, Residual metals present in ‘‘metal-free’’ N-doped carbons, Chem. Commun., 2015, 51, 15585–15587","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1272.htm"
+"19","广东省","东莞理工学院","化学工程与能源技术学院","郭晓娟","一、
+基本信息
+学位：博士研究生
+职称：副教授、硕士生导师
+电子邮箱：upclifeng@126.com
+二、教育、工作经历：
+2010.10-至今东莞理工学院能源与动力工程系专任教师
+2012.04-2014.07和2019.04-2022.06期间先后担任东莞理工学院化学工程与能源技术学院能源与动力工程系系主任
+2019.04-2020.03 英国阿斯顿大学欧洲生物质工程中心访问学者
+2005.09 -2008.09，天津大学，热能工程专业，博士
+2002.09 -2005.07，中国石油大学（华东），热能工程专业，硕士
+三、研究领域：
+主要从事固体废弃物处理及资源化利用、生物质能高效转化和技术开发、先进分布式能源系统筹方面的研究工作。
+先后参与国家973项目1项，国家自然科学基金3项，主持并完成省自然科学基金1项，东莞市社会科技发展项目1项，东莞市东城街道产学研合作项目1项。共发表了研究领域相关的SCI/EI学术论文近十篇，授权美国专利1项，国家发明专利4项，授权实用新型专利9项。
+四、代表性研究成果：
+（一）代表性论文/论著
+以第一作者或通讯作者在Industrial&Engineering Chemistry Research 、Journal of Analytical and Applied Pyrolysis、工程热物理学报、化工学报等国内外期刊发表论文15篇，其中SCI收录7篇、EI收录6篇，代表作如下：
+①　Xiaojuan Guo*, Zhou Xu，Xin Zheng，Xu Jin，Junmeng Cai. Understanding pyrolysis mechanisms of corn and cotton stalks via kinetics and thermodynamics.Journal of Analytical and Applied Pyrolysis[J].2022(164):1-7
+②　Xiaojuan Guo*, Junmeng Cai, Xi Yu. Kinetics and thermodynamics of microalgae residue oxidative pyrolysis based on double distributed activation energy model with simulated annealing method. Journal of Analytical and Applied Pyrolysis[J]. 2021, 154（1）：104997
+③　Shukai Zhang, Chong Li, Xiaojuan Guo*, Md. Maksudur Rahman, Xingguang Zhang, Xi Yu, Junmeng Cai*, Kinetic Analysis of Bio-oil Aging by Using pattern Search Method [J]. Industrial&Engineering Chemistry Research,  2020, 59（4）：1487-1494
+④　Laipeng Luo,Xiaojuan Guo, Zhen zhang, Meiyun Chai,Md.Maksudur Rahman, Xingguang Zhang, and Junmeng Cai*. Insight into Pyrolysis Kinetics of Lignocellulosic Biomass: Isoconversional Kinetic Analysis by the Modified Friedman Method [J].Energy &Fuels，2020,34:4874-4881
+⑤　Hanqi Duan, Zhiqing Zhang, Md Maksudur Rahman, Xiaojuan Guo, Xingguang Zhang, Junmeng Cai*. Insight into torrefaction of woody biomass: Kinetic modeling using pattern search methody[J]. Energy, 2020.201:117648
+⑥　Zhiqing Zhang, Hanqi Duan, Youjun Zhang, Xiaojuan Guo, Xi Yu, Xingguang Zhang, Md. Maksudur Rahman, Junmeng Cai*.Investigation of kinetic compensation effect in lignocellulosic biomass torrefaction: Kinetic and thermodynamic analyses[J].Energy,2020,207(15):1-8
+⑦　Xiaojuan Guo*, Frank G.F Qin, Xiaoxi Yang,Runhua Jiang. Study on low-temperature pyrolysis of large-size printed circuit boards, Journal of Analytical and Applied Pyrolylsis，Vol105,151-156,2014
+⑧　Xiaojuan Guo*, Yongjun Xu, Xiaoxi Yang, Frank G.F Qin. Effect of Heating Rate on Edible Mushroom Bran Pyrolysis. 6th International Conference on Applied Energy,ICAE2014,TAIPEI, 2014, Taipei City, Taiwan,2014.05.30-06.02（EI检索）
+⑨　郭晓娟*，徐勇军，杨晓西，王铁军等.食用菌生产废弃物热反应机理与活化能，工程热物理学报，2014，25（4）：22~26（EI检索）
+⑩　郭晓娟*，张刚．手机SIM卡TG-FTIR热解实验研究，化工进展，2014，33（4）：1030~1034
+⑪　郭晓娟*，张于峰，秦贯丰.废弃印刷线路板热解表观动力学模型研究，化工进展，2012，31（11）：2395-2399
+⑫　郭晓娟*,张于峰,魏莉莉,马洪亭.聚四氟乙烯型印刷线路板的热解实验[J], 华中科技大学学报（自然科学版）2008,  36(10) : 121~124（EI检索）
+⑬　张于峰，郭晓娟*，魏莉莉，溴化环氧树脂印刷线路板的中温热解实验, 天津大学学报（自然科学版, 2008, 37(7):724~728（EI检索）
+⑭　郭晓娟*,马洪亭. 废弃印刷线路板热解油的分析,2008, 37(7):724~728
+⑮　张于峰，郝斌，郭晓娟*. 废弃印刷线路板热重分析和动力学模型燃烧科学与技术, 2008, 14(6):506~510（EI检索）
+（二）科研项目
+① 主持粤莞联合基金1项，“CO2 化学吸收-微藻光合固碳耦合减排新技术及碳迁移机理研究，2020.01-2022.12，20万，2019B1515120002，已结题；
+② 主持广东省自然科学基金1项，印刷线路板热解过程传热性能及强化机理，2013/11-2015/11，5万，S2013010011909，已结题；
+③ 主持东莞市社会科技发展项目1项，一种高效生物质循环流化床蒸汽锅炉的研究，2014/01-2016/06，25万，2014108101037，已结题；
+④ 主持东莞市东城街道产学研合作项目1项，高效循环流化床锅炉低氮清洁燃烧关键技术的研究，2015/12-2017/11，80万，1ZC170501，已结题；
+⑤ 主持东莞市社会科技发展项目1项，基于超临界离子液体的废弃印刷线路板回收工艺及方法研究，2019/12-2021/12,20万， 2019507140180，已结题；
+⑥ 作为第二负责人参与国家自然科学青年基金项目，高温熔盐在多孔介质填料床蓄热过程中的传热特性和机理研究、2013/10-2016/10，25万元，51306039，已结题；
+⑦ 作为第三负责人参与国家自然科学基金主任基金项目1项，溶液冷冻浓缩中冰晶与母液的分离与提纯，2011/10-2013/10，8万，21146010，已结题；
+⑧ 作为骨干参与国家973计划项目，多能源互补的全工况系统集成、2010/01- 2014/12、458万，2010CB227103，已结题。
+⑨ 主持广东喜洋洋纸业有限公司产学研项目《造纸工业清洁生产与固废综合利用研究》，2022/03-2024/02,12万，在研。
+⑩ 主持东莞市大能环保科技有限公司产学研项目《一体式雾化喷洒的双重吸附净化型锅炉废气处理技术的研发》，2021/12-2023/11,12万，在研。
+⑪ 主持全国高等学校能源动力类专业教学研究与实践项目（编号NDJZW2021Z-46）”粤港澳大湾区能源与动力工程专业产科教融合设计及实践”，2022.03-2024.03，5万，在研。
+（三）专利
+以第一发明人先后授权专利14项，授权美国专利1项，发明专利4项，实用新型专利9项。具体情况如下：
+①　Title of Invention: Device and Method For Obtaining Water From Air On Island, 美国专利授权号：US 2020/0018050 A1（美国专利） ，第一发明人：郭晓娟
+②　发明专利：海岛空气取水装置及其取水方法；授权号：CN106906874 B；专利权人：东莞理工学院，第一发明人：郭晓娟
+③　发明专利：一种节能环保型污泥燃烧装置；授权号：CN107166408 B；专利权人：东莞理工学院；东莞市大能环保科技有限公司，第一发明人：郭晓娟
+④　发明专利：一种超临界流体处理废弃印刷线路板的方法，授权号：CN 113522885 B, 专利权人：东莞理工学院；第一发明人：郭晓娟
+⑤　发明专利：一种汽车散热与制冷的太阳能装置和汽车，授权号：CN 107914546 B，专利权人：东莞理工学院；第一发明人：郭晓娟
+⑥　实用新型专利：一种冷水循环回收系统；授权号：ZL201621218950.2；专利权人：东莞理工学院，第一发明人：郭晓娟
+⑦　实用新型专利：海岛空气取水装置；授权号：ZL201720203685.9；专利权人：东莞理工学院，第一发明人：郭晓娟
+⑧　实用新型专利：一种优化返料器运行的炉内脱硫装置；授权号：ZL201721921721.1；专利权人：东莞理工学院，第一发明人：郭晓娟
+⑨　实用新型专利：一种汽车散热与制冷的太阳能装置和汽车；授权号：CN207955265U；专利权人：东莞理工学院，第一发明人：郭晓娟
+⑩　实用新型专利：一种汽车通风散热装置；授权号：ZL201721546886.5；专利权人：东莞理工学院，第一发明人：郭晓娟
+⑪　实用新型专利：一种车用通风散热装置；授权号：ZL201721551357.4；专利权人：东莞理工学院，第一发明人：郭晓娟
+⑫　实用新型专利：一种太阳能车内散热装置；授权号：ZL201720633013.1；专利权人：东莞理工学院，第一发明人：郭晓娟
+⑬　实用新型专利：一种环形支管喷淋层；授权号：ZL201720510390.6；专利权人：东莞市大能环保科技有限公司；东莞理工学院，第一发明人：郭晓娟
+⑭　实用新型专利：一种适用于溴化锂吸收式制冷机组的空冷式冷凝器；授权号：ZL201821654402.3；专利权人：东莞理工学院，第一发明人：郭晓娟
+⑮　外观设计：车用通风散热装置；授权号：ZL201730569086.4；专利权人：东莞理工学院，第一发明人：郭晓娟
+⑯　外观设计：尿便分离器；授权号：ZL201730050704.4；专利权人：东莞理工学院，第一发明人：郭晓娟
+
+五、获奖、荣誉称号：
+1. 东莞理工学院2014年度青年教师教学技能竞赛二等奖。
+2. 第一指导教师指导项目“基于onenet物联网管理平台的新型厕所”获得第十四届“挑战杯”广东大学生课外学术科技作品二等奖。
+3. 作为指导教师指导学生创新创业项目“新型环保溴化锂制冷机”获得东莞理工学院节能环保大赛二等奖","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8763.htm"
+"38","广东省","东莞理工学院","化学工程与能源技术学院","钟占荣","钟占荣
+基本信息：
+学位：博士
+职称： 副 教授
+电子邮箱：zhongzr@dgut.edu.cn
+教育、工作经历：
+2012年4月-至今, 东莞理工学院化学工程与能源技术学院, 教师
+2006年10月-2009年1月, 中科院深圳先进技术研究院, 助理研究员
+ 2002年8月–2005年8月, University of Nebraska-Lincoln, 机械工程专业, 博士
+1998年9月–2001年6月, 中国科学技术大学, 工程热物理专业, 硕士
+1993年9月–1998年7月, 中国科学技术大学, 工程热物理专业, 学士
+研究领域：
+微纳尺度传热，工程力学，分布式能源系统
+讲授课程：
+《高等数学》、《压缩机技术》、《汽轮机原理》
+代表性研究成果：
+（一）论文/论著
+1. Z. Zhong, X. Wang and J. Xu, “Equilibrium Molecular Dynamics Study of Phonon Thermal Transport in Nanomaterials,” Journal of Numerical Heat Transfer：Part B， vol. 46, pp.429~446, 2004
+2. Z. Zhong, X. Wang and X. Feng, “Effects of pressure and temperature on sp3 fraction in diamondlike carbon materials,” Journal of Materials Research, vol. 20, No. 10, pp. 2770~2775, 2007
+(3) Z. Zhong and X. Wang, “Thermal Transport in Nanocrystalline Materials,” Journal of Applied Physics, vol. 100, No. 044310, pp.1-8, 2006","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/1260.htm"
+"15","广东省","东莞理工学院","化学工程与能源技术学院","陈捷超","一、
+
+
+基本信息：
+学位：博士研究生
+职称：特聘副教授、硕士生导师
+电子邮箱：chenjc@dgut.edu.cn
+二、教育、工作经历：
+2017年10月-至今，东莞理工学院化学工程与能源技术学院，教师
+2017年1月-至2017年10月，中国科学院广州能源研究所，助理研究员
+2011年9月-至2016年12月，重庆大学，动力工程及工程热物理专业，硕博
+2007年9月-至2011年7月，广东工业大学，热能与动力工程专业，学士
+三、研究领域：
+主要从事对流热质传递数值仿真模拟、流动稳定性分析、液体膜法除湿、固体吸附除湿等方面的研究工作。
+累计参与国家自然科学基金4项目，主持广东省自然科学基金项目2项。
+四、代表性研究成果：
+（一）代表性论文/论著
+1. Chen J C ,et.al.  Conjugate heat and mass transfer in a counter-flow spiral hollow fiber membrane tube bank for liquid desiccant air dehumidification[J]. International Journal of Thermal Sciences, 2022, 39: 18-29.
+2. Jie-Chao Chen, Chun-Mei Wu, You-Rong Li, Jia-Jia Yu. Capillary ratio dependence of thermal-solutal capillary convection in a shallow annular pool with radial temperature and concentration gradients[J]. International Journal of Thermal Sciences, 2019, 139: 15-24.
+3. Chen J C , Wu C M , Li Y R , et al. Effect of capillary ratio on thermal-solutal capillary-buoyancy convection in a shallow annular pool with radial temperature and concentration gradients[J]. International Journal of Heat and Mass Transfer, 2017, 109: 367-377.
+4. Chen J C, Zhang L, Li Y R, et al. Three-Dimensional Numerical Simulation of Pure Solutocapillary Flow in a Shallow Annular Pool for Mixture Fluid with High Schmidt Number[J]. Microgravity Science & Technology, 2016, 28(1):49-57.
+5. Chen Jie-Chao, Li You-Rong, Yu Jia-Jia, et al. Flow pattern transition of thermal-solutal capillary convection with the capillary ratio of-1 in a shallow annular pool[J]. International Journal of Heat and Mass Transfer. 2016,95:1-6.
+6. Wen-Kai Z , Minlin Y , Jie-Chao C , et al. Quasi-counter flow parallel-plate membrane contactors (QCPMC) for liquid desiccant air dehumidification: Conjugate heat and mass transfer[J]. International Journal of Thermal Sciences, 2018: S1290072918301169.
+7. 陈捷超, 李友荣, 于佳佳. 毛细力比对环形液池内耦合热-溶质对流的影响[J]. 工程热物理学报. 2014,(12):2496-2499.
+8. 陈捷超, 李友荣, 于佳佳. 毛细力比为-1时环形液池内双扩散毛细对流数值模拟[J]. 化工学报. 2015,(S1):138-145.
+9. [9] 陈捷超, 黄宏宇, 何兆红, 等. 转轮除湿系统优化技术研究进展[J]. 新能源进展. 2017,(06):457-465.
+（二）科研项目
+1. 广东省自然科学基金项目，2017A030310185，环形液池内双组分溶液溶质Rayleigh–Bénard-Maranboni对流稳定性机理研究，2018.05-2021.4，10万元。
+2. 广东省基础与应用基础研究基金项目，2021A1515110616， 基于热渗透传递的低温余热回收膜接触器内热质传递特性研究，2020.05-2023.4，10万元。 
+（三）专利
+1. 陈捷超, 肖汉敏. 一种基于热渗透能量转换的余热回收发电系统：ZL202123201785.3[P]. 2022-03-23.
+2. 陈捷超, 肖汉敏, 陈佰满. 一种强制分离外泄型循环水泵调压装置:ZL201820319779.7[P]. 2018-11-13.
+3. 陈捷超, 肖汉敏, 温海平. 一种污泥热泵干燥系统:CN201810603180.0[P]. 2018-06-12.
+4. 陈捷超, 肖汉敏, 温海平. 一种节能型密闭无水涂覆工艺系统:CN201810680270.X[P]. 2018-06-27.
+5. 黄斯珉, 陈捷超, 胡冰, 等. 一种鼓泡加湿减湿海水淡化装置:ZL201721712157.2[P]. 2018-07-20.
+6. 肖汉敏, 陈捷超. 一种双回路污泥热泵干燥系统:CN201810603188.7[P]. 2018-06-12.
+7. 肖汉敏, 陈捷超, 陈佰满. 一种循环水泵调压装置:ZL201820319758.5[P]. 2018-11-13.
+8. 黄斯珉, 陈捷超, 胡冰,等. 一种鼓泡加湿减湿海水淡化装置及方法:CN201711309957.4[P]. 2017-12-11.
+9. 黄斯珉, 陈阳辉, 杨敏林, 等. 膜式接触装置及吸收式制冷系统:ZL201820146246.3[P]. 2018-08-31.
+五、获奖、荣誉称号：
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8623.htm"
+"25","广东省","东莞理工学院","化学工程与能源技术学院","陶实","一、
+
+
+基本信息：
+学位：博士研究生
+职称：副教授、硕士生导师
+电子邮箱：taoshi@dgut.edu.cn
+二、教育、工作经历：
+2021年01月- 至今，东莞理工学院化学工程与能源技术学院，副教授
+2017年07月-2020年12月，东莞理工学院化学工程与能源技术学院，讲师
+2013年09月- 2017年06月，华中科技大学，热能工程专业，博士
+2010年09月- 2013年06月，大连理工大学，船舶与海洋结构物设计制造专业，硕士
+三、研究领域：
+主要从事多相复杂流动、微尺度传热传质、流固耦合及介观数值方法等方面的研究工作。
+累计主持国家自然科学基金青年基金项目、重点实验室攻坚项目、校科研启动项目各1项。已累计接收和发表SCI收录的学术论文40余篇，其中以第一/通讯作者在J. Comput. Phys.、Int. J Heat Mass Tran.、Phys. Fluids、Phys. Rev. E等国际知名期刊上发表论文20余篇。申请发明/实用新型专利6项。SCI论文引用650余次、H指数15，是国自然基金函评专家和多个国际知名期刊的审稿人。
+四、代表性研究成果：
+（一）代表性论文/论著
+1. Tao, S., Wang, L., He, Q., Chen, J., & Luo, J. (2022). A sharp interface immersed boundary-discrete unified gas kinetic scheme for fluid-solid flows with heat transfer. International Communications in Heat and Mass Transfer, 139, 106424.
+2. Tao, S., Wang, L., He, Q., Chen, J., & Luo, J. (2022). Lattice Boltzmann simulation of complex thermal flows via a simplified immersed boundary method. Journal of Computational Science, 65, 101878.
+3. Tao, S., Wang, L., He, Q., Chen, J., & Luo, J. (2022). Interface-resolved simulation of solid-liquid phase change with thermal convection using discrete unified gas kinetic scheme. Computers & Mathematics with Applications, 125, 213-221.
+4. Tao, S., He, Q., Yang, X., Luo, J., & Zhao, X. (2022). Numerical study on the drag and flow characteristics of porous particles at intermediate Reynolds numbers. Mathematics and Computers in Simulation, 202, 273-294.
+5. Tao, S., He, Q., Wang, L., Chen, B., Chen, J., & Lin, Y. (2021). Discrete unified gas kinetic scheme simulation of conjugate heat transfer problems in complex geometries by a ghost-cell interface method. Applied Mathematics and Computation, 404, 126228.
+（二）科研项目
+1. 国家自然科学基金：基于离散统一气体动力学的纳米颗粒分形团聚体多尺度流动直接数值模拟 (51906044)，24万，结题，主持。
+2. 省重点实验室攻坚项目：生物质颗粒分形团聚体的多尺度流动及湍流燃烧特性(2020B1212060075-8)，5万，在研，主持。
+3.  校科研启动项目: 30万，在研，主持。
+4. 省自然科学基金项目：基于核壳型双功能铜基复合载氧体的化学链氧解耦燃烧协同原位脱氯的基础研究(2023A1515011333)，10万，在研，参与。
+（三）专利
+1. 何清，谢明亮，赵莉丽，葛亚，陶实，林有胜。一种颗粒群尺寸分布确定方法、系统、设备及存储介质。发明专利，申请号：CN202211155804.X；授权号：CN115436237A
+五、获奖、荣誉称号：
+1.  校优秀班主任（2019年）、校优秀共产党员（2019年）
+2.  指导学生获校优秀本科毕业论文十余人次。
+ ","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://hxyny.dgut.edu.cn/info/1045/8783.htm"
+"47","广东省","东莞理工学院","卓越工程师学院","丁文霞","一、教育背景
+1992.09－1996.06    中国人民解放军国防科学技术大学，电子学与信息系统专业，本科毕业
+1996.09－1999.06    中国人民解放军国防科学技术大学，信息与通信专业，硕士毕业
+2003.03－2009.03    中国人民解放军国防科学技术大，信息与通信专业，博士毕业
+2011.02－2011.08    Toronto University，ECE department，Canada，国家公派访问学者
+
+二、工作经历
+1999.03－2000.12    国防科学技术大学电子科学与工程学院，助教
+2001.01－2004.12    国防科学技术大学电子科学与工程学院，讲师
+2005.01－2015.12    国防科学技术大学电子科学与工程学院，副教授，教研室主任
+2016.01－2017.12    国防科学技术大学电子科学与工程学院，教授，系副主任
+2017.12－2019.01    东莞松山湖国际机器人研究院有限公司，研究部部长
+2018.03－2019.12    东莞理工学院电子工程与智能化学院，教授
+2020.01－2023.04    东莞理工学院电子工程与智能化学院，教授、粤港机器人学院副院长
+2023.05－至今      东莞理工学院卓越工程师学院（创新创业学院），教授、副院长
+
+三、个人简介
+丁文霞教授长期从事电子科学与技术、自动化、信息与通信工程等专业方向的教学科研工作，同时积极参与机器人工程、人工智能与计算机视觉方向、信息安全方向的科研工作。
+先后主持和参与国家、省部级以上科研项目近10项，其中863、973重点科研项目子课题3项、航空支撑基金1项、武器装备预研项目1项；主持国家级教研教改课题2项、省级8项。已获国家发明专利4项、实用新型专利10余项，曾获湖南省国防科学技术进步奖二等奖1项。
+长期主讲“模拟电子技术”、“数字电子技术”等本科专业核心课程，先后担任“数字电子技术基础”湖南省精品课程负责人、湖南省“名师空间课堂”负责人及主讲人、国家首批精品MOOC课程前期负责人和全程主讲人；主持完成中国高等教育学会“十三五”高等教育科学研究重大攻关子课题——“互联网+课程”电子技术基础课程群创新与实践项目和教育部办公厅第二批新工科研究与实践项目各1项，现为“数字电子技术”广东省线下一流课程负责人，广东省首批示范性产业学院及教育部、工信部国家首批现代产业学院——粤港机器人学院负责人和学科带头人。先后获得国家教学成果二等奖1项、省级以上教学成果奖8项，5次获国家级和省级课堂教学竞赛及信息化教学竞赛个人一、二等奖，2007年获军队院校育才奖个人“银奖”，2009年获中国人民解放军院校优秀人才岗位津贴，多次荣立个人“三等功”，2014-2016年连续获评年度“中国大学MOOC优秀教师”，2023年被评为东莞市优秀教师及第四届东莞市“最美教师”。
+先后在核心刊物上发表教学科研论文近50篇，已出版教材10余部，其中4部教材被评为国家“十一五”规划教材，1部教材被推荐参评国家首批优秀教材奖。长期担任大学生电子设计竞赛、物联网竞赛、全国机器人RC、RM大赛等指导老师，指导机器人赛队400余人次获奖近70项，获2022年教育部公布全国大学生机器人竞赛获奖指数前2%，名列广东省第一。已指导培养硕士研究生近30人。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3224.htm"
+"52","广东省","东莞理工学院","卓越工程师学院","吕杰融","一、教育背景
+2004.09－2008.07   中国台湾义守大学，机械与自动化工程专业，本科毕业
+2008.09－2010.07   中国台湾义守大学，机械与自动化工程专业，硕士毕业
+2010.09－2017.08   中国台湾中正大学，机械工程专业，博士毕业
+
+
+二、工作经历
+2017.11－2018.05   中国台湾群创光电股份有限公司，高级工程师
+2018.06－2018.12   中国广东东莞理工学院粤台产业科技学院精密制造专业，副教授
+2019.01－2021.07   中国广东东莞理工学院粤台产业科技学院精密制造专业，副教授兼系主任
+2020.09－2021.07   中国广东东莞理工学院粤台产业科技学院自动化专业，副教授兼系主任
+2020.09－2021.07   中国广东东莞理工学院粤台产业科技学院智能制造专业，副教授兼系主任
+2021.08－2023.01   中国台湾龙华科技大学电机专业，助理教授
+2023.02－2023.07   中国台湾正修科技大学机械工程专业，助理教授
+2023.08－迄今     中国广东东莞理工学院卓越工程师学院（创新创业学院），副教授兼系主任
+
+
+三、个人简介
+
+吕杰融老师毕业于中国台湾中正大学机械工程专业，取得博士学位。主要研究方向为机械制图、集成电路封装工艺与热管理、有限元、计算机辅助工程分析。过往曾承担Mechanical graphics、反向工程技术、3D打印技术及实践、机械原理、多重物理场耦合技术、PLC技术、集成电路制程技术、基本电学、电子学、电路学、机电整合等课程。过去参与多项广东省校企合作协同育人项目，指导学生参加过内多项竞赛，如第七届广东省大学生合泰杯单片机应用设计大赛获三等奖，2019年中国工程机器人大赛暨国际公开赛获二等奖，2019中国机器人大赛-获一等奖、二等奖各一，第22届CaTICs三维CAD网络赛获团队二等奖、个人赛一等奖两座、个人赛二等奖一座。先后参与台湾地区科技部门纵向课题二项(成员，已结题)，台湾地区产学合作横向课题三项(成员，已结题)，广东省校企合作协同育人专案二项(成员，已结题)，广东省东莞倍力扣金属制品有限公司等横向项目2项。发表SCI检索文章3篇，其中以第一作业或通讯作者发表科研论文2篇，EI文章4篇，研讨会论文6篇。申请专利4项。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3144.htm"
+"45","广东省","东莞理工学院","卓越工程师学院","孔光源","一、教育背景
+1978.09—1983.02   中原大学 机械工程， 本科毕业
+1983.09—1985.05   逢甲大学 机械工程研究所，硕士 毕业
+1991.09—1996.03   中原大学 机械工程研究所，博士毕业  
+
+二、工作经历
+1987.05—1988.08   美商捷康半导体公司 ，工程师
+1988.09—1989.07   荷商中坜飞利浦，工程师
+1989.08—2008.10   南亚技术学院， 副教授、讲师
+2008.11—2012.07   南亚技术学院机械工程系 ，教授
+2012.08—2019.01   南亚技术学院应用科技研究所，教授
+2019.02—2023.01   岭南师范学院 机电学院，教授
+2023.02—至今     东莞理工学院卓越工程师学院（创新创业学院），教授
+
+三、个人简介
+孔光源 主要学历为中原大学机械工程系学士，逢甲大学机械工程研究所硕士，中原大学机械工程研究所博士。主修热传导与对流，其中除专业课程外，尚有专业实验/量测技术实习/校外工厂实习、以及5篇专题研究论文。论文内容为科氏力与表面张力对柏纳马籣过尼对流不稳定性之效应。
+目前研究方向为精密机械及微系统是近年机械工程领域中发展最快，也最具有突破性的研究课题。而微热流系统更是在热流领域中相当重要的研究方向。其应用是以微小、节能、加大热传效能的系统分析与设计为主轴发展。近年来投入不少研究能量探讨微系统之经典流场及双相流场及热传特性。流体之应用由采用牛顿流体至于非牛顿流体乃至于粘弹性流体。流场也由经典流场，双相流场发展到微滴管的内流场分析。完成三年期的微滴管内流场驱动分析的计划且也有一些结果已在研讨会发表，目前也正整理相关成果发表在期刊上。粘弹性流体之经典流场及双相流场及热传特性。
+论文著述：近5年文章期刊论文6篇
+A. K.Y. Kung , Y.D. Huang , H.M. Wee , and Y. Daryanto,Production-Inventory System for Deteriorating Itemswith Machine Breakdown, Inspection,and Partial Backordering, Mathematics 2019, 7, 616; doi:10.3390/math7070616
+B. Kuang-Yuan Kung et al. Numerical Simulation of a Bionic Blade on Small-Scale Wind Turbine, Materials Science and Engineering 730 (2020) 012031 IOP Publishing doi:10.1088/1757-899X/730/1/012031
+C.  K. Y. Kung,et.al. Numerical Simulation on Wind Turbine Design Quality Improvement, Journal of Quality ,Vol. 28, No. 3 (2021)pp.171-179 (2021年3月) (EI) DOI:10.6220/joq.202106_28(3).0002
+D. K. Y. Kung,et.al. Analytic Transient Solutions of a Cylindrical Heat Equation, Filomat 35:8 (2021), 2617–2628
+E.H. M. Srivastava, K.-Y. Kung, et.al. Analytic Solutions of the CylindricalHeat Equation with a Heat Source, Russian Journal of Mathematical Physics, Vol. 28, No. 4, 2021, pp. 545–552  DOI: 10.1134/S1061920821040129
+F.C.H. Hsu J. L. Chen, S. C. Yuan and K.-Y. Kung，CFD Simulations on the Rotor Dynamics of a Horizontal Axis Wind Turbine Activated from Stationary https://doi.org/10.3390/applmech2010009   2021 03  Apply Mechanics","3","","","2024-09-19 22:18:23","2024-09-27 17:34:49","0",""
+"50","广东省","东莞理工学院","卓越工程师学院","张安昇","一、教育背景
+2000.09－2005.06   台湾大学，数学学士，资讯工程学士，本科毕业
+2007.09－2013.06   纽约大学库朗研究所应用数学，博士毕业
+
+二、工作经历
+2005.08－2006.10   “台湾国防部”资讯安全少尉
+2006.10－2007.06    台湾大学 资讯助理
+2013.16－2014.12    探讨创业项目
+2015.01－2015.07    厦门黄金时代科技有限公司 技术长
+2016.03－至今      厦门石湾科技有限公司 总经理
+2021.03－至今      上海石湾科技有限公司 技术长
+2023.03－2023.06    东莞理工学院粤台产业科技学院，副教授
+2023.05－至今      东莞理工学院卓越工程师学院（创新创业学院），副教授、副系主任
+
+三、个人简介
+张安昇教授长期从事资讯工程、电子工程、人工智能等专业方向的创新创业研究，同时对教育心理学、媒体传播、人文艺术学科多有研究。
+博士论文”Suspensions of Length-changing rods in various domain” 主要是研究微流体运动，首位以最简单的理论，解释微流体的根本动力（比方说细胞内部的流体运动，或是鞭虫的触毛为何会纠缠），并且以相同的kinetic理论，首位成功模拟出与实验吻合的有界微流体运动。2015年初与大陆青年合作基于资料探勘的游戏视频推荐项目，除负责理论外也完成伺服器的开发以及文档撰写。2016年起，与数个大陆青年基于数个开源项目，进行教育机器人的再开发，同时获得台大教授种子轮投资，同时在两岸多所机构学校开始实验。2017、2018年发表两篇教育机器人相关论文。2017年获得优秀来闽创业留学人员等数个奖项资助。2018、2019年以教育机器人设计分别获得 IF、红点设计大奖。2019年开始思考如何以语意网路，意识流融入APP的发展，并申请相关专利。2020年出版人工智能奠基人、STEAM教育始祖麻省理工学院西蒙派珀特核心著作《思维风暴-儿童如何用电脑建构无限可能》。台湾课纲小学数学部分委员会召集人、大学小学数学课本作者、台湾大学教授翁秉仁，担任《思维风暴》第八章《皮亚杰与人工智能》、结语《数学潜意识》审校。2022年获得福建省高层次人才称号。创办的上海石湾科技有限公司在2022年获得高新技术企业资质。自2023年起，在东莞理工学院任教，从事人工智能、大学数学教育改革、人工智能教育改革的课题研究。
+发表4篇论文、翻译1本专著、获得2个发明专利、2个实用新型专利、2个设计专利。获得数个省级市级人才计划称号。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3294.htm"
+"59","广东省","东莞理工学院","卓越工程师学院","张幼青","一、教育背景
+1984.10－1988.06  台湾大学，物理学专业，本科毕业
+1991.09－1993.06  新竹清华大学，物理学专业，硕士毕业
+1993.03－1999.09  新竹清华大学，物理学专业，博士毕业
+1999.11－2000.07  新竹交通大学，物理学研究所，博士后研究
+
+二、工作经历
+2000.08－2014.04  新竹工业技术研究院，工程师
+2014.09－2017.01  明新科技大学，助理教授
+2017.02－2020.01  东莞理工学院电子工程与智能化学院，讲师
+2020.02－2022.12  惠州学院，讲师
+2023.03－至今    东莞理工学院卓越工程师学院，副教授
+
+三、个人简介
+张幼青副教授长期从事大学物理、C/C++语言程序设计、Python语言程序设计等专业方向的教学科研工作，同时积极参与生物信息、量子计算、人工智能方向的科研工作。
+在台湾新竹工业技术研究院任职期间，领导及执行多项生物信息及医疗器材方向的研发项目：
+(1) 长序列 DNA 快速比对搜寻软件 (2001.03 - 2003.12)
+(2) 生物芯片探针设计软件开发  (2002.01 - 2004.12)
+(3) 开发 RNAi 技术于病毒与致癌基因之治疗 (2004.01 - 2007.12)
+(4) 模式生物 microRNA 芯片探针设计 (2008.01 - 2010.07)
+(5) HHT 算法应用于超声波图像对比增强之应用 (2010.08 - 2012.12)
+(6) 相位对比 X 光成像于乳癌诊断之应用 (2013.01 - 2014.04)
+2002年，接受台湾华联生物科技公司委托，领导科研团队开发出专利探针设计平台IMPORT (Integrated Massive Probe's Optimal Recognition Tools)，完成人类、大鼠、小鼠、酵母菌等模式生物全基因组生物芯片的专一性探针序列设计与质量管控；同时，为因应实验需求，构建高通量、高效能的生物芯片实验数据分析与生物功能注释流水线。科研团队又自主研发创新性的新颖microRNA调控因子探勘软件，并取得初步成果，已发表多篇论文，取得各国专利。
+在超声波图像增强及信号处理方面，通过滤除低频燥声，成功提高了超声波影像对比度，并完成可从血管超声波信号中提取流速的新颖算法。此部分成果已发表多篇论文，并取得各国专利。先后在核心刊物上发表科研论文6篇，获得国家发明专利8项。已指导培养本科生近10人。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3204.htm"
+"43","广东省","东莞理工学院","卓越工程师学院","彭士荣","     
+一、教育背景
+1980.09－1985.06  大华科技大学，电机工程科
+1988.09－1990.06  台湾科技大学，电子工程系，本科毕业
+1992.09－1994.06  中央大学，信息与及子工程研究所，硕士毕业
+2000.09－2009.04  交通大学，信息科学与工程研究所，博士毕业
+
+二、工作经历
+1990.06－1991.01  连宇电子公司，开发工程师
+1991.02－1994.07  大华科技大学电机工程系，助教
+1994.08－1997.07  大华科技大学电机工程系，讲师
+1997.08－2006.07  大华科技大学信息管理系，讲师
+2006.08－2009.05  大华科技大学计算机通讯工程系，讲师，系主任
+2009.06－2012.01  大华科技大学计算机通讯工程系，副教授，系主任
+2009.06－2012.01  大华科技大学计算机通讯工程系，副教授，系主任
+2012.02－2012.07  大华科技大学计算机通讯工程系，副教授
+2012.08－2013.12  大华科技大学数位内容科技系，副教授
+2014.01－2017.07  大华科技大学数位内容科技系，副教授，系主任
+2015.09－2017.07  大华科技大学电子工程系，副教授，系主任
+2017.08－2018.07  大华科技大学数位内容科技系，副教授
+2018.08－2023.01  肇庆学院计算机科学与软件工程，副教授
+2023.02－至今    东莞理工学院卓越工程师学院（创新创业学院），副教授
+
+三、个人简介
+彭士荣副教授，成长于中国台湾新竹市，毕业于台湾交通大学信息科学与工程研究所博士班，在中国台湾大华科技大学从事教学工作将近27年，其中包括电机系、计算机通讯系、信息工程系、数位内容科技系、电子系，担任系主任近10年时间。2018年8月来到中国广东肇庆学院计算机科学与软件工程学院任教，职称副教授。2023年2月转职来到广东东莞理工学院工程师学院任教，职称副教授。教学及学术特长为Application Control System、E-learning、Digital Content、Computer Interface。
+就学期间，深知实作课程的重要，参加教育部举办“微电脑应用系统设计制作竞赛”， 题目:“智能型机械手” ，获得优等奖。台湾科技大学毕业后直接投入就业市场，进入连宇电子公司担任开发工程师。由于幼时对教育拥有一颗热诚的心，1991年秉持教育服务热诚投入教学行列。期间教育无数优秀人才，在实作上并指导学生参加教育部举办“微电脑应用系统设计制作竞赛”， 题目:“智能型媬姆1号”，获得佳作。
+经由教学及学习的经验历程，就读国立中央大学信息与电子工程所硕士，以及国立交通大学信息科学与工程所博士持续学习研究，期间并发表多篇SCI Journal 、Conference Paper，共计20余篇，及申请台湾发明专利“界面系统、方法及装置(INTERFACE SYSTEM, METHOD AND APPARATUS)”。
+在教学上，则不仅仅只限于课本知识之传授，在学生教学辅导上，更加强同学学习之实务启发及自信之建立。因所学应用获得肯定，于2005.10–2009.12获聘为“新竹县政府顾问”。更于2010.07.获选为“广州第六届两岸经贸文化论坛”参加代表，为两岸交流尽绵薄心力。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3194.htm"
+"58","广东省","东莞理工学院","卓越工程师学院","杨立杰","一、教育背景
+1980.08－1984.06   大同大学，机械工程专业，本科毕业
+1988.09－1989.12   圣路易华盛顿大学，机械工程专业，硕士毕业
+1990.09－1994.08   俄亥俄州立大学，工程力学专业，博士毕业
+
+二、工作经历
+1986.07－1988.06   台湾通用器材公司应用工程处 制程工程师
+1988.09－1989.05   圣路易华盛顿大学机械工程所 教学助理
+1989.09－1990.05   圣路易华盛顿大学机械工程所 研究助理
+1990.09－1994.08   俄亥俄州立大学工程力学所 研究助理
+1994.08－2001.12   中华大学应用数学系/所 副教授
+1995.08－1997.07   中华大学学务处课外活动组 组长
+1998.01－2006.06   大华科技大学工业管理系/所 兼任教授
+1999.08－2001.02   中华大学教务处教学资源组 组长
+2003.08－2004.11   中华大学应用数学系/所 系主任/所长
+2002.01－2010.07   中华大学应用数学系/所 教授
+2006.01－现在     台湾企业经理人协进会 顾问
+2010.08－2012.07   中华大学应用统计系/所 教授
+2007.08－2019.02   勤益科技大学机械工程系/所 兼任教授
+2012.08－2018.07   中华大学营建管理系 教授
+2012.08－2018.07   中华大学科技管理博士学位学程，博士生导师
+2012.08－2018.07   中华大学运输科技与物流管理系 教授
+2019.02－2022.01   福建省高层次人才
+2019.02－2022.01   闽南师范大学数学与统计学院 教授
+2021.06－现在     中国科学院云计算中心 客座研究员
+2021.11－现在     深圳市微波通信技术应用行业协会 工程力学专家
+2022.02－2023.01   勤益科技大学机械工程系/所 兼任教授
+2022.02－2023.01   静宜大学资讯工程系/所 兼任教授
+2023.02－2023.07   东莞理工粤台学院 教授
+2023.08－现在     东莞理工卓越工程师学院 教授
+
+三、个人简介
+杨立杰于94年8月自俄亥俄州立大学取得博士学位后，旋即进入中华大学应用数学系任教。
+在美国的求学过程中，主要以力学为研究领域，授业教授都是学界菁英，尤以硕士班的指导教授、破坏力学界的知名大师Dr. Paul C. Paris，和博士班的指导教授Dr. Daniel A. Mendelsohn对他影响最大；在跟随Dr. Paris作研究的两年中，亲炙大师风范，耳濡目染之余，学习不少作学问的方法，奠定了研究破坏力学的基础，而从Dr. Mendelsohn清晰的数学观念中，得以应用边界元素法(Boundary Element Method)将破坏力学的理念作更确切的表达。
+在中华大学任教期间，每一门课都全力以赴预备，因材施教倾囊相授。不仅课堂上严格督导学生学习，并于课余砥砺品格关怀生活，深受学生的信任与肯定。除了尽心授业，在科研方面，除继续原有力学的钻研外，并融入大数据、统计等方向，计有来自台电、”国科会”、”教育部”，以及中华大学23个科研项目，在台24年来，获”教育部”、”国科会”，中华大学，以及力学学会等6个奖项，发表的论文与著作计有SCI论文13篇、AHCI论文1篇、EI论文5篇、其他论文11篇、研讨会论文42篇、专书7本，并兼任1间学术期刊的编辑委员，以及4间学术期刊的审查委员。
+2019年以福建省高层次人才应聘至闽南师范大学任教的第1年便参与福建省区域发展项目，”基于多模态功能影像的腰椎间盘退变代谢组学研究”，编号2019Y3007，对弯腰时腰大肌的受力大小作力学分析，结合力学与医学，发表北大核心论文1篇、EI论文2篇、研讨会论文3篇，并于第二年申请专利，”基于医学影像检查技术的疼痛指数判定方法及系统”，将医院近百万笔的数据做大数据整理，对腰椎受力的数值大小转化为10级的疼痛指数，使今后的患者在检验解果出来后，立刻可以知道自己腰肌疼痛的等级，以期在未来能获医疗机构的认可，服务社会。今年更申请国家自然科学基金的科研项目，”基于边界元与大数据的下腰疼痛生物力学流变机制分析与防治策略研究”，以期将人体腰椎受力，用边界元与大数据的方式加以关联，这是一个创新的科研方向。
+未来几年，将把重心放在科研与教学工作。在一个办学理念更加严谨的学术单位，于科研环境及资源取得更优越的前提下，拓展个人潜能，也贡献心力于相关的科研领域。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3214.htm"
+"51","广东省","东莞理工学院","卓越工程师学院","林安德","一、教育背景
+1984.09－1988.06  B.S.  Mathematics, Tunghai University, Taichung, Taiwan.
+东海大学数学系学士
+1991.09－1993.06  M.S.  Applied Mathematics, National Chiao Tung University, Hsin-Chu, Taiwan.
+交通大学 (新竹) 应用数学研究所硕士
+1994.08－2000.12  Ph.D. (September 2000) Applied Mathematics & Statistics, State University of New York at Stony Brook, Stony Brook, NY.
+纽约石溪州立大学应用数学暨统计研究所博士
+
+二、工作经历
+2017.02–Current : Faculty Member,Dongguan University of Technology,Guangdong,China.
+东莞理工学院电子暨智能化学院
+2015.05–2016.07: Big Data Analysis Engineer,The Liberty Times,Taipei City,Taiwan.
+自由时报电子报网络大数据及算法工程师
+2013.02–2013.07: Faculty Member,Kang Chiao International School,New Taipei City,Taiwan.
+康桥国际学校
+2012.08–2012.09: Post Doctoral Research Associate,Institute of Applied Mechanics,National Taiwan University,Taipe,Taiwan.
+台湾大学应用力学研究所博士后研究
+2012.05–2012.07: Post Doctoral Research Associate,Hydrotech Research Institute,National Taiwan University,Taipei,Taiwan.
+台湾大学水工研究所博士后研究
+2011.08–2012.07:Adjunct Assistant Professor,Department of Applied Science,Naval Academy R.O.C.
+海军官校应用科学系兼任助理教授
+2007.10–2008.01 Adjunct Assistant Professor,Department of Applied Mathematics,National Sun Yat-sen University,Kaohsiung,Tai
+wan.
+中山大学应用数学系兼任助理教授
+2004.08–2010.03: Assistant Professor, Department of Medical Information Management,Kaohsiung Medical University,Kaohsiung,Taiwan.
+高雄医学大学医疗信息管理系助理教授
+2002.08–2004.07: Assistant Professor of Mathematics, National Chung Cheng University, Chiayi, Taiwan.
+中正大学数学系暨数学研究所助理教授
+2001.01–2002.05: Post Doctoral Research Associate,Dept.of Applied Mathematics and Statistics,State University of New York at Stony Brook.
+纽约石溪州立大学博士后研究
+1995.06–2000.12: Research Assistant,Dept. of Applied Mathematics and Statistics,State University of New York at Stony Brook.
+纽约石溪州立大学研究助理
+1995.02 - 1995.06: Teaching Assistant,Dept.of Applied Mathematics and Statistics,State University of New York at Stony Brook.
+纽约石溪州立大学教学助理
+1993.09 - 1994.08: Teaching Assistant, Mathematics Department, Tunghai University, Taichung, Taiwan.
+东海大学数学系助教
+1991.09 - 1993.06: Teaching Assistant with full scholarship of NSF, Taiwan, Applied Mathematics Department, National Chiao Tung University, Hsin-Chu, Taiwan.
+交通大学 (新竹) 应用数学系助教
+1990.09 - 1991.06: Teaching Assistant, Mathematics Department, Tunghai University, Taichung, Taiwan.
+东海大学数学系助教
+
+三、教学工作
+2002 - 2004 中正大学数学系暨数学研究所讲授课程：Calculus (微积分), Numerical Linear Algebra (矩阵计算:数值线性代数), Linear Algebra(线性代数), Ordinary Differential Equations(常微分方程), Partial Differential Equations (偏微分方程)
+2004 - 2010 高雄医学大学讲授课程：Programming Language C++ (C++程序语言), Introduction to Elementary Statistics (机率统计学), Discrete Mathematics (离散数学), Computer Organization and Architecture(计算机组织与架构), Operating System(操作系统),  Data Structure(数据结构),  Linear Algebra(线性代数), Calculus (微积分)
+2017 - 目前 东莞理工学院讲授课程：高等数学, 线性代数
+
+四、主持的研究项目
+1．国家科学委员会  NSC-91-2115-M-194-020
+2. 国家科学委员会  NSC 92-2115-M-194-012
+
+五、科学研究
+
+学术论文和著作
+1.""Late time phenomena of single mode Rayleigh-Taylor Instability"", Ph.D. Thesis, State University of New York at Stony Brook, 2000.
+2.""Nonuniform approach to terminal velocity for single mode Rayleigh-Taylor instability"",James Glimm, Xiaolin Li, An-Der Lin, ""Acta Mathematica Applicae"", Vol.18, No.1,pp. 1-8, 2002.
+3.""Rayleigh-Taylor instability for fluids with a small density contrast"", Snezhana Abarzhi,James Glimm, An-Der Lin,""Physics of Fluids"", vol.15, No.8, pp 2190-2197, 2003.
+4.""Dynamics of the Rayliegh-Taylor bubbles for fluids with a finite density contrast"",""Laser and Particle Beams"", S. I. Abarzhi, J. Glimm, and An-Der Lin,pages 2190–2197, 2003. Stony Brook University Preprint SUNYSB-AMS-02-11.
+5 .""Random Numbers with Applications: An Overview"", An-Der Lin, Wen-Chuan Hsieh, ""Communications of the CCISA"", Vol.15, No.1, pp 1-10, Jan 2009.
+
+Conference Papers:
+1.""Rayleigh-Taylor instability for fluids with a small density contrast"", Snezhana Abarzhi, James Glimm, An-Der Lin, 8th IWPCTM. CalTech, Pasadena, CA. Dec. 9 - 14, 2001.
+2 .""A numerical study of Rayleigh-Benard convection"", An-Der Lin, Wen-Kai Chiu, ICMA-MU 2005, Bangkok, Thailand. Dec. 15 - 17, 2005.
+3 . ""High order ADI scheme for the Boussinesq equations"", An-Der Lin, Wen-Kai Chiu, Second IMT-GT Conference on Mathematics, Statistics, and Applications, Penang, Malaysia, June 13 - 15, 2006.
+
+六、邀请讲座
+Invited Talks :
+1. Dept. of Mathematics, National Chung Cheng University, Taiwan, Sep. 25, 2002.
+2. Dept. of Applied Mathematics, National Sun Yat-Sen University, Taiwan, Sep. 26, 2002.
+3. Dept. of Mathematics, National Taiwan University, Taiwan, Sep. 28, 2002.
+4. Dept. of Applied Mathematics, National Chiao Tung University, Taiwan, Oct. 24, 2002.
+5. Dept. of Mathematics, Fu Jen Catholic University, Taiwan, Oct. 30, 2002.
+6. Dept. of Mathematics, National Cheng Kung University, Taiwan, Nov. 26, 2002.
+7. Dept. of Mathematics, Hong Kong Baptist University, Jan. 21, 2008
+8. Dept. of Mathematics, Zhe Jiang University, China, Jan. 23, 2008","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3284.htm"
+"46","广东省","东莞理工学院","卓越工程师学院","林文丰","一、教育背景
+1983.09－1987.06  中国台湾中原大学，机械工程专业，本科毕业
+1987.09－1989.06  中国台湾成功大学，机械工程专业，硕士毕业
+2006.02－2011.01  中国台湾淡江大学，工程管理专业，博士毕业
+
+二、工作经历
+1991.08－2016.06  中国台湾中华科技大学工学院，讲师，助理教授
+2016.07－2017.07  中国安徽良润医疗器械股份有限公司，工程经理
+2017.08－2018.07  中国淮安淮阴工学院机材学院，教师
+2018.08－2023.05  中国广东肇庆学院机械学院，教师
+2023.06－至今    中国广东东莞理工学院卓越工程师学院（创新创业学院），教师
+
+三、个人简介
+林文丰老师长期从事机械工程专业方向的教学科研工作，主讲“电路分析基础”、“电工与电子技术” 、“材料力学”、“流体力学”等本科专业核心课程，先后担任“电工技术”肇庆学院在线开放课程负责人、“工程流体力学”肇庆学院在线开放课程负责人，先后在核心刊物上发表教学科研论文近20篇。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3154.htm"
+"54","广东省","东莞理工学院","卓越工程师学院","林江龙"," 
+一、教育背景
+1977.09－1981.07   台湾中央大学，机械工程专业，学士毕业
+1985.09－1987.07   台湾清华大学，动力机械工程专业，硕士毕业
+1991.09－1999.10   台湾中央大学，机械工程专业，博士毕业
+
+二、工作经历
+1983.10－1984.09   台塑 助理工程师
+1987.09－1999.11   复兴工商专校 自动化科讲师兼代主任
+1999.12－2000.07   兰阳技术学院 自动化工程系  副教授兼主任
+2000.08－2001.07   兰阳技术学院 校务主任
+2001.08－2005.04   兰阳技术学院 副教授
+2005.05－2006.07   兰阳技术学院教授
+2006.08－2008.01   兰阳技术学院教授 系主任
+2008.02－2008.07   佛光大学 信息工程系教授
+2008.08－2010.07   佛光大学 产品与媒体设计学系教授兼系主任
+2010.08－2012.07   佛光大学 理工学院院长兼产品与媒体设计学系教授兼系主任
+2012.08－2014.08   兰阳技术学院 校长
+2014.09－2016.01   佛光大学产品与媒体设计学系教授
+2016.02－2019.12   东莞理工学院城市学院 创意设计学院院长
+2017.02－2019.12   东莞理工学院城市学院 校长助理
+2018.08－2019.02   东莞理工学院城市学院 创意设计学院院长校长助理 兼机电工程系主任
+2021.02－2022.03   东莞城市学院 副校长
+2022.04－2023.01   上海中侨职业技术大学 校长助理
+2020.01－        华创（台北）教育集团  董事，顾问
+2023.09－        东莞理工学院 卓越工程师学院教授
+
+三、个人简介
+林江龙 博士，东莞理工学院，教授。1999 年10月毕业于台湾中央大学机械工程专业,获工学博士学位。1983.10－1984.09 台湾塑胶 助理工程师，1987.07 台湾清华大学，动力机械工程专业，硕士毕业后开始担任教职，分别干过兰阳技术学院自动化工程系主任、校务主任、校长，佛光大学产品与媒体设计学系主任、理工学院院长。期间发表了25篇期刊论文、19篇研讨会论文、9本学术专着、2项实用新型专利、6项纵向课题、6项横向课题、社会服务(灰色系统学会理事、Journal of Grey System Editorial Board Jiang-Long Lin Department of Product and Media Design计量管理期刊编辑委员、宜兰县艺术学会顾问、宜兰大学机械与机电工程学系(所) 工程认证校外咨询委员、宜兰县98年度小区文化创意展计划副执行长、中央大学机械系系友会理事、北区技专校院教学资源中心指导委员)、荣誉(，《佛光大学100学年度弹性薪资服务绩优人才》、《佛光大学100学年度教师评鉴绩优教师》、《中央大学机械系99年度杰出系友》荣誉称号)。
+2016.02至今:
+1.东莞理工学院城市学院创意设计学院为省试点学院;
+2东莞理工学院城市学院.校长助理,“主管实验中心、协管教务处;
+3.东莞城市学院副校长, 主管教务处、实验中心、科技处、教学质量监控与评估中心、图书信息;
+4.上海中侨职业技术大学校长助理主管教务处、实验中心;
+5. 2021年获《广东省国际及港澳台高端人才交流专项 “银龄专家” 》荣誉称号;
+6. SCI (SCIE) 检索文章 7 篇。","3","","","2024-09-19 22:18:23","2024-09-27 17:34:49","0",""
+"60","广东省","东莞理工学院","卓越工程师学院","沈博","一、教育背景
+2006年9月-2010年7月：工学学士，东北大学，信息科学与工程学院，自动化专业
+2010年9月-2013年3月：工学硕士，沈阳工业大学，信息科学与工程学院，检测技术及自动化专业
+2013年4月-2016年3月：工学博士，高知工科大学（日本），系统工程学院，智能机械系
+
+二、工作经历
+2016年4月-2019年7月：日本， 高知工科大学（日本）， 综合技术研究所，高级机器人研究中心，助教
+2019年7月至今 东莞理工学院 卓越工程师学院 讲师
+
+三、个人简介
+2010年东北大学自动化专业毕业，获得学士学位；2013年沈阳工业大学检测技术及自动化专业毕业，获得硕士学位；2016年于日本高知工科大学系统工学系基础工学专业毕业，获得博士学位；2017年获得日本文部科学省奖学金。2016年至2019年，在日本高知工科大学综合技术研究所高级机器人研究中心任助理研究员，主持一项日本文部科学省青年基金（基金编号19K20742），获奖情况IEEE ROBIO2015 Finalist of Best Student Paper Award ，日本生物医学与模糊系统学会，贡献奖 ，IEEE ICMA AWARD for ICMA 2018 Best Paper in Automation ；第一作者发表期刊论文7篇，国际会议论文12篇，日本国内会议9篇，联名发表28篇，期中EI收录8篇。主要研究方向：福祉机器人、机器人控制、意图识别。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3334.htm"
+"44","广东省","东莞理工学院","卓越工程师学院","沈哲鑫","一、教育背景
+2013.08－2017.07  华南师范大学增城学院，审计学专业，本科毕业
+2017.08－2019.07  澳门城市大学，工商管理专业，硕士毕业
+2019.08－2022.07  澳门城市大学，金融学专业，博士毕业
+
+二、工作经历
+2022.08—2022.11 广州商学院 国际学院 讲师
+2022.12至今 东莞理工学院 卓越工程师学院（创新创业学院） 讲师
+
+三、个人简介
+主要讲授的课程有：《创业基础》、《管理学原理》、《市场调研》
+
+四、获奖与荣誉
+1.中国国际大学生创新大赛（2023）国赛金奖，指导老师，2023；
+2.中国国际大学生创新大赛（2023）广东省分赛（原第九届“互联网+”大学生创新创业大赛）铜奖，指导老师，2023
+3.首届全国大学生职业规划大赛广东省分赛铜奖，指导教师，2023。","3","","","2024-09-19 22:18:23","2024-09-27 17:34:49","0",""
+"49","广东省","东莞理工学院","卓越工程师学院","王福杰","一、教育背景
+2009.09－2013.06   广东工业大学，自动化专业，本科毕业
+2017.06－2017.10   The University of Newcastle, Australia，访问学者
+2013.09－2018.06   广东工业大学，控制科学与工程专业，博士毕业
+
+二、工作经历
+2018.06－2020.12   东莞理工学院，讲师
+2020.06－至今     东莞理工学院，硕士生导师
+2021.01－2023.12   东莞理工学院，特聘副教授
+2023.12－至今     东莞理工学院，副教授
+
+三、教学工作
+主要讲授的课程有：机器人控制技术、机器人与智能控制技术、机器人学、机器人控制技术综合训练、WinCC数据采集与监控（入门篇）、WinCC数据采集与监控（提高篇）、西门子双数字化胞胎技术基础、WinCC应用、自动化综合导论、智能制造综合导论，主持研究生与本科生教学研究项目4项，参与多项国家级、省部级教学研究项目。
+
+四、科研工作
+长期从事机器人技术、自动化、人工智能等专业方向的科研工作，先后主持国家自然科学基金青年基金、广东省基础与应用基础研究基金面上项目（2项）、广东省教育厅特色创新项目、广东省青年创新人才类项目、东莞市社会发展科技项目重点项目、东莞市特技特派员项目、松山湖特技特派员项目等多项纵向横向项目，参与国家级、省部级以上科研项目近10项，包括国家自然科学基金面上项目、广东省杰出青年基金项目、广东省基础与应用基础研究基金联合基金重点项目等；在机器人、人工智能、智能控制领域发表SCI/EI期刊论文、会议论文20余篇。
+
+五、获奖与荣誉
+1.中国自动化学会科技进步奖二等奖，2023；
+2.全国大学生电子设计竞赛一等奖，指导教师，2023；
+3.全国大学生电子设计竞赛二等奖，指导教师，2023；
+4.全国大学生电子设计竞赛广东赛区一等奖（2组），指导教师，2023；
+5.全国大学生电子设计竞赛广东赛区优秀指导老师，2023；
+6.二十二届全国大学生机器人大赛ROBOCON2023“吴哥之花”全国一等奖，指导教师，2023；
+7.二十二届全国大学生机器人大赛ROBOCON2023“机器马术(竞速)”全国二等奖，指导教师，2023；
+8.二十二届全国大学生机器人大赛ROBOCON2023“机器马术(障碍)”全国三等奖，指导教师，2023；
+9.二十二届全国大学生机器人大赛RoboMaster 2023 机甲大师高校联盟赛(广东站)”步兵对抗赛三等奖，指导教师，2023；
+10.全国研究生电子设计比赛华南赛区二等奖，指导教师，2023；
+11.东莞理工学院研究生电子设计比赛三等奖，指导教师，2023；
+12.广东省大学生电子设计竞赛“AI-未来技术”专题三等奖，指导教师，2022；
+13.广东省大学生电子设计竞赛“AI-未来技术”专题成功参赛奖，指导教师，2022；
+14.二十一届全国大学生机器人大赛 ROBOCON2022“同创辉煌”全国一等奖，指导教师，2022；
+15.广东省机械成果鉴定：全自动高速PCB封装点胶机关键技术研发及产业化（国际先进），2020；
+16.东莞理工学院教学技能比赛二等奖，2019；
+17.东莞理工学院优秀班主任，2019。
+
+六、指导研究生
+现为东莞理工学院硕士生导师，深圳大学兼职硕士生导师、广东工业大学兼职硕士生导师，招收计算机科学与技术专业、电子信息专业研究生，累计培养研究生8人。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3354.htm"
+"57","广东省","东莞理工学院","卓越工程师学院","秦斐燕","一、教育背景
+2001.09－2005.07   西南交通大学，通信工程，本科毕业
+2005.09－2008.07   西南交通大学，微电子学与固体电子学，硕士毕业
+2013.09－2018.06   中国科学院大学，模式识别与智能系统，博士毕业
+
+二、工作经历
+2008.06－2011.11   中国科学院深圳先进技术研究院汽车电子研究中心，助理工程师
+2011.12－2013.08   中国科学院深圳先进技术研究院汽车电子研究中心，工程师
+2018.09－至今     东莞理工学院电子工程与智能化学院，讲师
+
+三、个人简介
+秦斐燕博士长期从事自动化、智能制造、机器人工程等专业方向的教学工作。同时，从事新能源汽车智能控制、模式识别与能源大数据等方向的科研工作。
+先后主持广东省基础与应用基础研究项目1项，东莞市科技特派员项目1项和松山湖科技特派员项目1项和东莞理工学院博士启动基金项目1项。作为骨干人员参与国家自然科学基金面上项目3项，国家自然科学基金青年基金项目1项，国家重点研发计划2项，深圳市技术创新计划技术攻关项目1项，深圳市工程实验室1项，积累了丰富的研究开发经验。发表SCI/EI论文9篇，包括JCR二区论文2篇，授权发明专利2项，授权实用新型专利4项，申请发明专利6项。
+主讲课程有：《NX基础》、《NX提高》和《模式识别与人工智能》。负责东莞理工学院粤港奥机器人学院“新能源动力艇”实验室的建设与指导工作。主持校级教改项目2项，出版教材2部。发表教改论文2篇。指导学生参加广东省电子设计大赛获省二等奖1次。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3344.htm"
+"56","广东省","东莞理工学院","卓越工程师学院","谢仲业","一、教育背景
+2010.09－2014.06    西南交通大学，机械设计制造及其自动化专业，本科毕业
+2015.09－2020.06    中国科学院大学，测试计量技术及仪器，博士毕业
+
+二、工作经历
+2014.06－2015.05    航天控制技术有限公司，助理工程师
+2020.07－2021.03    中车株洲电力机车研究所有限公司，工程师
+2021.04－至今      东莞理工学院，硕士生导师，特聘副教授
+
+三、教学工作
+主要讲授的课程有：C\C++语言程序设计、高级语言程序设计、C++语言及应用开发、matlab及应用、市场调研、工程伦理，主持校级质量工程项目1项。
+
+四、科研工作
+聚焦机器视觉三维检测领域，开展微纳结构膜厚测量、光刻套刻精度检测、微纳尺度3D检测等方法研究与设备研发，发展基于人工智能的新型算法、3D缺陷检测识别与分类智能算法等方向。主持国家自然科学基金1项，广东省科研平台项目（青年特色人才项目）1项，区域联合重点项目（与中国科学院合作）1项，四川省科技厅苗子工程项目1项，参与国家重点研发项目，国家自然科学基金面上项目等多项科研项目，在国内外高水平SCI期刊上发表论文20余篇，申请专利5项。
+
+五、获奖与荣誉
+1. 全国大学生电子设计竞赛广东赛区三等奖（2组），指导教师，2023；
+2. 二十二届全国大学生机器人大赛ROBOCON2023“吴哥之花”全国一等奖，指导教师，2023；
+3. 二十二届全国大学生机器人大赛ROBOCON2023“机器马术(竞速)”全国二等奖，指导教师，2023；
+4. 二十二届全国大学生机器人大赛ROBOCON2023“机器马术(障碍)”全国三等奖，指导教师，2023；
+5. 二十二届全国大学生机器人大赛RoboMaster 2023 机甲大师高校联盟赛3v3英雄机器人组二等奖，指导教师，2023；
+6. 二十二届全国大学生机器人大赛RoboMaster 2023 机甲大师高校联盟赛3V3步兵组一等奖，指导教师，2023；
+7. 二十一届全国大学生机器人大赛 ROBOCON2022“同创辉煌”全国一等奖，指导教师，2022；
+8. 二十一届全国大学生机器人大赛RoboMaster 2023 机甲大师高校联盟赛3v3对抗赛一等奖，指导教师，2022；
+9. 十四届“蓝桥杯”全国软件和信息专业人才广东赛区C/C++程序设计大学B组三等奖，2023.
+10.“蓝桥杯”优秀指导教师。
+11.东莞理工学院课程思政教学设计大赛三等奖，2023；
+
+六、指导研究生
+现为东莞理工学院硕士生导师，拟招收计算机科学与技术专业、电子信息专业研究生。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3324.htm"
+"48","广东省","东莞理工学院","卓越工程师学院","边国维","一、教育背景
+1989.08－1991.06   台湾大学，计算机科学专业，硕士毕业
+1994.08－1999.06   台湾大学，计算机科学专业，博士毕业
+
+二、工作经历
+1999.07－2003.06   传译网科技股份有限公司，董事长兼总经理
+2003.08－2005.01   台湾 中央研究院信息科学研究所，博士后研究员
+2005.02－2018.12   台湾 华梵大学信息管理学系，助理教授
+2019.02－2023.04   广东省肇庆学院 计算机科学学院、大数据学院，副教授
+2023.05－至今     东莞理工学院卓越工程师学院（创新创业学院），副教授
+
+三、个人简介
+边国维 博士，东莞理工学院 副教授。台湾大学资讯工程学系博士，台湾中央研究院信息科学研究所博士后研究。从事自然语言处理(NLP)、人工智能(AI)、跨语言信息检索(CLIR)、机器翻译(MT)等领域之研究与系统开发二十多年，在该领域已发表过六十多篇学术论文，多次担任国际会议与SCI期刊的议程与论文审查委员。
+曾任职软件公司多年，担任过研发工程师、项目经理、总经理、董事长。后任教于台湾华梵大学信息管理学系，主持人工智能实验室，并担任云端与行动应用学程召集人。
+在软件设计、开发、和整合方面具有高度熟练的技术与专业，具备人工智能应用、大型系统设计、用户接口设计、云端和行动运算的实务经验，教导学生创业丶募资丶产品研发丶项目管理丶产品营销。在计算机科学丶数字媒体和交叉科学(跨领域)的教学与产业合作也有多年经验，指导学生设计开发人工智能应用系统、移动应用App、与物联网产品。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3254.htm"
+"55","广东省","东莞理工学院","卓越工程师学院","连畊宇"," 一、教育背景
+1987.09－1991.06  台湾清华大学，电机工程专业，本科毕业
+1991.09－1992.06  台湾清华大学，电机工程专业，硕士毕业
+1992.09－1998.06  台湾清华大学，电机工程专业，博士毕业
+
+ 二、工作经历
+1998.07－2003.02  台湾工业技术研究院，研究员
+2003.03－2016.06  台湾中华科技大学，助理教授
+2016.07－2019.06  台湾中华科技大学，副教授
+2018.01－2019.06  台湾中华科技大学航空学院，副教授，系主任
+2019.09－2022.06  闽南师范大学，副教授
+2023.05－至今    东莞理工学院卓越工程师学院（创新创业学院），副教授
+
+三、个人简介
+连畊宇副教授长期从事电力系统分析、故障侦测、信号处理等专业方向的教学科研工作，同时积极参与自动化工程、智能电网方向、人工智能赋能方向的科研工作。先后主持和参与省部级以上科研项目17项，其中机关部门科研项目课题12项。近十年先后在核心刊物上发表科研论文11篇。曾获得年度优良教师奖。拥有民航局飞机维修证照，亦为民航局欧盟航空维修认证专任讲师。曾在“两岸智能配电网与新能源技术及应用研讨会”会议中发表专题演说。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3164.htm"
+"53","广东省","东莞理工学院","卓越工程师学院","陈德华","一、教育背景
+1999.09－2003.07   台湾中原大学，应用数学专业，硕士毕业
+2004.09－2009.07   台湾中原大学，应用数学专业，博士毕业
+
+二、工作经历
+2010.01－2015.02   中央研究院，统计科学研究所，博士后研究员
+2015.03－2016.02   阳明大学，生物医学影像暨放射科学系，博士后研究员
+2016.03－2018.01   交通大学，产学运筹中心，博士后研究员
+2018.02－2023.04   中强光电股份有限公司，智慧演算技术部，研发工程师
+2023.06－至今     东莞理工学院卓越工程师学院（创新创业学院），副教授
+
+三、个人简介
+陈德华 博士，东莞理工学院，副教授。2009 年 7 月毕业于台湾中原大学应用数学专业,获理学博士学位。2010 年 1 月到 2015 年 2 月服务期间于中央研究院统计科学研究所担任博士后研究员，跨领域研究次世代基因序列(NGS)甲基化异质性问题。2016年3月服务于阳明大学生物医学影像暨放射科学系担任博士后研究员，负责CT影像重建算法开发，加速影像重建相关算法。于2016年初进入台湾交通大学的产学运筹中心担任博士后研究员，该中心参与经济部与产业合作计划，主要负责提升公司的产线生产智能化，导入AI技术应用于产在线，如刀具毁损预测等。2018进入中强光电股份有限公司智慧演算技术部，主要负责产线AOI开发，例如协助产线开发炉后PCB内电子零件锡膏瑕疵检测、导光板表面瑕疵检测、导光板网点精密量测等研发。研究领域包括类神经网络、影像重建算法、强化学习。研究成果有国际研讨会论文(EI)4篇、SCI 检索论文10 篇。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3264.htm"
+"42","广东省","东莞理工学院","卓越工程师学院","陈自豪","一、教育背景
+2007.09－2009.07   台湾中华大学，机械工程专业，硕士毕业
+2009.09－2016.07   台湾中正大学，机械工程专业，博士毕业
+
+二、工作经历
+2013.09－2015.04   宝成工业股份有限公司，NIKE创新事业群，技术襄理
+2017.01－2023.02   台湾中正大学前瞻制造系统顶尖研究中心，博士后研究员
+2023.02－至今     东莞创云智略科技有限公司，技术长
+2023.06－至今     东莞理工学院卓越工程师学院（创新创业学院），副教授、系主任
+
+三、个人简介
+陈自豪 博士，东莞理工学院，副教授。2017 年 1 月毕业于台湾中正大学机械工程专业,获工学博士学位。2013 年 9 月到 2015 年 4 月获得台湾教育行政机关-产学合作培育博士级研发人才计划补助，以产博共同培养的身份进入产业-宝成国际集团担任技术襄理（副高级），期间与国外知名品牌 NIKE，Adidas 等合作开发多款高价值高性能运动产品以及自动化生产技术。毕业后至 2023 年 6 月担任台湾中正大学 前瞻制造系统顶尖研究中心，博士后研究员。担任研究员期间主要领导6人跨领域科研团队，团队内有计算机、化学、数学、电子电路等人才，主要面相协助产业数字化技术升级，主要负责鞋业、半导体业、医院等领域厂家合作，针对鞋业部分，协助多家制鞋产业智能化升级，并协助鞋业开发具独特性中底产品制程，如高倍率发泡成型预估系统，微细物理发泡制程技术、3D打印中底结构几何性能设计软件程序等，在医疗部分，主要针对放射科与外科医师，开发智慧AI辨识器官、肿瘤勾画软件与微创手术辅具设计，其中协助医院开发专用的液态柔性材料3D打印以及生物墨水3D打印软硬件系统，未来也会积极导入医疗生物芯片等技术开发。协助单位申请产业合作横向课题 4 项，企业投入研发金额超 500 万。另外，协助单位申请台湾教育、科研行政单位与研究中心课题5 项，共获得补助金额超 470 万，所有课题中，担任主持人 3 项(已结题)、共同主持人 2 项(已结题)、协同参与 4 项(已结题)。个人获奖方面，与企业合作开发技术【智能高倍率射出发泡成型系统之研发】获得台湾科研行政单位颁发未来科技突破奖奖励，以第一作者或通讯作者发表科研论文 7 篇，其中，SCI 检索文章 2 篇，EI 检索文章 2 篇，研讨会文章 3 篇。申请专利 7 项。目前主要从事新材料智能化生产技术以及图像识别等方面的研究。2023年6月于东莞理工学院卓越工程师学院（创新创业学院）入职，担任计算机科学与技术专业系主任，2023年10月获聘为广东省“产教评”产业技能生态链公共实训基地专家导师。","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://gcs.dgut.edu.cn/info/1488/3274.htm"
+"93","广东省","东莞理工学院","国际微电子学院","丁颜玉助理教授","丁颜玉助理教授
+dingyy@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1235.htm
+专业方向：人工智能与深度学习
+        
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1235.htm"
+"78","广东省","东莞理工学院","国际微电子学院","任斌二级教授、广东省教学名师、广东省“千百十”省级人才","任斌二级教授、广东省教学名师、广东省“千百十”省级人才
+29547648@qq.com
+个人主页：https://sme.dgut.edu.cn/info/1123/1432.htm
+专业方向：电子技术、机器视觉、人工智能
+        
+
+
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1123/1432.htm"
+"90","广东省","东莞理工学院","国际微电子学院","刘华珠教授","刘华珠教授
+liuhz@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1123/1225.htm
+专业方向：机器视觉，人工智能，嵌入式系统和数字集成电路设计等
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1123/1225.htm"
+"69","广东省","东莞理工学院","国际微电子学院","刘彬特聘副研究员","刘彬特聘副研究员
+个人主页：https://sme.dgut.edu.cn/info/1124/4294.htm
+专业方向：无人艇相关核心技术的研究
+        
+
+
+
+
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/4294.htm"
+"92","广东省","东莞理工学院","国际微电子学院","卢贵主教授","卢贵主教授
+lugz@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1123/1222.htm
+专业方向：集成电路设计及应用
+         分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1123/1222.htm"
+"80","广东省","东莞理工学院","国际微电子学院","吴定军讲师","吴定军讲师
+1309622641@qq.com
+个人主页：https://sme.dgut.edu.cn/info/1125/4094.htm
+专业方向：半导体光电信息材料与器件
+        
+
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/4094.htm"
+"82","广东省","东莞理工学院","国际微电子学院","周海特聘教授","周海特聘教授
+hizhou@dgut.edu.cn
+个人主页： https://www.x-mol.com/people/hizhou
+专业方向：微纳光电信息材料与器件
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2024-09-27 17:34:49","0",""
+"65","广东省","东莞理工学院","国际微电子学院","唐穗谷讲师","唐穗谷讲师
+tangsuigu@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/4134.htm
+专业方向：医学图像分割，深度学习
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/4134.htm"
+"66","广东省","东莞理工学院","国际微电子学院","姚霞助理教授","姚霞助理教授
+yaox@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1228.htm
+专业方向：信号与信息处理
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1228.htm"
+"99","广东省","东莞理工学院","国际微电子学院","姜明慧助理教授","姜明慧助理教授
+jiangmh@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1229.htm
+专业方向：集成光子芯片
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1229.htm"
+"86","广东省","东莞理工学院","国际微电子学院","孙凤文讲师","孙凤文讲师
+sunfw@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1247.htm
+专业方向：电子信息工程
+        
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1247.htm"
+"100","广东省","东莞理工学院","国际微电子学院","宫玉彬客座教授","宫玉彬客座教授
+gongyb@dgut.edu.cn
+个人主页：
+专业方向：
+         分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1123/1412.htm"
+"89","广东省","东莞理工学院","国际微电子学院","张健开讲师","张健开讲师
+个人主页：https://sme.dgut.edu.cn/info/1125/4044.htm
+专业方向：钙钛矿光电材料与器件
+        
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/4044.htm"
+"75","广东省","东莞理工学院","国际微电子学院","张光旻副院长/副教授","张光旻副院长/副教授
+zhanggm@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/1238.htm
+专业方向：电子科学与技术
+        
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/1238.htm"
+"85","广东省","东莞理工学院","国际微电子学院","张宝晖讲师","张宝晖讲师
+zhangbaohui@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/4634.htm
+专业方向：微电子与固体电子学，敏感材料与器件，MEMS器件
+        
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/4634.htm"
+"73","广东省","东莞理工学院","国际微电子学院","张梅副教授","张梅副教授
+zhangm@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/1301.htm
+专业方向：物理电子
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/1301.htm"
+"91","广东省","东莞理工学院","国际微电子学院","彭超助理教授","彭超助理教授
+pengchao@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1245.htm
+专业方向：电路与系统专业
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1245.htm"
+"102","广东省","东莞理工学院","国际微电子学院","李媛系主任/讲师","李媛系主任/讲师
+liyuan@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1304.htm
+专业方向：主要从事氮化物半导体材料、紫外光电器件、高电子迁移率晶体管等方面的研究
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1304.htm"
+"97","广东省","东莞理工学院","国际微电子学院","李秀平教授","李秀平教授
+lixp@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1123/1233.htm
+专业方向：
+         分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1123/1233.htm"
+"68","广东省","东莞理工学院","国际微电子学院","杨阳系主任/助理教授","杨阳系主任/助理教授
+yangyang@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1223.htm
+专业方向：电子信息
+        
+
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1223.htm"
+"95","广东省","东莞理工学院","国际微电子学院","杨 雷教授","杨 雷教授
+yangl@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1123/1224.htm
+专业方向：主要从事嵌入式系统、测控系统等方面的研究。
+        
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1123/1224.htm"
+"98","广东省","东莞理工学院","国际微电子学院","林俊辉讲师","林俊辉讲师
+个人主页：https://sme.dgut.edu.cn/info/1125/4124.htm
+专业方向：半导体材料与器件
+        
+
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/4124.htm"
+"96","广东省","东莞理工学院","国际微电子学院","柴吉星讲师","柴吉星讲师
+个人主页：https://sme.dgut.edu.cn/info/1125/4064.htm
+专业方向：III-V族半导体材料与光电探测器
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/4064.htm"
+"63","广东省","东莞理工学院","国际微电子学院","沈飞教授","沈飞教授
+shenfei@hfut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1123/1232.htm
+专业方向：电磁信号的产生、调制、功率放大及其在探测与无损检测等方面的应用研究
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1123/1232.htm"
+"74","广东省","东莞理工学院","国际微电子学院","牛高强讲师","牛高强讲师
+个人主页：https://sme.dgut.edu.cn/info/1125/4494.htm
+专业方向：从事MEMS工艺开发、半导体传感器设计、半导体光伏等方向的研究工作
+        
+
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/4494.htm"
+"101","广东省","东莞理工学院","国际微电子学院","王浩伟副研究员","王浩伟副研究员
+wanghaowei@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/3484.htm
+专业方向：半导体与电子器件可靠性测试、失效物理分析、失效率与寿命评估、加速试验技术、可靠性系统工程
+        
+
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2024-09-27 17:34:49","0",""
+"64","广东省","东莞理工学院","国际微电子学院","王禹系副主任/助理教授","王禹系副主任/助理教授
+chnwangyu@dgut.edu.cn
+个人主页：https://www.researchgate.net/profile/Yu-Wang-388
+专业方向：锂离子电池碰撞安全；电子元器件中的力学问题
+        
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/8994.htm"
+"83","广东省","东莞理工学院","国际微电子学院","程凯扬助理教授","程凯扬助理教授
+chengky@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1230.htm
+专业方向：微波与电磁调控
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1230.htm"
+"71","广东省","东莞理工学院","国际微电子学院","罗安信特聘副教授","罗安信特聘副教授
+luoanxin@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/4084.htm
+专业方向：振动能量采集器，自供能系统，微纳传感器
+        
+
+
+
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/4084.htm"
+"79","广东省","东莞理工学院","国际微电子学院","罗福川讲师","罗福川讲师
+luofuc@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1305.htm
+专业方向：主要从事高频微波介质基板、柔性复合基板材料、微波介质陶瓷、二维材料与器件的研究。
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1305.htm"
+"81","广东省","东莞理工学院","国际微电子学院","胡必武副教授","胡必武副教授
+hubw@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/1243.htm
+专业方向：微机原理与单片机技术、EDA技术基础、电工与电子技术等
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/1243.htm"
+"70","广东省","东莞理工学院","国际微电子学院","胡胜副教授","胡胜副教授
+hus@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/1240.htm
+专业方向：数字电子技术、EDA技术基础、PLC原理及应用等
+        
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/1240.htm"
+"84","广东省","东莞理工学院","国际微电子学院","艾远飞助理教授","艾远飞助理教授
+aiyf@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1246.htm
+专业方向：微电子科学与工程
+        
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1246.htm"
+"77","广东省","东莞理工学院","国际微电子学院","苏龙兴特聘研究员","苏龙兴特聘研究员
+sulongxing@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1123/4394.htm
+专业方向：半导体物理/器件
+        
+
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1123/4394.htm"
+"76","广东省","东莞理工学院","国际微电子学院","谢子娟助理教授","谢子娟助理教授
+2022005@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1227.htm
+专业方向：半导体缺陷光电特性的第一性原理计算
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1227.htm"
+"67","广东省","东莞理工学院","国际微电子学院","贾传宇系副主任/副研究员","贾传宇系副主任/副研究员
+jiacy@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/1248.htm
+专业方向：
+        
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/1248.htm"
+"61","广东省","东莞理工学院","国际微电子学院","赖浩杰讲师","赖浩杰讲师
+个人主页：https://sme.dgut.edu.cn/info/1125/4114.htm
+专业方向：二维半导体光电子信息器件，具体研究方向包括场效应电子器件，存储器与类脑计算器件，光电探测器件等
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/4114.htm"
+"72","广东省","东莞理工学院","国际微电子学院","赵旭鹏特聘副研究员","赵旭鹏特聘副研究员
+zhaoxupeng@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/1291.htm
+专业方向：自旋电子学、磁性存储、反铁磁性
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/1291.htm"
+"88","广东省","东莞理工学院","国际微电子学院","赵晓芳副教授","赵晓芳副教授
+zhaoxf@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/1244.htm
+专业方向：图像处理、人工智能、电子功能材料与器件
+        
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1124/1244.htm"
+"62","广东省","东莞理工学院","国际微电子学院","逯瑶特聘副研究员","逯瑶特聘副研究员
+luyao08@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1124/1290.htm
+专业方向：可穿戴热电技术，基于微型热电制冷的芯片热管理、GaN基外延及芯片技术
+        
+
+
+
+
+分享到：","3","","","2024-09-19 22:18:23","2024-09-27 17:34:49","0",""
+"94","广东省","东莞理工学院","国际微电子学院","陈剑助理教授","陈剑助理教授
+chenjian@dgut.edu.cn
+个人主页：https://sme.dgut.edu.cn/info/1125/1236.htm
+专业方向：微电子科学与工程
+        
+
+
+分享到：","3","","","2024-09-19 22:18:23","2025-05-14 03:20:46","0","https://sme.dgut.edu.cn/info/1125/1236.htm"
