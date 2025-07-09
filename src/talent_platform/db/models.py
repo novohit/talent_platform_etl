@@ -1,5 +1,7 @@
-from sqlmodel import Field, SQLModel
-from typing import Optional
+from sqlmodel import Field, SQLModel, JSON, Column
+from typing import Optional, Dict, Any
+from datetime import datetime
+import json
 
 
 class Teacher(SQLModel, table=True):
@@ -77,3 +79,31 @@ class Domain(SQLModel, table=True):
     level: int
     code: Optional[str] = None
     sort: Optional[int] = None
+
+
+class ScheduledTaskModel(SQLModel, table=True):
+    __tablename__ = "scheduled_tasks"
+    
+    id: str = Field(primary_key=True)
+    name: str = Field(max_length=255)
+    plugin_name: str = Field(max_length=100)
+    parameters: Dict[str, Any] = Field(default={}, sa_column=Column(JSON))
+    schedule_type: str = Field(max_length=20)  # 'cron', 'interval'
+    schedule_config: Dict[str, Any] = Field(sa_column=Column(JSON))
+    enabled: bool = Field(default=True)
+    
+    # 执行状态跟踪
+    last_run: Optional[datetime] = None
+    next_run: Optional[datetime] = None
+    
+    # 审计字段
+    created_at: datetime = Field(default_factory=datetime.now)
+    updated_at: datetime = Field(default_factory=datetime.now)
+    created_by: Optional[str] = Field(default="system", max_length=100)
+    
+    # 任务元数据
+    description: Optional[str] = Field(default=None, max_length=500)
+    tags: Optional[str] = Field(default=None, max_length=255)  # JSON string
+    priority: int = Field(default=5)  # 1-10, 10 is highest
+    max_retries: int = Field(default=3)
+    timeout: Optional[int] = Field(default=None)  # seconds

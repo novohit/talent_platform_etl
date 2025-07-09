@@ -1,0 +1,14 @@
+{
+  "name": "long_time_test",
+  "version": "1.0.0",
+  "description": "长时测试插件",
+  "author": "Talent Platform Team",
+  "entry_point": "main.long_time_test",
+  "parameters": {
+  },
+  "dependencies": [
+  ],
+  "python_version": ">=3.8",
+  "enabled": true,
+  "tags": ["test", "long_time"]
+} 

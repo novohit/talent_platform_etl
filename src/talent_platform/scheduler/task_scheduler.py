@@ -45,9 +45,22 @@ class TaskScheduler:
         self._register_db_handlers()
     
     def _load_scheduled_tasks(self):
-        """加载调度任务配置"""
-        # 这里可以从数据库或配置文件加载
-        # 示例配置
+        """加载调度任务配置 - 从数据库加载持久化任务"""
+        logger.info("Loading persisted scheduled tasks...")
+        
+        # 从数据库加载所有持久化任务
+        loaded_count = self.load_persisted_tasks()
+        
+        # 如果数据库为空，创建一些默认任务
+        # if loaded_count == 0:
+        #     logger.info("No persisted tasks found, creating default tasks...")
+        #     self._create_default_tasks()
+        
+        logger.info(f"Task scheduler initialization completed with {len(self.scheduled_tasks)} tasks")
+    
+    def _create_default_tasks(self):
+        """创建默认的调度任务"""
+        # 示例默认任务配置
         default_tasks = [
             {
                 "id": "daily_teacher_sync",
@@ -64,14 +77,34 @@ class TaskScheduler:
                 "parameters": {"batch_size": 100},
                 "schedule_type": "interval",
                 "schedule_config": {"interval": 3600}  # 每小时
+            },
+            {
+                "id": "mysql_health_check",
+                "name": "MySQL数据库健康检查",
+                "plugin_name": "mysql_test",
+                "parameters": {"operation": "health_check"},
+                "schedule_type": "interval",
+                "schedule_config": {"interval": 300}  # 每5分钟
+            },
+            {
+                "id": "mysql_daily_test",
+                "name": "MySQL每日连接测试",
+                "plugin_name": "mysql_test",
+                "parameters": {"operation": "query_test"},
+                "schedule_type": "cron",
+                "schedule_config": {"cron": "0 8 * * *"}  # 每天早上8点
             }
         ]
         
+        # 使用 add_scheduled_task 方法来创建默认任务（自动持久化）
         for task_config in default_tasks:
-            task = ScheduledTask(**task_config)
-            self.scheduled_tasks[task.id] = task
+            try:
+                self.add_scheduled_task(task_config)
+                logger.info(f"Created default task: {task_config['id']}")
+            except Exception as e:
+                logger.error(f"Failed to create default task {task_config['id']}: {e}")
         
-        logger.info(f"Loaded {len(self.scheduled_tasks)} scheduled tasks")
+        logger.info(f"Default tasks creation completed")
     
     def _register_db_handlers(self):
         """注册数据库变更处理器"""
@@ -108,36 +141,313 @@ class TaskScheduler:
         db_monitor.register_handler("data_intl_wide_view", handle_teacher_wide_change)
     
     def add_scheduled_task(self, task_config: Dict) -> str:
-        """添加调度任务"""
-        task = ScheduledTask(**task_config)
-        self.scheduled_tasks[task.id] = task
+        """添加调度任务 - 纯 Celery Beat + 持久化方案"""
+        from .celery_app import celery_app
+        from celery.schedules import crontab
+        from ..db.database import get_scheduler_db_session
+        from ..db.models import ScheduledTaskModel
+        from datetime import datetime
         
-        logger.info(f"Added scheduled task: {task.name}")
-        return task.id
+        task = ScheduledTask(**task_config)
+        
+        # 构建 Celery 调度配置
+        schedule = self._build_celery_schedule(task.schedule_type, task.schedule_config)
+        
+        if schedule is None:
+            raise ValueError(f"Invalid schedule configuration: {task.schedule_config}")
+        
+        try:
+            # 1. 持久化到数据库
+            with get_scheduler_db_session() as session:
+                # 检查任务是否已存在
+                existing_task = session.get(ScheduledTaskModel, task.id)
+                if existing_task:
+                    # 更新现有任务
+                    existing_task.name = task.name
+                    existing_task.plugin_name = task.plugin_name
+                    existing_task.parameters = task.parameters
+                    existing_task.schedule_type = task.schedule_type
+                    existing_task.schedule_config = task.schedule_config
+                    existing_task.enabled = task.enabled
+                    existing_task.updated_at = datetime.now()
+                    session.add(existing_task)
+                else:
+                    # 创建新任务
+                    db_task = ScheduledTaskModel(
+                        id=task.id,
+                        name=task.name,
+                        plugin_name=task.plugin_name,
+                        parameters=task.parameters,
+                        schedule_type=task.schedule_type,
+                        schedule_config=task.schedule_config,
+                        enabled=task.enabled,
+                        description=task_config.get("description"),
+                        tags=task_config.get("tags"),
+                        priority=task_config.get("priority", 5),
+                        max_retries=task_config.get("max_retries", 3),
+                        timeout=task_config.get("timeout")
+                    )
+                    session.add(db_task)
+                
+                session.commit()
+                logger.info(f"Persisted task to database: {task.id}")
+            
+            # 2. 添加到 Celery Beat Schedule
+            self._add_task_to_celery_beat(task, schedule)
+            
+            # 3. 存储到内存（TODO 后续更换成分布式缓存）
+            self.scheduled_tasks[task.id] = task
+            
+            logger.info(f"Successfully added scheduled task: {task.name}")
+            return task.id
+            
+        except Exception as e:
+            logger.error(f"Failed to add scheduled task {task.id}: {e}")
+            raise
+    
+    def _build_celery_schedule(self, schedule_type: str, schedule_config: Dict):
+        """构建 Celery 调度配置"""
+        from celery.schedules import crontab
+        
+        if schedule_type == "interval":
+            interval = schedule_config.get("interval", 3600)
+            return float(interval)
+        
+        elif schedule_type == "cron":
+            cron_expr = schedule_config.get("cron", "0 * * * *")
+            # 解析 cron 表达式: "minute hour day_of_month month day_of_week"
+            parts = cron_expr.split()
+            
+            if len(parts) != 5:
+                logger.error(f"Invalid cron expression: {cron_expr}")
+                return None
+            
+            try:
+                return crontab(
+                    minute=parts[0],
+                    hour=parts[1], 
+                    day_of_month=parts[2],
+                    month_of_year=parts[3],
+                    day_of_week=parts[4]
+                )
+            except Exception as e:
+                logger.error(f"Failed to parse cron expression {cron_expr}: {e}")
+                return None
+        
+        else:
+            logger.error(f"Unsupported schedule type: {schedule_type}")
+            return None
+    
+    def _add_task_to_celery_beat(self, task: ScheduledTask, schedule):
+        """添加任务到 Celery Beat Schedule"""
+        from .celery_app import celery_app
+        
+        if not task.enabled:
+            logger.info(f"Task {task.id} is disabled, skipping Celery Beat registration")
+            return
+        
+        try:
+            # 构建任务配置
+            task_config = {
+                'task': 'talent_platform.scheduler.tasks.execute_plugin_task',
+                'schedule': schedule,
+                'args': [task.plugin_name],
+                'kwargs': task.parameters,
+                'options': {
+                    'queue': 'plugin_tasks',
+                    'priority': getattr(task, 'priority', 5),
+                }
+            }
+            
+            # 如果有超时设置
+            if hasattr(task, 'timeout') and task.timeout:
+                task_config['options']['time_limit'] = task.timeout
+            
+            # 如果有重试设置
+            if hasattr(task, 'max_retries'):
+                task_config['options']['retry'] = True
+                task_config['options']['max_retries'] = task.max_retries
+            
+            # 动态添加到 Celery Beat
+            celery_app.conf.beat_schedule[task.id] = task_config
+            
+            logger.info(f"Added task {task.id} to Celery Beat schedule")
+            
+        except Exception as e:
+            logger.error(f"Failed to add task {task.id} to Celery Beat: {e}")
+            raise
+    
+    def _remove_task_from_celery_beat(self, task_id: str):
+        """从 Celery Beat Schedule 移除任务"""
+        from .celery_app import celery_app
+        
+        try:
+            if task_id in celery_app.conf.beat_schedule:
+                del celery_app.conf.beat_schedule[task_id]
+                logger.info(f"Removed task {task_id} from Celery Beat schedule")
+                return True
+            else:
+                logger.warning(f"Task {task_id} not found in Celery Beat schedule")
+                return False
+                
+        except Exception as e:
+            logger.error(f"Failed to remove task {task_id} from Celery Beat: {e}")
+            return False
     
     def remove_scheduled_task(self, task_id: str) -> bool:
-        """移除调度任务"""
-        if task_id in self.scheduled_tasks:
-            del self.scheduled_tasks[task_id]
-            logger.info(f"Removed scheduled task: {task_id}")
+        """移除调度任务 - 从数据库和 Celery Beat 中删除"""
+        from ..db.database import get_scheduler_db_session
+        from ..db.models import ScheduledTaskModel
+        
+        try:
+            # 1. 从数据库删除
+            with get_scheduler_db_session() as session:
+                db_task = session.get(ScheduledTaskModel, task_id)
+                if db_task:
+                    session.delete(db_task)
+                    session.commit()
+                    logger.info(f"Deleted task from database: {task_id}")
+                else:
+                    logger.warning(f"Task {task_id} not found in database")
+            
+            # 2. 从 Celery Beat 移除
+            self._remove_task_from_celery_beat(task_id)
+            
+            # 3. 从内存移除
+            if task_id in self.scheduled_tasks:
+                del self.scheduled_tasks[task_id]
+            
+            logger.info(f"✅ Successfully removed scheduled task: {task_id}")
             return True
-        return False
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to remove scheduled task {task_id}: {e}")
+            return False
     
     def enable_task(self, task_id: str) -> bool:
-        """启用任务"""
-        if task_id in self.scheduled_tasks:
-            self.scheduled_tasks[task_id].enabled = True
-            logger.info(f"Enabled task: {task_id}")
+        """启用任务 - 更新数据库和 Celery Beat"""
+        from ..db.database import get_scheduler_db_session
+        from ..db.models import ScheduledTaskModel
+        from datetime import datetime
+        
+        try:
+            # 1. 更新数据库状态
+            with get_scheduler_db_session() as session:
+                db_task = session.get(ScheduledTaskModel, task_id)
+                if not db_task:
+                    logger.error(f"Task {task_id} not found in database")
+                    return False
+                
+                db_task.enabled = True
+                db_task.updated_at = datetime.now()
+                session.add(db_task)
+                session.commit()
+                logger.info(f"Enabled task in database: {task_id}")
+            
+            # 2. 更新内存状态
+            if task_id in self.scheduled_tasks:
+                self.scheduled_tasks[task_id].enabled = True
+            
+            # 3. 重新添加到 Celery Beat
+            if task_id in self.scheduled_tasks:
+                task = self.scheduled_tasks[task_id]
+                schedule = self._build_celery_schedule(task.schedule_type, task.schedule_config)
+                if schedule:
+                    self._add_task_to_celery_beat(task, schedule)
+            
+            logger.info(f"✅ Successfully enabled task: {task_id}")
             return True
-        return False
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to enable task {task_id}: {e}")
+            return False
     
     def disable_task(self, task_id: str) -> bool:
-        """禁用任务"""
-        if task_id in self.scheduled_tasks:
-            self.scheduled_tasks[task_id].enabled = False
-            logger.info(f"Disabled task: {task_id}")
+        """禁用任务 - 更新数据库和 Celery Beat"""
+        from ..db.database import get_scheduler_db_session
+        from ..db.models import ScheduledTaskModel
+        from datetime import datetime
+        
+        try:
+            # 1. 更新数据库状态
+            with get_scheduler_db_session() as session:
+                db_task = session.get(ScheduledTaskModel, task_id)
+                if not db_task:
+                    logger.error(f"Task {task_id} not found in database")
+                    return False
+                
+                db_task.enabled = False
+                db_task.updated_at = datetime.now()
+                session.add(db_task)
+                session.commit()
+                logger.info(f"Disabled task in database: {task_id}")
+            
+            # 2. 更新内存状态
+            if task_id in self.scheduled_tasks:
+                self.scheduled_tasks[task_id].enabled = False
+            
+            # 3. 从 Celery Beat 移除
+            self._remove_task_from_celery_beat(task_id)
+            
+            logger.info(f"Successfully disabled task: {task_id}")
             return True
-        return False
+            
+        except Exception as e:
+            logger.error(f"Failed to disable task {task_id}: {e}")
+            return False
+    
+    def load_persisted_tasks(self):
+        """从数据库加载持久化的定时任务"""
+        from ..db.database import get_scheduler_db_session
+        from ..db.models import ScheduledTaskModel
+        
+        try:
+            with get_scheduler_db_session() as session:
+                # 查询所有任务
+                db_tasks = session.query(ScheduledTaskModel).all()
+                
+                loaded_count = 0
+                enabled_count = 0
+                
+                for db_task in db_tasks:
+                    try:
+                        # 转换为 ScheduledTask 对象
+                        task = ScheduledTask(
+                            id=db_task.id,
+                            name=db_task.name,
+                            plugin_name=db_task.plugin_name,
+                            parameters=db_task.parameters,
+                            schedule_type=db_task.schedule_type,
+                            schedule_config=db_task.schedule_config,
+                            enabled=db_task.enabled,
+                            last_run=db_task.last_run,
+                            next_run=db_task.next_run,
+                            created_at=db_task.created_at
+                        )
+                        
+                        # 存储到内存
+                        self.scheduled_tasks[task.id] = task
+                        loaded_count += 1
+                        
+                        # 如果任务启用，添加到 Celery Beat
+                        if task.enabled:
+                            schedule = self._build_celery_schedule(task.schedule_type, task.schedule_config)
+                            if schedule:
+                                self._add_task_to_celery_beat(task, schedule)
+                                enabled_count += 1
+                        
+                        logger.debug(f"Loaded task: {task.id} (enabled: {task.enabled})")
+                        
+                    except Exception as e:
+                        logger.error(f"Failed to load task {db_task.id}: {e}")
+                        continue
+                
+                logger.info(f"Loaded {loaded_count} tasks from database ({enabled_count} enabled)")
+                return loaded_count
+                
+        except Exception as e:
+            logger.error(f"Failed to load persisted tasks: {e}")
+            return 0
     
     def trigger_plugin(self, plugin_name: str, parameters: Dict = None, priority: str = "normal") -> str:
         """立即触发插件执行"""
@@ -279,6 +589,8 @@ class TaskScheduler:
                 self.scheduled_tasks[task.id] = task
             
             logger.info(f"Imported {len(config['scheduled_tasks'])} scheduled tasks")
+    
+
 
 
 # 全局任务调度器实例

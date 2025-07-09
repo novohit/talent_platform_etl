@@ -1,4 +1,5 @@
 from celery import Celery
+from celery.schedules import crontab
 from talent_platform.config import config
 from talent_platform.logger import logger
 
@@ -36,10 +37,22 @@ celery_app.conf.update(
     
     # 定时任务配置
     beat_schedule={
-        'monitor-db-changes': {
-            'task': 'talent_platform.scheduler.tasks.monitor_db_changes',
-            'schedule': config.DB_CHANGE_POLLING_INTERVAL,
-        },
+        # 'monitor-db-changes': {
+        #     'task': 'talent_platform.scheduler.tasks.monitor_db_changes',
+        #     'schedule': config.DB_CHANGE_POLLING_INTERVAL,
+        # },
+        # 'mysql-health-check': {
+        #     'task': 'talent_platform.scheduler.tasks.execute_plugin_task',
+        #     'schedule': 300.0,  # 每5分钟
+        #     'args': ['mysql_test'],
+        #     'kwargs': {'operation': 'health_check'},
+        # },
+        # 'mysql-daily-test': {
+        #     'task': 'talent_platform.scheduler.tasks.execute_plugin_task',
+        #     'schedule': crontab(hour=8, minute=0),  # 每天早上8点
+        #     'args': ['mysql_test'],
+        #     'kwargs': {'operation': 'query_test'},
+        # },
     },
 )
 

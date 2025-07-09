@@ -9,11 +9,11 @@ from talent_platform.scheduler import celery_app, TaskScheduler, PluginManager
 from talent_platform.logger import logger
 
 
-def start_worker(queues=None, concurrency=None):
+def start_worker(queues=None, concurrency=None, worker_name=None):
     """启动 Celery Worker"""
     logger.info("Starting Celery Worker...")
     
-    argv = ['worker', '--loglevel=info']
+    argv = ['worker', '--loglevel=info', '-E']
     
     if queues:
         argv.extend(['--queues', queues])
@@ -22,6 +22,18 @@ def start_worker(queues=None, concurrency=None):
     
     if concurrency:
         argv.extend(['--concurrency', str(concurrency)])
+    
+    # 添加worker名称支持
+    if worker_name:
+        # 如果提供了名称，使用用户指定的名称
+        argv.extend(['-n', f'{worker_name}@%h'])
+        logger.info(f"Starting worker with name: {worker_name}@%h")
+    else:
+        # 如果没有提供名称，使用默认名称（避免冲突）
+        import os
+        default_name = f"worker-{os.getpid()}"  # 使用进程ID确保唯一性
+        argv.extend(['-n', f'{default_name}@%h'])
+        logger.info(f"Starting worker with auto-generated name: {default_name}@%h")
     
     celery_app.start(argv)
 
@@ -291,6 +303,129 @@ def health_check():
         print(f"健康检查失败: {e}")
 
 
+def list_scheduled_tasks():
+    """列出所有定时任务"""
+    from talent_platform.scheduler.task_scheduler import task_scheduler
+    
+    try:
+        tasks = task_scheduler.get_scheduled_tasks()
+        
+        print(f"\n{'='*60}")
+        print(f"定时任务列表 (共 {len(tasks)} 个)")
+        print(f"{'='*60}")
+        
+        for task in tasks:
+            status = "✓ 启用" if task["enabled"] else "✗ 禁用"
+            print(f"ID: {task['id']}")
+            print(f"名称: {task['name']}")
+            print(f"插件: {task['plugin_name']}")
+            print(f"状态: {status}")
+            print(f"调度类型: {task['schedule_type']}")
+            print(f"调度配置: {task['schedule_config']}")
+            print(f"参数: {task['parameters']}")
+            
+            if task.get('last_run'):
+                print(f"上次运行: {task['last_run']}")
+            if task.get('next_run'):
+                print(f"下次运行: {task['next_run']}")
+            
+            print("-" * 40)
+        
+    except Exception as e:
+        logger.error(f"List scheduled tasks failed: {e}")
+        print(f"获取定时任务列表失败: {e}")
+
+
+def add_scheduled_task(plugin_name, task_id=None, schedule_type="interval", schedule_config=None, **params):
+    """添加定时任务"""
+    from talent_platform.scheduler.task_scheduler import task_scheduler
+    
+    try:
+        if not task_id:
+            task_id = f"{plugin_name}_{schedule_type}_task"
+        
+        if not schedule_config:
+            if schedule_type == "interval":
+                schedule_config = {"interval": 3600}  # 默认1小时
+            elif schedule_type == "cron":
+                schedule_config = {"cron": "0 * * * *"}  # 默认每小时
+        
+        task_config = {
+            "id": task_id,
+            "name": f"{plugin_name} 定时任务",
+            "plugin_name": plugin_name,
+            "parameters": params,
+            "schedule_type": schedule_type,
+            "schedule_config": schedule_config
+        }
+        
+        success = task_scheduler.add_scheduled_task(task_config)
+        
+        if success:
+            print(f"\n✓ 定时任务添加成功")
+            print(f"任务ID: {task_id}")
+            print(f"插件: {plugin_name}")
+            print(f"调度类型: {schedule_type}")
+            print(f"调度配置: {schedule_config}")
+        else:
+            print(f"\n✗ 定时任务添加失败")
+            
+    except Exception as e:
+        logger.error(f"Add scheduled task failed: {e}")
+        print(f"添加定时任务失败: {e}")
+
+
+def remove_scheduled_task(task_id):
+    """移除定时任务"""
+    from talent_platform.scheduler.task_scheduler import task_scheduler
+    
+    try:
+        success = task_scheduler.remove_scheduled_task(task_id)
+        
+        if success:
+            print(f"\n✓ 定时任务 '{task_id}' 已移除")
+        else:
+            print(f"\n✗ 定时任务 '{task_id}' 不存在")
+            
+    except Exception as e:
+        logger.error(f"Remove scheduled task failed: {e}")
+        print(f"移除定时任务失败: {e}")
+
+
+def enable_scheduled_task(task_id):
+    """启用定时任务"""
+    from talent_platform.scheduler.task_scheduler import task_scheduler
+    
+    try:
+        success = task_scheduler.enable_task(task_id)
+        
+        if success:
+            print(f"\n✓ 定时任务 '{task_id}' 已启用")
+        else:
+            print(f"\n✗ 定时任务 '{task_id}' 不存在")
+            
+    except Exception as e:
+        logger.error(f"Enable scheduled task failed: {e}")
+        print(f"启用定时任务失败: {e}")
+
+
+def disable_scheduled_task(task_id):
+    """禁用定时任务"""
+    from talent_platform.scheduler.task_scheduler import task_scheduler
+    
+    try:
+        success = task_scheduler.disable_task(task_id)
+        
+        if success:
+            print(f"\n✓ 定时任务 '{task_id}' 已禁用")
+        else:
+            print(f"\n✗ 定时任务 '{task_id}' 不存在")
+            
+    except Exception as e:
+        logger.error(f"Disable scheduled task failed: {e}")
+        print(f"禁用定时任务失败: {e}")
+
+
 def main():
     """主函数"""
     parser = argparse.ArgumentParser(description='调度系统管理工具')
@@ -301,6 +436,7 @@ def main():
     worker_parser = subparsers.add_parser('worker', help='启动 Celery Worker')
     worker_parser.add_argument('--queues', help='指定队列')
     worker_parser.add_argument('--concurrency', type=int, help='并发数')
+    worker_parser.add_argument('--name', help='Worker名称 (用于区分多个Worker)')
     
     # Beat 命令
     subparsers.add_parser('beat', help='启动 Celery Beat')
@@ -334,10 +470,30 @@ def main():
     # 健康检查命令
     subparsers.add_parser('health', help='系统健康检查')
     
+    # 定时任务管理命令
+    subparsers.add_parser('list-tasks', help='列出所有定时任务')
+    
+    add_task_parser = subparsers.add_parser('add-task', help='添加定时任务')
+    add_task_parser.add_argument('plugin_name', help='插件名称')
+    add_task_parser.add_argument('--task-id', help='任务ID')
+    add_task_parser.add_argument('--schedule-type', choices=['interval', 'cron'], default='interval', help='调度类型')
+    add_task_parser.add_argument('--interval', type=int, help='间隔时间（秒）')
+    add_task_parser.add_argument('--cron', help='Cron表达式')
+    add_task_parser.add_argument('--operation', help='操作类型')
+    
+    remove_task_parser = subparsers.add_parser('remove-task', help='移除定时任务')
+    remove_task_parser.add_argument('task_id', help='任务ID')
+    
+    enable_task_parser = subparsers.add_parser('enable-task', help='启用定时任务')
+    enable_task_parser.add_argument('task_id', help='任务ID')
+    
+    disable_task_parser = subparsers.add_parser('disable-task', help='禁用定时任务')
+    disable_task_parser.add_argument('task_id', help='任务ID')
+    
     args = parser.parse_args()
     
     if args.command == 'worker':
-        start_worker(args.queues, args.concurrency)
+        start_worker(args.queues, args.concurrency, args.name)
     elif args.command == 'beat':
         start_beat()
     elif args.command == 'monitor':
@@ -362,6 +518,29 @@ def main():
         watch_plugins()
     elif args.command == 'health':
         health_check()
+    elif args.command == 'list-tasks':
+        list_scheduled_tasks()
+    elif args.command == 'add-task':
+        schedule_config = None
+        params = {}
+        
+        if args.operation:
+            params['operation'] = args.operation
+        
+        if args.schedule_type == 'interval':
+            interval = args.interval or 3600  # 默认1小时
+            schedule_config = {"interval": interval}
+        elif args.schedule_type == 'cron':
+            cron = args.cron or "0 * * * *"  # 默认每小时
+            schedule_config = {"cron": cron}
+        
+        add_scheduled_task(args.plugin_name, args.task_id, args.schedule_type, schedule_config, **params)
+    elif args.command == 'remove-task':
+        remove_scheduled_task(args.task_id)
+    elif args.command == 'enable-task':
+        enable_scheduled_task(args.task_id)
+    elif args.command == 'disable-task':
+        disable_scheduled_task(args.task_id)
     else:
         parser.print_help()
 
