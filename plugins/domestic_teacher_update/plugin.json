@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "国内教师简介更新 通过已有链接以及谷歌搜索方式更新",
   "author": "Talent Platform Team",
-  "entry_point": "main.run",
+  "entry_point": "main.main",
   "parameters": {
     "operation": {
       "type": "string",

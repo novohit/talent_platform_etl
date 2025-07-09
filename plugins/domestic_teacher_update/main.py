@@ -38,15 +38,10 @@ async def _main(teacher_id: str):
         batch_insert(result, "raw_web_html")
 
 
-# def main(teacher_id: str = 1, **kwargs):
-#     print("dsfsf")
-#     print("dsfsf")
-#     _main(teacher_id)
 
-def run():
-    print("dsfsf")
-    print("dsfsf")
-    print(os.getenv('COROUTINE_NUM'))
+def main(teacher_id: str=1, **kwargs):
+    asyncio.run(_main(teacher_id))
+
 
 
 if __name__ == "__main__":

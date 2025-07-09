@@ -123,7 +123,7 @@ async def get_llm_response(prompt):
         return text
     # except asyncio.TimeoutError:
     except Exception as e:
-        logger.error("请求超时，正在重试...")
+        logger.error(f"请求超时，正在重试...{e}")
         raise
 
 

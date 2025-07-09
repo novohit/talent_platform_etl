@@ -256,6 +256,31 @@ class PluginManager:
         self.virtual_envs[plugin_name] = str(venv_path)
         return str(venv_path)
     
+    def _get_venv_site_packages_path(self, venv_path: Path) -> Optional[Path]:
+        """获取虚拟环境的site-packages路径，支持动态Python版本检测"""
+        try:
+            # 尝试Unix样式路径
+            lib_dir = venv_path / "lib"
+            if lib_dir.exists():
+                # 查找python*目录
+                for python_dir in lib_dir.iterdir():
+                    if python_dir.is_dir() and python_dir.name.startswith("python"):
+                        site_packages = python_dir / "site-packages"
+                        if site_packages.exists():
+                            return site_packages
+            
+            # 尝试Windows样式路径
+            lib_dir = venv_path / "Lib"
+            if lib_dir.exists():
+                site_packages = lib_dir / "site-packages"
+                if site_packages.exists():
+                    return site_packages
+            
+            return None
+        except Exception as e:
+            logger.debug(f"Error getting site-packages path for {venv_path}: {e}")
+            return None
+    
     def load_plugin(self, plugin_name: str) -> Optional[Any]:
         """加载插件模块"""
         with self._lock:
@@ -347,40 +372,39 @@ class PluginManager:
         original_sys_path = sys.path.copy()
         
         try:
-            # 创建虚拟环境（如果需要）
-            if metadata.dependencies:
-                venv_path = self._create_virtual_env(plugin_name, metadata.dependencies)
-                # 将虚拟环境的 site-packages 添加到 sys.path
-                site_packages = Path(venv_path) / "lib" / "python3.13" / "site-packages"
-                if not site_packages.exists():  # Windows
-                    site_packages = Path(venv_path) / "Lib" / "site-packages"
+            # plugin_environment上下文管理器设置环境变量(加载的时候也要设置环境变量)
+            with plugin_environment(metadata.env_vars):            
+                # 创建虚拟环境（如果需要）
+                if metadata.dependencies:
+                    venv_path = self._create_virtual_env(plugin_name, metadata.dependencies)
+                    # 将虚拟环境的 site-packages 添加到 sys.path
+                    site_packages_path = self._get_venv_site_packages_path(Path(venv_path))
+                    if site_packages_path and site_packages_path.exists():
+                        sys.path.insert(0, str(site_packages_path))
+                        logger.debug(f"Added virtual env site-packages to sys.path during loading: {site_packages_path}")
                 
-                if site_packages.exists():
-                    sys.path.insert(0, str(site_packages))
-            
-            # 🔥 使用临时路径隔离加载插件，避免模块冲突
-            plugin_dir = self.plugins_dir / plugin_name
-            
-            # 1. 获取插件的子目录列表
-            plugin_dirs = self._get_plugin_directories(plugin_dir)
-            
-            # 2. 精确清理可能冲突的模块
-            self._clear_conflicting_modules(plugin_name, plugin_dirs)
-            
-            # 3. 临时将插件目录添加到sys.path最前面（最高优先级）
-            plugin_dir_str = str(plugin_dir)
-            if plugin_dir_str not in sys.path:
-                sys.path.insert(0, plugin_dir_str)
-            
-            # 4. 加载插件模块
-            module = self._load_plugin_as_file(plugin_name, plugin_dir, metadata)
-            
-            if module:
-                self.loaded_modules[plugin_name] = module
-                logger.info(f"Successfully loaded plugin: {plugin_name}")
-            
-            return module
-            
+                # 使用临时路径隔离加载插件，避免模块冲突
+                plugin_dir = self.plugins_dir / plugin_name
+                
+                # 1. 获取插件的子目录列表
+                plugin_dirs = self._get_plugin_directories(plugin_dir)
+                
+                # 2. 精确清理可能冲突的模块
+                self._clear_conflicting_modules(plugin_name, plugin_dirs)
+                
+                # 3. 临时将插件目录添加到sys.path最前面（最高优先级）
+                plugin_dir_str = str(plugin_dir)
+                if plugin_dir_str not in sys.path:
+                    sys.path.insert(0, plugin_dir_str)
+                
+                # 4. 加载插件模块
+                module = self._load_plugin_as_file(plugin_name, plugin_dir, metadata)
+                
+                if module:
+                    self.loaded_modules[plugin_name] = module
+                    logger.info(f"Successfully loaded plugin: {plugin_name}")
+                
+                return module
         except Exception as e:
             logger.error(f"Failed to load plugin {plugin_name}: {e}")
             return None
@@ -450,10 +474,19 @@ class PluginManager:
         
         logger.info(f"Executing plugin {plugin_name} with parameters: {list(kwargs.keys())}")
         
-        # 🔥 执行时也使用临时路径隔离，确保插件运行时能找到正确的模块
+        # 执行时也使用临时路径隔离，确保插件运行时能找到正确的模块
         original_sys_path = sys.path.copy()
         try:
-            # 临时将插件目录添加到sys.path最前面
+            # 1. 添加虚拟环境的 site-packages 路径（如果存在）
+            if metadata.dependencies:
+                venv_path = self.venv_dir / plugin_name
+                if venv_path.exists():
+                    site_packages_path = self._get_venv_site_packages_path(venv_path)
+                    if site_packages_path and site_packages_path.exists():
+                        sys.path.insert(0, str(site_packages_path))
+                        logger.debug(f"Added virtual env site-packages to sys.path: {site_packages_path}")
+            
+            # 2. 临时将插件目录添加到sys.path最前面
             plugin_dir = self.plugins_dir / plugin_name
             plugin_dir_str = str(plugin_dir)
             if plugin_dir_str not in sys.path:
