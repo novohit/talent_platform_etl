@@ -1,0 +1,27 @@
+{
+  "name": "mysql_test",
+  "version": "1.0.0",
+  "description": "MySQL数据库连接测试插件",
+  "author": "Talent Platform Team",
+  "entry_point": "main.test_mysql_connection",
+  "parameters": {
+    "operation": {
+      "type": "string",
+      "description": "操作类型",
+      "default": "query_test",
+      "options": ["test_connection", "query_test", "health_check", "show_tables"]
+    },
+    "timeout": {
+      "type": "integer",
+      "description": "连接超时时间（秒）",
+      "default": 30
+    }
+  },
+  "dependencies": [
+    "PyMySQL>=1.0.2",
+    "cryptography>=3.4.8"
+  ],
+  "python_version": ">=3.8",
+  "enabled": true,
+  "tags": ["database", "mysql", "test", "connection"]
+} 
