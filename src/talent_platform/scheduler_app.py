@@ -246,9 +246,16 @@ def trigger_plugin(plugin_name, operation=None, **params):
         # 触发执行
         task_id = task_scheduler.trigger_plugin(plugin_name, plugin_params)
         
-        print(f"\n插件 '{plugin_name}' 已触发执行")
+        print(f"\n✓ 插件 '{plugin_name}' 已触发执行")
         print(f"任务ID: {task_id}")
         print(f"参数: {plugin_params}")
+        print()
+        print("📝 取消任务的方法:")
+        print(f"   python -m talent_platform.scheduler_app cancel {task_id}")
+        print(f"   或者: python -m talent_platform.scheduler_app cancel-plugin {plugin_name}")
+        print()
+        print("🔍 查看任务状态:")
+        print(f"   python -m talent_platform.scheduler_app status {task_id}")
         
         return task_id
         
@@ -280,6 +287,106 @@ def get_task_status(task_id):
     except Exception as e:
         logger.error(f"Get task status failed: {e}")
         print(f"获取状态失败: {e}")
+
+
+def cancel_task(task_id):
+    """取消任务"""
+    from talent_platform.scheduler.task_scheduler import task_scheduler
+    
+    try:
+        result = task_scheduler.cancel_task(task_id)
+        
+        print(f"\n{'='*60}")
+        print(f"取消任务: {task_id}")
+        print(f"{'='*60}")
+        
+        if result['success']:
+            print(f"✓ {result['message']}")
+        else:
+            print(f"✗ {result['message']}")
+            if result.get('status'):
+                print(f"任务状态: {result['status']}")
+                
+    except Exception as e:
+        logger.error(f"Cancel task failed: {e}")
+        print(f"取消任务失败: {e}")
+
+
+def list_active_tasks():
+    """列出活动任务"""
+    from talent_platform.scheduler.task_scheduler import task_scheduler
+    
+    try:
+        result = task_scheduler.list_active_tasks()
+        
+        print(f"\n{'='*60}")
+        print(f"活动任务列表")
+        print(f"{'='*60}")
+        print(f"Worker 数量: {result['total_workers']}")
+        print(f"任务总数: {result['total_tasks']}")
+        
+        if result.get('error'):
+            print(f"错误: {result['error']}")
+            return
+        
+        if result['total_tasks'] == 0:
+            print("当前没有活动任务")
+            return
+        
+        print()
+        for worker, tasks in result['active_tasks'].items():
+            print(f"Worker: {worker}")
+            print(f"任务数: {len(tasks)}")
+            print("-" * 40)
+            
+            for task in tasks:
+                task_id = task['id']
+                task_name = task.get('name', 'Unknown')
+                args = task.get('args', [])
+                
+                print(f"  任务ID: {task_id}")
+                print(f"  任务名: {task_name}")
+                
+                # 如果是插件任务，显示插件名
+                if (task_name == 'talent_platform.scheduler.tasks.execute_plugin_task' and 
+                    len(args) > 0):
+                    print(f"  插件名: {args[0]}")
+                
+                if args:
+                    print(f"  参数: {args}")
+                
+                print()
+            
+            print("=" * 40)
+            
+    except Exception as e:
+        logger.error(f"List active tasks failed: {e}")
+        print(f"获取活动任务列表失败: {e}")
+
+
+def cancel_plugin_tasks(plugin_name):
+    """取消指定插件的所有任务"""
+    from talent_platform.scheduler.task_scheduler import task_scheduler
+    
+    try:
+        result = task_scheduler.cancel_all_plugin_tasks(plugin_name)
+        
+        print(f"\n{'='*60}")
+        print(f"取消插件任务: {plugin_name}")
+        print(f"{'='*60}")
+        
+        if result['success']:
+            print(f"✓ {result['message']}")
+            if result.get('cancelled_tasks'):
+                print("已取消的任务ID:")
+                for task_id in result['cancelled_tasks']:
+                    print(f"  - {task_id}")
+        else:
+            print(f"✗ {result['message']}")
+                
+    except Exception as e:
+        logger.error(f"Cancel plugin tasks failed: {e}")
+        print(f"取消插件任务失败: {e}")
 
 
 def health_check():
@@ -462,6 +569,17 @@ def main():
     status_parser = subparsers.add_parser('status', help='获取任务状态')
     status_parser.add_argument('task_id', help='任务ID')
     
+    # 任务取消命令
+    cancel_parser = subparsers.add_parser('cancel', help='取消运行中的任务')
+    cancel_parser.add_argument('task_id', help='任务ID')
+    
+    # 列出活动任务命令
+    subparsers.add_parser('list-active', help='列出所有活动任务')
+    
+    # 取消插件任务命令
+    cancel_plugin_parser = subparsers.add_parser('cancel-plugin', help='取消指定插件的所有任务')
+    cancel_plugin_parser.add_argument('plugin_name', help='插件名称')
+    
     # 热加载命令
     reload_parser = subparsers.add_parser('reload', help='重新加载插件')
     reload_parser.add_argument('plugin_name', help='插件名称')
@@ -511,6 +629,12 @@ def main():
         trigger_plugin(args.plugin_name, args.operation)
     elif args.command == 'status':
         get_task_status(args.task_id)
+    elif args.command == 'cancel':
+        cancel_task(args.task_id)
+    elif args.command == 'list-active':
+        list_active_tasks()
+    elif args.command == 'cancel-plugin':
+        cancel_plugin_tasks(args.plugin_name)
     elif args.command == 'reload':
         reload_plugin(args.plugin_name)
     elif args.command == 'enable-hot-reload':

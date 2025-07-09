@@ -434,8 +434,11 @@ python -m talent_platform.scheduler_app list-plugins
 python -m talent_platform.scheduler_app test-plugin your_plugin
 python -m talent_platform.scheduler_app trigger your_plugin --operation your_op
 
-# 任务状态
-python -m talent_platform.scheduler_app status <task_id>
+# 任务管理
+python -m talent_platform.scheduler_app status <task_id>          # 查看任务状态
+python -m talent_platform.scheduler_app cancel <task_id>          # 取消指定任务
+python -m talent_platform.scheduler_app list-active              # 列出活动任务
+python -m talent_platform.scheduler_app cancel-plugin <plugin>   # 取消插件的所有任务
 
 # 启动服务
 python -m talent_platform.scheduler_app worker --queues plugin_tasks --concurrency 4
@@ -625,6 +628,19 @@ python -m talent_platform.scheduler_app status task_id
 
 # 检查系统健康
 python -m talent_platform.scheduler_app health
+```
+
+**4. 任务运行时间过长**
+
+```bash
+# 查看所有活动任务
+python -m talent_platform.scheduler_app list-active
+
+# 取消指定任务
+python -m talent_platform.scheduler_app cancel <task_id>
+
+# 取消某个插件的所有任务
+python -m talent_platform.scheduler_app cancel-plugin <plugin_name>
 ```
 
 **4. 依赖问题**

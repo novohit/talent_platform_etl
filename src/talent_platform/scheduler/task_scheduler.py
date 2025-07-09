@@ -1,4 +1,5 @@
 import json
+import signal
 from typing import Dict, List, Any, Optional
 from datetime import datetime, timedelta
 from dataclasses import dataclass, asdict
@@ -478,6 +479,137 @@ class TaskScheduler:
             "result": result.result if result.ready() else None,
             "traceback": result.traceback if result.failed() else None
         }
+    
+    def cancel_task(self, task_id: str) -> Dict:
+        """取消正在运行的任务"""
+        from .celery_app import celery_app
+        
+        try:
+            result = celery_app.AsyncResult(task_id)
+            
+            # 检查任务状态
+            if result.state in ['SUCCESS', 'FAILURE', 'REVOKED']:
+                return {
+                    "success": False,
+                    "message": f"任务已完成，无法取消。当前状态: {result.state}",
+                    "task_id": task_id,
+                    "status": result.state
+                }
+            
+            # 撤销任务
+            celery_app.control.revoke(task_id, terminate=True, signal=signal.SIGTERM)
+            
+            # 更新任务历史记录
+            for record in self.task_history:
+                if record.get("task_id") == task_id:
+                    record["status"] = "cancelled"
+                    record["cancelled_at"] = datetime.now().isoformat()
+                    break
+            
+            logger.info(f"Task {task_id} has been cancelled")
+            
+            return {
+                "success": True,
+                "message": "任务已成功取消",
+                "task_id": task_id,
+                "status": "cancelled"
+            }
+            
+        except Exception as e:
+            logger.error(f"Failed to cancel task {task_id}: {e}")
+            return {
+                "success": False,
+                "message": f"取消任务失败: {e}",
+                "task_id": task_id,
+                "error": str(e)
+            }
+    
+    def list_active_tasks(self) -> Dict:
+        """列出所有活动任务"""
+        from .celery_app import celery_app
+        
+        try:
+            # 获取活动任务
+            inspect = celery_app.control.inspect()
+            active_tasks = inspect.active()
+            
+            if not active_tasks:
+                return {
+                    "active_tasks": {},
+                    "total_workers": 0,
+                    "total_tasks": 0
+                }
+            
+            total_tasks = 0
+            for worker, tasks in active_tasks.items():
+                total_tasks += len(tasks)
+            
+            return {
+                "active_tasks": active_tasks,
+                "total_workers": len(active_tasks),
+                "total_tasks": total_tasks
+            }
+            
+        except Exception as e:
+            logger.error(f"Failed to list active tasks: {e}")
+            return {
+                "active_tasks": {},
+                "total_workers": 0,
+                "total_tasks": 0,
+                "error": str(e)
+            }
+    
+    def cancel_all_plugin_tasks(self, plugin_name: str) -> Dict:
+        """取消指定插件的所有运行中任务"""
+        from .celery_app import celery_app
+        
+        try:
+            inspect = celery_app.control.inspect()
+            active_tasks = inspect.active()
+            
+            if not active_tasks:
+                return {
+                    "success": True,
+                    "message": "没有找到活动任务",
+                    "cancelled_count": 0
+                }
+            
+            cancelled_tasks = []
+            
+            for worker, tasks in active_tasks.items():
+                for task in tasks:
+                    # 检查是否是目标插件的任务
+                    if (task.get('name') == 'talent_platform.scheduler.tasks.execute_plugin_task' and 
+                        len(task.get('args', [])) > 0 and 
+                        task['args'][0] == plugin_name):
+                        
+                        task_id = task['id']
+                        celery_app.control.revoke(task_id, terminate=True)
+                        cancelled_tasks.append(task_id)
+                        
+                        # 更新任务历史
+                        for record in self.task_history:
+                            if record.get("task_id") == task_id:
+                                record["status"] = "cancelled"
+                                record["cancelled_at"] = datetime.now().isoformat()
+                                break
+            
+            logger.info(f"Cancelled {len(cancelled_tasks)} tasks for plugin {plugin_name}")
+            
+            return {
+                "success": True,
+                "message": f"已取消 {len(cancelled_tasks)} 个 {plugin_name} 插件的任务",
+                "cancelled_count": len(cancelled_tasks),
+                "cancelled_tasks": cancelled_tasks
+            }
+            
+        except Exception as e:
+            logger.error(f"Failed to cancel plugin tasks: {e}")
+            return {
+                "success": False,
+                "message": f"取消插件任务失败: {e}",
+                "error": str(e)
+            }
     
     def get_scheduled_tasks(self) -> List[Dict]:
         """获取所有调度任务"""
