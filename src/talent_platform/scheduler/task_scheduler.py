@@ -239,63 +239,31 @@ class TaskScheduler:
             return None
     
     def _add_task_to_celery_beat(self, task: ScheduledTask, schedule):
-        """添加任务到 Celery Beat Schedule"""
-        from .celery_app import celery_app
+        """
+        [已废弃] 添加任务到 Celery Beat Schedule
         
-        if not task.enabled:
-            logger.info(f"Task {task.id} is disabled, skipping Celery Beat registration")
-            return
-        
-        try:
-            # 构建任务配置
-            task_config = {
-                'task': 'talent_platform.scheduler.tasks.execute_plugin_task',
-                'schedule': schedule,
-                'args': [task.plugin_name],
-                'kwargs': task.parameters,
-                'options': {
-                    'queue': 'plugin_tasks',
-                    'priority': getattr(task, 'priority', 5),
-                }
-            }
-            
-            # 如果有超时设置
-            if hasattr(task, 'timeout') and task.timeout:
-                task_config['options']['time_limit'] = task.timeout
-            
-            # 如果有重试设置
-            if hasattr(task, 'max_retries'):
-                task_config['options']['retry'] = True
-                task_config['options']['max_retries'] = task.max_retries
-            
-            # 动态添加到 Celery Beat
-            celery_app.conf.beat_schedule[task.id] = task_config
-            
-            logger.info(f"Added task {task.id} to Celery Beat schedule")
-            
-        except Exception as e:
-            logger.error(f"Failed to add task {task.id} to Celery Beat: {e}")
-            raise
+        注意：使用 DatabaseScheduler 后，此方法已不再需要。
+        DatabaseScheduler 会自动从数据库读取任务，无需手动添加。
+        """
+        logger.debug(f"_add_task_to_celery_beat called for task {task.id}, but using DatabaseScheduler - no action needed")
     
     def _remove_task_from_celery_beat(self, task_id: str):
-        """从 Celery Beat Schedule 移除任务"""
-        from .celery_app import celery_app
+        """
+        [已废弃] 从 Celery Beat Schedule 移除任务
         
-        try:
-            if task_id in celery_app.conf.beat_schedule:
-                del celery_app.conf.beat_schedule[task_id]
-                logger.info(f"Removed task {task_id} from Celery Beat schedule")
-                return True
-            else:
-                logger.warning(f"Task {task_id} not found in Celery Beat schedule")
-                return False
-                
-        except Exception as e:
-            logger.error(f"Failed to remove task {task_id} from Celery Beat: {e}")
-            return False
+        注意：使用 DatabaseScheduler 后，此方法已不再需要。
+        DatabaseScheduler 会自动同步数据库变更，任务启用/禁用会自动生效。
+        """
+        logger.debug(f"_remove_task_from_celery_beat called for task {task_id}, but using DatabaseScheduler - no action needed")
+        return True
     
     def remove_scheduled_task(self, task_id: str) -> bool:
-        """移除调度任务 - 从数据库和 Celery Beat 中删除"""
+        """
+        移除调度任务 - 从数据库删除
+        
+        注意：使用 DatabaseScheduler 后，只需从数据库删除即可。
+        DatabaseScheduler 会在下次同步时自动移除任务。
+        """
         from ..db.database import get_scheduler_db_session
         from ..db.models import ScheduledTaskModel
         
@@ -310,22 +278,25 @@ class TaskScheduler:
                 else:
                     logger.warning(f"Task {task_id} not found in database")
             
-            # 2. 从 Celery Beat 移除
-            self._remove_task_from_celery_beat(task_id)
-            
-            # 3. 从内存移除
+            # 2. 从内存移除
             if task_id in self.scheduled_tasks:
                 del self.scheduled_tasks[task_id]
             
-            logger.info(f"✅ Successfully removed scheduled task: {task_id}")
+            # 注意：DatabaseScheduler 会在下次同步时自动从调度中移除此任务
+            logger.info(f"Successfully removed scheduled task: {task_id}")
             return True
             
         except Exception as e:
-            logger.error(f"❌ Failed to remove scheduled task {task_id}: {e}")
+            logger.error(f"Failed to remove scheduled task {task_id}: {e}")
             return False
     
     def enable_task(self, task_id: str) -> bool:
-        """启用任务 - 更新数据库和 Celery Beat"""
+        """
+        启用任务 - 更新数据库状态
+        
+        注意：使用 DatabaseScheduler 后，只需更新数据库即可。
+        DatabaseScheduler 会在下次同步时自动加载启用的任务。
+        """
         from ..db.database import get_scheduler_db_session
         from ..db.models import ScheduledTaskModel
         from datetime import datetime
@@ -348,22 +319,21 @@ class TaskScheduler:
             if task_id in self.scheduled_tasks:
                 self.scheduled_tasks[task_id].enabled = True
             
-            # 3. 重新添加到 Celery Beat
-            if task_id in self.scheduled_tasks:
-                task = self.scheduled_tasks[task_id]
-                schedule = self._build_celery_schedule(task.schedule_type, task.schedule_config)
-                if schedule:
-                    self._add_task_to_celery_beat(task, schedule)
-            
-            logger.info(f"✅ Successfully enabled task: {task_id}")
+            # 注意：DatabaseScheduler 会在下次同步时自动加载此任务到调度中
+            logger.info(f"Successfully enabled task: {task_id}")
             return True
             
         except Exception as e:
-            logger.error(f"❌ Failed to enable task {task_id}: {e}")
+            logger.error(f"Failed to enable task {task_id}: {e}")
             return False
     
     def disable_task(self, task_id: str) -> bool:
-        """禁用任务 - 更新数据库和 Celery Beat"""
+        """
+        禁用任务 - 更新数据库状态
+        
+        注意：使用 DatabaseScheduler 后，只需更新数据库即可。
+        DatabaseScheduler 会在下次同步时自动停止调度禁用的任务。
+        """
         from ..db.database import get_scheduler_db_session
         from ..db.models import ScheduledTaskModel
         from datetime import datetime
@@ -386,9 +356,7 @@ class TaskScheduler:
             if task_id in self.scheduled_tasks:
                 self.scheduled_tasks[task_id].enabled = False
             
-            # 3. 从 Celery Beat 移除
-            self._remove_task_from_celery_beat(task_id)
-            
+            # 注意：DatabaseScheduler 会在下次同步时自动从调度中移除此任务
             logger.info(f"Successfully disabled task: {task_id}")
             return True
             
@@ -397,7 +365,12 @@ class TaskScheduler:
             return False
     
     def load_persisted_tasks(self):
-        """从数据库加载持久化的定时任务"""
+        """
+        从数据库加载持久化的定时任务到内存
+        
+        注意：使用 DatabaseScheduler 后，此方法只需加载到内存即可。
+        DatabaseScheduler 会直接从数据库读取任务并自动调度。
+        """
         from ..db.database import get_scheduler_db_session
         from ..db.models import ScheduledTaskModel
         
@@ -429,12 +402,8 @@ class TaskScheduler:
                         self.scheduled_tasks[task.id] = task
                         loaded_count += 1
                         
-                        # 如果任务启用，添加到 Celery Beat
                         if task.enabled:
-                            schedule = self._build_celery_schedule(task.schedule_type, task.schedule_config)
-                            if schedule:
-                                self._add_task_to_celery_beat(task, schedule)
-                                enabled_count += 1
+                            enabled_count += 1
                         
                         logger.debug(f"Loaded task: {task.id} (enabled: {task.enabled})")
                         
@@ -443,6 +412,7 @@ class TaskScheduler:
                         continue
                 
                 logger.info(f"Loaded {loaded_count} tasks from database ({enabled_count} enabled)")
+                logger.info("DatabaseScheduler will automatically handle task scheduling from database")
                 return loaded_count
                 
         except Exception as e:

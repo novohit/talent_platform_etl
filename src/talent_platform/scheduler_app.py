@@ -4,6 +4,7 @@
 """
 
 import sys
+import os
 import argparse
 from talent_platform.scheduler import celery_app, TaskScheduler, PluginManager
 from talent_platform.logger import logger
@@ -42,6 +43,8 @@ def start_beat():
     """启动 Celery Beat (定时任务调度器)"""
     logger.info("Starting Celery Beat...")
     
+    # 设置 SQL_ECHO env 为 False
+    os.environ['SQL_ECHO'] = 'False'
     argv = ['beat', '--loglevel=info']
     celery_app.start(argv)
 

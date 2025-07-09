@@ -35,23 +35,18 @@ celery_app.conf.update(
     # 重试配置
     task_reject_on_worker_lost=True,
     
-    # 定时任务配置
+    # 使用数据库调度器
+    beat_scheduler='talent_platform.scheduler.simple_database_scheduler:SimpleDatabaseScheduler',
+    
+    # 数据库调度器设置 - 控制调度器唤醒频率以检测变化
+    beat_max_loop_interval=5.0,  # 每5秒检查一次（而非强制同步）
+    
+    # 静态任务配置（可选，用于系统级任务）
     beat_schedule={
+        # 系统监控任务（如果需要的话）
         # 'monitor-db-changes': {
         #     'task': 'talent_platform.scheduler.tasks.monitor_db_changes',
         #     'schedule': config.DB_CHANGE_POLLING_INTERVAL,
-        # },
-        # 'mysql-health-check': {
-        #     'task': 'talent_platform.scheduler.tasks.execute_plugin_task',
-        #     'schedule': 300.0,  # 每5分钟
-        #     'args': ['mysql_test'],
-        #     'kwargs': {'operation': 'health_check'},
-        # },
-        # 'mysql-daily-test': {
-        #     'task': 'talent_platform.scheduler.tasks.execute_plugin_task',
-        #     'schedule': crontab(hour=8, minute=0),  # 每天早上8点
-        #     'args': ['mysql_test'],
-        #     'kwargs': {'operation': 'query_test'},
         # },
     },
 )
