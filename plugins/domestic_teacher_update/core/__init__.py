@@ -1,1 +1,0 @@
-# Core modules for domestic teacher update 

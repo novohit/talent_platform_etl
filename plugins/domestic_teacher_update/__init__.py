@@ -1,1 +1,0 @@
-# Domestic Teacher Update Plugin 
