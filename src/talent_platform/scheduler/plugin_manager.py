@@ -309,10 +309,17 @@ class PluginManager:
             subdirs = [d for d in plugin_dir.iterdir() if d.is_dir() and not d.name.startswith('.')]
             
             if len(python_files) > 1 or subdirs:
-                # 包结构：将插件目录添加到sys.path，然后导入为包
+                # 包结构：支持绝对导入 - 关键是将插件目录本身添加到sys.path
                 plugin_parent = str(plugin_dir.parent)
+                plugin_dir_str = str(plugin_dir)
+                
+                # 添加插件父目录到路径（为了包导入）
                 if plugin_parent not in sys.path:
                     sys.path.insert(0, plugin_parent)
+                
+                # 关键：添加插件目录本身到路径（为了绝对导入）
+                if plugin_dir_str not in sys.path:
+                    sys.path.insert(0, plugin_dir_str)
                 
                 try:
                     # 先尝试导入包

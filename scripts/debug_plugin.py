@@ -31,9 +31,13 @@ class PluginDebugger:
         if not self.plugin_dir.exists():
             raise ValueError(f"Plugin directory not found: {self.plugin_dir}")
         
-        # 添加插件目录到路径，让插件可以正确导入
+        # 添加插件目录到路径，支持绝对导入
         if str(self.plugin_dir.parent) not in sys.path:
             sys.path.insert(0, str(self.plugin_dir.parent))
+        
+        # 关键：添加插件目录本身到路径，让插件内部的绝对导入能正常工作
+        if str(self.plugin_dir) not in sys.path:
+            sys.path.insert(0, str(self.plugin_dir))
     
     def load_plugin_info(self) -> Dict[str, Any]:
         """加载插件信息"""
