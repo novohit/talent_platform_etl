@@ -77,6 +77,12 @@ def setup_logger(name: str = "talent_platform_etl") -> logging.Logger:
     logger.addHandler(error_file_handler)
     logger.addHandler(console_handler)
 
+    # 禁止日志传播到父级导致打印重复的日志，Celery 执行任务时会有一个专用的任务日志器
+    #2025-07-21 14:31:05,110 - INFO - Executing plugin mysql_test with parameters: []  │
+    #[2025-07-21 14:31:05,110: INFO/ForkPoolWorker-5] Executing plugin mysql_test with parameters: []
+    
+    logger.propagate = False
+
     return logger
 
 
