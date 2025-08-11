@@ -22,6 +22,7 @@ celery_app.conf.update(
     # 任务路由配置
     task_routes={
         'talent_platform.scheduler.tasks.execute_plugin_task': {'queue': 'plugin_tasks'},
+        'talent_platform.scheduler.tasks.execute_chain_plugin_task': {'queue': 'plugin_tasks'},
         'talent_platform.scheduler.tasks.monitor_db_changes': {'queue': 'monitoring'},
     },
     

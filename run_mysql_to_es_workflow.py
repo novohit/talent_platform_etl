@@ -8,7 +8,7 @@
 
 import logging
 from celery import chain
-from talent_platform.scheduler.tasks import execute_plugin_task
+from talent_platform.scheduler.tasks import execute_plugin_task, execute_chain_plugin_task
 
 # 配置日志
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -29,10 +29,8 @@ def main():
     # 步骤二: Elasticsearch 索引
     # 使用 .si() 创建一个不可变签名。
     # 这可以防止它接收前一个任务的返回值作为参数，从而解决 TypeError。
-    es_task_signature = execute_plugin_task.si(
+    es_task_signature = execute_chain_plugin_task.s(
         plugin_name='es_indexer',
-        operation='bulk_index',
-        index_name='synced_from_mysql'
     )
 
     # 2. 使用 chain() 将任务签名链接起来

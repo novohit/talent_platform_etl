@@ -59,6 +59,49 @@ def execute_plugin_task(self, plugin_name: str, change_event: Optional[Dict] = N
             "timestamp": datetime.now().isoformat()
         }
 
+@celery_app.task(bind=True, base=CallbackTask, max_retries=3)
+def execute_chain_plugin_task(self, previous_result: Dict[str, Any], plugin_name: str, change_event: Optional[Dict] = None, **kwargs):
+    """执行链式插件任务，明确接收上一个任务的返回结果。"""
+    try:
+        logger.info(f"Executing chained plugin task: {plugin_name}")
+        
+        # 准备插件参数，从上一个任务的结果开始
+        plugin_kwargs = {}
+
+        # 合并任何在签名中额外定义的kwargs
+        plugin_kwargs.update(kwargs)
+
+        if change_event:
+            plugin_kwargs['change_event'] = change_event
+        
+        # 执行插件
+        result = plugin_manager.execute_plugin(plugin_name, **plugin_kwargs)
+        
+        logger.info(f"Plugin {plugin_name} executed successfully")
+        return {
+            "status": "success",
+            "plugin_name": plugin_name,
+            "result": result,
+            "timestamp": datetime.now().isoformat()
+        }
+        
+    except Exception as exc:
+        logger.error(f"Plugin {plugin_name} execution failed: {exc}")
+        logger.error(f"Traceback: {traceback.format_exc()}")
+        
+        # 重试机制
+        if self.request.retries < self.max_retries:
+            logger.info(f"Retrying plugin {plugin_name} (attempt {self.request.retries + 1})")
+            raise self.retry(exc=exc, countdown=60)
+        
+        # 最终失败
+        return {
+            "status": "failed",
+            "plugin_name": plugin_name,
+            "error": str(exc),
+            "timestamp": datetime.now().isoformat()
+        }
+
 
 @celery_app.task(bind=True, base=CallbackTask)
 def monitor_db_changes(self):

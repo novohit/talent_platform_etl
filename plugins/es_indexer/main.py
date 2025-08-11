@@ -21,6 +21,8 @@ def index_data(operation: str = "update_teacher_index",
                batch_size: int = 100,
                change_event: Optional[Dict] = None,
                **kwargs) -> Dict[str, Any]:
+    
+    logger.info(f"params: {kwargs}")
     """
     ES索引主函数
     
