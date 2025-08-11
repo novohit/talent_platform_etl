@@ -1,14 +1,17 @@
-from talent_platform.es.client import es_client
-from talent_platform.db.database import get_domain_tree_session
-from talent_platform.db.models import TeacherWide
-from sqlmodel import select
-from talent_platform.logger import logger
-from typing import List
 import json
-import humps
 import os
 import pickle
 from datetime import datetime, timedelta
+from typing import List
+
+import humps
+from sqlmodel import select
+import pandas as pd
+
+from talent_platform.db.database import get_session
+from talent_platform.db.models import TeacherWide
+from talent_platform.es.client import es_client
+from talent_platform.logger import logger
 
 
 def sync_teacher_wide_data():
@@ -26,7 +29,9 @@ def sync_teacher_wide_data():
                     return pickle.load(f)
 
     logger.info("Fetching teacher wide data from database")
-    with get_domain_tree_session() as session:
+    with get_session() as session:
+        # teacher_ids = get_teacher_ids()
+        # statement = select(TeacherWide).where(TeacherWide.teacher_id.in_(teacher_ids))
         statement = select(TeacherWide)
         results = session.exec(statement)
         data = list(results)
@@ -121,7 +126,7 @@ def process_batch(index, items: List[TeacherWide]):
 
         documents.append(
             {
-                "_index": "teacher_test",
+                "_index": index,
                 "_id": item.teacher_id,
                 "_source": {
                     "teacherId": item.teacher_id,
@@ -194,8 +199,14 @@ def process_batch(index, items: List[TeacherWide]):
         es_client.bulk(index, documents)
 
 
+def get_teacher_ids():
+    excel_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), "人工智能PDF_teacher_id.xlsx")
+    df = pd.read_excel(excel_file)
+    return df.iloc[:, 0].tolist()
+
+
 if __name__ == "__main__":
-    index = "teacher_dev"
+    index = "teachers_20250805"
     create_teacher_index(index)
     logger.info("Starting to reading teacher wide data")
     res = sync_teacher_wide_data()
