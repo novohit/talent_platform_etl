@@ -21,6 +21,8 @@ logs/
 # cache
 cache/
 
+data/
+output/
 
 # plugin_envs
 plugin_envs/

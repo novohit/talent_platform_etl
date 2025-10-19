@@ -59,14 +59,13 @@ class TeacherWide(SQLModel, table=True):
     major_paper_2_domain: str
     minor_paper_2_domain: str
     major_paper_3_domain: str
+    minor_paper_3_domain: str
     paper_l1_domains: str
     paper_l2_domains: str
     paper_l3_domains: str
     is_dome_cooperation: int
     paper_num: int
     is_paper_CNS: int
-    educations: str
-    employments: str
     famous_titles_level: float
     job_title_level: float
 

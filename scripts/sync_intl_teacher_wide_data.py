@@ -104,25 +104,25 @@ def safe_split_string(value):
 def process_batch(index, items: List[TeacherWide]):
     documents = []
     for item in items:
-        educations = safe_json_loads(
-            item.educations, "educations", item.teacher_id, to_camel=True
-        )
-        if isinstance(educations, list):
-            for edu in educations:
-                if isinstance(edu, dict) and "isValid" in edu:
-                    edu["isValid"] = bool(edu["isValid"])
-                if isinstance(edu, dict) and "isFromOrcid" in edu:
-                    edu["isFromOrcid"] = bool(edu["isFromOrcid"])
+        # educations = safe_json_loads(
+        #     item.educations, "educations", item.teacher_id, to_camel=True
+        # )
+        # if isinstance(educations, list):
+        #     for edu in educations:
+        #         if isinstance(edu, dict) and "isValid" in edu:
+        #             edu["isValid"] = bool(edu["isValid"])
+        #         if isinstance(edu, dict) and "isFromOrcid" in edu:
+        #             edu["isFromOrcid"] = bool(edu["isFromOrcid"])
 
-        employments = safe_json_loads(
-            item.employments, "employments", item.teacher_id, to_camel=True
-        )
-        if isinstance(employments, list):
-            for emp in employments:
-                if isinstance(emp, dict) and "isValid" in emp:
-                    emp["isValid"] = bool(emp["isValid"])
-                if isinstance(emp, dict) and "isFromOrcid" in emp:
-                    emp["isFromOrcid"] = bool(emp["isFromOrcid"])
+        # employments = safe_json_loads(
+        #     item.employments, "employments", item.teacher_id, to_camel=True
+        # )
+        # if isinstance(employments, list):
+        #     for emp in employments:
+        #         if isinstance(emp, dict) and "isValid" in emp:
+        #             emp["isValid"] = bool(emp["isValid"])
+        #         if isinstance(emp, dict) and "isFromOrcid" in emp:
+        #             emp["isFromOrcid"] = bool(emp["isFromOrcid"])
 
         documents.append(
             {
@@ -179,6 +179,11 @@ def process_batch(index, items: List[TeacherWide]):
                         "major_paper_3_domain",
                         item.teacher_id,
                     ),
+                    "minorPaper3Domain": safe_json_loads(
+                        item.minor_paper_3_domain,
+                        "minor_paper_3_domain",
+                        item.teacher_id,
+                    ),
                     "ageRange": item.age_range,
                     "corporateExperience": item.corporate_experience,
                     "overseasExperience": item.overseas_experience,
@@ -190,8 +195,6 @@ def process_batch(index, items: List[TeacherWide]):
                     ),
                     "famousTitlesLevel": item.famous_titles_level,
                     "jobTitleLevel": item.job_title_level,
-                    "educations": educations,
-                    "employments": employments,
                 },
             }
         )
@@ -206,7 +209,7 @@ def get_teacher_ids():
 
 
 if __name__ == "__main__":
-    index = "teachers_20250805"
+    index = "teachers_20250915"
     create_teacher_index(index)
     logger.info("Starting to reading teacher wide data")
     res = sync_teacher_wide_data()

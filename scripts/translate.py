@@ -1,6 +1,6 @@
 import requests
 
-url = "https://et-platform-dev3.ikchain.com.cn/api/translation/translate"
+url = "https://et-platform-dev3.ikchain.com.cn/api/translation/translate/llm"
 
 headers = {
     "accept": "application/json, text/plain, */*",
@@ -8,7 +8,7 @@ headers = {
 }
 
 data = {
-    "texts": ["Egypt", "China-Taiwan hello world"],
+    "texts": ["Dr. Donald C. Wunsch II is the Mary Finley Missouri Distinguished Professor and Director of the Kummer Institute Center for Artificial Intelligence and Autonomous Systems at Missouri University of Science and Technology. He also heads the Applied Computational Intelligence Laboratory. He previously worked at Texas Tech University, Boeing, etc. His research interests include clustering, neural networks, etc. He holds a Ph.D. in Electrical Engineering from the University of Washington. An IEEE Fellow and former INNS President, he has won numerous awards. He has mentored 23 Ph.D. recipients and made key contributions to real - time design of Unsupervised and Reinforcement Learning. "],
     "fromLanguage": "en",
     "toLanguage": "zh",
 }
