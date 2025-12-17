@@ -43,3 +43,9 @@ dev = [
     "pysocks>=1.7.1",
     "ruff>=0.12.0",
 ]
+
+[[tool.uv.index]]
+name = "custom-repo"
+url = "http://172.22.121.51:8081/repository/pypi-public/simple"
+publish-url = "http://172.22.121.51:8081/repository/pypi-host/"
+default = true
