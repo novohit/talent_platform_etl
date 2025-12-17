@@ -209,7 +209,7 @@ def get_teacher_ids():
 
 
 if __name__ == "__main__":
-    index = "teachers_20250915"
+    index = "teachers_20251216"
     create_teacher_index(index)
     logger.info("Starting to reading teacher wide data")
     res = sync_teacher_wide_data()
